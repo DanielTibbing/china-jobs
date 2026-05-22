@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Search, MapPin, Building2, Briefcase, Bookmark, ExternalLink, RefreshCw, Filter, History, Clock, Globe } from 'lucide-react'
+import { Search, MapPin, Building2, Briefcase, ExternalLink, RefreshCw, Filter, History, Clock, Globe } from 'lucide-react'
 
 interface Job {
   id: string;
@@ -132,6 +132,41 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     offices: ['Singapore', 'Shanghai', 'Hong Kong', 'Stockholm', 'Amsterdam'],
     careerUrl: 'https://www.adyen.com/careers'
   },
+  'EF': {
+    name: 'EF',
+    description: 'A global leader in international education, focusing on language, academics, and cultural experience.',
+    regions: ['China', 'Hong Kong', 'Singapore', 'Sweden'],
+    offices: ['Shanghai', 'Hong Kong', 'Singapore', 'Stockholm', 'Lucerne', 'London'],
+    careerUrl: 'https://www.ef.com/careers'
+  },
+  'Scania': {
+    name: 'Scania',
+    description: 'A world-leading provider of transport solutions, including trucks and buses for heavy transport applications.',
+    regions: ['Sweden', 'China'],
+    offices: ['Södertälje', 'Beijing', 'Shanghai'],
+    careerUrl: 'https://www.scania.com/group/en/home/career.html'
+  },
+  'Lego Group': {
+    name: 'Lego Group',
+    description: 'One of the world\'s leading manufacturers of play materials, famous for the LEGO brick.',
+    regions: ['China', 'Singapore', 'Sweden'],
+    offices: ['Shanghai', 'Singapore', 'Billund', 'Enköping'],
+    careerUrl: 'https://www.lego.com/en-us/aboutus/careers'
+  },
+  'Spotify': {
+    name: 'Spotify',
+    description: 'The world\'s most popular audio streaming subscription service.',
+    regions: ['Sweden', 'Singapore'],
+    offices: ['Stockholm', 'Singapore', 'New York', 'London'],
+    careerUrl: 'https://www.lifeatspotify.com/'
+  },
+  'Epic Games': {
+    name: 'Epic Games',
+    description: 'An interactive entertainment company and provider of 3D engine technology, creator of Fortnite and Unreal Engine.',
+    regions: ['China', 'Singapore'],
+    offices: ['Shanghai', 'Singapore', 'Cary'],
+    careerUrl: 'https://www.epicgames.com/site/en-US/careers'
+  },
 };
 
 function App() {
@@ -149,7 +184,7 @@ function App() {
     const savedSeen = localStorage.getItem('seen_job_ids')
     const savedAllJobs = localStorage.getItem('all_ever_seen_jobs')
     
-    const initialSeen = savedSeen ? new Set(JSON.parse(savedSeen)) : new Set<string>()
+    const initialSeen = savedSeen ? new Set<string>(JSON.parse(savedSeen) as string[]) : new Set<string>()
     const allEverSeen: Record<string, Job> = savedAllJobs ? JSON.parse(savedAllJobs) : {}
     
     setSeenJobIds(initialSeen)
@@ -329,6 +364,10 @@ function App() {
             <div className="space-y-4">
               {loading ? (
                 <div className="text-center py-20"><RefreshCw className="mx-auto h-12 w-12 text-blue-500 animate-spin mb-4" /></div>
+              ) : error ? (
+                <div className="text-center py-20 bg-red-50 rounded-2xl border-2 border-red-100">
+                  <p className="text-red-600 font-bold">{error}</p>
+                </div>
               ) : filteredJobs.length === 0 ? (
                 <div className="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200">
                   <Briefcase className="mx-auto h-12 w-12 text-gray-300 mb-4" />
