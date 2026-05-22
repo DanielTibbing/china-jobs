@@ -1,210 +1,192 @@
 [
   {
-    "id": "wd2-/job/Singapore/Product-Marketing-Intern---Mice_JR2026007391-1",
-    "title": "Product Marketing Intern - Mice",
-    "company": "Razer",
+    "id": "wd2-/job/Sweden---Lund/Fullstack-Developer---Developer-Experience---AI-Innovation--Lund_R-123584",
+    "title": "Fullstack Developer – Developer Experience & AI Innovation, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Fullstack-Developer---Developer-Experience---AI-Innovation--Lund_R-123584",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Stockholm/Junior-Embedded-Developer-in-Stockholm_R-123277",
+    "title": "Junior Embedded Developer in Stockholm",
+    "company": "Axis Communications",
+    "location": "Sweden - Stockholm",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Stockholm/Junior-Embedded-Developer-in-Stockholm_R-123277",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Stockholm/Experienced-Embedded-Firmware-Developer-in-Stockholm_R-123304",
+    "title": "Experienced Embedded Firmware Developer in Stockholm",
+    "company": "Axis Communications",
+    "location": "Sweden - Stockholm",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Stockholm/Experienced-Embedded-Firmware-Developer-in-Stockholm_R-123304",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Radar-Algorithm-Developer---Pioneer-Next-Generation-Surveillance-Solutions--Lund_R-123566",
+    "title": "Radar Algorithm Developer - Pioneer Next-Generation Surveillance Solutions, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Radar-Algorithm-Developer---Pioneer-Next-Generation-Surveillance-Solutions--Lund_R-123566",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Senior-Embedded-Firmware-Developer---Access-Control-Solutions--Lund_R-123532-1",
+    "title": "Senior Embedded Firmware Developer – Access Control Solutions, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-Firmware-Developer---Access-Control-Solutions--Lund_R-123532-1",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Engineering-Manager---AXIS-OS-Cyber-Security--Lund_R-122980-1",
+    "title": "Engineering Manager – AXIS OS Security & Compliance, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Engineering-Manager---AXIS-OS-Cyber-Security--Lund_R-122980-1",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Senior-Embedded-developer---Security_R-123533",
+    "title": "Senior Embedded developer – Security",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-developer---Security_R-123533",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Senior-Embedded-Developer---Network_R-123534",
+    "title": "Senior Embedded Developer – Network",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-Developer---Network_R-123534",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Front-End-Developer--Lund_R-123528",
+    "title": "Front-End Developer, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Front-End-Developer--Lund_R-123528",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Experienced-C-developer-who-knows--or-want-to-learn--Rust_R-123506",
+    "title": "Experienced C developer who knows, or want to learn, Rust",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Experienced-C-developer-who-knows--or-want-to-learn--Rust_R-123506",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Embedded-Radar-Software-Developer--Lund_R-123499",
+    "title": "Embedded Radar Software Developer, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Embedded-Radar-Software-Developer--Lund_R-123499",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/C-C---Go-Developer--streaming-to-cloud-from-cameras--Lund_R-123498",
+    "title": "C/C++/Go Developer, streaming to cloud from cameras, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/C-C---Go-Developer--streaming-to-cloud-from-cameras--Lund_R-123498",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Senior-Software-Engineer---Axis-Device-Management-SaaS--Lund_R-123496",
+    "title": "Senior Software Engineer – Axis Device Management SaaS, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Software-Engineer---Axis-Device-Management-SaaS--Lund_R-123496",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Experienced-Embedded-Software-Developer---Intercoms--Lund_R-123493",
+    "title": "Experienced Embedded Software Developer – Intercoms, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Experienced-Embedded-Software-Developer---Intercoms--Lund_R-123493",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Linkping/Software-Engineer---Experienced--AI-Powered-Video-Search-in-Linkping_R-123415",
+    "title": "Software Engineer – Experienced, AI-Powered Video Search in Linköping",
+    "company": "Axis Communications",
+    "location": "Sweden - Linköping",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Linkping/Software-Engineer---Experienced--AI-Powered-Video-Search-in-Linkping_R-123415",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Experienced-Software-Developer--Lund_R-123479",
+    "title": "Experienced Software Developer, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Experienced-Software-Developer--Lund_R-123479",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Junior-NET-C--developer--Lund_R-123469",
+    "title": "Junior .NET/C# developer, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Junior-NET-C--developer--Lund_R-123469",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Linkping/Experienced-Software-Engineer-in-Linkping_R-123427",
+    "title": "Software Engineer – Experienced, Video Management & Agentic Engineering in Linköping",
+    "company": "Axis Communications",
+    "location": "Sweden - Linköping",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Linkping/Experienced-Software-Engineer-in-Linkping_R-123427",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Engineering-Manager--Device-Application-Platform--Lund_R-123467",
+    "title": "Engineering Manager, Device Application Platform, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Engineering-Manager--Device-Application-Platform--Lund_R-123467",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Software-Developer---SIP-VoIP--Lund_R-123462",
+    "title": "Software Developer - SIP/VoIP, Lund",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Software-Developer---SIP-VoIP--Lund_R-123462",
+    "postedAt": "2026-05-22T23:28:58.061Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Singapore/Program---Project-Lead--Academy-APAC_R-123431-1",
+    "title": "Program & Project Lead, Academy APAC",
+    "company": "Axis Communications",
     "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern---Mice_JR2026007391-1",
-    "postedAt": "2026-05-22T23:02:51.571Z",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Singapore/Program---Project-Lead--Academy-APAC_R-123431-1",
+    "postedAt": "2026-05-22T23:28:58.061Z",
     "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Product-Marketing-Intern--Lifestyle-_JR2026007341",
-    "title": "Product Marketing Intern (Lifestyle)",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern--Lifestyle-_JR2026007341",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Software-Engineer-Intern_JR2026007284",
-    "title": "Software Engineer Intern",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer-Intern_JR2026007284",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Shenzhen/Senior-Software-Engineer_JR2026007240",
-    "title": "Senior Software Engineer",
-    "company": "Razer",
-    "location": "Shenzhen",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Software-Engineer_JR2026007240",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "China"
-  },
-  {
-    "id": "wd2-/job/Singapore/Manager--Product-Marketing-Gaming-Furniture_JR2026006916",
-    "title": "Manager, Product Marketing (Gaming Furniture)",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Manager--Product-Marketing-Gaming-Furniture_JR2026006916",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Product-Developer_JR2025006722",
-    "title": "Product Developer",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Developer_JR2025006722",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Manager--Product-Marketing_JR2026007261",
-    "title": "Manager, Product Marketing",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Manager--Product-Marketing_JR2026007261",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Product-Developer_JR2026007262",
-    "title": "Product Developer",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Developer_JR2026007262",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Category-Specialist_JR2026007247",
-    "title": "Product Marketing & Category Specialist",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Category-Specialist_JR2026007247",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Senior-Product-Marketing-Manager_JR2026007035",
-    "title": "Senior Product Marketing Manager",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Marketing-Manager_JR2026007035",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Shenzhen/Senior-Software-Engineer_JR2026007239",
-    "title": "Senior Software Engineer",
-    "company": "Razer",
-    "location": "Shenzhen",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Software-Engineer_JR2026007239",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "China"
-  },
-  {
-    "id": "wd2-/job/Singapore/Senior-Software-Engineer_JR2026007201",
-    "title": "Senior Software Engineer",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer_JR2026007201",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Senior-Marketing-Specialist_JR2026007115",
-    "title": "Senior Marketing Specialist",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Marketing-Specialist_JR2026007115",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Regional-Marketing-Director--APAC_JR2025006377",
-    "title": "Regional Marketing Director, APAC",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Regional-Marketing-Director--APAC_JR2025006377",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Senior-Product-Manager--Monetization-_JR2026007019",
-    "title": "Senior Product Manager (Monetization)",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Monetization-_JR2026007019",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Software-Engineer--Mid-Senior-_JR2026006790",
-    "title": "Software Engineer (Mid/Senior)",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer--Mid-Senior-_JR2026006790",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Singapore/Senior-Product-Manager--Mobile-Game-Publishing-_JR2025006686",
-    "title": "Senior Product Manager (Mobile Game Publishing)",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Mobile-Game-Publishing-_JR2025006686",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Chengdu/Senior-Software-Engineering_JR2025006514",
-    "title": "Senior Software Engineer(Golang）",
-    "company": "Razer",
-    "location": "Chengdu",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineering_JR2025006514",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "China"
-  },
-  {
-    "id": "wd2-/job/Singapore/Game-Customer-Support-Lead_JR2025006590",
-    "title": "Game Customer Support Lead",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Game-Customer-Support-Lead_JR2025006590",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Chengdu/Senior-Software-Engineering--JAVA-_JR2025006627",
-    "title": "Senior Software Engineering (JAVA)",
-    "company": "Razer",
-    "location": "Chengdu",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineering--JAVA-_JR2025006627",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "China"
-  },
-  {
-    "id": "wd2-/job/Chengdu/Software-Engineering--JAVA-_JR2025006619",
-    "title": "Software Engineering (JAVA)",
-    "company": "Razer",
-    "location": "Chengdu",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Software-Engineering--JAVA-_JR2025006619",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "China"
-  },
-  {
-    "id": "wd2-/job/Singapore/Global-Head-of-Marketing--Razer-Gold_JR2025006695",
-    "title": "Global Head of Marketing, Razer Gold",
-    "company": "Razer",
-    "location": "Singapore",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Global-Head-of-Marketing--Razer-Gold_JR2025006695",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "wd2-/job/Chengdu/Senior-Software-Engineer-web-_JR2025005934",
-    "title": "Senior Software Engineer(web)",
-    "company": "Razer",
-    "location": "Chengdu",
-    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineer-web-_JR2025005934",
-    "postedAt": "2026-05-22T23:02:51.571Z",
-    "region": "China"
   },
   {
     "id": "wd2-/job/Singapore/AI-Software-Engineer_JR2025005483-1",
@@ -212,7 +194,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/AI-Software-Engineer_JR2025005483-1",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -221,7 +203,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Data-Scientist--RL-_JR2026006982",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -230,7 +212,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Channel-Marketing-Specialist_JR2026007382",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -239,7 +221,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern--Keyboards-_JR2026007340",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -248,7 +230,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer--C---_JR2026006969",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -257,7 +239,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Software-Ecosystem_JR2025006731",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -266,7 +248,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Regional-Marketing-Intern_JR2026007350",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -275,7 +257,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Developer_JR2026007334-1",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -284,7 +266,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/AI-Lead--IT-Applications_JR2025006113-1",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -293,7 +275,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer---Lead--AI-ML-Platform-_JR2025006746",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -302,7 +284,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Game-AI-Developer_JR2026007297",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -311,7 +293,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer--iOS-_JR2025006698",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -320,7 +302,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer--Test-Automation-_JR2025006406",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -329,7 +311,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Product-Evangelist--AI_JR2026007027",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
   },
   {
@@ -338,7 +320,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-AI-Software-Engineer_JR2026007375-1",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "China"
   },
   {
@@ -347,8 +329,215 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer-II_JR2026007335",
-    "postedAt": "2026-05-22T23:02:51.570Z",
+    "postedAt": "2026-05-22T23:28:52.631Z",
     "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Product-Marketing-Intern---Mice_JR2026007391-1",
+    "title": "Product Marketing Intern - Mice",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern---Mice_JR2026007391-1",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Product-Marketing-Intern--Lifestyle-_JR2026007341",
+    "title": "Product Marketing Intern (Lifestyle)",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern--Lifestyle-_JR2026007341",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Software-Engineer-Intern_JR2026007284",
+    "title": "Software Engineer Intern",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer-Intern_JR2026007284",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Shenzhen/Senior-Software-Engineer_JR2026007240",
+    "title": "Senior Software Engineer",
+    "company": "Razer",
+    "location": "Shenzhen",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Software-Engineer_JR2026007240",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "China"
+  },
+  {
+    "id": "wd2-/job/Singapore/Manager--Product-Marketing-Gaming-Furniture_JR2026006916",
+    "title": "Manager, Product Marketing (Gaming Furniture)",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Manager--Product-Marketing-Gaming-Furniture_JR2026006916",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Product-Developer_JR2025006722",
+    "title": "Product Developer",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Developer_JR2025006722",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Manager--Product-Marketing_JR2026007261",
+    "title": "Manager, Product Marketing",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Manager--Product-Marketing_JR2026007261",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Product-Developer_JR2026007262",
+    "title": "Product Developer",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Developer_JR2026007262",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Category-Specialist_JR2026007247",
+    "title": "Product Marketing & Category Specialist",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Category-Specialist_JR2026007247",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Senior-Product-Marketing-Manager_JR2026007035",
+    "title": "Senior Product Marketing Manager",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Marketing-Manager_JR2026007035",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Shenzhen/Senior-Software-Engineer_JR2026007239",
+    "title": "Senior Software Engineer",
+    "company": "Razer",
+    "location": "Shenzhen",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Software-Engineer_JR2026007239",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "China"
+  },
+  {
+    "id": "wd2-/job/Singapore/Senior-Software-Engineer_JR2026007201",
+    "title": "Senior Software Engineer",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer_JR2026007201",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Senior-Marketing-Specialist_JR2026007115",
+    "title": "Senior Marketing Specialist",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Marketing-Specialist_JR2026007115",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Regional-Marketing-Director--APAC_JR2025006377",
+    "title": "Regional Marketing Director, APAC",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Regional-Marketing-Director--APAC_JR2025006377",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Senior-Product-Manager--Monetization-_JR2026007019",
+    "title": "Senior Product Manager (Monetization)",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Monetization-_JR2026007019",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Software-Engineer--Mid-Senior-_JR2026006790",
+    "title": "Software Engineer (Mid/Senior)",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer--Mid-Senior-_JR2026006790",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Singapore/Senior-Product-Manager--Mobile-Game-Publishing-_JR2025006686",
+    "title": "Senior Product Manager (Mobile Game Publishing)",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Mobile-Game-Publishing-_JR2025006686",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Chengdu/Senior-Software-Engineering_JR2025006514",
+    "title": "Senior Software Engineer(Golang）",
+    "company": "Razer",
+    "location": "Chengdu",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineering_JR2025006514",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "China"
+  },
+  {
+    "id": "wd2-/job/Singapore/Game-Customer-Support-Lead_JR2025006590",
+    "title": "Game Customer Support Lead",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Game-Customer-Support-Lead_JR2025006590",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Chengdu/Senior-Software-Engineering--JAVA-_JR2025006627",
+    "title": "Senior Software Engineering (JAVA)",
+    "company": "Razer",
+    "location": "Chengdu",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineering--JAVA-_JR2025006627",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "China"
+  },
+  {
+    "id": "wd2-/job/Chengdu/Software-Engineering--JAVA-_JR2025006619",
+    "title": "Software Engineering (JAVA)",
+    "company": "Razer",
+    "location": "Chengdu",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Software-Engineering--JAVA-_JR2025006619",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "China"
+  },
+  {
+    "id": "wd2-/job/Singapore/Global-Head-of-Marketing--Razer-Gold_JR2025006695",
+    "title": "Global Head of Marketing, Razer Gold",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Global-Head-of-Marketing--Razer-Gold_JR2025006695",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Chengdu/Senior-Software-Engineer-web-_JR2025005934",
+    "title": "Senior Software Engineer(web)",
+    "company": "Razer",
+    "location": "Chengdu",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineer-web-_JR2025005934",
+    "postedAt": "2026-05-22T23:28:52.631Z",
+    "region": "China"
   },
   {
     "id": "gh-7824804",
@@ -403,6 +592,14 @@
     "link": "https://www.riotgames.com/en/work-with-us/job/7922945?gh_jid=7922945",
     "postedAt": "2026-05-21T20:24:21-04:00",
     "region": "China"
+  },
+  {
+    "id": "ph-JR75611",
+    "title": "Data Engineering Manager",
+    "company": "Electrolux",
+    "location": "Stockholm, Sweden",
+    "postedAt": "2026-05-22T00:00:00.000+0000",
+    "region": "Sweden"
   },
   {
     "id": "gh-5204332008",
@@ -621,6 +818,14 @@
     "region": "China"
   },
   {
+    "id": "ph-JR00034293",
+    "title": "IS Technology Specialist (Software Product Manager)",
+    "company": "ABB",
+    "location": "Xiamen, Fujian, China",
+    "postedAt": "2026-05-17T00:00:00.000+0000",
+    "region": "China"
+  },
+  {
     "id": "sr-744000126734929",
     "title": "Principal Software Engineer, Backend",
     "company": "Grab",
@@ -774,6 +979,14 @@
     "region": "Singapore"
   },
   {
+    "id": "ph-JR00009022",
+    "title": "Lead PMS Engineer",
+    "company": "ABB",
+    "location": "Singapore, Central Singapore, Singapore",
+    "postedAt": "2026-05-11T00:00:00.000+0000",
+    "region": "Singapore"
+  },
+  {
     "id": "tv-049bc55a-0647-44b4-9f4b-0effb78372ac",
     "title": "Manager, Performance Marketing",
     "company": "Traveloka",
@@ -862,6 +1075,14 @@
     "link": "https://jobs.ashbyhq.com/airwallex/4e111942-e496-4a6e-b73e-0eeca25431b0",
     "postedAt": "2026-05-07T06:04:37.469+00:00",
     "region": "China"
+  },
+  {
+    "id": "ph-JR00013709",
+    "title": "Technical Project Leader – Software System",
+    "company": "ABB",
+    "location": "Vaesteras, Vastmanland County, Sweden",
+    "postedAt": "2026-05-07T00:00:00.000+0000",
+    "region": "Sweden"
   },
   {
     "id": "as-3206c402-a71a-4b1e-ab9a-a92c096220b0",
@@ -1485,6 +1706,14 @@
     "region": "China"
   },
   {
+    "id": "ph-JR00027951",
+    "title": "Senior Software Engineer",
+    "company": "ABB",
+    "location": "Shanghai, Shanghai, China",
+    "postedAt": "2026-04-26T00:00:00.000+0000",
+    "region": "China"
+  },
+  {
     "id": "tt-193ce972-9f81-4e0d-b288-5f35ddbfd87d",
     "title": "Junior Android Developer",
     "company": "Marshall",
@@ -1917,6 +2146,15 @@
     "region": "Singapore"
   },
   {
+    "id": "tv-c5bdfb31-7aee-4637-ace9-729520b8942b",
+    "title": "Software Engineer (web) ",
+    "company": "Traveloka",
+    "location": "Shenzhen, China",
+    "link": "https://careers.traveloka.com/jobs/c5bdfb31-7aee-4637-ace9-729520b8942b",
+    "postedAt": "2026-03-09T11:43:18.000Z",
+    "region": "China"
+  },
+  {
     "id": "tv-ad77eaf2-1979-4f80-a502-d2ceb3fedd54",
     "title": "Lead Product Manager, User Growth ",
     "company": "Traveloka",
@@ -1980,6 +2218,15 @@
     "region": "China"
   },
   {
+    "id": "tv-155ab26d-c5a5-4e83-aa22-7efacd1fb06a",
+    "title": "Backend Software Engineer-Flight",
+    "company": "Traveloka",
+    "location": "Shanghai, China",
+    "link": "https://careers.traveloka.com/jobs/155ab26d-c5a5-4e83-aa22-7efacd1fb06a",
+    "postedAt": "2026-03-04T05:32:28.000Z",
+    "region": "China"
+  },
+  {
     "id": "as-319456cb-731f-4de5-b860-ffcecab353c3",
     "title": "Staff / Engineering Lead, Data&AI Infrastructure",
     "company": "Airwallex",
@@ -2016,6 +2263,15 @@
     "region": "China"
   },
   {
+    "id": "as-4dc6b102-5f3f-4211-9f81-646c16f29888",
+    "title": "Product Lead, Project R.I.S.E",
+    "company": "Supercell",
+    "location": "Shanghai",
+    "link": "https://jobs.ashbyhq.com/supercell/4dc6b102-5f3f-4211-9f81-646c16f29888",
+    "postedAt": "2026-02-13T06:05:25.151+00:00",
+    "region": "China"
+  },
+  {
     "id": "gh-5783745004",
     "title": "Senior Growth Marketing Associate - Shenzhen",
     "company": "Casetify",
@@ -2043,15 +2299,6 @@
     "region": "Singapore"
   },
   {
-    "id": "tv-32851f7a-13a9-4fa9-9993-6660e57de2a2",
-    "title": "Senior Engineering Manager - Shanghai",
-    "company": "Traveloka",
-    "location": "Shanghai, China",
-    "link": "https://careers.traveloka.com/jobs/32851f7a-13a9-4fa9-9993-6660e57de2a2",
-    "postedAt": "2026-02-09T03:30:27.000Z",
-    "region": "China"
-  },
-  {
     "id": "tt-14a608e9-94d5-49b2-886b-36ca17414e4c",
     "title": "Product Manager, Amplification",
     "company": "Marshall",
@@ -2059,15 +2306,6 @@
     "link": "https://careers.marshall.com/jobs/7178264-product-manager-amplification",
     "postedAt": "2026-02-05T11:09:24+01:00",
     "region": "Sweden"
-  },
-  {
-    "id": "tv-150c8ae8-9f9c-4d86-abe8-40239475e33d",
-    "title": "Lead, Rewards",
-    "company": "Traveloka",
-    "location": "Shanghai, China",
-    "link": "https://careers.traveloka.com/jobs/150c8ae8-9f9c-4d86-abe8-40239475e33d",
-    "postedAt": "2026-02-02T14:32:03.000Z",
-    "region": "China"
   },
   {
     "id": "as-9e064013-6286-4984-9541-7bd702286d64",
@@ -2086,15 +2324,6 @@
     "link": "https://careers.traveloka.com/jobs/41401f48-2999-467a-a29a-5e8052378474",
     "postedAt": "2026-01-30T03:02:57.635Z",
     "region": "Singapore"
-  },
-  {
-    "id": "tv-199837f7-c670-4017-88ec-2bd6ae1c00b3",
-    "title": "Software Engineer (web)",
-    "company": "Traveloka",
-    "location": "Shanghai, China",
-    "link": "https://careers.traveloka.com/jobs/199837f7-c670-4017-88ec-2bd6ae1c00b3",
-    "postedAt": "2026-01-29T03:18:43.120Z",
-    "region": "China"
   },
   {
     "id": "as-2a471f31-9cc8-4ab5-9f6c-921fc1f137d6",
@@ -2250,6 +2479,14 @@
     "region": "Singapore"
   },
   {
+    "id": "ph-JR00011737",
+    "title": "Software Engineer",
+    "company": "ABB",
+    "location": "Shanghai, Shanghai, China",
+    "postedAt": "2025-09-26T00:00:00.000+0000",
+    "region": "China"
+  },
+  {
     "id": "as-752102de-b4c7-42e6-9220-52c508280708",
     "title": "Senior / Software Engineer, Payments Team - API & Checkout Experience",
     "company": "Airwallex",
@@ -2338,6 +2575,14 @@
     "link": "https://jobs.ashbyhq.com/airwallex/5ac353b4-e2bb-4db4-b66b-edb0c2188abb",
     "postedAt": "2025-06-30T05:12:56.723+00:00",
     "region": "Singapore"
+  },
+  {
+    "id": "ph-96124723",
+    "title": "Digital Solution Engineering Manager",
+    "company": "ABB",
+    "location": "Shanghai, Shanghai, China",
+    "postedAt": "2025-06-27T00:00:00.000+0000",
+    "region": "China"
   },
   {
     "id": "as-e0dc766a-3bb4-438f-b618-1e4d06de50df",

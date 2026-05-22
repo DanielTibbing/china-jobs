@@ -278,6 +278,27 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Hong Kong', 'Singapore', 'China'],
     offices: ['Hong Kong', 'Singapore', 'Shenzhen', 'Bangkok'],
     careerUrl: 'https://www.klook.com/en-US/careers/'
+  },
+  'ABB': {
+    name: 'ABB',
+    description: 'A leading global technology company that energizes the transformation of society and industry to achieve a more productive, sustainable future.',
+    regions: ['Sweden', 'China', 'Singapore'],
+    offices: ['Västerås', 'Zürich', 'Shanghai', 'Singapore'],
+    careerUrl: 'https://careers.abb/global/en'
+  },
+  'Axis Communications': {
+    name: 'Axis Communications',
+    description: 'Axis Communications (subsidiary of Canon) is the market leader in network video.',
+    regions: ['Sweden', 'China', 'Singapore', 'Hong Kong'],
+    offices: ['Lund', 'Shanghai', 'Singapore', 'Hong Kong'],
+    careerUrl: 'https://www.axis.com/about-axis/careers'
+  },
+  'Electrolux': {
+    name: 'Electrolux',
+    description: 'A global leader in household appliances, providing innovative products for consumers and professional users.',
+    regions: ['Sweden', 'China', 'Singapore'],
+    offices: ['Stockholm', 'Shanghai', 'Singapore'],
+    careerUrl: 'https://career.electroluxgroup.com/'
   }
 };
 
@@ -287,7 +308,7 @@ const TRACKED_COMPANIES = [
   'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
   'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
   'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
-  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook'
+  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook', 'ABB', 'Axis Communications', 'Electrolux'
 ];
 
 function App() {

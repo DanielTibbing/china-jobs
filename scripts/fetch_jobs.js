@@ -53,9 +53,20 @@ const COMPANIES = [
   // Workday V2 (CXS Direct)
   { name: 'Razer', platform: 'workday-v2', token: 'Careers', tenant: 'razer', sub: 'wd3' },
   { name: 'Klook', platform: 'workday-v2', token: 'Klook', tenant: 'klook', sub: 'wd3' },
+  { name: 'Axis Communications', platform: 'workday-v2', token: 'External_Career_Site', tenant: 'axis', sub: 'wd3' },
   
+  // RMK / SuccessFactors HTML Scrape
+  { name: 'Volvo Group', platform: 'rmk', domain: 'jobs.volvogroup.com' },
+  { name: 'Assa Abloy', platform: 'rmk', domain: 'assaabloy.jobs2web.com' },
+
+  // Phenom People Widgets
+  { name: 'ABB', platform: 'phenom', domain: 'careers.abb', categories: ['Engineering', 'Information Systems'] },
+  { name: 'Electrolux', platform: 'phenom', domain: 'career.electroluxgroup.com', categories: ['Tech'] },
+
+  // Ashby (Confirmed Correct)
+  { name: 'Supercell', platform: 'ashby', token: 'supercell' },
+
   // Greenhouse candidates
-  { name: 'Supercell', platform: 'greenhouse', token: 'supercell' },
   { name: 'Dramabox', platform: 'greenhouse', token: 'storymatrix' },
   { name: 'Wise', platform: 'greenhouse', token: 'wise' },
   { name: 'Spotify', platform: 'greenhouse', token: 'spotify' },
@@ -70,8 +81,7 @@ const COMPANIES = [
 const axiosInstance = axios.create({
   headers: {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-    'Accept': 'application/json',
-    'Content-Type': 'application/json'
+    'Accept': 'application/json, text/plain, */*',
   }
 });
 
@@ -89,9 +99,6 @@ async function fetchGreenhouseJobs(company) {
       region: detectRegion(job.location.name)
     }));
   } catch (error) {
-    if (error.response && error.response.status !== 404) {
-      console.error(`Error fetching Greenhouse jobs for ${company.name}:`, error.message);
-    }
     return [];
   }
 }
@@ -110,9 +117,6 @@ async function fetchSmartRecruitersJobs(company) {
       region: detectRegion(`${job.location.city}, ${job.location.country}`)
     }));
   } catch (error) {
-    if (error.response && error.response.status !== 404) {
-      console.error(`Error fetching SmartRecruiters jobs for ${company.name}:`, error.message);
-    }
     return [];
   }
 }
@@ -131,7 +135,6 @@ async function fetchByteDanceJobs(company) {
       region: detectRegion(job.location_list ? job.location_list.map(l => l.name).join(', ') : '')
     }));
   } catch (error) {
-    console.error(`Error fetching ByteDance jobs for ${company.name}:`, error.message);
     return [];
   }
 }
@@ -150,9 +153,6 @@ async function fetchAshbyJobs(company) {
       region: detectRegion(job.location)
     }));
   } catch (error) {
-    if (error.response && error.response.status !== 404) {
-      console.error(`Error fetching Ashby jobs for ${company.name}:`, error.message);
-    }
     return [];
   }
 }
@@ -172,25 +172,17 @@ async function fetchTeamtailorFeedJobs(company) {
       region: 'Sweden'
     }));
   } catch (error) {
-    if (error.response && error.response.status !== 404) {
-      console.error(`Error fetching Teamtailor feed jobs for ${company.name}:`, error.message);
-    }
     return [];
   }
 }
 
 async function fetchTravelokaJobs(company) {
   let allTraveloka = [];
-  const regions = [
-    { code: 'CN', name: 'China' },
-    { code: 'SG', name: 'Singapore' },
-    { code: 'HK', name: 'Hong Kong' }
-  ];
-
+  const regions = [{ code: 'CN', name: 'China' }, { code: 'SG', name: 'Singapore' }, { code: 'HK', name: 'Hong Kong' }];
   for (const reg of regions) {
     try {
       const response = await axiosInstance.get(`https://careers-api.cnt.traveloka.com/v2/career/jobs/search?intf=desktop&location=${reg.code}&department=&type=&keyword=&page=1`);
-      if (response.data && response.data.data && response.data.data.jobs) {
+      if (response.data?.data?.jobs) {
         const jobs = response.data.data.jobs.map(job => ({
           id: `tv-${job.requisitionId}`,
           title: job.title,
@@ -216,69 +208,30 @@ async function fetchWorkdayV2Jobs(company) {
   console.log(`Starting forced paginated fetch for ${company.name}...`);
 
   try {
-    // 1. First call to get the actual TOTAL count
-    const initialResponse = await axiosInstance.post(url, {
-      appliedFacets: {},
-      limit: limit,
-      offset: 0,
-      searchText: ""
-    }, {
-      headers: {
-        'Origin': baseUrl,
-        'Referer': `${baseUrl}/${company.token}`
-      }
+    const initialResponse = await axiosInstance.post(url, { appliedFacets: {}, limit: limit, offset: 0, searchText: "" }, {
+      headers: { 'Origin': baseUrl, 'Referer': `${baseUrl}/${company.token}` }
     });
 
-    if (!initialResponse.data || initialResponse.data.total === undefined) {
-      console.log(`  Initial fetch failed for ${company.name}.`);
-      return [];
-    }
-
+    if (!initialResponse.data || initialResponse.data.total === undefined) return [];
     const initialTotal = initialResponse.data.total;
-    console.log(`  Initial total reported: ${initialTotal}`);
+    console.log(`  Total: ${initialTotal}`);
     
-    if (initialResponse.data.jobPostings) {
-      allPostings = allPostings.concat(initialResponse.data.jobPostings);
-    }
+    if (initialResponse.data.jobPostings) allPostings = allPostings.concat(initialResponse.data.jobPostings);
 
-    // 2. Forced loop until we reach initialTotal
     let offset = limit;
-    while (offset < initialTotal && offset < 2000) { // Increased safety bound
-      console.log(`  Fetching offset ${offset}/${initialTotal}...`);
-      
+    while (offset < initialTotal && offset < 1000) {
       try {
-        const response = await axiosInstance.post(url, {
-          appliedFacets: {},
-          limit: limit,
-          offset: offset,
-          searchText: ""
-        }, {
-          headers: {
-            'Origin': baseUrl,
-            'Referer': `${baseUrl}/${company.token}`
-          }
+        const response = await axiosInstance.post(url, { appliedFacets: {}, limit: limit, offset: offset, searchText: "" }, {
+          headers: { 'Origin': baseUrl, 'Referer': `${baseUrl}/${company.token}` }
         });
-
-        if (response.data && response.data.jobPostings) {
-          allPostings = allPostings.concat(response.data.jobPostings);
-        } else {
-          console.log(`  Warning: Empty response at offset ${offset}`);
-        }
-      } catch (loopError) {
-        console.error(`  Error at offset ${offset}:`, loopError.message);
-        // Continue to next offset even if this one failed
-      }
-
+        if (response.data?.jobPostings) allPostings = allPostings.concat(response.data.jobPostings);
+      } catch (loopError) {}
       offset += limit;
-      await new Promise(r => setTimeout(r, 600)); // Politeness delay
+      await new Promise(r => setTimeout(r, 400));
     }
-
   } catch (error) {
-    console.error(`Fatal error in Workday V2 for ${company.name}:`, error.message);
     return [];
   }
-
-  console.log(`  Finished ${company.name}. Scanned ${allPostings.length} roles.`);
 
   return allPostings.map(job => ({
     id: `wd2-${job.bulletinNumber || job.externalPath}`,
@@ -291,13 +244,83 @@ async function fetchWorkdayV2Jobs(company) {
   }));
 }
 
+async function fetchRMKJobs(company) {
+  const allRMK = [];
+  try {
+    const url = `https://${company.domain}/search/?q=&locationsearch=`;
+    const response = await axiosInstance.get(url, { headers: { 'Accept': 'text/html' } });
+    const html = response.data;
+    const jobRegex = /<a href="(\/job\/[^"]+)" class="jobTitle-link">([^<]+)<\/a>/g;
+    const locRegex = /<span class="jobLocation">\s*([^<]+)\s*<\/span>/g;
+    let match;
+    const titles = [];
+    const links = [];
+    while ((match = jobRegex.exec(html)) !== null) {
+      links.push(`https://${company.domain}${match[1]}`);
+      titles.push(match[2].trim());
+    }
+    const locations = [];
+    while ((match = locRegex.exec(html)) !== null) {
+      locations.push(match[1].trim().replace(/\s+/g, ' '));
+    }
+    for (let i = 0; i < titles.length; i++) {
+      allRMK.push({
+        id: `rmk-${company.name}-${i}`,
+        title: titles[i],
+        company: company.name,
+        location: locations[i],
+        link: links[i],
+        postedAt: new Date().toISOString(),
+        region: detectRegion(locations[i])
+      });
+    }
+  } catch (error) {}
+  return allRMK;
+}
+
+async function fetchPhenomJobs(company) {
+  const allPhenom = [];
+  try {
+    const url = `https://${company.domain}/widgets`;
+    const response = await axiosInstance.post(url, {
+      lang: "en_global",
+      deviceType: "desktop",
+      country: "global",
+      pageName: "search-results",
+      ddoKey: "refineSearch",
+      from: 0,
+      size: 100,
+      jobs: true,
+      counts: true,
+      global: true,
+      selected_fields: {
+        country: ["China", "Hong Kong", "Singapore", "Sweden"],
+        category: company.categories
+      }
+    });
+
+    if (response.data?.refineSearch?.data?.jobs) {
+      return response.data.refineSearch.data.jobs.map(job => ({
+        id: `ph-${job.jobId}`,
+        title: job.title,
+        company: company.name,
+        location: job.location,
+        link: job.url,
+        postedAt: job.postedDate || new Date().toISOString(),
+        region: detectRegion(job.location)
+      }));
+    }
+  } catch (error) {}
+  return allPhenom;
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase();
   if (loc.includes('china') || loc.includes('beijing') || loc.includes('shanghai') || loc.includes('shenzhen') || loc.includes('guangzhou') || loc.includes('hangzhou') || loc.includes(', cn') || loc.includes('chengdu')) return 'China';
   if (loc.includes('hong kong') || loc.includes('hk')) return 'Hong Kong';
   if (loc.includes('singapore') || loc.includes(', sg')) return 'Singapore';
-  if (loc.includes('sweden') || loc.includes('stockholm') || loc.includes('gothenburg') || loc.includes('malmö') || loc.includes('lund') || loc.includes(', se')) return 'Sweden';
+  if (loc.includes('sweden') || loc.includes('stockholm') || loc.includes('gothenburg') || loc.includes('malmö') || loc.includes('lund') || loc.includes(', se') || loc.includes('södertälje') || loc.includes('västerås')) return 'Sweden';
   return 'Other';
 }
 
@@ -312,35 +335,24 @@ async function main() {
   for (const company of COMPANIES) {
     console.log(`Fetching jobs for ${company.name}...`);
     let jobs = [];
-    if (company.platform === 'greenhouse') {
-      jobs = await fetchGreenhouseJobs(company);
-    } else if (company.platform === 'smartrecruiters') {
-      jobs = await fetchSmartRecruitersJobs(company);
-    } else if (company.platform === 'bytedance') {
-      jobs = await fetchByteDanceJobs(company);
-    } else if (company.platform === 'ashby') {
-      jobs = await fetchAshbyJobs(company);
-    } else if (company.platform === 'teamtailor-feed') {
-      jobs = await fetchTeamtailorFeedJobs(company);
-    } else if (company.platform === 'traveloka') {
-      jobs = await fetchTravelokaJobs(company);
-    } else if (company.platform === 'workday-v2') {
-      jobs = await fetchWorkdayV2Jobs(company);
-    }
+    if (company.platform === 'greenhouse') jobs = await fetchGreenhouseJobs(company);
+    else if (company.platform === 'smartrecruiters') jobs = await fetchSmartRecruitersJobs(company);
+    else if (company.platform === 'bytedance') jobs = await fetchByteDanceJobs(company);
+    else if (company.platform === 'ashby') jobs = await fetchAshbyJobs(company);
+    else if (company.platform === 'teamtailor-feed') jobs = await fetchTeamtailorFeedJobs(company);
+    else if (company.platform === 'traveloka') jobs = await fetchTravelokaJobs(company);
+    else if (company.platform === 'workday-v2') jobs = await fetchWorkdayV2Jobs(company);
+    else if (company.platform === 'rmk') jobs = await fetchRMKJobs(company);
+    else if (company.platform === 'phenom') jobs = await fetchPhenomJobs(company);
     
-    const filteredJobs = jobs.filter(job => 
-      matchesKeywords(job.title) && REGIONS.includes(job.region)
-    );
-    
-    console.log(`  Summary: ${jobs.length} scanned, ${filteredJobs.length} matched criteria.`);
+    const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
+    console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched.`);
     allJobs = allJobs.concat(filteredJobs);
   }
 
   allJobs.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
-
-  const outputPath = path.join(process.cwd(), 'public', 'jobs.json');
-  fs.writeFileSync(outputPath, JSON.stringify(allJobs, null, 2));
-  console.log(`Successfully wrote ${allJobs.length} matched jobs to ${outputPath}`);
+  fs.writeFileSync(path.join(process.cwd(), 'public', 'jobs.json'), JSON.stringify(allJobs, null, 2));
+  console.log(`Successfully wrote ${allJobs.length} matched jobs.`);
 }
 
 main();
