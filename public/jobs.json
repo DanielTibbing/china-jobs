@@ -423,6 +423,15 @@
     "region": "Singapore"
   },
   {
+    "id": "tv-049bc55a-0647-44b4-9f4b-0effb78372ac",
+    "title": "Manager, Performance Marketing",
+    "company": "Traveloka",
+    "location": "Singapore, Singapore",
+    "link": "https://careers.traveloka.com/jobs/049bc55a-0647-44b4-9f4b-0effb78372ac",
+    "postedAt": "2026-05-08T10:17:28.000Z",
+    "region": "Singapore"
+  },
+  {
     "id": "as-008a5372-57c2-4fc1-996b-0668923da526",
     "title": "Engineering Manager - Onboarding Team",
     "company": "Airwallex",
@@ -1098,6 +1107,24 @@
     "region": "Sweden"
   },
   {
+    "id": "tv-518c2ca6-78c3-4f0b-bba6-dccc6722e7bb",
+    "title": "Senior Frontend Engineer- Central Tech",
+    "company": "Traveloka",
+    "location": "Singapore, Singapore",
+    "link": "https://careers.traveloka.com/jobs/518c2ca6-78c3-4f0b-bba6-dccc6722e7bb",
+    "postedAt": "2026-04-24T06:40:07.000Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "tv-f2c88e86-b378-48ce-a080-818598fb89c6",
+    "title": "Senior Software Engineer (Mobile)",
+    "company": "Traveloka",
+    "location": "Singapore, Singapore",
+    "link": "https://careers.traveloka.com/jobs/f2c88e86-b378-48ce-a080-818598fb89c6",
+    "postedAt": "2026-04-24T02:58:10.000Z",
+    "region": "Singapore"
+  },
+  {
     "id": "as-fa8769f2-0808-4bb1-b254-9af4dbafc84a",
     "title": "(Senior) Software Engineer, iOS - Financial Platform",
     "company": "Airwallex",
@@ -1242,6 +1269,15 @@
     "region": "Singapore"
   },
   {
+    "id": "tv-749062d6-43b6-45af-b787-2f8b6b28b3f0",
+    "title": "Director, Performance Marketing",
+    "company": "Traveloka",
+    "location": "Singapore, Singapore",
+    "link": "https://careers.traveloka.com/jobs/749062d6-43b6-45af-b787-2f8b6b28b3f0",
+    "postedAt": "2026-04-15T10:33:49.000Z",
+    "region": "Singapore"
+  },
+  {
     "id": "gh-7590451",
     "title": "Marketing Lead APAC",
     "company": "Adyen",
@@ -1302,6 +1338,24 @@
     "location": "Shenzhen",
     "link": "https://job-boards.greenhouse.io/casetify/jobs/5913808004",
     "postedAt": "2026-04-10T06:47:49-04:00",
+    "region": "China"
+  },
+  {
+    "id": "tv-7da1b21e-4b7d-4969-b3fd-8d6450ddc752",
+    "title": "Senior Software Engineer",
+    "company": "Traveloka",
+    "location": "Shanghai, China",
+    "link": "https://careers.traveloka.com/jobs/7da1b21e-4b7d-4969-b3fd-8d6450ddc752",
+    "postedAt": "2026-04-09T09:08:41.000Z",
+    "region": "China"
+  },
+  {
+    "id": "tv-e0af1e0b-fd09-4115-bcae-46bc84a72603",
+    "title": "Engineering Manager-Payment",
+    "company": "Traveloka",
+    "location": "Shenzhen, China",
+    "link": "https://careers.traveloka.com/jobs/e0af1e0b-fd09-4115-bcae-46bc84a72603",
+    "postedAt": "2026-04-09T09:05:24.000Z",
     "region": "China"
   },
   {
@@ -1476,6 +1530,15 @@
     "region": "Singapore"
   },
   {
+    "id": "tv-ad77eaf2-1979-4f80-a502-d2ceb3fedd54",
+    "title": "Lead Product Manager, User Growth ",
+    "company": "Traveloka",
+    "location": "Singapore, Singapore",
+    "link": "https://careers.traveloka.com/jobs/ad77eaf2-1979-4f80-a502-d2ceb3fedd54",
+    "postedAt": "2026-03-06T09:55:30.000Z",
+    "region": "Singapore"
+  },
+  {
     "id": "as-9ff4c0f1-d279-40c4-8dfd-beba4ba69815",
     "title": "Staff Software Engineer,  Risk",
     "company": "Airwallex",
@@ -1602,12 +1665,30 @@
     "region": "Sweden"
   },
   {
+    "id": "tv-150c8ae8-9f9c-4d86-abe8-40239475e33d",
+    "title": "Lead, Rewards",
+    "company": "Traveloka",
+    "location": "Shanghai, China",
+    "link": "https://careers.traveloka.com/jobs/150c8ae8-9f9c-4d86-abe8-40239475e33d",
+    "postedAt": "2026-02-02T14:32:03.000Z",
+    "region": "China"
+  },
+  {
     "id": "as-9e064013-6286-4984-9541-7bd702286d64",
     "title": "Senior / Staff Software Engineer Backend, Billing",
     "company": "Airwallex",
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/9e064013-6286-4984-9541-7bd702286d64",
     "postedAt": "2026-02-02T08:55:53.616+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "tv-41401f48-2999-467a-a29a-5e8052378474",
+    "title": "Senior Engineering Manager",
+    "company": "Traveloka",
+    "location": "Singapore, Singapore",
+    "link": "https://careers.traveloka.com/jobs/41401f48-2999-467a-a29a-5e8052378474",
+    "postedAt": "2026-01-30T03:02:57.635Z",
     "region": "Singapore"
   },
   {

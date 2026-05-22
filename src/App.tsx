@@ -244,6 +244,13 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     offices: ['Hong Kong', 'Singapore', 'Shanghai', 'New York'],
     careerUrl: 'https://careers.payoneer.com/'
   },
+  'Traveloka': {
+    name: 'Traveloka',
+    description: 'Southeast Asia\'s leading travel and lifestyle platform, providing a wide range of services including flight and hotel bookings.',
+    regions: ['China', 'Singapore'],
+    offices: ['Shanghai', 'Shenzhen', 'Singapore', 'Jakarta', 'Bangkok'],
+    careerUrl: 'https://careers.traveloka.com/jobs'
+  },
   'Moonton': {
     name: 'Moonton',
     description: 'A global video game developer and publisher, creator of Mobile Legends: Bang Bang.',
@@ -266,7 +273,7 @@ const TRACKED_COMPANIES = [
   'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
   'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
   'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
-  'EF', 'Scania', 'Lego Group', 'On Running'
+  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka'
 ];
 
 function App() {

@@ -46,6 +46,11 @@ const COMPANIES = [
   { name: 'Epic Games', platform: 'greenhouse', token: 'epicgames' },
   { name: 'Adyen', platform: 'greenhouse', token: 'adyen' },
   { name: 'NetEase Games', platform: 'greenhouse', token: 'neteasegames' },
+  { name: 'On Running', platform: 'greenhouse', token: 'onrunning' },
+  { name: 'Payoneer', platform: 'greenhouse', token: 'payoneer' },
+  
+  // Custom API
+  { name: 'Traveloka', platform: 'traveloka', token: 'traveloka' },
   
   // Greenhouse candidates
   { name: 'Supercell', platform: 'greenhouse', token: 'supercell' },
@@ -57,9 +62,7 @@ const COMPANIES = [
   { name: 'Youtrip', platform: 'greenhouse', token: 'youtrip' },
   
   // SmartRecruiters
-  { name: 'On Running', platform: 'greenhouse', token: 'onrunning' },
   { name: 'Ubisoft', platform: 'smartrecruiters', token: 'Ubisoft' },
-  { name: 'Payoneer', platform: 'greenhouse', token: 'payoneer' },
 ];
 
 const axiosInstance = axios.create({
@@ -161,7 +164,7 @@ async function fetchTeamtailorFeedJobs(company) {
       id: `tt-${job.id}`,
       title: job.title,
       company: company.name,
-      location: 'Sweden', // Marshall is primarily SE, feed is sparse
+      location: 'Sweden', // Marshall specific fallback
       link: job.url,
       postedAt: job.date_published,
       region: 'Sweden'
@@ -172,6 +175,36 @@ async function fetchTeamtailorFeedJobs(company) {
     }
     return [];
   }
+}
+
+async function fetchTravelokaJobs(company) {
+  let allTraveloka = [];
+  const regions = [
+    { code: 'CN', name: 'China' },
+    { code: 'SG', name: 'Singapore' },
+    { code: 'HK', name: 'Hong Kong' }
+  ];
+
+  for (const reg of regions) {
+    try {
+      const response = await axiosInstance.get(`https://careers-api.cnt.traveloka.com/v2/career/jobs/search?intf=desktop&location=${reg.code}&department=&type=&keyword=&page=1`);
+      if (response.data && response.data.data && response.data.data.jobs) {
+        const jobs = response.data.data.jobs.map(job => ({
+          id: `tv-${job.requisitionId}`,
+          title: job.title,
+          company: company.name,
+          location: job.location,
+          link: `https://careers.traveloka.com${job.link}`,
+          postedAt: new Date(job.createdAt).toISOString(),
+          region: reg.name
+        }));
+        allTraveloka = allTraveloka.concat(jobs);
+      }
+    } catch (error) {
+       // console.error(`Error fetching Traveloka jobs for ${reg.name}:`, error.message);
+    }
+  }
+  return allTraveloka;
 }
 
 function detectRegion(location) {
@@ -205,6 +238,8 @@ async function main() {
       jobs = await fetchAshbyJobs(company);
     } else if (company.platform === 'teamtailor-feed') {
       jobs = await fetchTeamtailorFeedJobs(company);
+    } else if (company.platform === 'traveloka') {
+      jobs = await fetchTravelokaJobs(company);
     }
     
     const filteredJobs = jobs.filter(job => 
