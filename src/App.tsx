@@ -264,6 +264,20 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China', 'Singapore'],
     offices: ['Shanghai', 'Singapore', 'Zurich', 'Berlin', 'London'],
     careerUrl: 'https://culture.on.com/jobs/'
+  },
+  'Razer': {
+    name: 'Razer',
+    description: 'The world\'s leading lifestyle brand for gamers, providing hardware, software, and services.',
+    regions: ['Singapore', 'China', 'Hong Kong'],
+    offices: ['Singapore', 'Irvine', 'Shanghai', 'Hamburg'],
+    careerUrl: 'https://www.razer.com/careers'
+  },
+  'Klook': {
+    name: 'Klook',
+    description: 'A leading travel and leisure e-commerce platform.',
+    regions: ['Hong Kong', 'Singapore', 'China'],
+    offices: ['Hong Kong', 'Singapore', 'Shenzhen', 'Bangkok'],
+    careerUrl: 'https://www.klook.com/en-US/careers/'
   }
 };
 
@@ -273,7 +287,7 @@ const TRACKED_COMPANIES = [
   'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
   'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
   'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
-  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka'
+  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook'
 ];
 
 function App() {

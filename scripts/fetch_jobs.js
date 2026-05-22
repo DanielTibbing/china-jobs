@@ -48,9 +48,11 @@ const COMPANIES = [
   { name: 'NetEase Games', platform: 'greenhouse', token: 'neteasegames' },
   { name: 'On Running', platform: 'greenhouse', token: 'onrunning' },
   { name: 'Payoneer', platform: 'greenhouse', token: 'payoneer' },
-  
-  // Custom API
   { name: 'Traveloka', platform: 'traveloka', token: 'traveloka' },
+  
+  // Workday V2 (CXS Direct)
+  { name: 'Razer', platform: 'workday-v2', token: 'Careers', tenant: 'razer', sub: 'wd3' },
+  { name: 'Klook', platform: 'workday-v2', token: 'Klook', tenant: 'klook', sub: 'wd3' },
   
   // Greenhouse candidates
   { name: 'Supercell', platform: 'greenhouse', token: 'supercell' },
@@ -164,7 +166,7 @@ async function fetchTeamtailorFeedJobs(company) {
       id: `tt-${job.id}`,
       title: job.title,
       company: company.name,
-      location: 'Sweden', // Marshall specific fallback
+      location: 'Sweden',
       link: job.url,
       postedAt: job.date_published,
       region: 'Sweden'
@@ -200,17 +202,99 @@ async function fetchTravelokaJobs(company) {
         }));
         allTraveloka = allTraveloka.concat(jobs);
       }
-    } catch (error) {
-       // console.error(`Error fetching Traveloka jobs for ${reg.name}:`, error.message);
-    }
+    } catch (error) {}
   }
   return allTraveloka;
+}
+
+async function fetchWorkdayV2Jobs(company) {
+  let allPostings = [];
+  const limit = 20; 
+  const baseUrl = `https://${company.tenant}.${company.sub}.myworkdayjobs.com`;
+  const url = `${baseUrl}/wday/cxs/${company.tenant}/${company.token}/jobs`;
+
+  console.log(`Starting forced paginated fetch for ${company.name}...`);
+
+  try {
+    // 1. First call to get the actual TOTAL count
+    const initialResponse = await axiosInstance.post(url, {
+      appliedFacets: {},
+      limit: limit,
+      offset: 0,
+      searchText: ""
+    }, {
+      headers: {
+        'Origin': baseUrl,
+        'Referer': `${baseUrl}/${company.token}`
+      }
+    });
+
+    if (!initialResponse.data || initialResponse.data.total === undefined) {
+      console.log(`  Initial fetch failed for ${company.name}.`);
+      return [];
+    }
+
+    const initialTotal = initialResponse.data.total;
+    console.log(`  Initial total reported: ${initialTotal}`);
+    
+    if (initialResponse.data.jobPostings) {
+      allPostings = allPostings.concat(initialResponse.data.jobPostings);
+    }
+
+    // 2. Forced loop until we reach initialTotal
+    let offset = limit;
+    while (offset < initialTotal && offset < 2000) { // Increased safety bound
+      console.log(`  Fetching offset ${offset}/${initialTotal}...`);
+      
+      try {
+        const response = await axiosInstance.post(url, {
+          appliedFacets: {},
+          limit: limit,
+          offset: offset,
+          searchText: ""
+        }, {
+          headers: {
+            'Origin': baseUrl,
+            'Referer': `${baseUrl}/${company.token}`
+          }
+        });
+
+        if (response.data && response.data.jobPostings) {
+          allPostings = allPostings.concat(response.data.jobPostings);
+        } else {
+          console.log(`  Warning: Empty response at offset ${offset}`);
+        }
+      } catch (loopError) {
+        console.error(`  Error at offset ${offset}:`, loopError.message);
+        // Continue to next offset even if this one failed
+      }
+
+      offset += limit;
+      await new Promise(r => setTimeout(r, 600)); // Politeness delay
+    }
+
+  } catch (error) {
+    console.error(`Fatal error in Workday V2 for ${company.name}:`, error.message);
+    return [];
+  }
+
+  console.log(`  Finished ${company.name}. Scanned ${allPostings.length} roles.`);
+
+  return allPostings.map(job => ({
+    id: `wd2-${job.bulletinNumber || job.externalPath}`,
+    title: job.title,
+    company: company.name,
+    location: job.locationsText,
+    link: `${baseUrl}/${company.token}${job.externalPath}`,
+    postedAt: new Date().toISOString(),
+    region: detectRegion(job.locationsText)
+  }));
 }
 
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase();
-  if (loc.includes('china') || loc.includes('beijing') || loc.includes('shanghai') || loc.includes('shenzhen') || loc.includes('guangzhou') || loc.includes('hangzhou') || loc.includes(', cn')) return 'China';
+  if (loc.includes('china') || loc.includes('beijing') || loc.includes('shanghai') || loc.includes('shenzhen') || loc.includes('guangzhou') || loc.includes('hangzhou') || loc.includes(', cn') || loc.includes('chengdu')) return 'China';
   if (loc.includes('hong kong') || loc.includes('hk')) return 'Hong Kong';
   if (loc.includes('singapore') || loc.includes(', sg')) return 'Singapore';
   if (loc.includes('sweden') || loc.includes('stockholm') || loc.includes('gothenburg') || loc.includes('malmö') || loc.includes('lund') || loc.includes(', se')) return 'Sweden';
@@ -240,22 +324,23 @@ async function main() {
       jobs = await fetchTeamtailorFeedJobs(company);
     } else if (company.platform === 'traveloka') {
       jobs = await fetchTravelokaJobs(company);
+    } else if (company.platform === 'workday-v2') {
+      jobs = await fetchWorkdayV2Jobs(company);
     }
     
     const filteredJobs = jobs.filter(job => 
       matchesKeywords(job.title) && REGIONS.includes(job.region)
     );
     
-    console.log(`Found ${jobs.length} total, ${filteredJobs.length} matched.`);
+    console.log(`  Summary: ${jobs.length} scanned, ${filteredJobs.length} matched criteria.`);
     allJobs = allJobs.concat(filteredJobs);
   }
 
-  // Sort by date (newest first)
-  allJobs.sort((a, b) => new Date(b.postedAt) - new Date(a.postedAt));
+  allJobs.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
 
   const outputPath = path.join(process.cwd(), 'public', 'jobs.json');
   fs.writeFileSync(outputPath, JSON.stringify(allJobs, null, 2));
-  console.log(`Successfully wrote ${allJobs.length} jobs to ${outputPath}`);
+  console.log(`Successfully wrote ${allJobs.length} matched jobs to ${outputPath}`);
 }
 
 main();
