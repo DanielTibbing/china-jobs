@@ -242,7 +242,7 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     description: 'The world\'s go-to partner for digital commerce, enabling any business to go global.',
     regions: ['Hong Kong', 'Singapore', 'China'],
     offices: ['Hong Kong', 'Singapore', 'Shanghai', 'New York'],
-    careerUrl: 'https://www.payoneer.com/about/careers/'
+    careerUrl: 'https://careers.payoneer.com/'
   },
   'Moonton': {
     name: 'Moonton',
@@ -250,6 +250,13 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China', 'Singapore'],
     offices: ['Shanghai', 'Singapore'],
     careerUrl: 'https://www.moonton.com/careers'
+  },
+  'On Running': {
+    name: 'On Running',
+    description: 'A Swiss athletic shoe and performance sportswear company.',
+    regions: ['China', 'Singapore'],
+    offices: ['Shanghai', 'Singapore', 'Zurich', 'Berlin', 'London'],
+    careerUrl: 'https://culture.on.com/jobs/'
   }
 };
 
@@ -259,7 +266,7 @@ const TRACKED_COMPANIES = [
   'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
   'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
   'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
-  'EF', 'Scania', 'Lego Group'
+  'EF', 'Scania', 'Lego Group', 'On Running'
 ];
 
 function App() {

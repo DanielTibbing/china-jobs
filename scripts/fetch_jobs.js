@@ -57,8 +57,9 @@ const COMPANIES = [
   { name: 'Youtrip', platform: 'greenhouse', token: 'youtrip' },
   
   // SmartRecruiters
+  { name: 'On Running', platform: 'greenhouse', token: 'onrunning' },
   { name: 'Ubisoft', platform: 'smartrecruiters', token: 'Ubisoft' },
-  { name: 'Payoneer', platform: 'smartrecruiters', token: 'Payoneer' },
+  { name: 'Payoneer', platform: 'greenhouse', token: 'payoneer' },
 ];
 
 const axiosInstance = axios.create({
