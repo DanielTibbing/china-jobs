@@ -19,7 +19,7 @@ function App() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('/jobs.json')
+    fetch('jobs.json')
       .then(res => {
         if (!res.ok) throw new Error('Failed to fetch jobs')
         return res.json()
