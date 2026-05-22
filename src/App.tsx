@@ -111,12 +111,26 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     offices: ['Beijing', 'Pittsburgh', 'New York', 'Seattle'],
     careerUrl: 'https://careers.duolingo.com/'
   },
+  'Liftoff': {
+    name: 'Liftoff',
+    description: 'A complete mobile app marketing platform that helps advertisers, publishers, and developers grow.',
+    regions: ['Singapore'],
+    offices: ['Singapore', 'Redwood City', 'London'],
+    careerUrl: 'https://liftoff.io/careers/'
+  },
   'Riot Games': {
     name: 'Riot Games',
     description: 'A player-focused video game developer, publisher, and esports tournament organizer.',
     regions: ['China', 'Singapore', 'Hong Kong'],
     offices: ['Shanghai', 'Singapore', 'Hong Kong', 'Los Angeles'],
     careerUrl: 'https://www.riotgames.com/en/work-with-us'
+  },
+  'Nex': {
+    name: 'Nex',
+    description: 'A motion technology company that turns screen time into active time.',
+    regions: ['Hong Kong'],
+    offices: ['Hong Kong', 'San Francisco'],
+    careerUrl: 'https://www.nex.inc/careers'
   },
   'Casetify': {
     name: 'Casetify',
@@ -167,7 +181,86 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     offices: ['Shanghai', 'Singapore', 'Cary'],
     careerUrl: 'https://www.epicgames.com/site/en-US/careers'
   },
+  'NetEase Games': {
+    name: 'NetEase Games',
+    description: 'A leading global developer and publisher of video game IP.',
+    regions: ['China'],
+    offices: ['Hangzhou', 'Guangzhou', 'Tokyo', 'Montreal'],
+    careerUrl: 'https://www.neteasegames.com/careers/'
+  },
+  'Supercell': {
+    name: 'Supercell',
+    description: 'A mobile game developer based in Helsinki, Finland, with offices in San Francisco, Seoul and Shanghai.',
+    regions: ['China'],
+    offices: ['Helsinki', 'Shanghai', 'San Francisco', 'Seoul'],
+    careerUrl: 'https://supercell.com/en/careers/'
+  },
+  'Dramabox': {
+    name: 'Dramabox',
+    description: 'A leading short-form drama platform providing localized content globally.',
+    regions: ['China'],
+    offices: ['Beijing', 'Shanghai'],
+    careerUrl: 'https://www.storymatrix.com/'
+  },
+  'Wise': {
+    name: 'Wise',
+    description: 'A global technology company building the best way to move money around the world.',
+    regions: ['Singapore', 'Hong Kong'],
+    offices: ['Singapore', 'Hong Kong', 'London', 'Tallinn'],
+    careerUrl: 'https://wise.jobs/'
+  },
+  'Ascenda': {
+    name: 'Ascenda',
+    description: 'A global leader in innovative loyalty solutions and rewards technology.',
+    regions: ['Singapore'],
+    offices: ['Singapore'],
+    careerUrl: 'https://ascendaloyalty.com/careers/'
+  },
+  'Shopline': {
+    name: 'Shopline',
+    description: 'One of Asia\'s largest e-commerce platform providers.',
+    regions: ['Hong Kong', 'Singapore', 'China'],
+    offices: ['Hong Kong', 'Singapore', 'Shenzhen', 'Taipei'],
+    careerUrl: 'https://shopline.com/about/careers'
+  },
+  'Youtrip': {
+    name: 'Youtrip',
+    description: 'A leading multi-currency travel wallet in Southeast Asia.',
+    regions: ['Singapore'],
+    offices: ['Singapore', 'Bangkok'],
+    careerUrl: 'https://www.youtrip.co/careers/'
+  },
+  'Ubisoft': {
+    name: 'Ubisoft',
+    description: 'A leading creator, publisher and distributor of interactive entertainment and services.',
+    regions: ['China', 'Singapore'],
+    offices: ['Shanghai', 'Singapore', 'Paris', 'Montreal'],
+    careerUrl: 'https://www.ubisoft.com/en-us/company/careers'
+  },
+  'Payoneer': {
+    name: 'Payoneer',
+    description: 'The world\'s go-to partner for digital commerce, enabling any business to go global.',
+    regions: ['Hong Kong', 'Singapore', 'China'],
+    offices: ['Hong Kong', 'Singapore', 'Shanghai', 'New York'],
+    careerUrl: 'https://www.payoneer.com/about/careers/'
+  },
+  'Moonton': {
+    name: 'Moonton',
+    description: 'A global video game developer and publisher, creator of Mobile Legends: Bang Bang.',
+    regions: ['China', 'Singapore'],
+    offices: ['Shanghai', 'Singapore'],
+    careerUrl: 'https://www.moonton.com/careers'
+  }
 };
+
+// All companies tracked in the scraper
+const TRACKED_COMPANIES = [
+  'Airwallex', 'Grab', 'Checkout.com', 'Canva', 'Roblox', 'Unity', 'ByteDance', 'TikTok', 
+  'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
+  'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
+  'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
+  'EF', 'Scania', 'Lego Group'
+];
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -320,7 +413,6 @@ function App() {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {currentView !== 'companies' ? (
           <>
-            {/* Controls Section */}
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
               <div className="flex flex-wrap gap-2">
                 {Object.keys(REGION_FLAGS).map((region) => (
@@ -383,7 +475,7 @@ function App() {
                         <div className="flex-1">
                           <h2 className={`text-xl font-black leading-tight ${currentView === 'history' ? 'text-gray-700' : 'text-gray-900 group-hover:text-blue-600 transition-colors'}`}>{job.title}</h2>
                           <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-sm text-gray-500 mt-4">
-                            <div className="flex items-center font-bold text-gray-700 cursor-pointer hover:text-blue-600" onClick={() => {setSelectedCompany(job.company); window.scrollTo(0,0)}}>
+                            <div className="flex items-center font-bold text-gray-700 cursor-pointer hover:text-blue-600" onClick={() => {setSelectedCompany(job.company); setCurrentView('active'); window.scrollTo(0,0)}}>
                               <Building2 className="h-4 w-4 mr-2 text-gray-400" />
                               {job.company}
                             </div>
@@ -409,65 +501,89 @@ function App() {
             </div>
           </>
         ) : (
-          /* Companies View */
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {Object.values(COMPANY_DETAILS)
-              .filter(c => c.name.toLowerCase().includes(searchTerm.toLowerCase()))
-              .map((company) => (
-              <div key={company.name} className="bg-white p-8 rounded-3xl border-2 border-gray-100 shadow-sm hover:border-purple-100 transition-all duration-200">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="bg-gray-900 text-white p-3 rounded-2xl">
-                    <Building2 className="h-6 w-6" />
+            {TRACKED_COMPANIES
+              .sort()
+              .filter(name => name.toLowerCase().includes(searchTerm.toLowerCase()))
+              .map((name) => {
+              const company = COMPANY_DETAILS[name] || {
+                name,
+                description: 'Technology company with global operations.',
+                regions: [],
+                offices: ['Global'],
+                careerUrl: '#'
+              };
+              const activeCount = activeJobs.filter(j => j.company === name).length;
+
+              return (
+                <div key={name} className="bg-white p-8 rounded-3xl border-2 border-gray-100 shadow-sm hover:border-purple-100 transition-all duration-200">
+                  <div className="flex justify-between items-start mb-6">
+                    <div className="bg-gray-900 text-white p-3 rounded-2xl">
+                      <Building2 className="h-6 w-6" />
+                    </div>
+                    <a href={company.careerUrl} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 transition-colors">
+                      <ExternalLink className="h-5 w-5" />
+                    </a>
                   </div>
-                  <a href={company.careerUrl} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 transition-colors">
-                    <ExternalLink className="h-5 w-5" />
-                  </a>
-                </div>
-                <h2 className="text-2xl font-black text-gray-900 mb-3">{company.name}</h2>
-                <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                  {company.description}
-                </p>
-                
-                <div className="space-y-4 pt-4 border-t border-gray-50">
-                  <div>
-                    <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                       <Globe className="h-3 w-3" />
-                       Active Regions
-                    </h3>
-                    <div className="flex flex-wrap gap-2">
-                      {company.regions.map(r => (
-                        <span key={r} className="inline-flex items-center gap-1.5 bg-gray-50 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold border border-gray-100">
-                          <span>{REGION_FLAGS[r]}</span>
-                          {r}
-                        </span>
-                      ))}
+                  <div className="flex items-center gap-3 mb-3">
+                    <h2 className="text-2xl font-black text-gray-900">{name}</h2>
+                    {activeCount > 0 && (
+                      <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-wider">
+                        {activeCount} active roles
+                      </span>
+                    )}
+                  </div>
+                  <p className="text-gray-500 text-sm leading-relaxed mb-6">
+                    {company.description}
+                  </p>
+                  
+                  <div className="space-y-4 pt-4 border-t border-gray-50">
+                    <div>
+                      <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                         <Globe className="h-3 w-3" />
+                         Active Regions
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {company.regions.length > 0 ? company.regions.map(r => (
+                          <span key={r} className="inline-flex items-center gap-1.5 bg-gray-50 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold border border-gray-100">
+                            <span>{REGION_FLAGS[r]}</span>{r}
+                          </span>
+                        )) : <span className="text-xs text-gray-400 italic">No specific regions tracked</span>}
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                         <MapPin className="h-3 w-3" />
+                         Office Locations
+                      </h3>
+                      <p className="text-xs text-gray-600 font-medium leading-relaxed">
+                        {company.offices.join(', ')}
+                      </p>
                     </div>
                   </div>
                   
-                  <div>
-                    <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                       <MapPin className="h-3 w-3" />
-                       Office Locations
-                    </h3>
-                    <p className="text-xs text-gray-600 font-medium leading-relaxed">
-                      {company.offices.join(', ')}
-                    </p>
-                  </div>
+                  <button 
+                    onClick={() => {
+                      if (activeCount > 0) {
+                        setSelectedCompany(name);
+                        setCurrentView('active');
+                        window.scrollTo(0, 0);
+                      }
+                    }}
+                    disabled={activeCount === 0}
+                    className={`mt-8 w-full py-3 rounded-2xl text-sm font-black transition-colors flex items-center justify-center gap-2 ${
+                      activeCount > 0 
+                      ? 'bg-purple-50 hover:bg-purple-100 text-purple-700' 
+                      : 'bg-gray-50 text-gray-300 cursor-not-allowed'
+                    }`}
+                  >
+                    <Search className="h-4 w-4" />
+                    {activeCount > 0 ? `View Open Roles` : 'No open roles matching filters'}
+                  </button>
                 </div>
-                
-                <button 
-                  onClick={() => {
-                    setSelectedCompany(company.name);
-                    setCurrentView('active');
-                    window.scrollTo(0, 0);
-                  }}
-                  className="mt-8 w-full bg-purple-50 hover:bg-purple-100 text-purple-700 py-3 rounded-2xl text-sm font-black transition-colors flex items-center justify-center gap-2"
-                >
-                  <Search className="h-4 w-4" />
-                  View Open Roles
-                </button>
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </main>
