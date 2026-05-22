@@ -1,5 +1,23 @@
 [
   {
+    "id": "gh-7824804",
+    "title": "Senior Technical Product Manager, Engine Authoring UX & Workflows",
+    "company": "Unity",
+    "location": "Stockholm, Sweden",
+    "link": "https://unity.com/careers/positions/7824804?gh_jid=7824804",
+    "postedAt": "2026-05-22T15:52:58-04:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "gh-5840415004",
+    "title": "Marketing Intern, Travel (Full-time - 3 month)",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5840415004",
+    "postedAt": "2026-05-22T04:14:01-04:00",
+    "region": "Hong Kong"
+  },
+  {
     "id": "sr-744000127819119",
     "title": "Lead Software Engineer, Backend (Lending)",
     "company": "Grab",
@@ -27,6 +45,24 @@
     "region": "China"
   },
   {
+    "id": "gh-7922945",
+    "title": "Staff Software Engineer, Services - Unpublished R&D Product",
+    "company": "Riot Games",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7922945?gh_jid=7922945",
+    "postedAt": "2026-05-21T20:24:21-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5204332008",
+    "title": "Lead Product Manager, Mobile Games",
+    "company": "Scopely",
+    "location": "CH - Shanghai, China",
+    "link": "https://job-boards.greenhouse.io/scopely/jobs/5204332008",
+    "postedAt": "2026-05-21T15:18:18-04:00",
+    "region": "China"
+  },
+  {
     "id": "sr-744000127634234",
     "title": "Lead Product Designer, Grab For Business",
     "company": "Grab",
@@ -34,6 +70,15 @@
     "link": "https://jobs.smartrecruiters.com/grab/744000127634234",
     "postedAt": "2026-05-21T10:22:53.265Z",
     "region": "Singapore"
+  },
+  {
+    "id": "gh-6002193004",
+    "title": "Marketing Intern - Korea (Based in Hong Kong)",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/6002193004",
+    "postedAt": "2026-05-20T22:47:49-04:00",
+    "region": "Hong Kong"
   },
   {
     "id": "gh-7920864",
@@ -52,6 +97,15 @@
     "link": "https://careers.roblox.com/jobs/7926839?gh_jid=7926839",
     "postedAt": "2026-05-20T17:08:30-04:00",
     "region": "Singapore"
+  },
+  {
+    "id": "gh-5226150008",
+    "title": "Art Lead, New Game (AAA RPG)",
+    "company": "Scopely",
+    "location": "CH - Shanghai, China",
+    "link": "https://job-boards.greenhouse.io/scopely/jobs/5226150008",
+    "postedAt": "2026-05-20T06:15:57-04:00",
+    "region": "China"
   },
   {
     "id": "sr-744000127355710",
@@ -81,6 +135,114 @@
     "region": "Singapore"
   },
   {
+    "id": "gh-7922898",
+    "title": "Staff Software Engineer, Gameplay - Unpublished R&D Product",
+    "company": "Riot Games",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7922898?gh_jid=7922898",
+    "postedAt": "2026-05-19T15:27:23-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7786020",
+    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7786020?gh_jid=7786020",
+    "postedAt": "2026-05-19T15:14:57-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7271179",
+    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7271179?gh_jid=7271179",
+    "postedAt": "2026-05-19T15:14:22-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-4519009",
+    "title": "Staff Software Engineer, Services - Unpublished R&D Product",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/4519009?gh_jid=4519009",
+    "postedAt": "2026-05-19T15:13:39-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7154094",
+    "title": "Staff Software Engineer, Rendering 渲染工程师",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7154094?gh_jid=7154094",
+    "postedAt": "2026-05-19T15:13:04-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7892751",
+    "title": "Senior Software Engineer -  Tech Foundations",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7892751?gh_jid=7892751",
+    "postedAt": "2026-05-19T15:12:25-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7695533",
+    "title": "Publishing Product Manager, Event - VALORANT (Contract)",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7695533?gh_jid=7695533",
+    "postedAt": "2026-05-19T15:03:52-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7695550",
+    "title": "Marketing Creative Director - VALORANT (Contract)",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7695550?gh_jid=7695550",
+    "postedAt": "2026-05-19T14:57:33-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-6197738",
+    "title": "Senior Game Product Manager, Monetization and Growth - FFGS/金铲铲之战",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/6197738?gh_jid=6197738",
+    "postedAt": "2026-05-19T14:55:04-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5220269008",
+    "title": "Software Engineer (Connected Play SDK & Platform)",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5220269008",
+    "postedAt": "2026-05-19T00:00:02-04:00",
+    "region": "Hong Kong"
+  },
+  {
+    "id": "gh-5220274008",
+    "title": "Software Engineer (Studio Support)",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5220274008",
+    "postedAt": "2026-05-18T23:59:45-04:00",
+    "region": "Hong Kong"
+  },
+  {
+    "id": "gh-5839050004",
+    "title": "Senior Marketing Associate/ Assistant Manager (Co-Lab)",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5839050004",
+    "postedAt": "2026-05-18T06:25:31-04:00",
+    "region": "Hong Kong"
+  },
+  {
     "id": "sr-744000126903170",
     "title": "Senior Software Engineer, Reverse engineering",
     "company": "Grab",
@@ -99,6 +261,24 @@
     "region": "Singapore"
   },
   {
+    "id": "gh-7449588",
+    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449588?gh_jid=7449588",
+    "postedAt": "2026-05-14T15:30:17-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7449571",
+    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
+    "postedAt": "2026-05-14T15:30:16-04:00",
+    "region": "China"
+  },
+  {
     "id": "sr-744000126461929",
     "title": "Lead Localization Engineer (L4 Autonomous Systems)",
     "company": "Grab",
@@ -114,6 +294,267 @@
     "location": "Singapore",
     "link": "https://job-boards.greenhouse.io/agoda/jobs/7916603",
     "postedAt": "2026-05-13T22:51:37-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5980746004",
+    "title": "Product Manager (E-commerce & Conversion Rate Optimization)",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5980746004",
+    "postedAt": "2026-05-13T05:02:23-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7731860",
+    "title": "Software Engineer (Java)",
+    "company": "Adyen",
+    "location": "Singapore",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7731860",
+    "postedAt": "2026-05-12T09:55:53-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5991212004",
+    "title": "Engineering Manager, Digital Commerce Product - Shenzhen",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5991212004",
+    "postedAt": "2026-05-12T04:35:08-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5993024004",
+    "title": "Software Engineer, Digital Commerce Product - Shenzhen",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5993024004",
+    "postedAt": "2026-05-12T04:34:31-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5993027004",
+    "title": "Assistant Product Manager, Digital Commerce Product - Shenzhen",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5993027004",
+    "postedAt": "2026-05-12T03:28:19-04:00",
+    "region": "China"
+  },
+  {
+    "id": "as-ab89a8da-c743-4165-b154-2f1eab958950",
+    "title": "Staff Software Engineer, Infra Productivity",
+    "company": "Airwallex",
+    "location": "CN - Shanghai",
+    "link": "https://jobs.ashbyhq.com/airwallex/ab89a8da-c743-4165-b154-2f1eab958950",
+    "postedAt": "2026-05-11T13:34:26.739+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-1b9a80ed-c6fa-4e84-a9ca-2bf8d62a7d7b",
+    "title": "Senior Software Engineer, Infrastructure Productivity",
+    "company": "Airwallex",
+    "location": "CN - Shanghai",
+    "link": "https://jobs.ashbyhq.com/airwallex/1b9a80ed-c6fa-4e84-a9ca-2bf8d62a7d7b",
+    "postedAt": "2026-05-11T13:33:53.389+00:00",
+    "region": "China"
+  },
+  {
+    "id": "tt-7f3a9f6e-0394-4a2c-a7c8-16b49b117be6",
+    "title": "Channel Marketing Manager, UK & Online Marketplaces Europe",
+    "company": "Marshall",
+    "location": "Sweden",
+    "link": "https://careers.marshall.com/jobs/7714223-channel-marketing-manager-uk-online-marketplaces-europe",
+    "postedAt": "2026-05-11T13:51:31+02:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "sr-6000000001062135",
+    "title": "Frontend Engineer - International SG (Generative AI)",
+    "company": "Canva",
+    "location": "Beijing, cn",
+    "link": "https://jobs.smartrecruiters.com/canva/6000000001062135",
+    "postedAt": "2026-05-11T08:00:05.339Z",
+    "region": "China"
+  },
+  {
+    "id": "gh-7903376",
+    "title": "Senior Product Manager (SG-based) ",
+    "company": "Agoda",
+    "location": "Singapore ",
+    "link": "https://job-boards.greenhouse.io/agoda/jobs/7903376",
+    "postedAt": "2026-05-10T22:20:58-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-008a5372-57c2-4fc1-996b-0668923da526",
+    "title": "Engineering Manager - Onboarding Team",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/008a5372-57c2-4fc1-996b-0668923da526",
+    "postedAt": "2026-05-08T08:50:18.784+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-555eeddc-7e50-4fcf-a2a6-5e4c489adc0a",
+    "title": "Engineering Manager, Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/555eeddc-7e50-4fcf-a2a6-5e4c489adc0a",
+    "postedAt": "2026-05-08T08:50:04.508+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-1196d71d-9cb8-4543-a1e4-5d00eb714b57",
+    "title": "Engineering Lead - Onboarding Team",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/1196d71d-9cb8-4543-a1e4-5d00eb714b57",
+    "postedAt": "2026-05-08T08:49:47.465+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-6fb704d3-9454-4ad4-b442-9a6db66d253f",
+    "title": "Engineering Lead, Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/6fb704d3-9454-4ad4-b442-9a6db66d253f",
+    "postedAt": "2026-05-08T08:49:39.614+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5190477008",
+    "title": "Director / Senior Director, Platform Software Engineering",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5190477008",
+    "postedAt": "2026-05-08T04:49:17-04:00",
+    "region": "Hong Kong"
+  },
+  {
+    "id": "as-b0ae1000-8fa3-48e9-816f-6bfe5399d6dd",
+    "title": "Engineering Lead, Regulatory Reporting",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b0ae1000-8fa3-48e9-816f-6bfe5399d6dd",
+    "postedAt": "2026-05-08T08:03:56.021+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-937d449b-d826-424e-97b3-a8ad941a6048",
+    "title": "Regional Marketing Manager, APAC",
+    "company": "Checkout.com",
+    "location": "Singapore",
+    "link": "https://jobs.ashbyhq.com/checkout.com/937d449b-d826-424e-97b3-a8ad941a6048",
+    "postedAt": "2026-05-08T05:42:09.151+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-4e111942-e496-4a6e-b73e-0eeca25431b0",
+    "title": "Manager, Content Marketing(Video Editor)",
+    "company": "Airwallex",
+    "location": "CN - Shanghai",
+    "link": "https://jobs.ashbyhq.com/airwallex/4e111942-e496-4a6e-b73e-0eeca25431b0",
+    "postedAt": "2026-05-07T06:04:37.469+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-3206c402-a71a-4b1e-ab9a-a92c096220b0",
+    "title": "Senior Product Manager, Transaction Monitoring",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/3206c402-a71a-4b1e-ab9a-a92c096220b0",
+    "postedAt": "2026-05-06T08:40:38.680+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-0702ce79-c6d2-4c31-81dd-f643d21dbe7f",
+    "title": "Senior Product Manager, Transaction Risk",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/0702ce79-c6d2-4c31-81dd-f643d21dbe7f",
+    "postedAt": "2026-05-06T08:39:06.876+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-3e50e26a-ea9d-4b63-bdfa-3d3fc6a43908",
+    "title": "Senior Product Manager,  Identity & User Security",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/3e50e26a-ea9d-4b63-bdfa-3d3fc6a43908",
+    "postedAt": "2026-05-06T06:36:57.272+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-a532b09a-bfdc-4537-8bb7-d1c35f5dc0bc",
+    "title": "Senior Software Engineer, Risk",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/a532b09a-bfdc-4537-8bb7-d1c35f5dc0bc",
+    "postedAt": "2026-05-06T05:46:12.722+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-edfb3825-4068-420e-9754-007a3bed58b1",
+    "title": "Staff Product Manager, AI Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/edfb3825-4068-420e-9754-007a3bed58b1",
+    "postedAt": "2026-05-05T23:13:41.530+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-4cb09a94-d65f-4b89-bc41-ddcf50aa9598",
+    "title": "Engineering Lead - IAM & Account Infrastructure",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/4cb09a94-d65f-4b89-bc41-ddcf50aa9598",
+    "postedAt": "2026-05-05T08:32:13.846+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-a4136ffd-44e1-4660-a5e3-7424452c9aaf",
+    "title": "Senior Manager, Field Marketing, SEA",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/a4136ffd-44e1-4660-a5e3-7424452c9aaf",
+    "postedAt": "2026-05-04T02:26:12.683+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-967a6fef-cfb1-4a1b-98c2-50690489bd4e",
+    "title": "Director of Product Design - Developer Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/967a6fef-cfb1-4a1b-98c2-50690489bd4e",
+    "postedAt": "2026-04-30T23:39:17.218+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-739860fb-5b68-41e3-986c-57aeb8afe7e8",
+    "title": "Staff Software Engineer, Ecosystem",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/739860fb-5b68-41e3-986c-57aeb8afe7e8",
+    "postedAt": "2026-04-29T15:51:50.250+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-006156bb-7432-44f5-ba25-e670526b657c",
+    "title": "Software Engineer, Notification Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/006156bb-7432-44f5-ba25-e670526b657c",
+    "postedAt": "2026-04-29T15:41:44.085+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-edd8f06b-f5a8-4fd8-b834-382ab64be682",
+    "title": "Senior Software Engineer, Notification Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/edd8f06b-f5a8-4fd8-b834-382ab64be682",
+    "postedAt": "2026-04-29T15:40:07.971+00:00",
     "region": "Singapore"
   },
   {
@@ -135,84 +576,903 @@
     "region": "China"
   },
   {
-    "id": "lv-7d7fc4b3-c001-414d-aae5-57c0466666be",
-    "title": "Staff Software Engineer - Backend",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/7d7fc4b3-c001-414d-aae5-57c0466666be",
-    "postedAt": "2026-04-14T07:30:04.502Z",
+    "id": "gh-8526793002",
+    "title": "Software Engineer I",
+    "company": "Duolingo",
+    "location": "Beijing, China",
+    "link": "https://careers.duolingo.com/jobs/8526793002?gh_jid=8526793002",
+    "postedAt": "2026-04-28T13:05:28-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5021593008",
+    "title": "Director of Marketing",
+    "company": "Scopely",
+    "location": "CH - Shanghai, China",
+    "link": "https://job-boards.greenhouse.io/scopely/jobs/5021593008",
+    "postedAt": "2026-04-28T08:25:53-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7789996",
+    "title": "Team Lead, Implementation, Southeast Asia & India",
+    "company": "Adyen",
+    "location": "Singapore",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7789996",
+    "postedAt": "2026-04-27T22:25:52-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-8488912002",
+    "title": "Senior Software Engineer",
+    "company": "Duolingo",
+    "location": "Beijing, China",
+    "link": "https://careers.duolingo.com/jobs/8488912002?gh_jid=8488912002",
+    "postedAt": "2026-04-27T15:18:21-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-8489365002",
+    "title": "Staff Software Engineer",
+    "company": "Duolingo",
+    "location": "Beijing, China",
+    "link": "https://careers.duolingo.com/jobs/8489365002?gh_jid=8489365002",
+    "postedAt": "2026-04-27T15:18:21-04:00",
+    "region": "China"
+  },
+  {
+    "id": "tt-193ce972-9f81-4e0d-b288-5f35ddbfd87d",
+    "title": "Junior Android Developer",
+    "company": "Marshall",
+    "location": "Sweden",
+    "link": "https://careers.marshall.com/jobs/7636913-junior-android-developer",
+    "postedAt": "2026-04-24T16:55:40+02:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "as-fa8769f2-0808-4bb1-b254-9af4dbafc84a",
+    "title": "(Senior) Software Engineer, iOS - Financial Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/fa8769f2-0808-4bb1-b254-9af4dbafc84a",
+    "postedAt": "2026-04-23T07:36:34.788+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-29bca321-98dc-4707-9369-129fb8c480ce",
+    "title": "(Senior) Software Engineer, Android - Financial Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/29bca321-98dc-4707-9369-129fb8c480ce",
+    "postedAt": "2026-04-23T06:46:04.338+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-4dd43d25-d938-4ad2-b95c-f784decb8343",
+    "title": "Staff Software Engineer, Backend - Onboarding",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/4dd43d25-d938-4ad2-b95c-f784decb8343",
+    "postedAt": "2026-04-23T04:57:55.826+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5819621004",
+    "title": "Influencer Marketing Manager",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong; Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5819621004",
+    "postedAt": "2026-04-23T00:23:08-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5979732004",
+    "title": "Marketing Intern ",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5979732004",
+    "postedAt": "2026-04-22T22:16:49-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-2080652c-42ca-4bbe-b231-ea4aa02cb8c6",
-    "title": "Senior Product Manager / Product Lead",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/2080652c-42ca-4bbe-b231-ea4aa02cb8c6",
-    "postedAt": "2026-04-13T07:36:00.073Z",
+    "id": "gh-7556224",
+    "title": "APAC Lead - Payment Method Compliance",
+    "company": "Adyen",
+    "location": "Singapore",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7556224",
+    "postedAt": "2026-04-22T08:03:23-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5978666004",
+    "title": "Lead Product Designer, Accessories & Customisable Products",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5978666004",
+    "postedAt": "2026-04-22T07:02:57-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-9266df9c-171f-49de-9f3e-ccfe0ecb4bfc",
-    "title": "Lead, Platform Growth and Operations (Tagalog Speaker)",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/9266df9c-171f-49de-9f3e-ccfe0ecb4bfc",
-    "postedAt": "2026-04-03T01:13:25.741Z",
+    "id": "as-682acafb-57fe-4efe-a5ee-168dbe034330",
+    "title": "Software Engineer",
+    "company": "Checkout.com",
+    "location": "Shanghai",
+    "link": "https://jobs.ashbyhq.com/checkout.com/682acafb-57fe-4efe-a5ee-168dbe034330",
+    "postedAt": "2026-04-21T08:33:29.291+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-7fdb0541-90cf-412e-92ca-40ce9b3a117b",
+    "title": "Engineering Lead, Notification Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/7fdb0541-90cf-412e-92ca-40ce9b3a117b",
+    "postedAt": "2026-04-21T08:28:24.371+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-8858b315-3daf-4d13-b88b-e6a3ce4ec6bb",
+    "title": "Senior Software Engineer, Infrastructure (Cloud Platform)",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/8858b315-3daf-4d13-b88b-e6a3ce4ec6bb",
+    "postedAt": "2026-04-20T13:39:00.027+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-97b1fb70-efd9-4331-87aa-1f9046dba31b",
+    "title": "Senior Software Engineer (Backend), Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/97b1fb70-efd9-4331-87aa-1f9046dba31b",
+    "postedAt": "2026-04-20T11:28:10.486+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-ed0d55f4-965e-4d9d-94cb-4ccbd0070725",
+    "title": "Software Engineer I",
+    "company": "Checkout.com",
+    "location": "Shanghai",
+    "link": "https://jobs.ashbyhq.com/checkout.com/ed0d55f4-965e-4d9d-94cb-4ccbd0070725",
+    "postedAt": "2026-04-20T07:58:41.224+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-02ec6749-6b4f-4736-919a-cafc872cf239",
+    "title": "Senior Software Engineer I",
+    "company": "Checkout.com",
+    "location": "Shanghai",
+    "link": "https://jobs.ashbyhq.com/checkout.com/02ec6749-6b4f-4736-919a-cafc872cf239",
+    "postedAt": "2026-04-20T07:54:22.737+00:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5976148004",
+    "title": "Marketing Manager (Co-Lab)",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5976148004",
+    "postedAt": "2026-04-20T00:27:09-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-82aaa8f4-bb27-40a4-861f-cd4a5d1c80d6",
-    "title": "Lead, Platform Growth and Operations",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/82aaa8f4-bb27-40a4-861f-cd4a5d1c80d6",
-    "postedAt": "2026-04-03T01:09:23.705Z",
+    "id": "gh-5976123004",
+    "title": "Growth Marketing Manager",
+    "company": "Casetify",
+    "location": "Kwun Tong, Hong Kong",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5976123004",
+    "postedAt": "2026-04-19T22:11:31-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-16016a00-65a4-4ffc-a0ec-bdb68dd61c6a",
-    "title": "Software Engineer, Backend",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/16016a00-65a4-4ffc-a0ec-bdb68dd61c6a",
-    "postedAt": "2026-03-30T03:09:48.078Z",
+    "id": "as-b0fd93c9-b792-4a96-8828-bae299761a92",
+    "title": "Staff Software Engineer, Backend - Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b0fd93c9-b792-4a96-8828-bae299761a92",
+    "postedAt": "2026-04-17T02:29:21.345+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-7590451",
+    "title": "Marketing Lead APAC",
+    "company": "Adyen",
+    "location": "Singapore",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7590451",
+    "postedAt": "2026-04-14T19:43:56-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-7764908",
+    "title": "Team Lead - Account Management",
+    "company": "Adyen",
+    "location": "Shanghai",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7764908",
+    "postedAt": "2026-04-14T19:43:56-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7486450",
+    "title": "Team Lead, Performance Optimization",
+    "company": "Adyen",
+    "location": "Shanghai",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7486450",
+    "postedAt": "2026-04-14T19:43:56-04:00",
+    "region": "China"
+  },
+  {
+    "id": "as-41e7d9ff-6494-495f-a7be-0d5d833dd2b6",
+    "title": "Engineering Manager, Risk",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/41e7d9ff-6494-495f-a7be-0d5d833dd2b6",
+    "postedAt": "2026-04-14T03:09:25.924+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5014664008",
+    "title": "Software Engineer, Core Technology",
+    "company": "Nex",
+    "location": "Hong Kong or Remote",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5014664008",
+    "postedAt": "2026-04-13T03:53:24-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-7cc84d81-9504-4171-a10f-250966a5523a",
-    "title": "Graduate Software Engineer - Class of 2026 (Frontend/Data Warehouse)",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/7cc84d81-9504-4171-a10f-250966a5523a",
-    "postedAt": "2026-03-04T01:55:31.958Z",
+    "id": "gh-4960218008",
+    "title": "Senior Software Engineer, Platform Services",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/4960218008",
+    "postedAt": "2026-04-12T23:32:30-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-48c54bcd-f81c-401d-97cb-b9023ef14c59",
-    "title": "Lead, Platform Growth and Operations",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/48c54bcd-f81c-401d-97cb-b9023ef14c59",
-    "postedAt": "2025-12-24T05:47:58.614Z",
+    "id": "gh-5913808004",
+    "title": "Senior Product Manager - Shenzhen",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5913808004",
+    "postedAt": "2026-04-10T06:47:49-04:00",
+    "region": "China"
+  },
+  {
+    "id": "as-bf57431e-26d7-44b5-a039-a68acc05eb08",
+    "title": "Principal Software Engineer, Edge Team",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/bf57431e-26d7-44b5-a039-a68acc05eb08",
+    "postedAt": "2026-04-03T08:16:41.504+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5844222004",
+    "title": "Senior Mobile Developer (高级移动开发工程师)",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5844222004",
+    "postedAt": "2026-04-02T05:39:39-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5844050004",
+    "title": "Sr. Marketing Associate (Events/Pop-up & Influencers)",
+    "company": "Casetify",
+    "location": "Seoul, Seoul, South Korea",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5844050004",
+    "postedAt": "2026-04-02T05:17:55-04:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "as-5847f0f9-49c5-498b-a5f1-ff450c1ee844",
+    "title": "Staff Software Engineer, Data Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/5847f0f9-49c5-498b-a5f1-ff450c1ee844",
+    "postedAt": "2026-04-01T10:45:05.569+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-4a1e2e02-59c0-4c96-bc86-4164609eedfb",
+    "title": "Staff Software Engineer, Lending Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/4a1e2e02-59c0-4c96-bc86-4164609eedfb",
+    "postedAt": "2026-03-31T14:37:05.541+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-0887ecca-15c1-479b-b4be-b0cb705d168a",
+    "title": "Senior Software Engineer, Lending Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/0887ecca-15c1-479b-b4be-b0cb705d168a",
+    "postedAt": "2026-03-31T14:36:43.580+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-ae03bd35-b559-4d77-ab77-75d3fe376770",
+    "title": "Staff / Senior Software Engineer, Infrastructure (Citizen Dev)",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/ae03bd35-b559-4d77-ab77-75d3fe376770",
+    "postedAt": "2026-03-30T03:08:44.023+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "tt-8a9ed6aa-650f-4b19-884f-69f8c2cea037",
+    "title": "Backend Developer",
+    "company": "Marshall",
+    "location": "Sweden",
+    "link": "https://careers.marshall.com/jobs/7471581-backend-developer",
+    "postedAt": "2026-03-27T09:16:03+01:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "as-93df1f38-8700-47c7-b402-d1fe5805a76d",
+    "title": "Staff Product Manager, Check-Out",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/93df1f38-8700-47c7-b402-d1fe5805a76d",
+    "postedAt": "2026-03-27T07:51:17.111+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-d02347a4-9193-45f6-b267-fc52fbc3b6b3",
+    "title": "Senior Software Engineer, Data Platform & AI Enablement",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/d02347a4-9193-45f6-b267-fc52fbc3b6b3",
+    "postedAt": "2026-03-27T07:41:58.504+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-5080964008",
+    "title": "Software Engineer (Game Development)",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5080964008",
+    "postedAt": "2026-03-26T05:52:40-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-2554e87c-538e-4d75-a830-674cf14359c0",
-    "title": "Senior Android Developer",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/2554e87c-538e-4d75-a830-674cf14359c0",
-    "postedAt": "2022-01-24T10:15:19.542Z",
+    "id": "gh-5151622008",
+    "title": "QA Lead / Manager",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5151622008",
+    "postedAt": "2026-03-23T21:17:50-04:00",
     "region": "Hong Kong"
   },
   {
-    "id": "lv-58eb06ab-319f-4a56-b6e9-ba1f23e00bcb",
-    "title": "Senior Software Engineer - Backend",
-    "company": "Lalamove",
-    "location": "Hong Kong SAR",
-    "link": "https://jobs.lever.co/lalamove/58eb06ab-319f-4a56-b6e9-ba1f23e00bcb",
-    "postedAt": "2017-02-03T02:25:41.805Z",
+    "id": "gh-5118559008",
+    "title": "Software Engineer, Platform Services",
+    "company": "Nex",
+    "location": "Hong Kong",
+    "link": "https://job-boards.greenhouse.io/nex/jobs/5118559008",
+    "postedAt": "2026-03-23T21:17:50-04:00",
     "region": "Hong Kong"
+  },
+  {
+    "id": "as-b4218aa2-00c2-476f-8d9d-6e9729fbcf73",
+    "title": "Manager, Influencer Marketing",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b4218aa2-00c2-476f-8d9d-6e9729fbcf73",
+    "postedAt": "2026-03-13T08:13:10.610+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-891259fe-410a-4e9b-a8de-ce2c6ca21f03",
+    "title": "Director, Marketing, SEA",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/891259fe-410a-4e9b-a8de-ce2c6ca21f03",
+    "postedAt": "2026-03-12T07:40:59.749+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-008b91f6-61ad-40ae-a736-646ac171bf3d",
+    "title": "Senior Product Manager, Payment Fraud",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/008b91f6-61ad-40ae-a736-646ac171bf3d",
+    "postedAt": "2026-03-11T02:15:49.807+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "tt-4efb0216-4cfe-4ef0-bc2a-3aa0d797c9b5",
+    "title": "Senior Embedded Developer",
+    "company": "Marshall",
+    "location": "Sweden",
+    "link": "https://careers.marshall.com/jobs/7362252-senior-embedded-developer",
+    "postedAt": "2026-03-10T15:29:55+01:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "as-d64c46a2-bd46-497d-857a-ac81804cca95",
+    "title": "Performance Marketing (Paid Media), China",
+    "company": "Airwallex",
+    "location": "CN - Shanghai",
+    "link": "https://jobs.ashbyhq.com/airwallex/d64c46a2-bd46-497d-857a-ac81804cca95",
+    "postedAt": "2026-03-10T07:51:04.561+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-ae209ab9-4502-4f1f-a8d3-47e8db704dd9",
+    "title": "Senior Frontend Engineer, Regulatory Reporting",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/ae209ab9-4502-4f1f-a8d3-47e8db704dd9",
+    "postedAt": "2026-03-10T03:01:34.175+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-9ff4c0f1-d279-40c4-8dfd-beba4ba69815",
+    "title": "Staff Software Engineer,  Risk",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/9ff4c0f1-d279-40c4-8dfd-beba4ba69815",
+    "postedAt": "2026-03-06T06:46:57.639+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-3900887e-fbf1-49ac-a566-c04bca905977",
+    "title": "Senior Software Engineer, Transaction Risk",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/3900887e-fbf1-49ac-a566-c04bca905977",
+    "postedAt": "2026-03-06T06:46:45.212+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-f4471265-42b3-44cd-bc53-29436ceae3f1",
+    "title": "Staff Software Engineer, Search Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/f4471265-42b3-44cd-bc53-29436ceae3f1",
+    "postedAt": "2026-03-06T03:32:22.999+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-7374cd5e-fc70-496a-9de5-e7a7719df155",
+    "title": "Senior Software Engineer, Search Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/7374cd5e-fc70-496a-9de5-e7a7719df155",
+    "postedAt": "2026-03-06T03:31:19.431+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-330db6f4-079a-452a-a552-0c499d5c1473",
+    "title": "Senior Associate, Partner Marketing, CN",
+    "company": "Airwallex",
+    "location": "CN - Shanghai",
+    "link": "https://jobs.ashbyhq.com/airwallex/330db6f4-079a-452a-a552-0c499d5c1473",
+    "postedAt": "2026-03-04T07:59:21.762+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-0c2368b6-704d-4d3e-a97c-ff0a9a0ea89e",
+    "title": "Manager, Product Marketing, CN",
+    "company": "Airwallex",
+    "location": "CN - Shanghai",
+    "link": "https://jobs.ashbyhq.com/airwallex/0c2368b6-704d-4d3e-a97c-ff0a9a0ea89e",
+    "postedAt": "2026-03-04T07:19:42.269+00:00",
+    "region": "China"
+  },
+  {
+    "id": "as-319456cb-731f-4de5-b860-ffcecab353c3",
+    "title": "Staff / Engineering Lead, Data&AI Infrastructure",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/319456cb-731f-4de5-b860-ffcecab353c3",
+    "postedAt": "2026-03-04T04:41:10.356+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-452f3711-0eb8-47ab-8278-14a6af9018e9",
+    "title": "Data Platform Engineering Manager ",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/452f3711-0eb8-47ab-8278-14a6af9018e9",
+    "postedAt": "2026-02-25T09:04:25.678+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-63e23642-7e0c-4e6c-a993-184dc0f39c5e",
+    "title": "Staff Product Manager, Regulatory Reporting",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/63e23642-7e0c-4e6c-a993-184dc0f39c5e",
+    "postedAt": "2026-02-16T10:18:56.418+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-706b42e2-4a62-448d-96e3-e3f43ff4e576",
+    "title": "Sales Team Lead, SME & Growth",
+    "company": "Airwallex",
+    "location": "CN - Shenzhen",
+    "link": "https://jobs.ashbyhq.com/airwallex/706b42e2-4a62-448d-96e3-e3f43ff4e576",
+    "postedAt": "2026-02-14T05:46:59.643+00:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5783745004",
+    "title": "Senior Growth Marketing Associate - Shenzhen",
+    "company": "Casetify",
+    "location": "Shenzhen",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/5783745004",
+    "postedAt": "2026-02-13T00:04:25-05:00",
+    "region": "China"
+  },
+  {
+    "id": "as-fdfe0fe2-e7bf-4024-91d7-f6f209fe0dde",
+    "title": "Engineering Manager, Technical Support (Asia Pacific incl. China coverage) ",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/fdfe0fe2-e7bf-4024-91d7-f6f209fe0dde",
+    "postedAt": "2026-02-12T06:43:12.333+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-9774f068-d9de-4197-980b-a98311e90366",
+    "title": "Senior Software Engineer, Frontend - Identity & User Security",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/9774f068-d9de-4197-980b-a98311e90366",
+    "postedAt": "2026-02-11T14:14:53.204+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "tt-14a608e9-94d5-49b2-886b-36ca17414e4c",
+    "title": "Product Manager, Amplification",
+    "company": "Marshall",
+    "location": "Sweden",
+    "link": "https://careers.marshall.com/jobs/7178264-product-manager-amplification",
+    "postedAt": "2026-02-05T11:09:24+01:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "as-9e064013-6286-4984-9541-7bd702286d64",
+    "title": "Senior / Staff Software Engineer Backend, Billing",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/9e064013-6286-4984-9541-7bd702286d64",
+    "postedAt": "2026-02-02T08:55:53.616+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-2a471f31-9cc8-4ab5-9f6c-921fc1f137d6",
+    "title": "Staff Product Manager (0-1 Billing)",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/2a471f31-9cc8-4ab5-9f6c-921fc1f137d6",
+    "postedAt": "2026-01-28T14:01:55.903+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-f9413ae9-7f6b-4179-95cf-34a7f0e8985f",
+    "title": "Senior Product Manager, Corporate Site",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/f9413ae9-7f6b-4179-95cf-34a7f0e8985f",
+    "postedAt": "2026-01-14T23:37:33.034+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-23ce1b23-b65c-44a7-9366-f3deb2300b5d",
+    "title": "Senior Software Engineer, Issuing Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/23ce1b23-b65c-44a7-9366-f3deb2300b5d",
+    "postedAt": "2026-01-14T02:00:05.583+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-6c55b41b-824b-46cd-8590-b9e83eaa5de6",
+    "title": "Staff Product Manager, Onboarding",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/6c55b41b-824b-46cd-8590-b9e83eaa5de6",
+    "postedAt": "2026-01-13T08:54:43.586+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-37c976a3-3bde-4b7c-990b-d705cb7a9eea",
+    "title": "Senior Product Manager, Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/37c976a3-3bde-4b7c-990b-d705cb7a9eea",
+    "postedAt": "2026-01-13T01:10:41.897+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-5c8e057a-9089-45f4-a8b2-4bf2fc05cbce",
+    "title": "Senior Software Engineer - Global Treasury Payment Network",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/5c8e057a-9089-45f4-a8b2-4bf2fc05cbce",
+    "postedAt": "2026-01-12T03:24:03.520+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-c4794257-0db9-464a-8940-bdaf25fc253d",
+    "title": "Staff Product Manager, Embedded Finance",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/c4794257-0db9-464a-8940-bdaf25fc253d",
+    "postedAt": "2026-01-08T03:53:05.546+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-1276800f-a4ad-4c75-af30-d4a14933aa38",
+    "title": "Engineering Lead/Manager, Risk",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/1276800f-a4ad-4c75-af30-d4a14933aa38",
+    "postedAt": "2025-12-25T08:07:24.245+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-b54cae32-b37c-4c28-a01d-f72b2b179c6f",
+    "title": "Staff Product Manager, Direct Issuing",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b54cae32-b37c-4c28-a01d-f72b2b179c6f",
+    "postedAt": "2025-12-16T13:15:25.603+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-f4d64c0e-2425-409c-a296-4c4c6b9fe824",
+    "title": "Software Engineer Backend, Billing",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/f4d64c0e-2425-409c-a296-4c4c6b9fe824",
+    "postedAt": "2025-12-15T08:43:22.581+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-b5e329cd-e842-4404-bda0-3bc0f990f170",
+    "title": "Staff Software Engineer, Backend - Scale",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b5e329cd-e842-4404-bda0-3bc0f990f170",
+    "postedAt": "2025-12-10T07:36:26.717+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-d2770857-8f59-487e-9622-5c7ea64a54be",
+    "title": "Senior / Software Engineer, Global Payments",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/d2770857-8f59-487e-9622-5c7ea64a54be",
+    "postedAt": "2025-12-09T01:41:59.086+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "tt-240224d9-4be8-4d10-9322-f87f29bc6e61",
+    "title": "Culture Marketing Manager, China",
+    "company": "Marshall",
+    "location": "Sweden",
+    "link": "https://careers.marshall.com/jobs/6832382-culture-marketing-manager-china",
+    "postedAt": "2025-11-24T15:18:29+01:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "gh-6358288",
+    "title": "Software Engineer",
+    "company": "Skyscanner",
+    "location": "Shenzhen",
+    "link": "http://www.skyscanner.net/jobs/job/6358288?gh_jid=6358288",
+    "postedAt": "2025-11-20T09:36:38-05:00",
+    "region": "China"
+  },
+  {
+    "id": "as-791e023e-7009-40b0-b775-8bdcadac672c",
+    "title": "Staff Software Engineer (Backend), Growth",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/791e023e-7009-40b0-b775-8bdcadac672c",
+    "postedAt": "2025-11-07T09:44:21.008+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-18e9888b-12a6-4ad2-9740-7b2255efdc45",
+    "title": "Engineering Manager, AI Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/18e9888b-12a6-4ad2-9740-7b2255efdc45",
+    "postedAt": "2025-10-14T02:21:25.787+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-739ae3d3-12ca-4f26-bd9a-a80a74c4b0e0",
+    "title": "Senior Frontend Engineer, Billing",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/739ae3d3-12ca-4f26-bd9a-a80a74c4b0e0",
+    "postedAt": "2025-10-09T07:04:29.511+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-752102de-b4c7-42e6-9220-52c508280708",
+    "title": "Senior / Software Engineer, Payments Team - API & Checkout Experience",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/752102de-b4c7-42e6-9220-52c508280708",
+    "postedAt": "2025-09-22T14:17:52.112+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-65c33a72-d6e5-4fe3-b39b-048b08e411e0",
+    "title": "Engineering Manager - IAM & Account Infrastructure",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/65c33a72-d6e5-4fe3-b39b-048b08e411e0",
+    "postedAt": "2025-09-15T07:24:31.036+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-f217b125-5639-4e88-befd-7b070cc1b701",
+    "title": "Engineering Lead, KYC",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/f217b125-5639-4e88-befd-7b070cc1b701",
+    "postedAt": "2025-09-09T04:24:16.367+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-25da333f-d040-4ef0-a765-c9dc74283bc5",
+    "title": "Engineering Lead/Manager, Billing",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/25da333f-d040-4ef0-a765-c9dc74283bc5",
+    "postedAt": "2025-08-27T03:48:11.419+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-1711508a-927f-48c2-b3ef-0a79ccd0299d",
+    "title": "Staff Software Engineer, Cards",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/1711508a-927f-48c2-b3ef-0a79ccd0299d",
+    "postedAt": "2025-08-20T04:13:10.226+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-45b65dc1-ecf4-4d10-9e7e-61f433dbd81a",
+    "title": "Engineering Lead, Core Banking",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/45b65dc1-ecf4-4d10-9e7e-61f433dbd81a",
+    "postedAt": "2025-08-14T05:07:52.495+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-8323ef8a-a728-41a6-a82d-addb2d645a85",
+    "title": "Engineering Manager, Core Banking ",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/8323ef8a-a728-41a6-a82d-addb2d645a85",
+    "postedAt": "2025-08-14T05:06:38.662+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-6c29e112-c94c-4346-9721-283aa4f4bcdc",
+    "title": "Senior Software Engineer, Lending",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/6c29e112-c94c-4346-9721-283aa4f4bcdc",
+    "postedAt": "2025-07-15T07:55:28.710+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-078de7a5-2f5b-4420-ba5c-8d82a2110548",
+    "title": "Staff Software Engineer, Lending",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/078de7a5-2f5b-4420-ba5c-8d82a2110548",
+    "postedAt": "2025-07-15T07:54:12.731+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-5ac353b4-e2bb-4db4-b66b-edb0c2188abb",
+    "title": "Senior Software Engineer, Edge Team",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/5ac353b4-e2bb-4db4-b66b-edb0c2188abb",
+    "postedAt": "2025-06-30T05:12:56.723+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-e0dc766a-3bb4-438f-b618-1e4d06de50df",
+    "title": "Staff Software Engineer, Tech Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/e0dc766a-3bb4-438f-b618-1e4d06de50df",
+    "postedAt": "2025-06-25T07:38:15.279+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-b08cde0c-6e59-4625-9a1a-0b2e1465a579",
+    "title": "Senior Software Engineer, Backend - Onboarding",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b08cde0c-6e59-4625-9a1a-0b2e1465a579",
+    "postedAt": "2025-06-17T03:23:29.005+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-8208fe0d-6aab-4783-98ff-3bf3c393d67e",
+    "title": "(Senior) Software Engineer, Backend - Financial Platform ",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/8208fe0d-6aab-4783-98ff-3bf3c393d67e",
+    "postedAt": "2025-06-11T09:21:00.820+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-6e57e9b8-3649-42e8-afb7-58706fa53402",
+    "title": "Software Engineer, Frontend - Tech Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/6e57e9b8-3649-42e8-afb7-58706fa53402",
+    "postedAt": "2025-04-22T03:18:21.659+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-50b6af4d-2184-4572-b8bb-b05c3a83343c",
+    "title": "Senior Software Engineer, Developer Experience",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/50b6af4d-2184-4572-b8bb-b05c3a83343c",
+    "postedAt": "2025-04-10T04:27:42.768+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-b25fabff-0118-4393-9b48-844ce4421d8e",
+    "title": "Senior Software Engineer, Backend - GTPN Platform (Relocate to Singapore)",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/b25fabff-0118-4393-9b48-844ce4421d8e",
+    "postedAt": "2025-04-01T02:05:24.629+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-5cbee469-a6aa-47cd-9db3-36c93c5a4256",
+    "title": "Senior Software Engineer, GTPN Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/5cbee469-a6aa-47cd-9db3-36c93c5a4256",
+    "postedAt": "2025-02-18T08:20:16.297+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-f3fc61db-f010-4a90-8620-8b211241e0ff",
+    "title": "Software Engineer, GTPN Platform",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/f3fc61db-f010-4a90-8620-8b211241e0ff",
+    "postedAt": "2025-01-23T07:19:42.173+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-08f2e2b1-e248-4d2c-806a-41ae477ecd11",
+    "title": "Product Lead, Payment Fraud",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/08f2e2b1-e248-4d2c-806a-41ae477ecd11",
+    "postedAt": "2025-01-09T06:06:32.923+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-6b1be488-4a24-4f94-9baf-8ef281613b9a",
+    "title": "Engineering Lead / Staff Engineer, Infrastructure (Data &AI)",
+    "company": "Airwallex",
+    "location": "SG - Singapore",
+    "link": "https://jobs.ashbyhq.com/airwallex/6b1be488-4a24-4f94-9baf-8ef281613b9a",
+    "postedAt": "2024-11-06T03:25:36.759+00:00",
+    "region": "Singapore"
   }
 ]

@@ -17,33 +17,55 @@ const KEYWORDS = [
   'Fullstack developer', 
   'React',
   'Software Engineer',
-  'Developer'
+  'Developer',
+  'Product Manager',
+  'Marketing'
 ];
 
 const REGIONS = ['China', 'Hong Kong', 'Singapore', 'Sweden'];
 
 const COMPANIES = [
-  { name: 'Airwallex', platform: 'greenhouse', token: 'airwallex' },
+  // Existing & Working
+  { name: 'Airwallex', platform: 'ashby', token: 'airwallex' },
   { name: 'Grab', platform: 'smartrecruiters', token: 'grab' },
-  { name: 'Stripe', platform: 'lever', token: 'stripe' },
-  { name: 'Wise', platform: 'greenhouse', token: 'wise' },
-  { name: 'Checkout.com', platform: 'greenhouse', token: 'checkout' },
-  { name: 'Canva', platform: 'greenhouse', token: 'canva' },
+  { name: 'Checkout.com', platform: 'ashby', token: 'checkout.com' },
+  { name: 'Canva', platform: 'smartrecruiters', token: 'canva' },
   { name: 'Roblox', platform: 'greenhouse', token: 'roblox' },
   { name: 'Unity', platform: 'greenhouse', token: 'unity3d' },
-  { name: 'Spotify', platform: 'greenhouse', token: 'spotify' },
   { name: 'ByteDance', platform: 'bytedance', token: 'bytedance' },
   { name: 'TikTok', platform: 'bytedance', token: 'tiktok' },
-  { name: 'Lalamove', platform: 'lever', token: 'lalamove' },
-  { name: 'Klook', platform: 'greenhouse', token: 'klook' },
   { name: 'Agoda', platform: 'greenhouse', token: 'agoda' },
-  { name: 'Skyscanner', platform: 'smartrecruiters', token: 'skyscanner' },
-  { name: 'Lego Group', platform: 'greenhouse', token: 'thelegogroup' },
+  { name: 'Skyscanner', platform: 'greenhouse', token: 'skyscanner' },
+  { name: 'Scopely', platform: 'greenhouse', token: 'scopely' },
+  { name: 'Marshall', platform: 'teamtailor-feed', token: 'marshall', domain: 'careers.marshall.com' },
+  { name: 'Duolingo', platform: 'greenhouse', token: 'duolingo' },
+  { name: 'Liftoff', platform: 'greenhouse', token: 'liftoff' },
+  { name: 'Riot Games', platform: 'greenhouse', token: 'riotgames' },
+  { name: 'Nex', platform: 'greenhouse', token: 'nex' },
+  { name: 'Casetify', platform: 'greenhouse', token: 'casetify' },
+  { name: 'Epic Games', platform: 'greenhouse', token: 'epicgames' },
+  { name: 'Adyen', platform: 'greenhouse', token: 'adyen' },
+  { name: 'NetEase Games', platform: 'greenhouse', token: 'neteasegames' },
+  
+  // Greenhouse candidates
+  { name: 'Supercell', platform: 'greenhouse', token: 'supercell' },
+  { name: 'Dramabox', platform: 'greenhouse', token: 'storymatrix' },
+  { name: 'Wise', platform: 'greenhouse', token: 'wise' },
+  { name: 'Spotify', platform: 'greenhouse', token: 'spotify' },
+  { name: 'Ascenda', platform: 'greenhouse', token: 'ascendaloyalty' },
+  { name: 'Shopline', platform: 'greenhouse', token: 'shopline' },
+  { name: 'Youtrip', platform: 'greenhouse', token: 'youtrip' },
+  
+  // SmartRecruiters
+  { name: 'Ubisoft', platform: 'smartrecruiters', token: 'Ubisoft' },
+  { name: 'Payoneer', platform: 'smartrecruiters', token: 'Payoneer' },
 ];
 
 const axiosInstance = axios.create({
   headers: {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
   }
 });
 
@@ -61,26 +83,9 @@ async function fetchGreenhouseJobs(company) {
       region: detectRegion(job.location.name)
     }));
   } catch (error) {
-    console.error(`Error fetching Greenhouse jobs for ${company.name}:`, error.message);
-    return [];
-  }
-}
-
-async function fetchLeverJobs(company) {
-  try {
-    const response = await axiosInstance.get(`https://api.lever.co/v0/postings/${company.token}`);
-    if (!Array.isArray(response.data)) return [];
-    return response.data.map(job => ({
-      id: `lv-${job.id}`,
-      title: job.text,
-      company: company.name,
-      location: job.categories.location,
-      link: job.hostedUrl,
-      postedAt: new Date(job.createdAt).toISOString(),
-      region: detectRegion(job.categories.location)
-    }));
-  } catch (error) {
-    console.error(`Error fetching Lever jobs for ${company.name}:`, error.message);
+    if (error.response && error.response.status !== 404) {
+      console.error(`Error fetching Greenhouse jobs for ${company.name}:`, error.message);
+    }
     return [];
   }
 }
@@ -99,14 +104,15 @@ async function fetchSmartRecruitersJobs(company) {
       region: detectRegion(`${job.location.city}, ${job.location.country}`)
     }));
   } catch (error) {
-    console.error(`Error fetching SmartRecruiters jobs for ${company.name}:`, error.message);
+    if (error.response && error.response.status !== 404) {
+      console.error(`Error fetching SmartRecruiters jobs for ${company.name}:`, error.message);
+    }
     return [];
   }
 }
 
 async function fetchByteDanceJobs(company) {
   try {
-    // portal_type 2 is for experienced hires
     const response = await axiosInstance.get(`https://jobs.bytedance.com/api/v1/search/job/posts?limit=100&portal_type=2`);
     if (!response.data.data || !response.data.data.list) return [];
     return response.data.data.list.map(job => ({
@@ -124,7 +130,48 @@ async function fetchByteDanceJobs(company) {
   }
 }
 
+async function fetchAshbyJobs(company) {
+  try {
+    const response = await axiosInstance.get(`https://api.ashbyhq.com/posting-api/job-board/${company.token}`);
+    if (!response.data.jobs) return [];
+    return response.data.jobs.map(job => ({
+      id: `as-${job.id}`,
+      title: job.title,
+      company: company.name,
+      location: job.location,
+      link: job.jobUrl,
+      postedAt: job.publishedAt,
+      region: detectRegion(job.location)
+    }));
+  } catch (error) {
+    if (error.response && error.response.status !== 404) {
+      console.error(`Error fetching Ashby jobs for ${company.name}:`, error.message);
+    }
+    return [];
+  }
+}
 
+async function fetchTeamtailorFeedJobs(company) {
+  try {
+    const url = company.domain ? `https://${company.domain}/jobs.json` : `https://${company.token}.teamtailor.com/jobs.json`;
+    const response = await axiosInstance.get(url);
+    if (!response.data.items) return [];
+    return response.data.items.map(job => ({
+      id: `tt-${job.id}`,
+      title: job.title,
+      company: company.name,
+      location: 'Sweden', // Marshall is primarily SE, feed is sparse
+      link: job.url,
+      postedAt: job.date_published,
+      region: 'Sweden'
+    }));
+  } catch (error) {
+    if (error.response && error.response.status !== 404) {
+      console.error(`Error fetching Teamtailor feed jobs for ${company.name}:`, error.message);
+    }
+    return [];
+  }
+}
 
 function detectRegion(location) {
   if (!location) return 'Other';
@@ -149,12 +196,14 @@ async function main() {
     let jobs = [];
     if (company.platform === 'greenhouse') {
       jobs = await fetchGreenhouseJobs(company);
-    } else if (company.platform === 'lever') {
-      jobs = await fetchLeverJobs(company);
     } else if (company.platform === 'smartrecruiters') {
       jobs = await fetchSmartRecruitersJobs(company);
     } else if (company.platform === 'bytedance') {
       jobs = await fetchByteDanceJobs(company);
+    } else if (company.platform === 'ashby') {
+      jobs = await fetchAshbyJobs(company);
+    } else if (company.platform === 'teamtailor-feed') {
+      jobs = await fetchTeamtailorFeedJobs(company);
     }
     
     const filteredJobs = jobs.filter(job => 
