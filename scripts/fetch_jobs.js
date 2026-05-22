@@ -58,15 +58,23 @@ const COMPANIES = [
   // RMK / SuccessFactors HTML Scrape
   { name: 'Volvo Group', platform: 'rmk', domain: 'jobs.volvogroup.com' },
   { name: 'Assa Abloy', platform: 'rmk', domain: 'assaabloy.jobs2web.com' },
+  { name: 'Scania', platform: 'rmk', domain: 'jobs.scania.com' },
+
+  // Algolia (Atlas Copco)
+  { name: 'Atlas Copco', platform: 'algolia', appId: '9AX0H7NCCX', apiKey: '4415f5d1228e3b2da6ac78d10c41e93c', index: 'GROUP_EN_dateDesc' },
 
   // Phenom People Widgets
   { name: 'ABB', platform: 'phenom', domain: 'careers.abb', categories: ['Engineering', 'Information Systems'] },
   { name: 'Electrolux', platform: 'phenom', domain: 'career.electroluxgroup.com', categories: ['Tech'] },
 
-  // Ashby (Confirmed Correct)
+  // Ashby
   { name: 'Supercell', platform: 'ashby', token: 'supercell' },
 
+  // Jibe / Booking
+  { name: 'Booking.com', platform: 'booking', token: 'workingatbooking' },
+
   // Greenhouse candidates
+  { name: 'Supercell_Old', platform: 'greenhouse', token: 'supercell' }, // To be safe
   { name: 'Dramabox', platform: 'greenhouse', token: 'storymatrix' },
   { name: 'Wise', platform: 'greenhouse', token: 'wise' },
   { name: 'Spotify', platform: 'greenhouse', token: 'spotify' },
@@ -205,8 +213,6 @@ async function fetchWorkdayV2Jobs(company) {
   const baseUrl = `https://${company.tenant}.${company.sub}.myworkdayjobs.com`;
   const url = `${baseUrl}/wday/cxs/${company.tenant}/${company.token}/jobs`;
 
-  console.log(`Starting forced paginated fetch for ${company.name}...`);
-
   try {
     const initialResponse = await axiosInstance.post(url, { appliedFacets: {}, limit: limit, offset: 0, searchText: "" }, {
       headers: { 'Origin': baseUrl, 'Referer': `${baseUrl}/${company.token}` }
@@ -214,8 +220,6 @@ async function fetchWorkdayV2Jobs(company) {
 
     if (!initialResponse.data || initialResponse.data.total === undefined) return [];
     const initialTotal = initialResponse.data.total;
-    console.log(`  Total: ${initialTotal}`);
-    
     if (initialResponse.data.jobPostings) allPostings = allPostings.concat(initialResponse.data.jobPostings);
 
     let offset = limit;
@@ -279,7 +283,6 @@ async function fetchRMKJobs(company) {
 }
 
 async function fetchPhenomJobs(company) {
-  const allPhenom = [];
   try {
     const url = `https://${company.domain}/widgets`;
     const response = await axiosInstance.post(url, {
@@ -311,7 +314,52 @@ async function fetchPhenomJobs(company) {
       }));
     }
   } catch (error) {}
-  return allPhenom;
+  return [];
+}
+
+async function fetchBookingJobs(company) {
+  try {
+    const url = `https://jobs.booking.com/api/jobs?keywords=&locations=Shanghai,Shanghai,China%7CSingapore,Central%20Singapore,Singapore&page=1&sortBy=relevance&descending=false&internal=false&domain=workingatbooking.jibeapply.com`;
+    const response = await axiosInstance.get(url, { headers: { 'Referer': 'https://jobs.booking.com/booking/jobs' } });
+    if (response.data?.jobs) {
+      return response.data.jobs.map(job => ({
+        id: `bk-${job.data.req_id}`,
+        title: job.data.title,
+        company: company.name,
+        location: job.data.full_location,
+        link: `https://jobs.booking.com/booking/jobs/${job.data.slug}`,
+        postedAt: job.data.create_date,
+        region: detectRegion(job.data.full_location)
+      }));
+    }
+  } catch (error) {}
+  return [];
+}
+
+async function fetchAlgoliaJobs(company) {
+  try {
+    const url = `https://${company.appId.toLowerCase()}-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.25.2)&x-algolia-api-key=${company.apiKey}&x-algolia-application-id=${company.appId}`;
+    const response = await axiosInstance.post(url, {
+      requests: [{
+        indexName: company.index,
+        params: `facetFilters=%5B%5B%22data.country%3AChina%22%2C%22data.country%3AHong%20Kong%22%2C%22data.country%3ASingapore%22%2C%22data.country%3ASweden%22%5D%5D&filters=(data.tagsTranslated%3A%22Job%20vacancy%22)&hitsPerPage=100`
+      }]
+    });
+    if (response.data?.results?.[0]?.hits) {
+      return response.data.results[0].hits.map(hit => ({
+        id: `alg-${hit.objectID}`,
+        title: hit.data.title,
+        company: company.name,
+        location: hit.data.city + ", " + hit.data.country,
+        link: hit.data.externalPath,
+        postedAt: hit.data.postingDate,
+        region: detectRegion(hit.data.country)
+      }));
+    }
+  } catch (error) {
+    console.error(`Error fetching Algolia jobs for ${company.name}:`, error.message);
+  }
+  return [];
 }
 
 function detectRegion(location) {
@@ -344,9 +392,11 @@ async function main() {
     else if (company.platform === 'workday-v2') jobs = await fetchWorkdayV2Jobs(company);
     else if (company.platform === 'rmk') jobs = await fetchRMKJobs(company);
     else if (company.platform === 'phenom') jobs = await fetchPhenomJobs(company);
+    else if (company.platform === 'booking') jobs = await fetchBookingJobs(company);
+    else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
-    console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched.`);
+    console.log(`  Summary: ${jobs.length} scanned, ${filteredJobs.length} matched.`);
     allJobs = allJobs.concat(filteredJobs);
   }
 

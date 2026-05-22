@@ -299,6 +299,27 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore'],
     offices: ['Stockholm', 'Shanghai', 'Singapore'],
     careerUrl: 'https://career.electroluxgroup.com/'
+  },
+  'Booking.com': {
+    name: 'Booking.com',
+    description: 'One of the world\'s leading digital travel companies, making it easier for everyone to experience the world.',
+    regions: ['China', 'Singapore'],
+    offices: ['Shanghai', 'Singapore', 'Amsterdam'],
+    careerUrl: 'https://jobs.booking.com/'
+  },
+  'Atlas Copco': {
+    name: 'Atlas Copco',
+    description: 'A world-leading provider of sustainable productivity solutions, including compressors, vacuum solutions and industrial tools.',
+    regions: ['Sweden', 'China', 'Singapore'],
+    offices: ['Stockholm', 'Nacka', 'Shanghai', 'Singapore'],
+    careerUrl: 'https://www.atlascopcogroup.com/en/careers/jobs'
+  },
+  'Assa Abloy': {
+    name: 'Assa Abloy',
+    description: 'The global leader in access solutions, providing locks, doors, gates and entrance automation.',
+    regions: ['Sweden', 'China', 'Singapore', 'Hong Kong'],
+    offices: ['Stockholm', 'Shanghai', 'Singapore', 'Hong Kong'],
+    careerUrl: 'https://www.assaabloy.com/group/en/career'
   }
 };
 
@@ -308,7 +329,8 @@ const TRACKED_COMPANIES = [
   'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
   'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
   'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
-  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook', 'ABB', 'Axis Communications', 'Electrolux'
+  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook', 'ABB', 
+  'Axis Communications', 'Electrolux', 'Booking.com', 'Atlas Copco', 'Assa Abloy'
 ];
 
 function App() {
