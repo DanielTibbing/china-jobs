@@ -27,7 +27,7 @@ export function CompaniesView({ searchTerm, activeJobs, setSelectedCompany }: Co
 
   return (
     <div className="space-y-6">
-      <div className="flex justify-end items-center gap-2 mb-2">
+      <div className="sticky top-[184px] md:top-[136px] z-10 bg-gray-50/95 backdrop-blur-sm py-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 transition-all flex justify-end">
         <div className="bg-white border border-gray-200 rounded-xl p-1 flex shadow-sm">
           <button
             onClick={() => setViewMode('grid')}
