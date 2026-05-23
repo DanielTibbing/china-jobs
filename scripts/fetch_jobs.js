@@ -78,6 +78,8 @@ const COMPANIES = [
 
   // Greenhouse candidates
   { name: 'Supercell_Old', platform: 'greenhouse', token: 'supercell' }, // To be safe
+  { name: 'Moonton', platform: 'greenhouse', token: 'moonton' },
+  { name: 'EF', platform: 'greenhouse', token: 'efeducationfirst' },
   { name: 'Dramabox', platform: 'greenhouse', token: 'storymatrix' },
   { name: 'Wise', platform: 'greenhouse', token: 'wise' },
   { name: 'Spotify', platform: 'greenhouse', token: 'spotify' },
@@ -85,6 +87,9 @@ const COMPANIES = [
   { name: 'Shopline', platform: 'greenhouse', token: 'shopline' },
   { name: 'Youtrip', platform: 'greenhouse', token: 'youtrip' },
   
+  // Workday
+  { name: 'Lego Group', platform: 'workday-v2', token: 'Lego_Careers', tenant: 'lego', sub: 'wd3' },
+
   // SmartRecruiters
   { name: 'Ubisoft', platform: 'smartrecruiters', token: 'Ubisoft' },
 ];

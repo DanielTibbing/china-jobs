@@ -314,6 +314,13 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     offices: ['Stockholm', 'Nacka', 'Shanghai', 'Singapore'],
     careerUrl: 'https://www.atlascopcogroup.com/en/careers/jobs'
   },
+  'Volvo Group': {
+    name: 'Volvo Group',
+    description: 'A world-leading provider of transport solutions, including trucks, buses, engines, construction equipment and financial services.',
+    regions: ['Sweden', 'China', 'Singapore'],
+    offices: ['Gothenburg', 'Stockholm', 'Shanghai', 'Singapore'],
+    careerUrl: 'https://volvogroup.com/en/careers.html'
+  },
   'Assa Abloy': {
     name: 'Assa Abloy',
     description: 'The global leader in access solutions, providing locks, doors, gates and entrance automation.',
@@ -330,7 +337,7 @@ const TRACKED_COMPANIES = [
   'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
   'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
   'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook', 'ABB', 
-  'Axis Communications', 'Electrolux', 'Booking.com', 'Atlas Copco', 'Assa Abloy'
+  'Axis Communications', 'Electrolux', 'Booking.com', 'Atlas Copco', 'Assa Abloy', 'Volvo Group'
 ];
 
 function App() {

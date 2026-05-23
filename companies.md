@@ -1,56 +1,60 @@
-EF
-On running
-ABB 
-Scania china
-Roblox
-Scopely
-Supercell
-EA
-Ubisoft 
-Razer 
-Jabra
-Marshall
-Dramabox
-Atlas Copco
-Electrolux 
-Volvo
-Booking
-Traveloka
-Checkout.com
-Payoneer
-Axis communications 
-Duolingo
-Liftoff
-Riot
-Lego group
-Lazada
-Airwallex
-Grab
-Zalando
-Philips
-Youtrip
-Nex
-Casetify
-Canva
-Trip.com
-Fliggy 
-Agoda 
-Assa abloy
-Klook
-Skyscanner
-AirAsia
-https://www.sea.com/careers
-Epic games
-Moonton
-Ascenda
-Ayden
-Lalamove
-Stripe
-Wise
-Shopline
-Airwallex
-Tiktok
-Bytedance
-Ant 
-Tencent
-Netease
+# Tracked Companies
+* ABB
+* Adyen
+* Agoda
+* Airwallex
+* Assa Abloy
+* Ascenda
+* Atlas Copco
+* Axis Communications
+* Booking.com
+* ByteDance
+* Canva
+* Casetify
+* Checkout.com
+* Dramabox
+* Duolingo
+* EF
+* Electrolux
+* Epic Games
+* Grab
+* Klook
+* Lego Group
+* Liftoff
+* Marshall
+* Moonton
+* NetEase Games
+* Nex
+* On Running
+* Payoneer
+* Razer
+* Riot Games
+* Roblox
+* Scania
+* Scopely
+* Skyscanner
+* Shopline
+* Spotify
+* Supercell
+* TikTok
+* Traveloka
+* Ubisoft
+* Unity
+* Volvo Group
+* Wise
+* Youtrip
+
+# Pending Integration
+* AirAsia
+* Ant Group
+* EA (Electronic Arts)
+* Fliggy
+* Jabra
+* Lalamove
+* Lazada
+* Philips
+* Sea (Shopee)
+* Stripe
+* Tencent
+* Trip.com
+* Zalando
