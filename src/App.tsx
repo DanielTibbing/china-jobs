@@ -1,5 +1,17 @@
 import { useState, useEffect, useMemo } from 'react'
-import { Search, MapPin, Building2, Briefcase, ExternalLink, RefreshCw, Filter, History, Clock, Globe } from 'lucide-react'
+import { HashRouter, Routes, Route, Link, useLocation, useNavigate, Navigate } from 'react-router-dom'
+import { 
+  Search, 
+  MapPin, 
+  ExternalLink, 
+  Clock, 
+  Building2, 
+  Briefcase, 
+  History, 
+  RefreshCw,
+  Filter,
+  Globe
+} from 'lucide-react'
 
 interface Job {
   id: string;
@@ -375,15 +387,15 @@ const COMPANY_DETAILS: Record<string, CompanyInfo> = {
   }
 };
 
-// All companies tracked in the scraper
-const TRACKED_COMPANIES = [
-  'Airwallex', 'Grab', 'Checkout.com', 'Canva', 'Roblox', 'Unity', 'ByteDance', 'TikTok', 
-  'Agoda', 'Skyscanner', 'Scopely', 'Marshall', 'Duolingo', 'Liftoff', 'Riot Games', 
-  'Nex', 'Casetify', 'Epic Games', 'Adyen', 'NetEase Games', 'Supercell', 'Dramabox', 
-  'Wise', 'Spotify', 'Ascenda', 'Shopline', 'Youtrip', 'Ubisoft', 'Payoneer', 'Moonton',
-  'EF', 'Scania', 'Lego Group', 'On Running', 'Traveloka', 'Razer', 'Klook', 'ABB', 
-  'Axis Communications', 'Electrolux', 'Booking.com', 'Atlas Copco', 'Assa Abloy', 'Volvo Group'
-];
+const TRACKED_COMPANIES = Object.keys(COMPANY_DETAILS).sort();
+
+const REGION_FLAGS: Record<string, string> = {
+  'China': '🇨🇳',
+  'Hong Kong': '🇭🇰',
+  'Singapore': '🇸🇬',
+  'Sweden': '🇸🇪',
+  'All': '🌎'
+}
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('')
@@ -394,7 +406,6 @@ function App() {
   const [seenJobIds, setSeenJobIds] = useState<Set<string>>(new Set())
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [currentView, setCurrentView] = useState<'active' | 'history' | 'companies'>('active')
 
   useEffect(() => {
     const savedSeen = localStorage.getItem('seen_job_ids')
@@ -441,9 +452,7 @@ function App() {
     return ['All', ...Array.from(unique).sort()]
   }, [activeJobs])
 
-  const filteredJobs = useMemo(() => {
-    const source = currentView === 'active' ? activeJobs : removedJobs
-    if (currentView === 'companies') return []
+  const filteredJobs = (source: Job[]) => {
     return source.filter(job => {
       const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                            job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -452,318 +461,381 @@ function App() {
       const matchesCompany = selectedCompany === 'All' || job.company === selectedCompany
       return matchesSearch && matchesRegion && matchesCompany
     })
-  }, [activeJobs, removedJobs, currentView, searchTerm, selectedRegion, selectedCompany])
-
-  const REGION_FLAGS: Record<string, string> = {
-    'China': '🇨🇳',
-    'Hong Kong': '🇭🇰',
-    'Singapore': '🇸🇬',
-    'Sweden': '🇸🇪',
-    'All': '🌎'
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2">
-                <div className="bg-blue-600 p-1.5 rounded-lg">
-                  <Briefcase className="h-5 w-5 text-white" />
-                </div>
-                <h1 className="text-2xl font-bold text-gray-900 tracking-tight cursor-pointer" onClick={() => setCurrentView('active')}>
-                  China-Nordic Jobs
-                </h1>
-              </div>
-              <p className="text-sm text-gray-500 mt-1 italic">Tracking global tech roles for the China-Nordic corridor</p>
-            </div>
-            
-            <div className="flex flex-1 max-w-md gap-2">
-              <div className="relative flex-1">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Search className="h-5 w-5 text-gray-400" />
-                </div>
-                <input
-                  type="text"
-                  className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-xl leading-5 bg-gray-50 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition duration-150 ease-in-out"
-                  placeholder={currentView === 'companies' ? "Search companies..." : "Search roles..."}
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                />
-              </div>
-            </div>
-          </div>
+    <HashRouter>
+      <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+        <Header 
+          searchTerm={searchTerm} 
+          setSearchTerm={setSearchTerm} 
+          setSelectedCompany={setSelectedCompany}
+        />
 
-          <div className="flex items-center gap-1 mt-6 border-b border-gray-100">
-            <button
-              onClick={() => {setCurrentView('active'); setSelectedCompany('All')}}
-              className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 ${
-                currentView === 'active' 
-                ? 'border-blue-600 text-blue-600' 
-                : 'border-transparent text-gray-400 hover:text-gray-600'
-              }`}
-            >
-              <Briefcase className="h-4 w-4" />
-              Active Jobs
-            </button>
-            <button
-              onClick={() => {setCurrentView('history'); setSelectedCompany('All')}}
-              className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 ${
-                currentView === 'history' 
-                ? 'border-orange-500 text-orange-600' 
-                : 'border-transparent text-gray-400 hover:text-gray-600'
-              }`}
-            >
-              <History className="h-4 w-4" />
-              History
-            </button>
-            <button
-              onClick={() => setCurrentView('companies')}
-              className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 ${
-                currentView === 'companies' 
-                ? 'border-purple-600 text-purple-600' 
-                : 'border-transparent text-gray-400 hover:text-gray-600'
-              }`}
-            >
-              <Building2 className="h-4 w-4" />
-              Companies
-            </button>
+        <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <Routes>
+            <Route path="/" element={
+              <JobsView 
+                loading={loading}
+                error={error}
+                jobs={filteredJobs(activeJobs)}
+                selectedRegion={selectedRegion}
+                setSelectedRegion={setSelectedRegion}
+                selectedCompany={selectedCompany}
+                setSelectedCompany={setSelectedCompany}
+                companiesFromJobs={companiesFromJobs}
+                seenJobIds={seenJobIds}
+                currentView="active"
+              />
+            } />
+            <Route path="/history" element={
+              <JobsView 
+                loading={loading}
+                error={error}
+                jobs={filteredJobs(removedJobs)}
+                selectedRegion={selectedRegion}
+                setSelectedRegion={setSelectedRegion}
+                selectedCompany={selectedCompany}
+                setSelectedCompany={setSelectedCompany}
+                companiesFromJobs={companiesFromJobs}
+                seenJobIds={seenJobIds}
+                currentView="history"
+              />
+            } />
+            <Route path="/companies" element={
+              <CompaniesView 
+                searchTerm={searchTerm}
+                activeJobs={activeJobs}
+                setSelectedCompany={setSelectedCompany}
+              />
+            } />
+            <Route path="*" element={<Navigate to="/" replace />} />
+          </Routes>
+        </main>
+
+        <Footer activeCount={activeJobs.length} removedCount={removedJobs.length} />
+      </div>
+    </HashRouter>
+  )
+}
+
+function Header({ searchTerm, setSearchTerm, setSelectedCompany }: any) {
+  const { pathname } = useLocation();
+  
+  return (
+    <header className="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <Link to="/" onClick={() => setSelectedCompany('All')} className="flex items-center gap-2 group">
+            <div className="bg-blue-600 p-1.5 rounded-lg group-hover:bg-blue-700 transition-colors">
+              <Briefcase className="h-5 w-5 text-white" />
+            </div>
+            <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
+              China-Nordic Jobs
+            </h1>
+          </Link>
+          
+          <div className="flex flex-1 max-w-md gap-2">
+            <div className="relative flex-1">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Search className="h-5 w-5 text-gray-400" />
+              </div>
+              <input
+                type="text"
+                className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 rounded-xl leading-5 bg-gray-50 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition duration-150 ease-in-out"
+                placeholder={pathname === '/companies' ? "Search companies..." : "Search roles..."}
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
           </div>
         </div>
-      </header>
 
-      <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {currentView !== 'companies' ? (
-          <>
-            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
-              <div className="flex flex-wrap gap-2">
-                {Object.keys(REGION_FLAGS).map((region) => (
-                  <button
-                    key={region}
-                    onClick={() => setSelectedRegion(region)}
-                    className={`px-4 py-2 rounded-full text-sm font-bold border transition duration-150 ease-in-out flex items-center gap-2 ${
-                      selectedRegion === region
-                        ? 'bg-gray-900 border-gray-900 text-white shadow-sm'
-                        : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-gray-300'
-                    }`}
-                  >
-                    <span className="text-base leading-none">{REGION_FLAGS[region]}</span>
-                    {region}
-                  </button>
-                ))}
-              </div>
+        <div className="flex items-center gap-1 mt-6 border-b border-gray-100">
+          <Link
+            to="/"
+            onClick={() => setSelectedCompany('All')}
+            className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 ${
+              pathname === '/' 
+              ? 'border-blue-600 text-blue-600' 
+              : 'border-transparent text-gray-400 hover:text-gray-600'
+            }`}
+          >
+            <Briefcase className="h-4 w-4" />
+            Active Jobs
+          </Link>
+          <Link
+            to="/history"
+            onClick={() => setSelectedCompany('All')}
+            className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 ${
+              pathname === '/history' 
+              ? 'border-orange-500 text-orange-600' 
+              : 'border-transparent text-gray-400 hover:text-gray-600'
+            }`}
+          >
+            <History className="h-4 w-4" />
+            History
+          </Link>
+          <Link
+            to="/companies"
+            className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 ${
+              pathname === '/companies' 
+              ? 'border-purple-600 text-purple-600' 
+              : 'border-transparent text-gray-400 hover:text-gray-600'
+            }`}
+          >
+            <Building2 className="h-4 w-4" />
+            Companies
+          </Link>
+        </div>
+      </div>
+    </header>
+  )
+}
 
-              <div className="relative w-full md:w-64">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                  <Filter className="h-4 w-4 text-gray-400" />
-                </div>
-                <select
-                  value={selectedCompany}
-                  onChange={(e) => setSelectedCompany(e.target.value)}
-                  className="block w-full pl-10 pr-10 py-2.5 text-sm border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 rounded-xl bg-white shadow-sm appearance-none border font-bold text-gray-700"
-                >
-                  <option value="All">All Companies</option>
-                  {companiesFromJobs.filter(c => c !== 'All').map(company => (
-                    <option key={company} value={company}>
-                      {company}
-                    </option>
-                  ))}
-                </select>
-                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-400">
-                  <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                </div>
-              </div>
-            </div>
+function JobsView({ 
+  loading, error, jobs, selectedRegion, setSelectedRegion, 
+  selectedCompany, setSelectedCompany, companiesFromJobs, seenJobIds, currentView 
+}: any) {
+  const navigate = useNavigate();
 
-            <div className="space-y-4">
-              {loading ? (
-                <div className="text-center py-20"><RefreshCw className="mx-auto h-12 w-12 text-blue-500 animate-spin mb-4" /></div>
-              ) : error ? (
-                <div className="text-center py-20 bg-red-50 rounded-2xl border-2 border-red-100">
-                  <p className="text-red-600 font-bold">{error}</p>
-                </div>
-              ) : filteredJobs.length === 0 ? (
-                <div className="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200">
-                  <Briefcase className="mx-auto h-12 w-12 text-gray-300 mb-4" />
-                  <h3 className="text-lg font-bold">No jobs found</h3>
-                </div>
-              ) : (
-                filteredJobs.map((job) => {
-                  const isNew = currentView === 'active' && !seenJobIds.has(job.id);
-                  return (
-                    <div key={job.id} className={`bg-white p-6 rounded-2xl border-2 transition-all duration-200 group relative overflow-hidden ${currentView === 'history' ? 'border-gray-100 opacity-80 grayscale-[0.5]' : 'border-gray-100 hover:border-blue-100 shadow-sm hover:shadow-md'}`}>
-                      {isNew && <div className="absolute top-0 left-0"><div className="bg-blue-600 text-white text-[10px] font-black uppercase px-6 py-1 -rotate-45 -translate-x-6 translate-y-1 shadow-sm">New</div></div>}
-                      <div className="flex flex-col sm:flex-row justify-between items-start gap-5">
-                        <div className="flex-1 flex gap-5">
-                          <div className={`hidden sm:flex items-center justify-center w-14 h-14 rounded-xl border border-gray-100 overflow-hidden bg-white shrink-0 ${currentView === 'history' ? 'opacity-50' : ''}`}>
-                            {COMPANY_DETAILS[job.company]?.logoDomain ? (
-                              <img 
-                                src={`https://logo.clearbit.com/${COMPANY_DETAILS[job.company].logoDomain}`} 
-                                alt={`${job.company} logo`}
-                                className="max-w-full max-h-full object-contain p-1"
-                                onError={(e) => {
-                                  (e.target as HTMLImageElement).onerror = null;
-                                  (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(job.company) + '&background=random';
-                                }}
-                              />
-                            ) : (
-                              <Building2 className="h-6 w-6 text-gray-300" />
-                            )}
-                          </div>
-                          <div className="flex-1">
-                            <h2 className={`text-xl font-black leading-tight ${currentView === 'history' ? 'text-gray-700' : 'text-gray-900 group-hover:text-blue-600 transition-colors'}`}>{job.title}</h2>
-                            <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-sm text-gray-500 mt-4">
-                              <div className="flex items-center font-bold text-gray-700 cursor-pointer hover:text-blue-600" onClick={() => {setSelectedCompany(job.company); setCurrentView('active'); window.scrollTo(0,0)}}>
-                                <Building2 className="h-4 w-4 mr-2 text-gray-400 sm:hidden" />
-                                {job.company}
-                              </div>
-                              <div className="flex items-center font-medium"><MapPin className="h-4 w-4 mr-2 text-gray-400" />{job.location}</div>
-                              <div className="flex items-center text-gray-500 font-bold bg-gray-100 px-3 py-1 rounded-lg text-[11px] uppercase tracking-wider">
-                                <span className="mr-1.5 text-sm">{REGION_FLAGS[job.region] || '📍'}</span>{job.region}
-                              </div>
-                              <div className="flex items-center text-[11px] font-bold text-gray-400"><Clock className="h-3.5 w-3.5 mr-1.5" />{new Date(job.postedAt).toLocaleDateString()}</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-3 self-end sm:self-center">
-                          {currentView === 'active' ? (
-                            <a href={job.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-transparent text-sm font-black rounded-xl shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200">
-                              Apply <ExternalLink className="ml-2 h-4 w-4" />
-                            </a>
-                          ) : <div className="text-gray-400 text-xs font-bold uppercase italic px-4 py-2 bg-gray-50 rounded-lg">Expired</div>}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })
-              )}
-            </div>
-          </>
+  return (
+    <>
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+        <div className="flex flex-wrap gap-2">
+          {Object.keys(REGION_FLAGS).map((region) => (
+            <button
+              key={region}
+              onClick={() => setSelectedRegion(region)}
+              className={`px-4 py-2 rounded-full text-sm font-bold border transition duration-150 ease-in-out flex items-center gap-2 ${
+                selectedRegion === region
+                  ? 'bg-gray-900 border-gray-900 text-white shadow-sm'
+                  : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+              }`}
+            >
+              <span className="text-base leading-none">{REGION_FLAGS[region]}</span>
+              {region}
+            </button>
+          ))}
+        </div>
+
+        <div className="relative w-full md:w-64">
+          <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <Filter className="h-4 w-4 text-gray-400" />
+          </div>
+          <select
+            value={selectedCompany}
+            onChange={(e) => setSelectedCompany(e.target.value)}
+            className="block w-full pl-10 pr-10 py-2.5 text-sm border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 rounded-xl bg-white shadow-sm appearance-none border font-bold text-gray-700"
+          >
+            <option value="All">All Companies</option>
+            {companiesFromJobs.filter((c: any) => c !== 'All').map((company: any) => (
+              <option key={company} value={company}>
+                {company}
+              </option>
+            ))}
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-400">
+            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        {loading ? (
+          <div className="text-center py-20"><RefreshCw className="mx-auto h-12 w-12 text-blue-500 animate-spin mb-4" /></div>
+        ) : error ? (
+          <div className="text-center py-20 bg-red-50 rounded-2xl border-2 border-red-100">
+            <p className="text-red-600 font-bold">{error}</p>
+          </div>
+        ) : jobs.length === 0 ? (
+          <div className="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200">
+            <Briefcase className="mx-auto h-12 w-12 text-gray-300 mb-4" />
+            <h3 className="text-lg font-bold">No jobs found</h3>
+          </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {TRACKED_COMPANIES
-              .sort()
-              .filter(name => name.toLowerCase().includes(searchTerm.toLowerCase()))
-              .map((name) => {
-              const company = COMPANY_DETAILS[name] || {
-                name,
-                description: 'Technology company with global operations.',
-                regions: [],
-                offices: ['Global'],
-                careerUrl: '#'
-              };
-              const activeCount = activeJobs.filter(j => j.company === name).length;
-
-              return (
-                <div key={name} className="bg-white p-8 rounded-3xl border-2 border-gray-100 shadow-sm hover:border-purple-100 transition-all duration-200">
-                  <div className="flex justify-between items-start mb-6">
-                    <div className="bg-white border border-gray-100 p-2 rounded-2xl w-16 h-16 flex items-center justify-center overflow-hidden shadow-sm">
-                      {company.logoDomain ? (
+          jobs.map((job: any) => {
+            const isNew = currentView === 'active' && !seenJobIds.has(job.id);
+            return (
+              <div key={job.id} className={`bg-white p-6 rounded-2xl border-2 transition-all duration-200 group relative overflow-hidden ${currentView === 'history' ? 'border-gray-100 opacity-80 grayscale-[0.5]' : 'border-gray-100 hover:border-blue-100 shadow-sm hover:shadow-md'}`}>
+                {isNew && <div className="absolute top-0 left-0"><div className="bg-blue-600 text-white text-[10px] font-black uppercase px-6 py-1 -rotate-45 -translate-x-6 translate-y-1 shadow-sm">New</div></div>}
+                <div className="flex flex-col sm:flex-row justify-between items-start gap-5">
+                  <div className="flex-1 flex gap-5">
+                    <div className={`hidden sm:flex items-center justify-center w-14 h-14 rounded-xl border border-gray-100 overflow-hidden bg-white shrink-0 ${currentView === 'history' ? 'opacity-50' : ''}`}>
+                      {COMPANY_DETAILS[job.company]?.logoDomain ? (
                         <img 
-                          src={`https://logo.clearbit.com/${company.logoDomain}`} 
-                          alt={`${name} logo`}
-                          className="max-w-full max-h-full object-contain"
+                          src={`https://logo.clearbit.com/${COMPANY_DETAILS[job.company].logoDomain}`} 
+                          alt={`${job.company} logo`}
+                          className="max-w-full max-h-full object-contain p-1"
                           onError={(e) => {
                             (e.target as HTMLImageElement).onerror = null;
-                            (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=random';
+                            (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(job.company) + '&background=random';
                           }}
                         />
                       ) : (
-                        <Building2 className="h-8 w-8 text-gray-400" />
+                        <Building2 className="h-6 w-6 text-gray-300" />
                       )}
                     </div>
-                    <a href={company.careerUrl} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 transition-colors p-2 hover:bg-purple-50 rounded-xl">
-                      <ExternalLink className="h-5 w-5" />
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-3 mb-3">
-                    <h2 className="text-2xl font-black text-gray-900">{name}</h2>
-                    {activeCount > 0 && (
-                      <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-wider">
-                        {activeCount} active roles
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                    {company.description}
-                  </p>
-                  
-                  <div className="space-y-4 pt-4 border-t border-gray-50">
-                    <div>
-                      <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                         <Globe className="h-3 w-3" />
-                         Active Regions
-                      </h3>
-                      <div className="flex flex-wrap gap-2">
-                        {company.regions.length > 0 ? company.regions.map(r => (
-                          <span key={r} className="inline-flex items-center gap-1.5 bg-gray-50 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold border border-gray-100">
-                            <span>{REGION_FLAGS[r]}</span>{r}
-                          </span>
-                        )) : <span className="text-xs text-gray-400 italic">No specific regions tracked</span>}
+                    <div className="flex-1">
+                      <h2 className={`text-xl font-black leading-tight ${currentView === 'history' ? 'text-gray-700' : 'text-gray-900 group-hover:text-blue-600 transition-colors'}`}>{job.title}</h2>
+                      <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-sm text-gray-500 mt-4">
+                        <div className="flex items-center font-bold text-gray-700 cursor-pointer hover:text-blue-600" onClick={() => {setSelectedCompany(job.company); navigate('/'); window.scrollTo(0,0)}}>
+                          <Building2 className="h-4 w-4 mr-2 text-gray-400 sm:hidden" />
+                          {job.company}
+                        </div>
+                        <div className="flex items-center font-medium"><MapPin className="h-4 w-4 mr-2 text-gray-400" />{job.location}</div>
+                        <div className="flex items-center text-gray-500 font-bold bg-gray-100 px-3 py-1 rounded-lg text-[11px] uppercase tracking-wider">
+                          <span className="mr-1.5 text-sm">{REGION_FLAGS[job.region] || '📍'}</span>{job.region}
+                        </div>
+                        <div className="flex items-center text-[11px] font-bold text-gray-400"><Clock className="h-3.5 w-3.5 mr-1.5" />{new Date(job.postedAt).toLocaleDateString()}</div>
                       </div>
                     </div>
-                    
-                    <div>
-                      <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
-                         <MapPin className="h-3 w-3" />
-                         Office Locations
-                      </h3>
-                      <p className="text-xs text-gray-600 font-medium leading-relaxed">
-                        {company.offices.join(', ')}
-                      </p>
-                    </div>
                   </div>
-                  
-                  <button 
-                    onClick={() => {
-                      if (activeCount > 0) {
-                        setSelectedCompany(name);
-                        setCurrentView('active');
-                        window.scrollTo(0, 0);
-                      }
-                    }}
-                    disabled={activeCount === 0}
-                    className={`mt-8 w-full py-3 rounded-2xl text-sm font-black transition-colors flex items-center justify-center gap-2 ${
-                      activeCount > 0 
-                      ? 'bg-purple-50 hover:bg-purple-100 text-purple-700' 
-                      : 'bg-gray-50 text-gray-300 cursor-not-allowed'
-                    }`}
-                  >
-                    <Search className="h-4 w-4" />
-                    {activeCount > 0 ? `View Open Roles` : 'No open roles matching filters'}
-                  </button>
+                  <div className="flex items-center gap-3 self-end sm:self-center">
+                    {currentView === 'active' ? (
+                      <a href={job.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-6 py-3 border border-transparent text-sm font-black rounded-xl shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-all duration-200">
+                        Apply <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    ) : <div className="text-gray-400 text-xs font-bold uppercase italic px-4 py-2 bg-gray-50 rounded-lg">Expired</div>}
+                  </div>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })
         )}
-      </main>
+      </div>
+    </>
+  )
+}
 
-      <footer className="bg-white border-t border-gray-200 mt-20">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
-            <div>
-              <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
-                 <div className="bg-gray-900 p-1.5 rounded-lg"><Briefcase className="h-4 w-4 text-white" /></div>
-                 <h3 className="text-sm font-black text-gray-900 tracking-wider uppercase">China-Nordic Jobs</h3>
+function CompaniesView({ searchTerm, activeJobs, setSelectedCompany }: any) {
+  const navigate = useNavigate();
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {TRACKED_COMPANIES
+        .filter(name => name.toLowerCase().includes(searchTerm.toLowerCase()))
+        .map((name) => {
+        const company = COMPANY_DETAILS[name] || {
+          name,
+          description: 'Technology company with global operations.',
+          regions: [],
+          offices: ['Global'],
+          careerUrl: '#',
+          logoDomain: ''
+        };
+        const activeCount = activeJobs.filter((j: any) => j.company === name).length;
+
+        return (
+          <div key={name} className="bg-white p-8 rounded-3xl border-2 border-gray-100 shadow-sm hover:border-purple-100 transition-all duration-200 flex flex-col h-full">
+            <div className="flex justify-between items-start mb-6">
+              <div className="bg-white border border-gray-100 p-2 rounded-2xl w-16 h-16 flex items-center justify-center overflow-hidden shadow-sm">
+                {company.logoDomain ? (
+                  <img 
+                    src={`https://logo.clearbit.com/${company.logoDomain}`} 
+                    alt={`${name} logo`}
+                    className="max-w-full max-h-full object-contain"
+                    onError={(e) => {
+                      (e.target as HTMLImageElement).onerror = null;
+                      (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(name) + '&background=random';
+                    }}
+                  />
+                ) : (
+                  <Building2 className="h-8 w-8 text-gray-400" />
+                )}
               </div>
-              <p className="text-gray-500 text-sm max-w-sm leading-relaxed mx-auto md:mx-0">
-                A community-driven job board tracking technical leadership and engineering roles across the world's most dynamic tech hubs.
-              </p>
+              <a href={company.careerUrl} target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 transition-colors p-2 hover:bg-purple-50 rounded-xl">
+                <ExternalLink className="h-5 w-5" />
+              </a>
             </div>
-            <div className="md:text-right flex flex-col items-center md:items-end">
-              <h3 className="text-sm font-black text-gray-900 tracking-wider uppercase mb-4">Dashboard</h3>
-              <div className="flex flex-wrap justify-center md:justify-end gap-2">
-                <span className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-black bg-blue-50 text-blue-700 border border-blue-100">{activeJobs.length} ACTIVE</span>
-                <span className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-black bg-orange-50 text-orange-700 border border-orange-100">{removedJobs.length} REMOVED</span>
-                <span className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-black bg-gray-50 text-gray-600 border border-gray-100">{new Date().toLocaleDateString()}</span>
+            <div className="flex items-center gap-3 mb-3">
+              <h2 className="text-2xl font-black text-gray-900">{name}</h2>
+              {activeCount > 0 && (
+                <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-lg text-[10px] font-black uppercase tracking-wider">
+                  {activeCount} active roles
+                </span>
+              )}
+            </div>
+            <p className="text-gray-500 text-sm leading-relaxed mb-6 flex-grow">
+              {company.description}
+            </p>
+            
+            <div className="space-y-4 pt-4 border-t border-gray-50 mt-auto">
+              <div>
+                <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                   <Globe className="h-3 w-3" />
+                   Active Regions
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {company.regions.length > 0 ? company.regions.map(r => (
+                    <span key={r} className="inline-flex items-center gap-1.5 bg-gray-50 text-gray-700 px-3 py-1 rounded-lg text-xs font-bold border border-gray-100">
+                      <span>{REGION_FLAGS[r] || '📍'}</span>{r}
+                    </span>
+                  )) : <span className="text-xs text-gray-400 italic">No specific regions tracked</span>}
+                </div>
               </div>
+              
+              <div>
+                <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-2 flex items-center gap-2">
+                   <MapPin className="h-3 w-3" />
+                   Office Locations
+                </h3>
+                <p className="text-xs text-gray-600 font-medium leading-relaxed">
+                  {company.offices.join(', ')}
+                </p>
+              </div>
+            </div>
+            
+            <button 
+              onClick={() => {
+                if (activeCount > 0) {
+                  setSelectedCompany(name);
+                  navigate('/');
+                  window.scrollTo(0, 0);
+                }
+              }}
+              disabled={activeCount === 0}
+              className={`mt-8 w-full py-3 rounded-2xl text-sm font-black transition-colors flex items-center justify-center gap-2 ${
+                activeCount > 0 
+                ? 'bg-purple-50 hover:bg-purple-100 text-purple-700' 
+                : 'bg-gray-50 text-gray-300 cursor-not-allowed'
+              }`}
+            >
+              <Search className="h-4 w-4" />
+              {activeCount > 0 ? `View Open Roles` : 'No open roles matching filters'}
+            </button>
+          </div>
+        );
+      })}
+    </div>
+  )
+}
+
+function Footer({ activeCount, removedCount }: any) {
+  return (
+    <footer className="bg-white border-t border-gray-200 mt-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
+          <div>
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
+               <div className="bg-gray-900 p-1.5 rounded-lg"><Briefcase className="h-4 w-4 text-white" /></div>
+               <h3 className="text-sm font-black text-gray-900 tracking-wider uppercase">China-Nordic Jobs</h3>
+            </div>
+            <p className="text-gray-500 text-sm max-w-sm leading-relaxed mx-auto md:mx-0">
+              A community-driven job board tracking technical leadership and engineering roles across the world's most dynamic tech hubs.
+            </p>
+          </div>
+          <div className="md:text-right flex flex-col items-center md:items-end">
+            <h3 className="text-sm font-black text-gray-900 tracking-wider uppercase mb-4">Dashboard</h3>
+            <div className="flex flex-wrap justify-center md:justify-end gap-2">
+              <span className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-black bg-blue-50 text-blue-700 border border-blue-100">{activeCount} ACTIVE</span>
+              <span className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-black bg-orange-50 text-orange-700 border border-orange-100">{removedCount} REMOVED</span>
+              <span className="inline-flex items-center px-3 py-1 rounded-lg text-xs font-black bg-gray-50 text-gray-600 border border-gray-100">{new Date().toLocaleDateString()}</span>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   )
 }
 
