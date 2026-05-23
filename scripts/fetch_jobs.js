@@ -440,8 +440,8 @@ async function main() {
     else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
     else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
     
-    const filteredJobs = jobs.filter(job => matchesKeywords(job.title));
-    console.log(`  Summary: ${jobs.length} relevant, ${filteredJobs.length} matched criteria.`);
+    const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
+    console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);
     allJobs = allJobs.concat(filteredJobs);
   }
 
