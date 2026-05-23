@@ -38,6 +38,7 @@
 * Shopline
 * Shopee
 * Spotify
+* Stripe
 * Supercell
 * TikTok
 * Traveloka
@@ -57,6 +58,5 @@
 * Lalamove
 * Philips
 * Sea (Shopee - Integrated)
-* Stripe
 * Tencent
 * Trip.com

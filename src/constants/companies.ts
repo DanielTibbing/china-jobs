@@ -190,6 +190,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     careerUrl: 'https://www.lifeatspotify.com/',
     logoDomain: 'spotify.com'
   },
+  'Stripe': {
+    name: 'Stripe',
+    description: 'A financial infrastructure platform for businesses. From new startups to public companies, millions of businesses use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online.',
+    regions: ['Singapore', 'Sweden'],
+    offices: ['Singapore', 'Stockholm', 'Dublin', 'San Francisco'],
+    careerUrl: 'https://stripe.com/jobs',
+    logoDomain: 'stripe.com'
+  },
   'EA': {
     name: 'EA',
     description: 'Electronic Arts is a global leader in digital interactive entertainment, developing and delivering games, content and online services.',

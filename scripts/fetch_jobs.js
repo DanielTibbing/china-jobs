@@ -53,6 +53,7 @@ const COMPANIES = [
   { name: 'Adyen', platform: 'greenhouse', token: 'adyen' },
   { name: 'NetEase Games', platform: 'greenhouse', token: 'neteasegames' },
   { name: 'On Running', platform: 'greenhouse', token: 'onrunning' },
+  { name: 'Stripe', platform: 'greenhouse', token: 'stripe' },
   { name: 'Payoneer', platform: 'greenhouse', token: 'payoneer' },
   { name: 'Traveloka', platform: 'traveloka', token: 'traveloka' },
   
