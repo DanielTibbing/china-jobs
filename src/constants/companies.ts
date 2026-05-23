@@ -177,6 +177,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     careerUrl: 'https://www.lifeatspotify.com/',
     logoDomain: 'spotify.com'
   },
+  'EA': {
+    name: 'EA',
+    description: 'Electronic Arts is a global leader in digital interactive entertainment, developing and delivering games, content and online services.',
+    regions: ['Sweden', 'China', 'Singapore'],
+    offices: ['Stockholm', 'Shanghai', 'Singapore', 'Redwood City'],
+    careerUrl: 'https://www.ea.com/careers/careers-portal',
+    logoDomain: 'ea.com'
+  },
   'Epic Games': {
     name: 'Epic Games',
     description: 'An interactive entertainment company and provider of 3D engine technology, creator of Fortnite and Unreal Engine.',

@@ -18,6 +18,8 @@ const KEYWORDS = [
   'Fullstack developer', 
   'React',
   'Software Engineer',
+  'Engineer',
+  'SRE',
   'Developer',
   'Product Manager',
   'Marketing'
@@ -89,6 +91,9 @@ const COMPANIES = [
   
   // Workday
   { name: 'Lego Group', platform: 'workday-v2', token: 'Lego_Careers', tenant: 'lego', sub: 'wd3' },
+
+  // Avature (EA)
+  { name: 'EA', platform: 'ea', domain: 'jobs.ea.com' },
 
   // SmartRecruiters
   { name: 'Ubisoft', platform: 'smartrecruiters', token: 'Ubisoft' },
@@ -405,6 +410,42 @@ async function fetchVolvoFeed(company) {
   }
 }
 
+async function fetchEAJobs(company) {
+  let allEA = [];
+  try {
+    const url = `https://${company.domain}/en_US/careers/SearchJobs/?jobRecordsPerPage=100`;
+    const response = await axiosInstance.get(url, { headers: { 'Accept': 'text/html' } });
+    const html = response.data;
+    
+    const articleRegex = /<article[\s\S]*?<\/article>/g;
+    let articleMatch;
+    while ((articleMatch = articleRegex.exec(html)) !== null) {
+      const article = articleMatch[0];
+      const titleMatch = /<a class="link link_result" href="([^"]+)"[^>]*>\s*([\s\S]*?)\s*<\/a>/.exec(article);
+      const locMatch = /<span class="list-item-location">([\s\S]*?)<\/span>/.exec(article);
+      
+      if (titleMatch) {
+        const title = titleMatch[2].trim();
+        const link = titleMatch[1];
+        const loc = locMatch ? locMatch[1].trim() : 'Global';
+        
+        allEA.push({
+          id: `ea-${link.split('/').pop()}`,
+          title,
+          company: company.name,
+          location: loc,
+          link,
+          postedAt: new Date().toISOString(),
+          region: detectRegion(loc)
+        });
+      }
+    }
+  } catch (error) {
+    console.error(`Error fetching EA jobs:`, error.message);
+  }
+  return allEA;
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase();
@@ -439,6 +480,7 @@ async function main() {
     else if (company.platform === 'booking') jobs = await fetchBookingJobs(company);
     else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
     else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
+    else if (company.platform === 'ea') jobs = await fetchEAJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
     console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);

@@ -14,6 +14,7 @@
 * Checkout.com
 * Dramabox
 * Duolingo
+* EA
 * EF
 * Electrolux
 * Epic Games
@@ -47,7 +48,6 @@
 # Pending Integration
 * AirAsia
 * Ant Group
-* EA (Electronic Arts)
 * Fliggy
 * Jabra
 * Lalamove

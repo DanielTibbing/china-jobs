@@ -9,15 +9,16 @@
 - **Branding**: Dynamic company logos via Clearbit Logo API with UI Avatar fallbacks.
 
 ## 📊 Scraper Statistics
-- **Tracked Companies**: 44
-- **Active Technical Roles**: 307
+- **Tracked Companies**: 45
+- **Active Technical Roles**: 309
 - **Target Regions**: 
   - 🇨🇳 China: 117 roles
-  - 🇸🇬 Singapore: 135 roles
+  - 🇸🇬 Singapore: 137 roles
   - 🇸🇪 Sweden: 35 roles
   - 🇭🇰 Hong Kong: 20 roles
 
 ## ✅ Recently Completed
+- **Electronic Arts (EA) Integration**: Successfully integrated EA's Avature-based SSR portal with robust regex parsing.
 - **Volvo Group Migration**: Moved from HTML scraping to direct XML feed integration (`jobs.volvogroup.com/feed/361555`).
 - **Atlas Copco Integration**: Implemented Algolia API search for high-precision technical role fetching.
 - **Strict Filtering**: Enforced region-based discarding of non-target jobs to reduce dashboard noise.
