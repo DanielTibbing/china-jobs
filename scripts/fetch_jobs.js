@@ -1,6 +1,7 @@
 import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
+import { parseStringPromise } from 'xml2js';
 
 const KEYWORDS = [
   'Engineering Manager', 
@@ -55,8 +56,10 @@ const COMPANIES = [
   { name: 'Klook', platform: 'workday-v2', token: 'Klook', tenant: 'klook', sub: 'wd3' },
   { name: 'Axis Communications', platform: 'workday-v2', token: 'External_Career_Site', tenant: 'axis', sub: 'wd3' },
   
+  // XML Feed (Direct)
+  { name: 'Volvo Group', platform: 'volvo-feed', url: 'https://jobs.volvogroup.com/feed/361555' },
+
   // RMK / SuccessFactors HTML Scrape
-  { name: 'Volvo Group', platform: 'rmk', domain: 'jobs.volvogroup.com' },
   { name: 'Assa Abloy', platform: 'rmk', domain: 'assaabloy.jobs2web.com' },
   { name: 'Scania', platform: 'rmk', domain: 'jobs.scania.com' },
 
@@ -65,7 +68,7 @@ const COMPANIES = [
 
   // Phenom People Widgets
   { name: 'ABB', platform: 'phenom', domain: 'careers.abb', categories: ['Engineering', 'Information Systems'] },
-  { name: 'Electrolux', platform: 'phenom', domain: 'career.electroluxgroup.com', categories: ['Tech'] },
+  { name: 'Electrolux', platform: 'phenom', domain: 'career.electroluxgroup.com', categories: ['Tech', 'Engineering'] },
 
   // Ashby
   { name: 'Supercell', platform: 'ashby', token: 'supercell' },
@@ -90,7 +93,8 @@ const axiosInstance = axios.create({
   headers: {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     'Accept': 'application/json, text/plain, */*',
-  }
+  },
+  maxContentLength: 100 * 1024 * 1024 
 });
 
 async function fetchGreenhouseJobs(company) {
@@ -342,7 +346,7 @@ async function fetchAlgoliaJobs(company) {
     const response = await axiosInstance.post(url, {
       requests: [{
         indexName: company.index,
-        params: `facetFilters=%5B%5B%22data.country%3AChina%22%2C%22data.country%3AHong%20Kong%22%2C%22data.country%3ASingapore%22%2C%22data.country%3ASweden%22%5D%5D&filters=(data.tagsTranslated%3A%22Job%20vacancy%22)&hitsPerPage=100`
+        params: `facetFilters=%5B%5B%22data.country%3AChina%22%2C%22data.country%3AHong%20Kong%22%2C%22data.country%3ASingapore%22%2C%22data.country%3ASweden%22%5D%2C%5B%22data.jobFunction%3AInformation%20Technology%22%5D%5D&filters=(data.tagsTranslated%3A%22Job%20vacancy%22)&hitsPerPage=100`
       }]
     });
     if (response.data?.results?.[0]?.hits) {
@@ -356,10 +360,44 @@ async function fetchAlgoliaJobs(company) {
         region: detectRegion(hit.data.country)
       }));
     }
-  } catch (error) {
-    console.error(`Error fetching Algolia jobs for ${company.name}:`, error.message);
-  }
+  } catch (error) {}
   return [];
+}
+
+async function fetchVolvoFeed(company) {
+  try {
+    const response = await axiosInstance.get(company.url);
+    const result = await parseStringPromise(response.data);
+    // Volvo Group feed structure: source -> jobs -> job (ARRAY)
+    const rawJobs = result?.source?.jobs?.[0]?.job;
+    if (!rawJobs) return [];
+    
+    const countryMap = {
+      'CN': 'China',
+      'HK': 'Hong Kong',
+      'SG': 'Singapore',
+      'SE': 'Sweden'
+    };
+
+    return rawJobs
+      .map((job) => {
+        const countryCode = (job.country?.[0] || "").toUpperCase();
+        const region = countryMap[countryCode] || detectRegion(job.location?.[0] || "");
+        
+        return {
+          id: `vo-${job.ID?.[0]}`,
+          title: job.title?.[0],
+          company: company.name,
+          location: job.location?.[0],
+          link: job.url?.[0],
+          postedAt: new Date().toISOString(),
+          region: region
+        };
+      })
+      .filter(job => REGIONS.includes(job.region));
+  } catch (error) {
+    return [];
+  }
 }
 
 function detectRegion(location) {
@@ -373,6 +411,7 @@ function detectRegion(location) {
 }
 
 function matchesKeywords(title) {
+  if (!title) return false;
   const t = title.toLowerCase();
   return KEYWORDS.some(keyword => t.includes(keyword.toLowerCase()));
 }
@@ -394,9 +433,10 @@ async function main() {
     else if (company.platform === 'phenom') jobs = await fetchPhenomJobs(company);
     else if (company.platform === 'booking') jobs = await fetchBookingJobs(company);
     else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
+    else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
     
-    const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
-    console.log(`  Summary: ${jobs.length} scanned, ${filteredJobs.length} matched.`);
+    const filteredJobs = jobs.filter(job => matchesKeywords(job.title));
+    console.log(`  Summary: ${jobs.length} relevant, ${filteredJobs.length} matched criteria.`);
     allJobs = allJobs.concat(filteredJobs);
   }
 
