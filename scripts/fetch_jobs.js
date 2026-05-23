@@ -20,6 +20,7 @@ const KEYWORDS = [
   'Software Engineer',
   'Engineer',
   'SRE',
+  'Programmer',
   'Developer',
   'Product Manager',
   'Marketing'
@@ -66,8 +67,9 @@ const COMPANIES = [
   { name: 'Assa Abloy', platform: 'rmk', domain: 'assaabloy.jobs2web.com' },
   { name: 'Scania', platform: 'rmk', domain: 'jobs.scania.com' },
 
-  // Algolia (Atlas Copco)
+  // Algolia
   { name: 'Atlas Copco', platform: 'algolia', appId: '9AX0H7NCCX', apiKey: '4415f5d1228e3b2da6ac78d10c41e93c', index: 'GROUP_EN_dateDesc' },
+  { name: 'Ubisoft', platform: 'algolia', appId: 'AVCVYSEJS1', apiKey: 'd2ec5782c4eb549092cfa4ed5062599a', index: 'jobs_en-us_default' },
 
   // Phenom People Widgets
   { name: 'ABB', platform: 'phenom', domain: 'careers.abb', categories: ['Engineering', 'Information Systems'] },
@@ -95,9 +97,6 @@ const COMPANIES = [
 
   // Avature (EA)
   { name: 'EA', platform: 'ea', domain: 'jobs.ea.com' },
-
-  // SmartRecruiters
-  { name: 'Ubisoft', platform: 'smartrecruiters', token: 'Ubisoft' },
 ];
 
 const axiosInstance = axios.create({
@@ -354,24 +353,47 @@ async function fetchBookingJobs(company) {
 async function fetchAlgoliaJobs(company) {
   try {
     const url = `https://${company.appId.toLowerCase()}-dsn.algolia.net/1/indexes/*/queries?x-algolia-agent=Algolia%20for%20JavaScript%20(4.25.2)&x-algolia-api-key=${company.apiKey}&x-algolia-application-id=${company.appId}`;
+    
+    const params = company.name === 'Ubisoft' 
+      ? `facetFilters=%5B%5B%22countryCode%3Acn%22%2C%22countryCode%3Ase%22%2C%22countryCode%3Asg%22%5D%5D&hitsPerPage=100`
+      : `facetFilters=%5B%5B%22data.country%3AChina%22%2C%22data.country%3AHong%20Kong%22%2C%22data.country%3ASingapore%22%2C%22data.country%3ASweden%22%5D%2C%5B%22data.jobFunction%3AInformation%20Technology%22%5D%5D&filters=(data.tagsTranslated%3A%22Job%20vacancy%22)&hitsPerPage=100`;
+
     const response = await axiosInstance.post(url, {
       requests: [{
         indexName: company.index,
-        params: `facetFilters=%5B%5B%22data.country%3AChina%22%2C%22data.country%3AHong%20Kong%22%2C%22data.country%3ASingapore%22%2C%22data.country%3ASweden%22%5D%2C%5B%22data.jobFunction%3AInformation%20Technology%22%5D%5D&filters=(data.tagsTranslated%3A%22Job%20vacancy%22)&hitsPerPage=100`
+        params: params
       }]
     });
+
     if (response.data?.results?.[0]?.hits) {
-      return response.data.results[0].hits.map(hit => ({
-        id: `alg-${hit.objectID}`,
-        title: hit.data.title,
-        company: company.name,
-        location: hit.data.city + ", " + hit.data.country,
-        link: hit.data.externalPath,
-        postedAt: hit.data.postingDate,
-        region: detectRegion(hit.data.country)
-      }));
+      return response.data.results[0].hits.map(hit => {
+        if (company.name === 'Ubisoft') {
+          return {
+            id: `alg-ub-${hit.objectID}`,
+            title: hit.title,
+            company: company.name,
+            location: (hit.cities?.[0] || hit.city) + ", " + hit.countryCode,
+            link: hit.link,
+            postedAt: hit.createdAt || new Date().toISOString(),
+            region: detectRegion(hit.countryCode || hit.country)
+          };
+        } else {
+          // Atlas Copco style
+          return {
+            id: `alg-ac-${hit.objectID}`,
+            title: hit.data.title,
+            company: company.name,
+            location: hit.data.city + ", " + hit.data.country,
+            link: hit.data.externalPath,
+            postedAt: hit.data.postingDate,
+            region: detectRegion(hit.data.country)
+          };
+        }
+      });
     }
-  } catch (error) {}
+  } catch (error) {
+    console.error(`Error fetching Algolia jobs for ${company.name}:`, error.message);
+  }
   return [];
 }
 
@@ -497,11 +519,11 @@ async function fetchKlookJobs(company) {
 
 function detectRegion(location) {
   if (!location) return 'Other';
-  const loc = location.toLowerCase();
-  if (loc.includes('china') || loc.includes('beijing') || loc.includes('shanghai') || loc.includes('shenzhen') || loc.includes('guangzhou') || loc.includes('hangzhou') || loc.includes(', cn') || loc.includes('chengdu')) return 'China';
-  if (loc.includes('hong kong') || loc.includes('hk')) return 'Hong Kong';
-  if (loc.includes('singapore') || loc.includes(', sg')) return 'Singapore';
-  if (loc.includes('sweden') || loc.includes('stockholm') || loc.includes('gothenburg') || loc.includes('malmö') || loc.includes('lund') || loc.includes(', se') || loc.includes('södertälje') || loc.includes('västerås')) return 'Sweden';
+  const loc = location.toLowerCase().trim();
+  if (loc.includes('china') || loc.includes('beijing') || loc.includes('shanghai') || loc.includes('shenzhen') || loc.includes('guangzhou') || loc.includes('hangzhou') || loc.includes(', cn') || loc === 'cn' || loc.includes('chengdu')) return 'China';
+  if (loc.includes('hong kong') || loc.includes('hk') || loc === 'hk') return 'Hong Kong';
+  if (loc.includes('singapore') || loc.includes(', sg') || loc === 'sg') return 'Singapore';
+  if (loc.includes('sweden') || loc.includes('stockholm') || loc.includes('gothenburg') || loc.includes('malmö') || loc.includes('lund') || loc.includes(', se') || loc === 'se' || loc.includes('södertälje') || loc.includes('västerås')) return 'Sweden';
   return 'Other';
 }
 
