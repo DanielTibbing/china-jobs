@@ -15,6 +15,20 @@ function App() {
   const [seenJobIds, setSeenJobIds] = useState<Set<string>>(new Set())
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('theme')
+    return saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  })
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+    }
+  }, [isDarkMode])
 
   useEffect(() => {
     const savedSeen = localStorage.getItem('seen_job_ids')
@@ -74,11 +88,13 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+      <div className="min-h-screen bg-gray-50 dark:bg-slate-950 text-gray-900 dark:text-slate-100 font-sans transition-colors duration-300">
         <Header 
           searchTerm={searchTerm} 
           setSearchTerm={setSearchTerm} 
           setSelectedCompany={setSelectedCompany}
+          isDarkMode={isDarkMode}
+          setIsDarkMode={setIsDarkMode}
         />
 
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">

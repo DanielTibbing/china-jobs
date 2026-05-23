@@ -34,7 +34,7 @@ export function JobsView({
 
   return (
     <div className="space-y-6">
-      <div className="sticky top-[184px] md:top-[136px] z-10 bg-gray-50/95 backdrop-blur-sm py-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 transition-all">
+      <div className="sticky top-[184px] md:top-[136px] z-10 bg-gray-50/95 dark:bg-slate-950/95 backdrop-blur-sm py-4 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 transition-all">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div className="flex flex-wrap gap-2">
             {Object.keys(REGION_FLAGS).map((region) => (
@@ -43,8 +43,8 @@ export function JobsView({
                 onClick={() => setSelectedRegion(region)}
                 className={`px-4 py-2 rounded-full text-sm font-bold border transition duration-150 ease-in-out flex items-center gap-2 ${
                   selectedRegion === region
-                    ? 'bg-gray-900 border-gray-900 text-white shadow-sm'
-                    : 'bg-white border-gray-200 text-gray-600 hover:bg-gray-50 hover:border-gray-300'
+                    ? 'bg-gray-900 dark:bg-white border-gray-900 dark:border-white text-white dark:text-slate-950 shadow-sm'
+                    : 'bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-600 dark:text-slate-400 hover:bg-gray-50 dark:hover:bg-slate-800 hover:border-gray-300 dark:hover:border-slate-700'
                 }`}
               >
                 <span className="text-base leading-none">{REGION_FLAGS[region]}</span>
@@ -56,12 +56,12 @@ export function JobsView({
           <div className="flex items-center gap-2 w-full md:w-auto">
             <div className="relative flex-1 md:w-64">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Filter className="h-4 w-4 text-gray-400" />
+                <Filter className="h-4 w-4 text-gray-400 dark:text-slate-500" />
               </div>
               <select
                 value={selectedCompany}
                 onChange={(e) => setSelectedCompany(e.target.value)}
-                className="block w-full pl-10 pr-10 py-2.5 text-sm border-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 rounded-xl bg-white shadow-sm appearance-none border font-bold text-gray-700"
+                className="block w-full pl-10 pr-10 py-2.5 text-sm border-gray-300 dark:border-slate-700 focus:outline-none focus:ring-blue-500 focus:border-blue-500 rounded-xl bg-white dark:bg-slate-900 shadow-sm appearance-none border font-bold text-gray-700 dark:text-slate-300 transition-colors"
               >
                 <option value="All">All Companies</option>
                 {companiesFromJobs.filter(c => c !== 'All').map(company => (
@@ -75,17 +75,17 @@ export function JobsView({
               </div>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-1 flex shadow-sm shrink-0">
+            <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl p-1 flex shadow-sm shrink-0">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-blue-600 text-white shadow-md' : 'text-gray-400 hover:text-gray-600'}`}
+                className={`p-2 rounded-lg transition-all ${viewMode === 'grid' ? 'bg-blue-600 text-white shadow-md' : 'text-gray-400 hover:text-gray-600 dark:hover:text-slate-300'}`}
                 title="Grid View"
               >
                 <LayoutGrid className="h-4 w-4" />
               </button>
               <button
                 onClick={() => setViewMode('table')}
-                className={`p-2 rounded-lg transition-all ${viewMode === 'table' ? 'bg-blue-600 text-white shadow-md' : 'text-gray-400 hover:text-gray-600'}`}
+                className={`p-2 rounded-lg transition-all ${viewMode === 'table' ? 'bg-blue-600 text-white shadow-md' : 'text-gray-400 hover:text-gray-600 dark:hover:text-slate-300'}`}
                 title="Table View"
               >
                 <List className="h-4 w-4" />
@@ -99,13 +99,13 @@ export function JobsView({
         {loading ? (
           <div className="text-center py-20"><RefreshCw className="mx-auto h-12 w-12 text-blue-500 animate-spin mb-4" /></div>
         ) : error ? (
-          <div className="text-center py-20 bg-red-50 rounded-2xl border-2 border-red-100">
-            <p className="text-red-600 font-bold">{error}</p>
+          <div className="text-center py-20 bg-red-50 dark:bg-red-950/20 rounded-2xl border-2 border-red-100 dark:border-red-900/30">
+            <p className="text-red-600 dark:text-red-400 font-bold">{error}</p>
           </div>
         ) : jobs.length === 0 ? (
-          <div className="text-center py-20 bg-white rounded-2xl border-2 border-dashed border-gray-200">
-            <Briefcase className="mx-auto h-12 w-12 text-gray-300 mb-4" />
-            <h3 className="text-lg font-bold">No jobs found</h3>
+          <div className="text-center py-20 bg-white dark:bg-slate-900 rounded-2xl border-2 border-dashed border-gray-200 dark:border-slate-800">
+            <Briefcase className="mx-auto h-12 w-12 text-gray-300 dark:text-slate-700 mb-4" />
+            <h3 className="text-lg font-bold dark:text-slate-400">No jobs found</h3>
           </div>
         ) : viewMode === 'grid' ? (
           jobs.map((job) => (
@@ -118,28 +118,28 @@ export function JobsView({
             />
           ))
         ) : (
-          <div className="bg-white rounded-2xl border-2 border-gray-100 shadow-sm overflow-hidden">
+          <div className="bg-white dark:bg-slate-900 rounded-2xl border-2 border-gray-100 dark:border-slate-800 shadow-sm overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-gray-50 border-b border-gray-100">
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-widest">Role & Company</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-widest text-center">Region</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-widest">Location</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-widest">Posted</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 uppercase tracking-widest text-right">Action</th>
+                  <tr className="bg-gray-50 dark:bg-slate-800/50 border-b border-gray-100 dark:border-slate-800">
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Role & Company</th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-center">Region</th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Location</th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Posted</th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-right">Action</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-gray-50">
+                <tbody className="divide-y divide-gray-50 dark:divide-slate-800">
                   {jobs.map((job) => {
                     const isNew = currentView === 'active' && !seenJobIds.has(job.id);
                     const companyInfo = COMPANY_DETAILS[job.company];
                     
                     return (
-                      <tr key={job.id} className={`hover:bg-blue-50/30 transition-colors group ${currentView === 'history' ? 'opacity-70 grayscale-[0.3]' : ''}`}>
+                      <tr key={job.id} className={`hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors group ${currentView === 'history' ? 'opacity-70 grayscale-[0.3]' : ''}`}>
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-4">
-                            <div className="w-10 h-10 rounded-lg border border-gray-100 flex items-center justify-center bg-white shrink-0 shadow-sm overflow-hidden relative">
+                            <div className="w-10 h-10 rounded-lg border border-gray-100 dark:border-slate-700 flex items-center justify-center bg-white shrink-0 shadow-sm overflow-hidden relative">
                               {isNew && <div className="absolute top-0 left-0 w-2 h-2 bg-blue-600 rounded-full shadow-[0_0_8px_rgba(37,99,235,0.6)]"></div>}
                               {companyInfo?.logoDomain ? (
                                 <img 
@@ -152,12 +152,12 @@ export function JobsView({
                                   }}
                                 />
                               ) : (
-                                <Building2 className="h-5 w-5 text-gray-300" />
+                                <Building2 className="h-5 w-5 text-gray-300 dark:text-slate-600" />
                               )}
                             </div>
                             <div>
-                              <div className="font-black text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">{job.title}</div>
-                              <div className="text-[11px] font-bold text-gray-500 cursor-pointer hover:text-blue-600 uppercase tracking-tight mt-0.5" onClick={() => handleCompanyClick(job.company)}>{job.company}</div>
+                              <div className="font-black text-gray-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight">{job.title}</div>
+                              <div className="text-[11px] font-bold text-gray-500 dark:text-slate-400 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 uppercase tracking-tight mt-0.5" onClick={() => handleCompanyClick(job.company)}>{job.company}</div>
                             </div>
                           </div>
                         </td>
@@ -165,13 +165,13 @@ export function JobsView({
                           <span className="text-sm" title={job.region}>{REGION_FLAGS[job.region] || '📍'}</span>
                         </td>
                         <td className="px-6 py-4">
-                          <div className="flex items-center gap-1.5 text-xs font-bold text-gray-600">
-                            <MapPin className="h-3 w-3 text-gray-400 shrink-0" />
+                          <div className="flex items-center gap-1.5 text-xs font-bold text-gray-600 dark:text-slate-400">
+                            <MapPin className="h-3 w-3 text-gray-400 dark:text-slate-500 shrink-0" />
                             <span className="truncate max-w-[150px]">{job.location}</span>
                           </div>
                         </td>
                         <td className="px-6 py-4">
-                          <div className="flex items-center gap-1.5 text-[11px] font-bold text-gray-400 whitespace-nowrap">
+                          <div className="flex items-center gap-1.5 text-[11px] font-bold text-gray-400 dark:text-slate-500 whitespace-nowrap">
                             <Clock className="h-3 w-3" />
                             {new Date(job.postedAt).toLocaleDateString()}
                           </div>
@@ -182,12 +182,12 @@ export function JobsView({
                               href={job.link} 
                               target="_blank" 
                               rel="noopener noreferrer" 
-                              className="inline-flex p-2 text-blue-600 hover:bg-blue-600 hover:text-white rounded-xl transition-all border border-blue-100 hover:border-transparent"
+                              className="inline-flex p-2 text-blue-600 dark:text-blue-400 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white rounded-xl transition-all border border-blue-100 dark:border-blue-900/30 hover:border-transparent"
                             >
                               <ExternalLink className="h-4 w-4" />
                             </a>
                           ) : (
-                            <span className="text-[10px] font-bold text-gray-400 uppercase italic">Expired</span>
+                            <span className="text-[10px] font-bold text-gray-400 dark:text-slate-600 uppercase italic">Expired</span>
                           )}
                         </td>
                       </tr>
