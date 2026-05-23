@@ -105,6 +105,14 @@ const COMPANIES = [
 
   // Shopee / Sea Group API
   { name: 'Shopee', platform: 'shopee' },
+
+  // Oracle HCM (Virtuos)
+  { 
+    name: 'Virtuos', 
+    platform: 'oracle-hcm', 
+    baseUrl: 'https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com',
+    siteNumber: 'CX_1'
+  },
 ];
 
 const axiosInstance = axios.create({
@@ -611,6 +619,37 @@ async function fetchShopeeJobs(company) {
   return [];
 }
 
+async function fetchOracleHCMJobs(company) {
+  try {
+    const url = `${company.baseUrl}/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList.workLocation&finder=findReqs;siteNumber=${company.siteNumber},limit=100,sortBy=POSTING_DATES_DESC`;
+    const response = await axiosInstance.get(url, {
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/vnd.oracle.adf.resourceitem+json;charset=utf-8',
+        'ora-irc-language': 'en'
+      }
+    });
+
+    if (response.data?.items?.[0]?.requisitionList) {
+      return response.data.items[0].requisitionList.map(job => {
+        const locationName = job.workLocation?.[0]?.LocationName || job.PrimaryLocation || '';
+        return {
+          id: `ora-${job.Id}`,
+          title: job.Title,
+          company: company.name,
+          location: locationName,
+          link: `${company.baseUrl}/hcmUI/CandidateExperience/en/sites/${company.siteNumber}/job/${job.Id}`,
+          postedAt: job.PostedDate || new Date().toISOString(),
+          region: detectRegion(job.PrimaryLocationCountry || locationName)
+        };
+      });
+    }
+  } catch (error) {
+    console.error(`Error fetching Oracle HCM jobs for ${company.name}:`, error.message);
+  }
+  return [];
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase().trim();
@@ -649,6 +688,7 @@ async function main() {
     else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
     else if (company.platform === 'lazada') jobs = await fetchLazadaJobs(company);
     else if (company.platform === 'shopee') jobs = await fetchShopeeJobs(company);
+    else if (company.platform === 'oracle-hcm') jobs = await fetchOracleHCMJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
     console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);

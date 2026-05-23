@@ -43,9 +43,11 @@
 * Traveloka
 * Ubisoft
 * Unity
+* Virtuos
 * Volvo Group
 * Wise
 * Youtrip
+* Zalando
 
 # Pending Integration
 * AirAsia
@@ -58,4 +60,3 @@
 * Stripe
 * Tencent
 * Trip.com
-* Zalando

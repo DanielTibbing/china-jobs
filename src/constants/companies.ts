@@ -272,6 +272,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     careerUrl: 'https://www.youtrip.co/careers/',
     logoDomain: 'youtrip.co'
   },
+  'Zalando': {
+    name: 'Zalando',
+    description: 'Europe\'s leading online platform for fashion and lifestyle. China roles are primarily listed via LinkedIn.',
+    regions: ['China', 'Sweden'],
+    offices: ['Berlin', 'Shenzhen', 'Stockholm', 'Helsinki'],
+    careerUrl: 'https://www.linkedin.com/jobs/search/?f_C=10117120&location=China',
+    logoDomain: 'zalando.de'
+  },
   'Ubisoft': {
     name: 'Ubisoft',
     description: 'A leading creator, publisher and distributor of interactive entertainment and services.',
@@ -381,6 +389,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     offices: ['Gothenburg', 'Stockholm', 'Shanghai', 'Singapore'],
     careerUrl: 'https://volvogroup.com/en/careers.html',
     logoDomain: 'volvogroup.com'
+  },
+  'Virtuos': {
+    name: 'Virtuos',
+    description: 'A leading global video game development company, specializing in game development and 3D art production for AAA consoles and mobile titles.',
+    regions: ['China', 'Singapore'],
+    offices: ['Singapore', 'Chengdu', 'Shanghai', 'Xi\'an', 'Ho Chi Minh City'],
+    careerUrl: 'https://www.virtuosgames.com/careers/',
+    logoDomain: 'virtuosgames.com'
   },
   'Assa Abloy': {
     name: 'Assa Abloy',
