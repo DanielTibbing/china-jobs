@@ -36,6 +36,7 @@
 * Scopely
 * Skyscanner
 * Shopline
+* Shopee
 * Spotify
 * Supercell
 * TikTok
@@ -53,7 +54,7 @@
 * Jabra
 * Lalamove
 * Philips
-* Sea (Shopee)
+* Sea (Shopee - Integrated)
 * Stripe
 * Tencent
 * Trip.com

@@ -256,6 +256,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     careerUrl: 'https://shopline.com/about/careers',
     logoDomain: 'shoplineapp.com'
   },
+  'Shopee': {
+    name: 'Shopee',
+    description: 'The leading e-commerce platform in Southeast Asia and Taiwan, providing customers with an easy, secure and fast online shopping experience.',
+    regions: ['Singapore', 'China'],
+    offices: ['Singapore', 'Shenzhen', 'Shanghai', 'Beijing', 'Bangkok'],
+    careerUrl: 'https://careers.shopee.sg/',
+    logoDomain: 'shopee.sg'
+  },
   'Youtrip': {
     name: 'Youtrip',
     description: 'A leading multi-currency travel wallet in Southeast Asia.',

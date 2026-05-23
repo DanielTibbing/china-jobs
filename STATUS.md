@@ -9,16 +9,17 @@
 - **Branding**: Dynamic company logos via Clearbit Logo API with UI Avatar fallbacks.
 
 ## 📊 Scraper Statistics
-- **Tracked Companies**: 46
-- **Active Technical Roles**: 495
+- **Tracked Companies**: 47
+- **Active Technical Roles**: 543
 - **Target Regions**: 
-  - 🇨🇳 China: 133 roles
-  - 🇸🇬 Singapore: 221 roles
-  - 🇸🇪 Sweden: 114 roles
+  - 🇨🇳 China: 155 roles
+  - 🇸🇬 Singapore: 251 roles
+  - 🇸🇪 Sweden: 110 roles
   - 🇭🇰 Hong Kong: 27 roles
 
 ## ✅ Recently Completed
-- **Lazada Integration**: Implemented Lazada's internal API, capturing e-commerce technical roles in Singapore and China.
+- **Shopee (Sea Group) Integration**: Connected to Shopee's internal `ats.workatsea.com` API, capturing 48 technical roles across Singapore and China tech hubs.
+- **Lazada Integration**: Implemented Lazada's internal API, capturing e-commerce technical roles.
 - **Ubisoft Integration**: Integrated Ubisoft's Algolia-powered search, accurately capturing technical roles in China, Sweden, and Singapore.
 - **Expanded Keywords**: Added "Programmer" and "SRE" to the global keyword list to capture more high-value gaming and infra roles.
 - **Klook Integration**: Implemented Klook's internal API with full pagination.

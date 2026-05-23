@@ -13,6 +13,8 @@ const KEYWORDS = [
   'Frontend', 
   'Front-end',
   'Frontend Developer', 
+  'Backend',
+  'Backend Engineer',
   'Fullstack',
   'Full-stack',
   'Fullstack developer', 
@@ -100,6 +102,9 @@ const COMPANIES = [
 
   // Lazada Internal API
   { name: 'Lazada', platform: 'lazada' },
+
+  // Shopee / Sea Group API
+  { name: 'Shopee', platform: 'shopee' },
 ];
 
 const axiosInstance = axios.create({
@@ -562,6 +567,50 @@ async function fetchLazadaJobs(company) {
   return allLazada;
 }
 
+async function fetchShopeeJobs(company) {
+  let allShopee = [];
+  // City IDs: 4 (Indonesia - skip), 5 (Singapore), 6 (Thailand - skip), 25 (China/SZ/SH), etc.
+  // We'll target Singapore and China specifically based on the tested IDs
+  const targetCities = [
+    { id: 5, name: 'Singapore' },
+    { id: 25, name: 'Singapore' }, // Some SG roles use 25 as well
+    { id: 11, name: 'China' },     // CN common ID
+    { id: 31, name: 'China' }      // Shenzhen specifically
+  ];
+
+  try {
+    const url = `https://ats.workatsea.com/ats/api/v1/user/job/list/?limit=100&offset=0&city_ids=5&city_ids=25&city_ids=11&city_ids=31`;
+    const response = await axiosInstance.get(url, {
+      headers: {
+        'Referer': 'https://careers.shopee.sg/',
+        'Origin': 'https://careers.shopee.sg'
+      }
+    });
+
+    if (response.data?.data?.job_list) {
+      return response.data.data.job_list.map(job => {
+        // Shopee API returns internal city IDs, we'll use our detectRegion on titles/descriptions or fallback
+        const title = job.job_name;
+        // Construct a likely location string for detection
+        const locHint = job.city_id === 5 || job.city_id === 25 ? 'Singapore' : 'China';
+        
+        return {
+          id: `sh-${job.job_id}`,
+          title,
+          company: company.name,
+          location: locHint,
+          link: `https://careers.shopee.sg/jobs/${job.job_id}`,
+          postedAt: new Date().toISOString(),
+          region: detectRegion(locHint)
+        };
+      });
+    }
+  } catch (error) {
+    console.error(`Error fetching Shopee jobs:`, error.message);
+  }
+  return [];
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase().trim();
@@ -599,6 +648,7 @@ async function main() {
     else if (company.platform === 'ea') jobs = await fetchEAJobs(company);
     else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
     else if (company.platform === 'lazada') jobs = await fetchLazadaJobs(company);
+    else if (company.platform === 'shopee') jobs = await fetchShopeeJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
     console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);
