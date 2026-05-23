@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { LayoutGrid, List, ExternalLink, Building2, MapPin, Globe } from 'lucide-react'
+import { LayoutGrid, List, ExternalLink, Building2, MapPin } from 'lucide-react'
 import type { Job } from '../../types'
 import { COMPANY_DETAILS, TRACKED_COMPANIES } from '../../constants/companies'
 import { REGION_FLAGS } from '../../constants/regions'
