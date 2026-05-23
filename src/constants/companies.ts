@@ -304,6 +304,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     careerUrl: 'https://careers.payoneer.com/',
     logoDomain: 'payoneer.com'
   },
+  'Trip.com Group': {
+    name: 'Trip.com Group',
+    description: 'A global travel service provider comprising of Trip.com, Ctrip, Skyscanner, and Qunar. Headquartered in Shanghai.',
+    regions: ['China', 'Singapore', 'Hong Kong'],
+    offices: ['Shanghai', 'Beijing', 'Singapore', 'Hong Kong', 'Tokyo'],
+    careerUrl: 'https://careers.trip.com/',
+    logoDomain: 'trip.com'
+  },
   'Traveloka': {
     name: 'Traveloka',
     description: 'Southeast Asia\'s leading travel and lifestyle platform, providing a wide range of services including flight and hotel bookings.',

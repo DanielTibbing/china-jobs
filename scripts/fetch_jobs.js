@@ -107,6 +107,9 @@ const COMPANIES = [
   // Shopee / Sea Group API
   { name: 'Shopee', platform: 'shopee' },
 
+  // Trip.com Group API
+  { name: 'Trip.com Group', platform: 'trip' },
+
   // Oracle HCM (Virtuos)
   { 
     name: 'Virtuos', 
@@ -651,6 +654,79 @@ async function fetchOracleHCMJobs(company) {
   return [];
 }
 
+async function fetchTripJobs(company) {
+  let allTrip = [];
+  
+  // 1. Mainland China API (Shanghai, Shenzhen, Beijing, etc.)
+  try {
+    const response = await axiosInstance.post('https://careers.ctrip.com/api/hrrecruit/getJobAd', {
+      condition: {
+        fromId: [],
+        keyword: "",
+        kind: [],
+        country: [],
+        city: [],
+        bucode: [],
+        jobFamilyCode: [],
+        jobFamilyGroupCode: ["Categroy_2", "JFG_31", "JFG_32", "JFG_33", "JFG_34", "JFG_35", "JFG_36"],
+        category: 1
+      },
+      pager: { index: "1", size: "100" },
+      head: { language: "zh_CN", version: "1" }
+    });
+
+    if (response.data?.retValue?.recruitJobAdList) {
+      const jobs = response.data.retValue.recruitJobAdList.map(job => ({
+        id: `trip-cn-${job.jobId}`,
+        title: job.jobTitle,
+        company: company.name,
+        location: job.cityName + ", China",
+        link: `https://careers.ctrip.com/index.html#/job-detail?jobId=${job.jobId}`,
+        postedAt: job.publishDate || new Date().toISOString(),
+        region: 'China'
+      }));
+      allTrip = allTrip.concat(jobs);
+    }
+  } catch (error) {
+    console.error(`Error fetching Trip mainland jobs:`, error.message);
+  }
+
+  // 2. Overseas API (Singapore, Hong Kong)
+  try {
+    const response = await axiosInstance.post('https://careers.trip.com/api/oversea/getOverseaJobAd', {
+      condition: {
+        keyword: "",
+        jobId: [],
+        kind: [],
+        country: ["HKG", "SGP"],
+        city: [],
+        bucode: [],
+        jobFamilyGroupCode: [],
+        jobFamilyCode: []
+      },
+      pager: { index: "1", size: "100" },
+      head: { language: "en-US" }
+    });
+
+    if (response.data?.retValue?.recruitJobAdList) {
+      const jobs = response.data.retValue.recruitJobAdList.map(job => ({
+        id: `trip-intl-${job.jobId}`,
+        title: job.jobTitle,
+        company: company.name,
+        location: job.cityName,
+        link: `https://careers.trip.com/#/job-detail?jobId=${job.jobId}`,
+        postedAt: job.publishDate || new Date().toISOString(),
+        region: detectRegion(job.cityName)
+      }));
+      allTrip = allTrip.concat(jobs);
+    }
+  } catch (error) {
+    console.error(`Error fetching Trip overseas jobs:`, error.message);
+  }
+
+  return allTrip;
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase().trim();
@@ -689,6 +765,7 @@ async function main() {
     else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
     else if (company.platform === 'lazada') jobs = await fetchLazadaJobs(company);
     else if (company.platform === 'shopee') jobs = await fetchShopeeJobs(company);
+    else if (company.platform === 'trip') jobs = await fetchTripJobs(company);
     else if (company.platform === 'oracle-hcm') jobs = await fetchOracleHCMJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));

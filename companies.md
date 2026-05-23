@@ -42,6 +42,7 @@
 * Supercell
 * TikTok
 * Traveloka
+* Trip.com Group
 * Ubisoft
 * Unity
 * Virtuos
@@ -59,4 +60,3 @@
 * Philips
 * Sea (Shopee - Integrated)
 * Tencent
-* Trip.com

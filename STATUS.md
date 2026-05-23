@@ -9,16 +9,17 @@
 - **Branding**: Dynamic company logos via Clearbit Logo API with UI Avatar fallbacks.
 
 ## 📊 Scraper Statistics
-- **Tracked Companies**: 50
-- **Active Technical Roles**: 585
+- **Tracked Companies**: 51
+- **Active Technical Roles**: 592
 - **Target Regions**: 
-  - 🇨🇳 China: 161 roles
+  - 🇨🇳 China: 168 roles
   - 🇸🇬 Singapore: 285 roles
   - 🇸🇪 Sweden: 112 roles
   - 🇭🇰 Hong Kong: 27 roles
 
 ## ✅ Recently Completed
-- **Stripe Integration**: Connected to Stripe's Greenhouse board, capturing 29 technical roles in Singapore and Sweden.
+- **Trip.com Group Integration**: Implemented dual-API support for mainland China (`careers.ctrip.com`) and overseas (`careers.trip.com`), capturing technical roles in Shanghai, Singapore, and Hong Kong.
+- **Stripe Integration**: Connected to Stripe's Greenhouse board, capturing technical roles in Singapore and Sweden.
 - **Virtuos Integration**: Connected to Virtuos's Oracle HCM Cloud API, capturing technical and production roles.
 - **Zalando LinkedIn Integration**: Added Zalando with a direct deep-link to their China jobs on LinkedIn.
 - **Shopee (Sea Group) Integration**: Connected to Shopee's internal `ats.workatsea.com` API, capturing 48 technical roles across Singapore and China tech hubs.
