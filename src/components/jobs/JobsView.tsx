@@ -141,7 +141,13 @@ export function JobsView({
                           <div className="flex items-center gap-4">
                             <div className="w-10 h-10 rounded-lg border border-gray-100 dark:border-slate-700 flex items-center justify-center bg-white shrink-0 shadow-sm overflow-hidden relative">
                               {isNew && <div className="absolute top-0 left-0 w-2 h-2 bg-blue-600 rounded-full shadow-[0_0_8px_rgba(37,99,235,0.6)]"></div>}
-                              {companyInfo?.logoDomain ? (
+                              {companyInfo?.customLogo ? (
+                                <img 
+                                  src={companyInfo.customLogo} 
+                                  alt={`${job.company} logo`}
+                                  className="max-w-full max-h-full object-contain p-1"
+                                />
+                              ) : companyInfo?.logoDomain ? (
                                 <img 
                                   src={`https://logo.clearbit.com/${companyInfo.logoDomain}`} 
                                   alt={`${job.company} logo`}

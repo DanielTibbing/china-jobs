@@ -17,7 +17,13 @@ export function JobCard({ job, isNew, currentView, onCompanyClick }: JobCardProp
       <div className="flex flex-col sm:flex-row justify-between items-start gap-5">
         <div className="flex-1 flex gap-5">
           <div className={`hidden sm:flex items-center justify-center w-14 h-14 rounded-xl border border-gray-100 dark:border-slate-700 overflow-hidden bg-white shrink-0 ${currentView === 'history' ? 'opacity-50' : ''}`}>
-            {COMPANY_DETAILS[job.company]?.logoDomain ? (
+            {COMPANY_DETAILS[job.company]?.customLogo ? (
+              <img 
+                src={COMPANY_DETAILS[job.company].customLogo} 
+                alt={`${job.company} logo`}
+                className="max-w-full max-h-full object-contain p-1"
+              />
+            ) : COMPANY_DETAILS[job.company]?.logoDomain ? (
               <img 
                 src={`https://logo.clearbit.com/${COMPANY_DETAILS[job.company].logoDomain}`} 
                 alt={`${job.company} logo`}

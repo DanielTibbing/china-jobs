@@ -15,4 +15,5 @@ export interface CompanyInfo {
   offices: string[];
   careerUrl: string;
   logoDomain: string;
+  customLogo?: string;
 }

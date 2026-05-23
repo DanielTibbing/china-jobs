@@ -15,7 +15,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Singapore', 'China'],
     offices: ['Singapore', 'Beijing', 'Seattle', 'Bangalore'],
     careerUrl: 'https://grab.careers/',
-    logoDomain: 'grab.com'
+    logoDomain: 'grab.com',
+    customLogo: 'Grab-Logo.png'
   },
   'Checkout.com': {
     name: 'Checkout.com',
@@ -23,7 +24,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Hong Kong', 'Singapore'],
     offices: ['Hong Kong', 'Singapore', 'London', 'Dubai'],
     careerUrl: 'https://www.checkout.com/careers',
-    logoDomain: 'checkout.com'
+    logoDomain: 'checkout.com',
+    customLogo: 'checkout.png'
   },
   'Canva': {
     name: 'Canva',
@@ -95,7 +97,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China'],
     offices: ['Stockholm', 'Shenzhen', 'London', 'Milton Keynes'],
     careerUrl: 'https://careers.marshall.com/',
-    logoDomain: 'marshall.com'
+    logoDomain: 'marshall.com',
+    customLogo: 'marshall.png'
   },
   'Duolingo': {
     name: 'Duolingo',
@@ -103,7 +106,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China'],
     offices: ['Beijing', 'Pittsburgh', 'New York', 'Seattle'],
     careerUrl: 'https://careers.duolingo.com/',
-    logoDomain: 'duolingo.com'
+    logoDomain: 'duolingo.com',
+    customLogo: 'duolingo.svg'
   },
   'Liftoff': {
     name: 'Liftoff',
@@ -151,7 +155,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China', 'Hong Kong', 'Singapore', 'Sweden'],
     offices: ['Shanghai', 'Hong Kong', 'Singapore', 'Stockholm', 'Lucerne', 'London'],
     careerUrl: 'https://www.ef.com/careers',
-    logoDomain: 'ef.com'
+    logoDomain: 'ef.com',
+    customLogo: 'ef.svg'
   },
   'Scania': {
     name: 'Scania',
@@ -183,7 +188,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore'],
     offices: ['Stockholm', 'Shanghai', 'Singapore', 'Redwood City'],
     careerUrl: 'https://www.ea.com/careers/careers-portal',
-    logoDomain: 'ea.com'
+    logoDomain: 'ea.com',
+    customLogo: 'ea.png'
   },
   'Epic Games': {
     name: 'Epic Games',
@@ -191,7 +197,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China', 'Singapore'],
     offices: ['Shanghai', 'Singapore', 'Cary'],
     careerUrl: 'https://www.epicgames.com/site/en-US/careers',
-    logoDomain: 'epicgames.com'
+    logoDomain: 'epicgames.com',
+    customLogo: 'Epic_Games.svg'
   },
   'NetEase Games': {
     name: 'NetEase Games',
@@ -287,7 +294,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China', 'Singapore'],
     offices: ['Shanghai', 'Singapore', 'Zurich', 'Berlin', 'London'],
     careerUrl: 'https://culture.on.com/jobs/',
-    logoDomain: 'on-running.com'
+    logoDomain: 'on-running.com',
+    customLogo: 'on-running.svg'
   },
   'Razer': {
     name: 'Razer',
@@ -311,7 +319,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore'],
     offices: ['Västerås', 'Zürich', 'Shanghai', 'Singapore'],
     careerUrl: 'https://careers.abb/global/en',
-    logoDomain: 'abb.com'
+    logoDomain: 'abb.com',
+    customLogo: 'abb.png'
   },
   'Axis Communications': {
     name: 'Axis Communications',
@@ -319,7 +328,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore', 'Hong Kong'],
     offices: ['Lund', 'Shanghai', 'Singapore', 'Hong Kong'],
     careerUrl: 'https://www.axis.com/about-axis/careers',
-    logoDomain: 'axis.com'
+    logoDomain: 'axis.com',
+    customLogo: 'axis-communications.png'
   },
   'Electrolux': {
     name: 'Electrolux',
@@ -327,7 +337,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore'],
     offices: ['Stockholm', 'Shanghai', 'Singapore'],
     careerUrl: 'https://career.electroluxgroup.com/',
-    logoDomain: 'electrolux.com'
+    logoDomain: 'electrolux.com',
+    customLogo: 'Electrolux.svg'
   },
   'Booking.com': {
     name: 'Booking.com',
@@ -335,7 +346,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['China', 'Singapore'],
     offices: ['Shanghai', 'Singapore', 'Amsterdam'],
     careerUrl: 'https://jobs.booking.com/',
-    logoDomain: 'booking.com'
+    logoDomain: 'booking.com',
+    customLogo: 'booking.png'
   },
   'Atlas Copco': {
     name: 'Atlas Copco',
@@ -343,7 +355,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore'],
     offices: ['Stockholm', 'Nacka', 'Shanghai', 'Singapore'],
     careerUrl: 'https://www.atlascopcogroup.com/en/careers/jobs',
-    logoDomain: 'atlascopco.com'
+    logoDomain: 'atlascopco.com',
+    customLogo: 'atlas-copco.svg'
   },
   'Volvo Group': {
     name: 'Volvo Group',
@@ -359,7 +372,8 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     regions: ['Sweden', 'China', 'Singapore', 'Hong Kong'],
     offices: ['Stockholm', 'Shanghai', 'Singapore', 'Hong Kong'],
     careerUrl: 'https://www.assaabloy.com/group/en/career',
-    logoDomain: 'assaabloy.com'
+    logoDomain: 'assaabloy.com',
+    customLogo: 'assa-abloy.jpg'
   }
 };
 

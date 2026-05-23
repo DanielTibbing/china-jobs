@@ -13,7 +13,13 @@ export function CompanyCard({ company, activeCount, onViewRoles }: CompanyCardPr
     <div className="bg-white dark:bg-slate-900 p-8 rounded-3xl border-2 border-gray-100 dark:border-slate-800 shadow-sm hover:border-purple-100 dark:hover:border-purple-900 transition-all duration-200 flex flex-col h-full">
       <div className="flex justify-between items-start mb-6">
         <div className="bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 p-2 rounded-2xl w-16 h-16 flex items-center justify-center overflow-hidden shadow-sm text-gray-400">
-          {company.logoDomain ? (
+          {company.customLogo ? (
+            <img 
+              src={company.customLogo} 
+              alt={`${company.name} logo`}
+              className="max-w-full max-h-full object-contain"
+            />
+          ) : company.logoDomain ? (
             <img 
               src={`https://logo.clearbit.com/${company.logoDomain}`} 
               alt={`${company.name} logo`}

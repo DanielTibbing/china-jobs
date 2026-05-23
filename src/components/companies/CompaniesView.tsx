@@ -99,7 +99,13 @@ export function CompaniesView({ searchTerm, activeJobs, setSelectedCompany }: Co
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-4">
                           <div className="w-10 h-10 rounded-lg border border-gray-100 dark:border-slate-700 flex items-center justify-center bg-white shrink-0 shadow-sm overflow-hidden">
-                            {company.logoDomain ? (
+                            {company.customLogo ? (
+                              <img 
+                                src={company.customLogo} 
+                                alt={`${name} logo`}
+                                className="max-w-full max-h-full object-contain p-1"
+                              />
+                            ) : company.logoDomain ? (
                               <img 
                                 src={`https://logo.clearbit.com/${company.logoDomain}`} 
                                 alt={`${name} logo`}
