@@ -10,14 +10,15 @@
 
 ## 📊 Scraper Statistics
 - **Tracked Companies**: 45
-- **Active Technical Roles**: 309
+- **Active Technical Roles**: 481
 - **Target Regions**: 
-  - 🇨🇳 China: 117 roles
-  - 🇸🇬 Singapore: 137 roles
-  - 🇸🇪 Sweden: 35 roles
-  - 🇭🇰 Hong Kong: 20 roles
+  - 🇨🇳 China: 125 roles
+  - 🇸🇬 Singapore: 219 roles
+  - 🇸🇪 Sweden: 110 roles
+  - 🇭🇰 Hong Kong: 27 roles
 
 ## ✅ Recently Completed
+- **Klook Integration**: Implemented Klook's internal API with full pagination, capturing technical and leadership roles in Singapore and China.
 - **Electronic Arts (EA) Integration**: Successfully integrated EA's Avature-based SSR portal with robust regex parsing.
 - **Volvo Group Migration**: Moved from HTML scraping to direct XML feed integration (`jobs.volvogroup.com/feed/361555`).
 - **Atlas Copco Integration**: Implemented Algolia API search for high-precision technical role fetching.

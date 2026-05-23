@@ -55,7 +55,8 @@ const COMPANIES = [
   
   // Workday V2 (CXS Direct)
   { name: 'Razer', platform: 'workday-v2', token: 'Careers', tenant: 'razer', sub: 'wd3' },
-  { name: 'Klook', platform: 'workday-v2', token: 'Klook', tenant: 'klook', sub: 'wd3' },
+  // Internal API
+  { name: 'Klook', platform: 'klook' },
   { name: 'Axis Communications', platform: 'workday-v2', token: 'External_Career_Site', tenant: 'axis', sub: 'wd3' },
   
   // XML Feed (Direct)
@@ -446,6 +447,54 @@ async function fetchEAJobs(company) {
   return allEA;
 }
 
+async function fetchKlookJobs(company) {
+  let allKlook = [];
+  const limit = 20;
+  let offset = 0;
+  let total = 0;
+
+  try {
+    do {
+      const response = await axiosInstance.post('https://www.klookcareers.com/api/outer/ats-apply/website/jobs/v2', {
+        orgId: "klookcareers",
+        siteId: "100000176",
+        limit: limit,
+        offset: offset,
+        needStat: true,
+        site: "social",
+        locale: "en-US"
+      });
+
+      if (!response.data?.data) break;
+      const data = response.data.data;
+      total = data.jobStats?.total || 0;
+      
+      if (data.jobs) {
+        const jobs = data.jobs.map(job => {
+          const loc = job.locations?.[0]?.country || job.locations?.[0]?.cityName || 'Global';
+          return {
+            id: `kl-${job.id}`,
+            title: job.title,
+            company: company.name,
+            location: loc,
+            link: `https://www.klookcareers.com/jobs-detail/${job.id}`,
+            postedAt: job.publishedAt || new Date().toISOString(),
+            region: detectRegion(loc)
+          };
+        });
+        allKlook = allKlook.concat(jobs);
+      }
+      
+      offset += limit;
+      if (offset >= total || offset > 500) break;
+      await new Promise(r => setTimeout(r, 300));
+    } while (offset < total);
+  } catch (error) {
+    console.error(`Error fetching Klook jobs:`, error.message);
+  }
+  return allKlook;
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase();
@@ -481,6 +530,7 @@ async function main() {
     else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
     else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
     else if (company.platform === 'ea') jobs = await fetchEAJobs(company);
+    else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
     console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);

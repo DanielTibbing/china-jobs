@@ -9,6 +9,7 @@ interface HeaderProps {
   setIsDarkMode: (val: boolean) => void;
 }
 
+
 export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMode, setIsDarkMode }: HeaderProps) {
   const { pathname } = useLocation();
   
@@ -45,7 +46,7 @@ export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMo
                 className="block w-full pl-10 pr-3 py-2.5 border border-gray-300 dark:border-slate-700 rounded-xl leading-5 bg-gray-50 dark:bg-slate-800 dark:text-white placeholder-gray-500 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm transition duration-150 ease-in-out"
                 placeholder={pathname === '/companies' ? "Search companies..." : "Search roles..."}
                 value={searchTerm}
-                onChange={(e) => (setSearchTerm as any)(e.target.value)}
+                onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
 
