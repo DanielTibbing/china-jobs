@@ -21,6 +21,7 @@
 * Grab
 * Klook
 * Lego Group
+* Lazada
 * Liftoff
 * Marshall
 * Moonton
@@ -51,7 +52,6 @@
 * Fliggy
 * Jabra
 * Lalamove
-* Lazada
 * Philips
 * Sea (Shopee)
 * Stripe

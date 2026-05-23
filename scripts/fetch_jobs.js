@@ -97,6 +97,9 @@ const COMPANIES = [
 
   // Avature (EA)
   { name: 'EA', platform: 'ea', domain: 'jobs.ea.com' },
+
+  // Lazada Internal API
+  { name: 'Lazada', platform: 'lazada' },
 ];
 
 const axiosInstance = axios.create({
@@ -517,6 +520,48 @@ async function fetchKlookJobs(company) {
   return allKlook;
 }
 
+async function fetchLazadaJobs(company) {
+  let allLazada = [];
+  const locations = [
+    { id: 'SGP', name: 'Singapore' },
+    { id: 'CHN', name: 'China' }
+  ];
+
+  for (const loc of locations) {
+    try {
+      // Lazada uses application/x-www-form-urlencoded
+      const params = new URLSearchParams();
+      params.append('do', 'careersiteJobSearch');
+      params.append('location_id', loc.id);
+      params.append('pagesize', '100');
+      params.append('page', '1');
+
+      const response = await axiosInstance.post('https://www.lazada.com/en/api/career/', params, {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'X-Requested-With': 'XMLHttpRequest'
+        }
+      });
+
+      if (response.data?.jobs) {
+        const jobs = response.data.jobs.map(job => ({
+          id: `lz-${job.id}`,
+          title: job.name,
+          company: company.name,
+          location: job.location_name || loc.name,
+          link: `https://www.lazada.com/en/careers/job-description/?id=${job.id}`,
+          postedAt: new Date().toISOString(), // Lazada API doesn't return date
+          region: loc.name
+        }));
+        allLazada = allLazada.concat(jobs);
+      }
+    } catch (error) {
+      console.error(`Error fetching Lazada jobs for ${loc.name}:`, error.message);
+    }
+  }
+  return allLazada;
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase().trim();
@@ -553,6 +598,7 @@ async function main() {
     else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
     else if (company.platform === 'ea') jobs = await fetchEAJobs(company);
     else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
+    else if (company.platform === 'lazada') jobs = await fetchLazadaJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
     console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);

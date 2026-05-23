@@ -174,6 +174,14 @@ export const COMPANY_DETAILS: Record<string, CompanyInfo> = {
     careerUrl: 'https://www.lego.com/en-us/aboutus/careers',
     logoDomain: 'lego.com'
   },
+  'Lazada': {
+    name: 'Lazada',
+    description: 'The leading e-commerce platform in Southeast Asia, connecting local and international sellers and brands to millions of consumers.',
+    regions: ['Singapore', 'China'],
+    offices: ['Singapore', 'Shanghai', 'Shenzhen', 'Bangkok'],
+    careerUrl: 'https://www.lazada.com/en/careers/',
+    logoDomain: 'lazada.com'
+  },
   'Spotify': {
     name: 'Spotify',
     description: 'The world\'s most popular audio streaming subscription service.',
