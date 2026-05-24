@@ -34,6 +34,12 @@ export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMo
               Jobs Board
             </a>
             <a
+              href="https://danieltibbing.github.io/china-pods"
+              className="hover:text-gray-700 dark:hover:text-slate-200 transition-colors pb-0.5"
+            >
+              Podcast Hub
+            </a>
+            <a
               href="https://danieltibbing.github.io/chinese-practice/"
               className="hover:text-gray-700 dark:hover:text-slate-200 transition-colors pb-0.5"
             >
