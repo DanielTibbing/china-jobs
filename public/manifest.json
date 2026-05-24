@@ -1,7 +1,8 @@
 {
   "short_name": "China Jobs",
   "name": "China-Nordic Jobs",
-  "start_url": "/",
+  "start_url": "/china-jobs/",
+  "scope": "/china-jobs/",
   "background_color": "#2563EB",
   "theme_color": "#2563EB",
   "display": "standalone",
