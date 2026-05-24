@@ -72,7 +72,11 @@ export function ApplicationsView({
   // Filtered applications based on search and selected filter card
   const filteredApplications = useMemo(() => {
     return trackedApplicationsList.filter(item => {
-      const matchesStatus = selectedStatusFilter === 'all' || item.app.status === selectedStatusFilter
+      const matchesStatus = 
+        selectedStatusFilter === 'all' || 
+        (selectedStatusFilter === 'rejected' 
+          ? (item.app.status === 'rejected' || item.app.status === 'withdrawn') 
+          : item.app.status === selectedStatusFilter)
       
       const searchStr = searchTerm.toLowerCase()
       const matchesSearch = 
@@ -239,7 +243,7 @@ export function ApplicationsView({
           <div className="flex items-center gap-2 self-start sm:self-center shrink-0">
             <span className="text-xs font-black text-gray-400 uppercase tracking-wider">Filtered:</span>
             <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 border border-blue-200/40">
-              {selectedStatusFilter.toUpperCase()}
+              {selectedStatusFilter === 'rejected' ? 'REJECTED / CLOSED' : selectedStatusFilter.toUpperCase()}
               <button 
                 onClick={() => setSelectedStatusFilter('all')} 
                 className="ml-1.5 p-0.5 rounded-full hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-900"
