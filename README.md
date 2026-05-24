@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# 💼 China Career Board (china-jobs)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Careers and Job Board application for the **China Suite** ecosystem—an ultra-premium, interactive client-side web directory allowing professionals to search for employment openings, apply to listings, and track application progress under a unified tracker dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Seeded Job Directories:** Contains a rich preset database of China-related job listings covering tech, logistics, education, translation, and consulting sectors.
+- **Dynamic Search & Filtering:** Categorized by industry sectors (*Semiconductors & AI*, *Logistics & Trade*, *Academics & Language*, etc.) with quick search inputs.
+- **Interactive Inspection Overlays:** Inspect company profiles, job requirements, salary tiers, and detailed specifications instantly.
+- **Applicant Tracking System (ATS):** Submit applications using a responsive form overlay and monitor interview progression, stashes, and application dates under your offline dashboard.
+- **Theme Sync Engine:** Binds dark and light modes across all active browser windows instantly using standard shared local storage listeners.
+- **SEO & FOUC Prevention:** Structurally optimized SEO tags and head scripts preventing any unstyled flashes on launch.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Framework:** React 19 + TypeScript + Vite 8
+- **Styling:** Tailwind CSS v4.0.0
+- **Deployment:** GitHub Pages Subdirectory `/china-jobs/`
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Directory Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```text
+src/
+├── components/          # Reactive UI Components
+│   ├── applications/    # ATS dashboards and apply overlays
+│   ├── jobs/            # Job card grids, filters, and detail sheets
+│   └── layout/          # Cross-Navigation Switcher Header & Footer
+├── constants/
+│   └── jobs.ts          # Central jobs and companies database
+├── hooks/
+│   └── useTheme.ts      # Dark/light theme switcher hook
+├── types/
+│   └── index.ts         # TypeScript structures (Job, Company, Application)
+├── App.tsx              # Main layout assembler and routing configuration
+└── main.tsx             # DOM entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💻 Local Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Run locally in development mode:**
+   ```bash
+   npm run dev
+   ```
+3. **Build the production package:**
+   ```bash
+   npm run build
+   ```
+   *This compiles TypeScript strict checking (`tsc -b`) and bundles standard minified files inside `dist/` using Vite.*
+
+---
+
+## 🌐 China Suite Ecosystem
+
+The Career Board operates as a sub-app of the broader **China Suite** family. The switcher header instantly navigates between:
+- **Switcher Portal**: [danieltibbing.github.io](https://danieltibbing.github.io/)
+- **Career Board (This Repo)**: [china-jobs](https://danieltibbing.github.io/china-jobs/)
+- **Study Hub**: [chinese-practice](https://danieltibbing.github.io/chinese-practice/)
+- **Podcast Hub**: [china-pods](https://danieltibbing.github.io/china-pods/)
