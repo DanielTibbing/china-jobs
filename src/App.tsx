@@ -6,6 +6,7 @@ import { Footer } from './components/layout/Footer'
 import { JobsView } from './components/jobs/JobsView'
 import { CompaniesView } from './components/companies/CompaniesView'
 import { ApplicationsView } from './components/applications/ApplicationsView'
+import { SettingsView } from './components/settings/SettingsView'
 import { useJobs } from './hooks/useJobs'
 import { useTheme } from './hooks/useTheme'
 
@@ -155,6 +156,7 @@ function App() {
                 onAddCustomJob={addCustomJob}
               />
             } />
+            <Route path="/settings" element={<SettingsView />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

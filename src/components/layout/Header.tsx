@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Search, Briefcase, History, Building2, Sun, Moon, Star, CheckSquare } from 'lucide-react'
+import { Search, Briefcase, History, Building2, Sun, Moon, Star, CheckSquare, Settings } from 'lucide-react'
 
 interface HeaderProps {
   searchTerm: string;
@@ -36,6 +36,15 @@ export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMo
             >
               {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
+
+            <Link
+              to="/settings"
+              className="p-2.5 rounded-xl bg-gray-50 dark:bg-slate-800 text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all md:hidden border border-gray-200 dark:border-slate-700 hover:text-blue-600 dark:hover:text-blue-400"
+              title="Data Settings"
+              aria-label="Data Settings"
+            >
+              <Settings className="h-5 w-5" />
+            </Link>
           </div>
           
           <div className="flex flex-1 max-w-md gap-2 items-center">
@@ -59,6 +68,15 @@ export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMo
             >
               {isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
+
+            <Link
+              to="/settings"
+              className="hidden md:flex p-2.5 rounded-xl bg-gray-50 dark:bg-slate-800 text-gray-500 dark:text-slate-400 hover:bg-gray-100 dark:hover:bg-slate-700 transition-all border border-gray-200 dark:border-slate-700 hover:text-blue-600 dark:hover:text-blue-400"
+              title="Data Settings"
+              aria-label="Data Settings"
+            >
+              <Settings className="h-5 w-5" />
+            </Link>
           </div>
         </div>
 
