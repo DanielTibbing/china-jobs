@@ -52,10 +52,39 @@ export function useJobs() {
         setRemovedJobs(removed.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime()))
 
         const updatedAllEverSeen = { ...allEverSeen }
+        const nowStr = new Date().toISOString()
         data.forEach(job => {
-          updatedAllEverSeen[job.id] = job
+          const existing = allEverSeen[job.id] as any
+          updatedAllEverSeen[job.id] = {
+            ...job,
+            firstSeenAt: existing?.firstSeenAt || nowStr
+          } as any
         })
-        localStorage.setItem('all_ever_seen_jobs', JSON.stringify(updatedAllEverSeen))
+
+        // Prune cache details older than 180 days since first seen, unless they are active, starred, or tracked
+        const savedStarred = localStorage.getItem('starred_job_ids')
+        const starredSet = savedStarred ? new Set<string>(JSON.parse(savedStarred) as string[]) : new Set<string>()
+        
+        const savedApplied = localStorage.getItem('applied_jobs_data')
+        const appliedKeys = savedApplied ? new Set<string>(Object.keys(JSON.parse(savedApplied) as Record<string, any>)) : new Set<string>()
+
+        const cutoffTime = Date.now() - 180 * 24 * 60 * 60 * 1000
+        const prunedAllEverSeen: Record<string, Job> = {}
+        
+        Object.values(updatedAllEverSeen).forEach(job => {
+          const isActive = currentIds.has(job.id)
+          const isStarred = starredSet.has(job.id)
+          const isTracked = appliedKeys.has(job.id)
+          
+          // Use firstSeenAt if available, fallback to postedAt for existing listings
+          const seenTime = new Date((job as any).firstSeenAt || job.postedAt).getTime()
+          const isRecent = seenTime > cutoffTime
+          
+          if (isActive || isStarred || isTracked || isRecent) {
+            prunedAllEverSeen[job.id] = job
+          }
+        })
+        localStorage.setItem('all_ever_seen_jobs', JSON.stringify(prunedAllEverSeen))
 
         setTimeout(() => {
           const newSeenIds = new Set([...Array.from(initialSeen), ...data.map(j => j.id)])
