@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Search, Briefcase, History, Building2, Sun, Moon, Star } from 'lucide-react'
+import { Search, Briefcase, History, Building2, Sun, Moon, Star, CheckSquare } from 'lucide-react'
 
 interface HeaderProps {
   searchTerm: string;
@@ -8,10 +8,11 @@ interface HeaderProps {
   isDarkMode: boolean;
   setIsDarkMode: (val: boolean) => void;
   starredCount: number;
+  appliedCount: number;
 }
 
 
-export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMode, setIsDarkMode, starredCount }: HeaderProps) {
+export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMode, setIsDarkMode, starredCount, appliedCount }: HeaderProps) {
   const { pathname } = useLocation();
   
   return (
@@ -113,6 +114,22 @@ export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMo
           >
             <Building2 className="h-4 w-4" />
             Companies
+          </Link>
+          <Link
+            to="/applications"
+            className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 relative ${
+              pathname === '/applications' 
+              ? 'border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400' 
+              : 'border-transparent text-gray-400 dark:text-slate-500 hover:text-gray-600 dark:hover:text-slate-300'
+            }`}
+          >
+            <CheckSquare className="h-4 w-4" />
+            <span>Tracked Apps</span>
+            {appliedCount > 0 && (
+              <span className="inline-flex items-center justify-center px-2 py-0.5 ml-1 text-[10px] font-black leading-none text-blue-700 bg-blue-100 dark:text-blue-300 dark:bg-blue-950/40 rounded-full border border-blue-200 dark:border-blue-900/30 animate-fade-in">
+                {appliedCount}
+              </span>
+            )}
           </Link>
         </div>
       </div>

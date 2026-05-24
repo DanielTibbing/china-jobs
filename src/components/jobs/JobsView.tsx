@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Filter, Briefcase, RefreshCw, LayoutGrid, List, Building2, ExternalLink, Clock, MapPin, Star, Eye, EyeOff } from 'lucide-react'
-import type { Job } from '../../types'
+import { Filter, Briefcase, RefreshCw, LayoutGrid, List, Building2, ExternalLink, Clock, MapPin, Star, Eye, EyeOff, CheckSquare } from 'lucide-react'
+import type { Job, JobApplication } from '../../types'
 import { REGION_FLAGS } from '../../constants/regions'
 import { COMPANY_DETAILS } from '../../constants/companies'
 import { JobCard } from './JobCard'
+import { ApplicationModal } from '../applications/ApplicationModal'
 
 interface JobsViewProps {
   loading: boolean;
@@ -24,15 +25,20 @@ interface JobsViewProps {
   onToggleStarred: (id: string) => void;
   onHide: (id: string) => void;
   onUnhide: (id: string) => void;
+  appliedJobs: Record<string, JobApplication>;
+  onSaveApplication: (jobId: string, app: Partial<JobApplication> & { status: JobApplication['status'] }) => void;
+  onRemoveApplication: (jobId: string) => void;
 }
 
 export function JobsView({ 
   loading, error, jobs, selectedRegion, setSelectedRegion, 
   selectedCompany, setSelectedCompany, companiesFromJobs, seenJobIds, currentView,
-  starredJobIds, hiddenJobIds, hiddenJobs, activeJobIds, onToggleStarred, onHide, onUnhide
+  starredJobIds, hiddenJobIds, hiddenJobs, activeJobIds, onToggleStarred, onHide, onUnhide,
+  appliedJobs, onSaveApplication, onRemoveApplication
 }: JobsViewProps) {
   const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid');
+  const [editingJob, setEditingJob] = useState<Job | null>(null);
 
   const handleCompanyClick = (company: string) => {
     setSelectedCompany(company);
@@ -128,6 +134,8 @@ export function JobsView({
               onHide={onHide}
               onUnhide={onUnhide}
               isExpired={currentView === 'history' || (currentView === 'starred' && !activeJobIds.has(job.id))}
+              trackedApplication={appliedJobs[job.id]}
+              onTrackClick={setEditingJob}
             />
           ))
         ) : (
@@ -206,12 +214,30 @@ export function JobsView({
                               className={`p-2 rounded-lg border transition-all duration-200 hover:scale-105 active:scale-95 ${
                                 isStarred
                                   ? 'bg-amber-50 border-amber-250 text-amber-500 hover:bg-amber-100 hover:border-amber-350 dark:bg-amber-950/20 dark:border-amber-900/30 dark:hover:bg-amber-900/40 dark:text-amber-400'
-                                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:text-gray-650 hover:bg-gray-100 hover:border-gray-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-slate-750 dark:hover:text-slate-350'
+                                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:text-gray-655 hover:bg-gray-100 hover:border-gray-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-slate-750 dark:hover:text-slate-350'
                               }`}
                               title={isStarred ? "Remove from Starred" : "Add to Starred"}
                               aria-label={isStarred ? "Remove from Starred" : "Add to Starred"}
                             >
                               <Star className={`h-4 w-4 ${isStarred ? 'fill-current' : ''}`} />
+                            </button>
+
+                            {/* Track Application Button */}
+                            <button
+                              onClick={() => setEditingJob(job)}
+                              className={`p-2 rounded-lg border transition-all duration-200 hover:scale-105 active:scale-95 ${
+                                appliedJobs[job.id]
+                                  ? appliedJobs[job.id].status === 'applied' ? 'bg-blue-50 border-blue-200 text-blue-650 dark:bg-blue-950/20 dark:border-blue-900/30 dark:text-blue-400'
+                                    : appliedJobs[job.id].status === 'interviewing' ? 'bg-purple-50 border-purple-200 text-purple-650 dark:bg-purple-950/20 dark:border-purple-900/30 dark:text-purple-400'
+                                    : appliedJobs[job.id].status === 'offer' ? 'bg-green-50 border-green-200 text-green-650 dark:bg-green-950/20 dark:border-green-900/30 dark:text-green-400'
+                                    : appliedJobs[job.id].status === 'rejected' ? 'bg-red-50 border-red-200 text-red-650 dark:bg-red-950/20 dark:border-red-900/30 dark:text-red-400'
+                                    : 'bg-gray-50 border-gray-200 text-gray-500 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400'
+                                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:text-blue-600 hover:bg-blue-50 hover:border-blue-150 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-slate-750 dark:hover:text-slate-300'
+                              }`}
+                              title={appliedJobs[job.id] ? `Tracked: ${appliedJobs[job.id].status.toUpperCase()} (Click to edit)` : "Track Application Progress"}
+                              aria-label={appliedJobs[job.id] ? `Tracked: ${appliedJobs[job.id].status.toUpperCase()}` : "Track Application"}
+                            >
+                              <CheckSquare className="h-4 w-4" />
                             </button>
 
                             {/* Hide / Unhide Toggle Button */}
@@ -285,6 +311,8 @@ export function JobsView({
                   onHide={onHide}
                   onUnhide={onUnhide}
                   isExpired={!activeJobIds.has(job.id)}
+                  trackedApplication={appliedJobs[job.id]}
+                  onTrackClick={setEditingJob}
                 />
               ))
             ) : (
@@ -398,6 +426,17 @@ export function JobsView({
             )}
           </div>
         </div>
+      )}
+      {/* Global Application Detail modal */}
+      {editingJob && (
+        <ApplicationModal
+          isOpen={!!editingJob}
+          onClose={() => setEditingJob(null)}
+          job={editingJob}
+          existingApplication={appliedJobs[editingJob.id]}
+          onSave={onSaveApplication}
+          onDelete={onRemoveApplication}
+        />
       )}
     </div>
   )

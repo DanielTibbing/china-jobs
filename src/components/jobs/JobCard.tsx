@@ -1,5 +1,5 @@
-import { MapPin, ExternalLink, Clock, Building2, Star, Eye, EyeOff } from 'lucide-react'
-import type { Job } from '../../types'
+import { MapPin, ExternalLink, Clock, Building2, Star, Eye, EyeOff, CheckSquare } from 'lucide-react'
+import type { Job, JobApplication } from '../../types'
 import { COMPANY_DETAILS } from '../../constants/companies'
 import { REGION_FLAGS } from '../../constants/regions'
 
@@ -13,11 +13,14 @@ interface JobCardProps {
   onHide: (id: string) => void;
   onUnhide?: (id: string) => void;
   isExpired: boolean;
+  trackedApplication?: JobApplication;
+  onTrackClick?: (job: Job) => void;
 }
 
 export function JobCard({ 
   job, isNew, onCompanyClick, 
-  isStarred, isHidden, onToggleStarred, onHide, onUnhide, isExpired 
+  isStarred, isHidden, onToggleStarred, onHide, onUnhide, isExpired,
+  trackedApplication, onTrackClick
 }: JobCardProps) {
   return (
     <div key={job.id} className={`bg-white dark:bg-slate-900 p-6 rounded-2xl border-2 transition-all duration-200 group relative overflow-hidden ${isExpired ? 'border-gray-100 dark:border-slate-800 opacity-85 grayscale-[0.3] hover:shadow-sm' : 'border-gray-100 dark:border-slate-800 hover:border-blue-100 dark:hover:border-blue-900 shadow-sm hover:shadow-md'}`}>
@@ -75,6 +78,33 @@ export function JobCard({
           >
             <Star className={`h-4.5 w-4.5 ${isStarred ? 'fill-current' : ''}`} />
           </button>
+
+          {/* Track Application Button */}
+          {onTrackClick && (
+            <button
+              onClick={() => onTrackClick(job)}
+              className={`p-2.5 rounded-xl border transition-all duration-200 hover:scale-105 active:scale-95 flex items-center justify-center gap-1.5 ${
+                trackedApplication
+                  ? trackedApplication.status === 'applied' ? 'bg-blue-50 border-blue-200 text-blue-600 hover:bg-blue-100 dark:bg-blue-950/20 dark:border-blue-900/30 dark:text-blue-400'
+                    : trackedApplication.status === 'interviewing' ? 'bg-purple-50 border-purple-200 text-purple-600 hover:bg-purple-100 dark:bg-purple-950/20 dark:border-purple-900/30 dark:text-purple-400'
+                    : trackedApplication.status === 'offer' ? 'bg-green-50 border-green-200 text-green-600 hover:bg-green-100 dark:bg-green-950/20 dark:border-green-900/30 dark:text-green-400'
+                    : trackedApplication.status === 'rejected' ? 'bg-red-50 border-red-200 text-red-650 hover:bg-red-100 dark:bg-red-950/20 dark:border-red-900/30 dark:text-red-400'
+                    : 'bg-gray-50 border-gray-200 text-gray-500 hover:bg-gray-100 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-400'
+                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:text-blue-600 hover:bg-blue-50 hover:border-blue-150 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-slate-750 dark:hover:text-slate-300'
+              }`}
+              title={trackedApplication ? `Tracked: ${trackedApplication.status.toUpperCase()} (Click to edit)` : "Track Application Progress"}
+              aria-label={trackedApplication ? `Tracked: ${trackedApplication.status.toUpperCase()}` : "Track Application"}
+            >
+              <CheckSquare className="h-4.5 w-4.5" />
+              {trackedApplication ? (
+                <span className="text-[10px] font-black uppercase tracking-wider hidden md:inline">
+                  {trackedApplication.status === 'offer' ? 'Offer!' : trackedApplication.status}
+                </span>
+              ) : (
+                <span className="text-[10px] font-black uppercase tracking-wider hidden md:inline text-gray-400 hover:text-blue-605">Track</span>
+              )}
+            </button>
+          )}
 
           {/* Hide / Unhide Toggle Button */}
           {isHidden ? (

@@ -5,6 +5,7 @@ import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
 import { JobsView } from './components/jobs/JobsView'
 import { CompaniesView } from './components/companies/CompaniesView'
+import { ApplicationsView } from './components/applications/ApplicationsView'
 import { useJobs } from './hooks/useJobs'
 import { useTheme } from './hooks/useTheme'
 
@@ -26,9 +27,14 @@ function App() {
     hiddenJobs,
     starredCount,
     activeJobIds,
+    appliedJobs,
+    allEverSeenJobsList,
     toggleStarred,
     hideJob,
-    unhideJob
+    unhideJob,
+    saveJobApplication,
+    removeJobApplication,
+    addCustomJob
   } = useJobs()
 
   const companiesFromJobs = useMemo(() => {
@@ -58,6 +64,7 @@ function App() {
           isDarkMode={isDarkMode}
           setIsDarkMode={setIsDarkMode}
           starredCount={starredCount}
+          appliedCount={Object.keys(appliedJobs).length}
         />
 
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -80,6 +87,9 @@ function App() {
                 onToggleStarred={toggleStarred}
                 onHide={hideJob}
                 onUnhide={unhideJob}
+                appliedJobs={appliedJobs}
+                onSaveApplication={saveJobApplication}
+                onRemoveApplication={removeJobApplication}
               />
             } />
             <Route path="/starred" element={
@@ -100,6 +110,9 @@ function App() {
                 onToggleStarred={toggleStarred}
                 onHide={hideJob}
                 onUnhide={unhideJob}
+                appliedJobs={appliedJobs}
+                onSaveApplication={saveJobApplication}
+                onRemoveApplication={removeJobApplication}
               />
             } />
             <Route path="/history" element={
@@ -121,6 +134,9 @@ function App() {
                 onToggleStarred={toggleStarred}
                 onHide={hideJob}
                 onUnhide={unhideJob}
+                appliedJobs={appliedJobs}
+                onSaveApplication={saveJobApplication}
+                onRemoveApplication={removeJobApplication}
               />
             } />
             <Route path="/companies" element={
@@ -128,6 +144,15 @@ function App() {
                 searchTerm={searchTerm}
                 activeJobs={activeJobs}
                 setSelectedCompany={setSelectedCompany}
+              />
+            } />
+            <Route path="/applications" element={
+              <ApplicationsView 
+                allJobs={allEverSeenJobsList}
+                appliedJobs={appliedJobs}
+                onSaveApplication={saveJobApplication}
+                onRemoveApplication={removeJobApplication}
+                onAddCustomJob={addCustomJob}
               />
             } />
             <Route path="*" element={<Navigate to="/" replace />} />
@@ -138,6 +163,7 @@ function App() {
           activeCount={activeJobs.filter(j => !hiddenJobIds.has(j.id)).length} 
           removedCount={removedJobs.filter(j => !hiddenJobIds.has(j.id)).length} 
           starredCount={starredCount}
+          appliedCount={Object.keys(appliedJobs).length}
         />
       </div>
     </HashRouter>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react'
-import type { Job } from '../types'
+import type { Job, JobApplication } from '../types'
 
 export function useJobs() {
   const [activeJobs, setActiveJobs] = useState<Job[]>([])
@@ -18,6 +18,16 @@ export function useJobs() {
   const [hiddenJobIds, setHiddenJobIds] = useState<Set<string>>(() => {
     const savedHidden = localStorage.getItem('hidden_job_ids')
     return savedHidden ? new Set<string>(JSON.parse(savedHidden) as string[]) : new Set<string>()
+  })
+
+  const [appliedJobs, setAppliedJobs] = useState<Record<string, JobApplication>>(() => {
+    const saved = localStorage.getItem('applied_jobs_data')
+    return saved ? JSON.parse(saved) : {}
+  })
+
+  const [customJobs, setCustomJobs] = useState<Record<string, Job>>(() => {
+    const saved = localStorage.getItem('custom_jobs_data')
+    return saved ? JSON.parse(saved) : {}
   })
   
   const [loading, setLoading] = useState(true)
@@ -94,10 +104,11 @@ export function useJobs() {
 
   const allEverSeenJobsList = useMemo(() => {
     const uniqueMap = new Map<string, Job>()
+    Object.values(customJobs).forEach(j => uniqueMap.set(j.id, j))
     activeJobs.forEach(j => uniqueMap.set(j.id, j))
     removedJobs.forEach(j => uniqueMap.set(j.id, j))
     return Array.from(uniqueMap.values())
-  }, [activeJobs, removedJobs])
+  }, [activeJobs, removedJobs, customJobs])
 
   const starredJobs = useMemo(() => {
     return allEverSeenJobsList.filter(job => starredJobIds.has(job.id))
@@ -115,6 +126,51 @@ export function useJobs() {
     return new Set(activeJobs.map(j => j.id))
   }, [activeJobs])
 
+  const saveJobApplication = (jobId: string, application: Partial<JobApplication> & { status: JobApplication['status'] }) => {
+    setAppliedJobs(prev => {
+      const existing = prev[jobId] || {
+        jobId,
+        status: 'applied',
+        appliedAt: new Date().toISOString().split('T')[0],
+        updatedAt: new Date().toISOString(),
+      }
+      
+      const next = {
+        ...prev,
+        [jobId]: {
+          ...existing,
+          ...application,
+          updatedAt: new Date().toISOString(),
+        }
+      }
+      localStorage.setItem('applied_jobs_data', JSON.stringify(next))
+      return next
+    })
+  }
+
+  const removeJobApplication = (jobId: string) => {
+    setAppliedJobs(prev => {
+      const next = { ...prev }
+      delete next[jobId]
+      localStorage.setItem('applied_jobs_data', JSON.stringify(next))
+      return next
+    })
+  }
+
+  const addCustomJob = (job: Omit<Job, 'id'>) => {
+    const jobId = `custom-${Date.now()}`
+    const newJob: Job = {
+      ...job,
+      id: jobId,
+    }
+    setCustomJobs(prev => {
+      const next = { ...prev, [jobId]: newJob }
+      localStorage.setItem('custom_jobs_data', JSON.stringify(next))
+      return next
+    })
+    return newJob
+  }
+
   return {
     loading,
     error,
@@ -127,8 +183,14 @@ export function useJobs() {
     hiddenJobs,
     starredCount,
     activeJobIds,
+    appliedJobs,
+    customJobs,
+    allEverSeenJobsList,
     toggleStarred,
     hideJob,
-    unhideJob
+    unhideJob,
+    saveJobApplication,
+    removeJobApplication,
+    addCustomJob
   }
 }

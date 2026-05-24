@@ -17,3 +17,15 @@ export interface CompanyInfo {
   logoDomain: string;
   customLogo?: string;
 }
+
+export interface JobApplication {
+  jobId: string;
+  status: 'applied' | 'interviewing' | 'offer' | 'rejected' | 'withdrawn';
+  appliedAt: string;
+  contactName?: string;
+  contactEmail?: string;
+  processStep?: string;
+  notes?: string;
+  updatedAt: string;
+}
+
