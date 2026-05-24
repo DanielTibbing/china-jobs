@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Filter, Briefcase, RefreshCw, LayoutGrid, List, Building2, ExternalLink, Clock, MapPin } from 'lucide-react'
+import { Filter, Briefcase, RefreshCw, LayoutGrid, List, Building2, ExternalLink, Clock, MapPin, Star, Eye, EyeOff } from 'lucide-react'
 import type { Job } from '../../types'
 import { REGION_FLAGS } from '../../constants/regions'
 import { COMPANY_DETAILS } from '../../constants/companies'
@@ -16,12 +16,20 @@ interface JobsViewProps {
   setSelectedCompany: (company: string) => void;
   companiesFromJobs: string[];
   seenJobIds: Set<string>;
-  currentView: 'active' | 'history';
+  currentView: 'active' | 'history' | 'starred';
+  starredJobIds: Set<string>;
+  hiddenJobIds: Set<string>;
+  hiddenJobs?: Job[];
+  activeJobIds: Set<string>;
+  onToggleStarred: (id: string) => void;
+  onHide: (id: string) => void;
+  onUnhide: (id: string) => void;
 }
 
 export function JobsView({ 
   loading, error, jobs, selectedRegion, setSelectedRegion, 
-  selectedCompany, setSelectedCompany, companiesFromJobs, seenJobIds, currentView 
+  selectedCompany, setSelectedCompany, companiesFromJobs, seenJobIds, currentView,
+  starredJobIds, hiddenJobIds, hiddenJobs, activeJobIds, onToggleStarred, onHide, onUnhide
 }: JobsViewProps) {
   const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid');
@@ -113,8 +121,13 @@ export function JobsView({
               key={job.id} 
               job={job} 
               isNew={currentView === 'active' && !seenJobIds.has(job.id)} 
-              currentView={currentView}
               onCompanyClick={handleCompanyClick}
+              isStarred={starredJobIds.has(job.id)}
+              isHidden={hiddenJobIds.has(job.id)}
+              onToggleStarred={onToggleStarred}
+              onHide={onHide}
+              onUnhide={onUnhide}
+              isExpired={currentView === 'history' || (currentView === 'starred' && !activeJobIds.has(job.id))}
             />
           ))
         ) : (
@@ -134,9 +147,12 @@ export function JobsView({
                   {jobs.map((job) => {
                     const isNew = currentView === 'active' && !seenJobIds.has(job.id);
                     const companyInfo = COMPANY_DETAILS[job.company];
+                    const isStarred = starredJobIds.has(job.id);
+                    const isHidden = hiddenJobIds.has(job.id);
+                    const isExpired = currentView === 'history' || (currentView === 'starred' && !activeJobIds.has(job.id));
                     
                     return (
-                      <tr key={job.id} className={`hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors group ${currentView === 'history' ? 'opacity-70 grayscale-[0.3]' : ''}`}>
+                      <tr key={job.id} className={`hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors group ${isExpired ? 'opacity-75 grayscale-[0.2]' : ''}`}>
                         <td className="px-6 py-4">
                           <div className="flex items-center gap-4">
                             <div className="w-10 h-10 rounded-lg border border-gray-100 dark:border-slate-700 flex items-center justify-center bg-white shrink-0 shadow-sm overflow-hidden relative">
@@ -183,18 +199,55 @@ export function JobsView({
                           </div>
                         </td>
                         <td className="px-6 py-4 text-right">
-                          {currentView === 'active' ? (
-                            <a 
-                              href={job.link} 
-                              target="_blank" 
-                              rel="noopener noreferrer" 
-                              className="inline-flex p-2 text-blue-600 dark:text-blue-400 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white rounded-xl transition-all border border-blue-100 dark:border-blue-900/30 hover:border-transparent"
+                          <div className="flex items-center justify-end gap-2 shrink-0">
+                            {/* Star Toggle Button */}
+                            <button
+                              onClick={() => onToggleStarred(job.id)}
+                              className={`p-2 rounded-lg border transition-all duration-200 hover:scale-105 active:scale-95 ${
+                                isStarred
+                                  ? 'bg-amber-50 border-amber-250 text-amber-500 hover:bg-amber-100 hover:border-amber-350 dark:bg-amber-950/20 dark:border-amber-900/30 dark:hover:bg-amber-900/40 dark:text-amber-400'
+                                  : 'bg-gray-50 border-gray-200 text-gray-400 hover:text-gray-650 hover:bg-gray-100 hover:border-gray-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-slate-750 dark:hover:text-slate-350'
+                              }`}
+                              title={isStarred ? "Remove from Starred" : "Add to Starred"}
+                              aria-label={isStarred ? "Remove from Starred" : "Add to Starred"}
                             >
-                              <ExternalLink className="h-4 w-4" />
-                            </a>
-                          ) : (
-                            <span className="text-[10px] font-bold text-gray-400 dark:text-slate-600 uppercase italic">Expired</span>
-                          )}
+                              <Star className={`h-4 w-4 ${isStarred ? 'fill-current' : ''}`} />
+                            </button>
+
+                            {/* Hide / Unhide Toggle Button */}
+                            {isHidden ? (
+                              <button
+                                onClick={() => onUnhide(job.id)}
+                                className="p-2 rounded-lg border border-gray-200 bg-gray-50 text-gray-400 hover:text-blue-500 hover:bg-blue-50 hover:border-blue-150 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-blue-950/20 dark:hover:border-blue-900/30 dark:hover:text-blue-400 hover:scale-105 active:scale-95 transition-all duration-200"
+                                title="Restore / Unhide Listing"
+                                aria-label="Restore Listing"
+                              >
+                                <Eye className="h-4 w-4" />
+                              </button>
+                            ) : (
+                              <button
+                                onClick={() => onHide(job.id)}
+                                className="p-2 rounded-lg border border-gray-200 bg-gray-50 text-gray-400 hover:text-red-500 hover:bg-red-50 hover:border-red-150 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-red-950/20 dark:hover:border-red-900/30 dark:hover:text-red-400 hover:scale-105 active:scale-95 transition-all duration-200"
+                                title="Permanently Hide Listing"
+                                aria-label="Hide Listing"
+                              >
+                                <EyeOff className="h-4 w-4" />
+                              </button>
+                            )}
+
+                            {!isExpired ? (
+                              <a 
+                                href={job.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="inline-flex p-2 text-blue-600 dark:text-blue-400 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white rounded-lg transition-all border border-blue-100 dark:border-blue-900/30 hover:border-transparent hover:scale-105"
+                              >
+                                <ExternalLink className="h-4 w-4" />
+                              </a>
+                            ) : (
+                              <span className="text-[10px] font-bold text-gray-400 dark:text-slate-600 uppercase italic whitespace-nowrap bg-gray-50 dark:bg-slate-800 px-2 py-1 rounded border border-gray-200/20">Expired</span>
+                            )}
+                          </div>
                         </td>
                       </tr>
                     );
@@ -205,6 +258,147 @@ export function JobsView({
           </div>
         )}
       </div>
+
+      {/* Recover Hidden Listings system - visible in history view only */}
+      {currentView === 'history' && hiddenJobs && hiddenJobs.length > 0 && (
+        <div className="mt-16 pt-10 border-t border-gray-200 dark:border-slate-800 space-y-6">
+          <div>
+            <h2 className="text-xl font-black text-gray-900 dark:text-white flex items-center gap-2">
+              <EyeOff className="h-5 w-5 text-gray-500 dark:text-slate-400" />
+              Hidden Listings
+            </h2>
+            <p className="text-xs font-bold text-gray-500 dark:text-slate-400 mt-1 uppercase tracking-wider">
+              These listings have been hidden from active and history feeds. Click the eye icon to restore them.
+            </p>
+          </div>
+          <div className="space-y-4">
+            {viewMode === 'grid' ? (
+              hiddenJobs.map((job) => (
+                <JobCard 
+                  key={job.id} 
+                  job={job} 
+                  isNew={false} 
+                  onCompanyClick={handleCompanyClick}
+                  isStarred={starredJobIds.has(job.id)}
+                  isHidden={true}
+                  onToggleStarred={onToggleStarred}
+                  onHide={onHide}
+                  onUnhide={onUnhide}
+                  isExpired={!activeJobIds.has(job.id)}
+                />
+              ))
+            ) : (
+              <div className="bg-white dark:bg-slate-900 rounded-2xl border-2 border-gray-100 dark:border-slate-800 shadow-sm overflow-hidden opacity-90">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-gray-50 dark:bg-slate-800/50 border-b border-gray-100 dark:border-slate-800">
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Role & Company</th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-center">Region</th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Location</th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Posted</th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-right">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-50 dark:divide-slate-800">
+                      {hiddenJobs.map((job) => {
+                        const isStarred = starredJobIds.has(job.id);
+                        const isExpired = !activeJobIds.has(job.id);
+                        const companyInfo = COMPANY_DETAILS[job.company];
+                        
+                        return (
+                          <tr key={job.id} className="hover:bg-blue-50/30 dark:hover:bg-blue-900/10 transition-colors group opacity-85">
+                            <td className="px-6 py-4">
+                              <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-lg border border-gray-100 dark:border-slate-700 flex items-center justify-center bg-white shrink-0 shadow-sm overflow-hidden relative">
+                                  {companyInfo?.customLogo ? (
+                                    <img 
+                                      src={companyInfo.customLogo} 
+                                      alt={`${job.company} logo`}
+                                      className="max-w-full max-h-full object-contain p-1"
+                                    />
+                                  ) : companyInfo?.logoDomain ? (
+                                    <img 
+                                      src={`https://logo.clearbit.com/${companyInfo.logoDomain}`} 
+                                      alt={`${job.company} logo`}
+                                      className="max-w-full max-h-full object-contain p-1"
+                                      onError={(e) => {
+                                        (e.target as HTMLImageElement).onerror = null;
+                                        (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=' + encodeURIComponent(job.company) + '&background=random';
+                                      }}
+                                    />
+                                  ) : (
+                                    <Building2 className="h-5 w-5 text-gray-300 dark:text-slate-600" />
+                                  )}
+                                </div>
+                                <div>
+                                  <div className="font-black text-gray-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors leading-tight">{job.title}</div>
+                                  <div className="text-[11px] font-bold text-gray-500 dark:text-slate-400 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400 uppercase tracking-tight mt-0.5" onClick={() => handleCompanyClick(job.company)}>{job.company}</div>
+                                </div>
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 text-center">
+                              <span className="text-sm" title={job.region}>{REGION_FLAGS[job.region] || '📍'}</span>
+                            </td>
+                            <td className="px-6 py-4">
+                              <div className="flex items-center gap-1.5 text-xs font-bold text-gray-600 dark:text-slate-400">
+                                <MapPin className="h-3 w-3 text-gray-400 dark:text-slate-500 shrink-0" />
+                                <span className="truncate max-w-[150px]">{job.location}</span>
+                              </div>
+                            </td>
+                            <td className="px-6 py-4">
+                              <div className="flex items-center gap-1.5 text-[11px] font-bold text-gray-400 dark:text-slate-500 whitespace-nowrap">
+                                <Clock className="h-3 w-3" />
+                                {new Date(job.postedAt).toLocaleDateString()}
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 text-right">
+                              <div className="flex items-center justify-end gap-2 shrink-0">
+                                <button
+                                  onClick={() => onToggleStarred(job.id)}
+                                  className={`p-2 rounded-lg border transition-all duration-200 hover:scale-105 active:scale-95 ${
+                                    isStarred
+                                      ? 'bg-amber-50 border-amber-250 text-amber-500 hover:bg-amber-100 hover:border-amber-350 dark:bg-amber-950/20 dark:border-amber-900/30 dark:hover:bg-amber-900/40 dark:text-amber-400'
+                                      : 'bg-gray-50 border-gray-200 text-gray-400 hover:text-gray-650 hover:bg-gray-100 hover:border-gray-300 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-slate-750 dark:hover:text-slate-300'
+                                  }`}
+                                  title={isStarred ? "Remove from Starred" : "Add to Starred"}
+                                  aria-label={isStarred ? "Remove from Starred" : "Add to Starred"}
+                                >
+                                  <Star className={`h-4 w-4 ${isStarred ? 'fill-current' : ''}`} />
+                                </button>
+                                <button
+                                  onClick={() => onUnhide(job.id)}
+                                  className="p-2 rounded-lg border border-gray-200 bg-gray-50 text-gray-400 hover:text-blue-500 hover:bg-blue-50 hover:border-blue-150 dark:bg-slate-800 dark:border-slate-700 dark:text-slate-500 dark:hover:bg-blue-950/20 dark:hover:border-blue-900/30 dark:hover:text-blue-400 hover:scale-105 active:scale-95 transition-all duration-200"
+                                  title="Restore / Unhide Listing"
+                                  aria-label="Restore Listing"
+                                >
+                                  <Eye className="h-4 w-4" />
+                                </button>
+                                {!isExpired ? (
+                                  <a 
+                                    href={job.link} 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    className="inline-flex p-2 text-blue-600 dark:text-blue-400 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white rounded-lg transition-all border border-blue-100 dark:border-blue-900/30 hover:border-transparent hover:scale-105"
+                                  >
+                                    <ExternalLink className="h-4 w-4" />
+                                  </a>
+                                ) : (
+                                  <span className="text-[10px] font-bold text-gray-400 dark:text-slate-600 uppercase italic whitespace-nowrap bg-gray-50 dark:bg-slate-800 px-2 py-1 rounded border border-gray-200/20">Expired</span>
+                                )}
+                              </div>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

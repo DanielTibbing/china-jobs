@@ -12,7 +12,18 @@ function App() {
   const [selectedCompany, setSelectedCompany] = useState('All')
   const [activeJobs, setActiveJobs] = useState<Job[]>([])
   const [removedJobs, setRemovedJobs] = useState<Job[]>([])
-  const [seenJobIds, setSeenJobIds] = useState<Set<string>>(new Set())
+  const [seenJobIds] = useState<Set<string>>(() => {
+    const savedSeen = localStorage.getItem('seen_job_ids')
+    return savedSeen ? new Set<string>(JSON.parse(savedSeen) as string[]) : new Set<string>()
+  })
+  const [starredJobIds, setStarredJobIds] = useState<Set<string>>(() => {
+    const savedStarred = localStorage.getItem('starred_job_ids')
+    return savedStarred ? new Set<string>(JSON.parse(savedStarred) as string[]) : new Set<string>()
+  })
+  const [hiddenJobIds, setHiddenJobIds] = useState<Set<string>>(() => {
+    const savedHidden = localStorage.getItem('hidden_job_ids')
+    return savedHidden ? new Set<string>(JSON.parse(savedHidden) as string[]) : new Set<string>()
+  })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -38,8 +49,6 @@ function App() {
     
     const initialSeen = savedSeen ? new Set<string>(JSON.parse(savedSeen) as string[]) : new Set<string>()
     const allEverSeen: Record<string, Job> = savedAllJobs ? JSON.parse(savedAllJobs) : {}
-    
-    setSeenJobIds(initialSeen)
 
     fetch('jobs.json')
       .then(res => {
@@ -72,13 +81,68 @@ function App() {
       })
   }, [])
 
+  const toggleStarred = (jobId: string) => {
+    setStarredJobIds(prev => {
+      const next = new Set(prev)
+      if (next.has(jobId)) {
+        next.delete(jobId)
+      } else {
+        next.add(jobId)
+      }
+      localStorage.setItem('starred_job_ids', JSON.stringify(Array.from(next)))
+      return next
+    })
+  }
+
+  const hideJob = (jobId: string) => {
+    setHiddenJobIds(prev => {
+      const next = new Set(prev)
+      next.add(jobId)
+      localStorage.setItem('hidden_job_ids', JSON.stringify(Array.from(next)))
+      return next
+    })
+  }
+
+  const unhideJob = (jobId: string) => {
+    setHiddenJobIds(prev => {
+      const next = new Set(prev)
+      next.delete(jobId)
+      localStorage.setItem('hidden_job_ids', JSON.stringify(Array.from(next)))
+      return next
+    })
+  }
+
   const companiesFromJobs = useMemo(() => {
     const unique = new Set(activeJobs.map(job => job.company))
     return ['All', ...Array.from(unique).sort()]
   }, [activeJobs])
 
-  const filterSource = (source: Job[]) => {
+  const allEverSeenJobsList = useMemo(() => {
+    const uniqueMap = new Map<string, Job>()
+    activeJobs.forEach(j => uniqueMap.set(j.id, j))
+    removedJobs.forEach(j => uniqueMap.set(j.id, j))
+    return Array.from(uniqueMap.values())
+  }, [activeJobs, removedJobs])
+
+  const starredJobs = useMemo(() => {
+    return allEverSeenJobsList.filter(job => starredJobIds.has(job.id))
+  }, [allEverSeenJobsList, starredJobIds])
+
+  const hiddenJobs = useMemo(() => {
+    return allEverSeenJobsList.filter(job => hiddenJobIds.has(job.id))
+  }, [allEverSeenJobsList, hiddenJobIds])
+
+  const starredCount = useMemo(() => {
+    return starredJobs.filter(job => !hiddenJobIds.has(job.id)).length
+  }, [starredJobs, hiddenJobIds])
+
+  const activeJobIds = useMemo(() => {
+    return new Set(activeJobs.map(j => j.id))
+  }, [activeJobs])
+
+  const filterSource = (source: Job[], excludeHidden = true) => {
     return source.filter(job => {
+      if (excludeHidden && hiddenJobIds.has(job.id)) return false
       const matchesSearch = job.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
                            job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
                            job.location.toLowerCase().includes(searchTerm.toLowerCase())
@@ -97,6 +161,7 @@ function App() {
           setSelectedCompany={setSelectedCompany}
           isDarkMode={isDarkMode}
           setIsDarkMode={setIsDarkMode}
+          starredCount={starredCount}
         />
 
         <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -113,6 +178,32 @@ function App() {
                 companiesFromJobs={companiesFromJobs}
                 seenJobIds={seenJobIds}
                 currentView="active"
+                starredJobIds={starredJobIds}
+                hiddenJobIds={hiddenJobIds}
+                activeJobIds={activeJobIds}
+                onToggleStarred={toggleStarred}
+                onHide={hideJob}
+                onUnhide={unhideJob}
+              />
+            } />
+            <Route path="/starred" element={
+              <JobsView 
+                loading={loading}
+                error={error}
+                jobs={filterSource(starredJobs)}
+                selectedRegion={selectedRegion}
+                setSelectedRegion={setSelectedRegion}
+                selectedCompany={selectedCompany}
+                setSelectedCompany={setSelectedCompany}
+                companiesFromJobs={companiesFromJobs}
+                seenJobIds={seenJobIds}
+                currentView="starred"
+                starredJobIds={starredJobIds}
+                hiddenJobIds={hiddenJobIds}
+                activeJobIds={activeJobIds}
+                onToggleStarred={toggleStarred}
+                onHide={hideJob}
+                onUnhide={unhideJob}
               />
             } />
             <Route path="/history" element={
@@ -127,6 +218,13 @@ function App() {
                 companiesFromJobs={companiesFromJobs}
                 seenJobIds={seenJobIds}
                 currentView="history"
+                starredJobIds={starredJobIds}
+                hiddenJobIds={hiddenJobIds}
+                hiddenJobs={filterSource(hiddenJobs, false)}
+                activeJobIds={activeJobIds}
+                onToggleStarred={toggleStarred}
+                onHide={hideJob}
+                onUnhide={unhideJob}
               />
             } />
             <Route path="/companies" element={
@@ -140,7 +238,11 @@ function App() {
           </Routes>
         </main>
 
-        <Footer activeCount={activeJobs.length} removedCount={removedJobs.length} />
+        <Footer 
+          activeCount={activeJobs.filter(j => !hiddenJobIds.has(j.id)).length} 
+          removedCount={removedJobs.filter(j => !hiddenJobIds.has(j.id)).length} 
+          starredCount={starredCount}
+        />
       </div>
     </HashRouter>
   )

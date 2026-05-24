@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { Search, Briefcase, History, Building2, Sun, Moon } from 'lucide-react'
+import { Search, Briefcase, History, Building2, Sun, Moon, Star } from 'lucide-react'
 
 interface HeaderProps {
   searchTerm: string;
@@ -7,10 +7,11 @@ interface HeaderProps {
   setSelectedCompany: (company: string) => void;
   isDarkMode: boolean;
   setIsDarkMode: (val: boolean) => void;
+  starredCount: number;
 }
 
 
-export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMode, setIsDarkMode }: HeaderProps) {
+export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMode, setIsDarkMode, starredCount }: HeaderProps) {
   const { pathname } = useLocation();
   
   return (
@@ -72,6 +73,23 @@ export function Header({ searchTerm, setSearchTerm, setSelectedCompany, isDarkMo
           >
             <Briefcase className="h-4 w-4" />
             Active Jobs
+          </Link>
+          <Link
+            to="/starred"
+            onClick={() => setSelectedCompany('All')}
+            className={`px-4 py-2 text-sm font-bold transition-all border-b-2 flex items-center gap-2 relative ${
+              pathname === '/starred' 
+              ? 'border-amber-500 text-amber-600 dark:text-amber-400 dark:border-amber-400' 
+              : 'border-transparent text-gray-400 dark:text-slate-500 hover:text-gray-600 dark:hover:text-slate-300'
+            }`}
+          >
+            <Star className={`h-4 w-4 ${pathname === '/starred' ? 'fill-current text-amber-500' : ''}`} />
+            <span>Starred</span>
+            {starredCount > 0 && (
+              <span className="inline-flex items-center justify-center px-2 py-0.5 ml-1 text-[10px] font-black leading-none text-amber-700 bg-amber-100 dark:text-amber-300 dark:bg-amber-950/40 rounded-full border border-amber-200 dark:border-amber-900/30">
+                {starredCount}
+              </span>
+            )}
           </Link>
           <Link
             to="/history"
