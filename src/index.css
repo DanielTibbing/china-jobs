@@ -1,3 +1,4 @@
 @import "tailwindcss";
+@source "../node_modules/china-common/dist/**/*.js";
 
 @variant dark (&:where(.dark, .dark *));
