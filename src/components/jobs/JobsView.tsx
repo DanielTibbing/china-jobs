@@ -15,6 +15,8 @@ interface JobsViewProps {
   setSelectedRegion: (region: string) => void;
   selectedCompany: string;
   setSelectedCompany: (company: string) => void;
+  onlyNew?: boolean;
+  setOnlyNew?: (onlyNew: boolean) => void;
   companiesFromJobs: string[];
   seenJobIds: Set<string>;
   currentView: 'active' | 'history' | 'starred';
@@ -34,7 +36,8 @@ export function JobsView({
   loading, error, jobs, selectedRegion, setSelectedRegion, 
   selectedCompany, setSelectedCompany, companiesFromJobs, seenJobIds, currentView,
   starredJobIds, hiddenJobIds, hiddenJobs, activeJobIds, onToggleStarred, onHide, onUnhide,
-  appliedJobs, onSaveApplication, onRemoveApplication
+  appliedJobs, onSaveApplication, onRemoveApplication,
+  onlyNew = false, setOnlyNew = () => {}
 }: JobsViewProps) {
   const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid');
@@ -88,6 +91,20 @@ export function JobsView({
                 <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
               </div>
             </div>
+
+            {currentView === 'active' && (
+              <button
+                onClick={() => setOnlyNew(!onlyNew)}
+                className={`px-4 py-2.5 rounded-xl text-sm font-bold border transition duration-150 ease-in-out flex items-center gap-2 shadow-sm shrink-0 hover:scale-[1.02] active:scale-[0.98] ${
+                  onlyNew
+                    ? 'bg-blue-600 border-blue-600 text-white hover:bg-blue-700'
+                    : 'bg-white dark:bg-slate-900 border-gray-200 dark:border-slate-800 text-gray-600 dark:text-slate-400 hover:bg-gray-50 dark:hover:bg-slate-800'
+                }`}
+              >
+                <Clock className={`h-4 w-4 ${onlyNew ? 'animate-pulse' : ''}`} />
+                New Only
+              </button>
+            )}
 
             <div className="bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800 rounded-xl p-1 flex shadow-sm shrink-0">
               <button

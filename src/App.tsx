@@ -14,6 +14,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('')
   const [selectedRegion, setSelectedRegion] = useState('All')
   const [selectedCompany, setSelectedCompany] = useState('All')
+  const [onlyNew, setOnlyNew] = useState(false)
 
   const { isDarkMode, setIsDarkMode } = useTheme()
   const {
@@ -51,7 +52,8 @@ function App() {
                            job.location.toLowerCase().includes(searchTerm.toLowerCase())
       const matchesRegion = selectedRegion === 'All' || job.region === selectedRegion
       const matchesCompany = selectedCompany === 'All' || job.company === selectedCompany
-      return matchesSearch && matchesRegion && matchesCompany
+      const matchesNew = !onlyNew || !seenJobIds.has(job.id)
+      return matchesSearch && matchesRegion && matchesCompany && matchesNew
     })
   }
 
@@ -79,6 +81,8 @@ function App() {
                 setSelectedRegion={setSelectedRegion}
                 selectedCompany={selectedCompany}
                 setSelectedCompany={setSelectedCompany}
+                onlyNew={onlyNew}
+                setOnlyNew={setOnlyNew}
                 companiesFromJobs={companiesFromJobs}
                 seenJobIds={seenJobIds}
                 currentView="active"
@@ -102,6 +106,8 @@ function App() {
                 setSelectedRegion={setSelectedRegion}
                 selectedCompany={selectedCompany}
                 setSelectedCompany={setSelectedCompany}
+                onlyNew={onlyNew}
+                setOnlyNew={setOnlyNew}
                 companiesFromJobs={companiesFromJobs}
                 seenJobIds={seenJobIds}
                 currentView="starred"
@@ -125,6 +131,8 @@ function App() {
                 setSelectedRegion={setSelectedRegion}
                 selectedCompany={selectedCompany}
                 setSelectedCompany={setSelectedCompany}
+                onlyNew={onlyNew}
+                setOnlyNew={setOnlyNew}
                 companiesFromJobs={companiesFromJobs}
                 seenJobIds={seenJobIds}
                 currentView="history"
