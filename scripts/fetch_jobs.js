@@ -69,6 +69,7 @@ const COMPANIES = [
   // RMK / SuccessFactors HTML Scrape
   { name: 'Assa Abloy', platform: 'rmk', domain: 'assaabloy.jobs2web.com' },
   { name: 'Scania', platform: 'rmk', domain: 'jobs.scania.com' },
+  { name: 'Traton', platform: 'rmk', domain: 'traton.jobs2web.com' },
 
   // Algolia
   { name: 'Atlas Copco', platform: 'algolia', appId: '9AX0H7NCCX', apiKey: '4415f5d1228e3b2da6ac78d10c41e93c', index: 'GROUP_EN_dateDesc' },
@@ -94,6 +95,7 @@ const COMPANIES = [
   { name: 'Ascenda', platform: 'greenhouse', token: 'ascendaloyalty' },
   { name: 'Shopline', platform: 'greenhouse', token: 'shopline' },
   { name: 'Youtrip', platform: 'greenhouse', token: 'youtrip' },
+  { name: 'Coupang', platform: 'greenhouse', token: 'coupang' },
   
   // Workday
   { name: 'Lego Group', platform: 'workday-v2', token: 'Lego_Careers', tenant: 'lego', sub: 'wd3' },
@@ -110,13 +112,25 @@ const COMPANIES = [
   // Trip.com Group API
   { name: 'Trip.com Group', platform: 'trip' },
 
-  // Oracle HCM (Virtuos)
+  // Oracle HCM (Virtuos & Nokia)
   { 
     name: 'Virtuos', 
     platform: 'oracle-hcm', 
     baseUrl: 'https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com',
     siteNumber: 'CX_1'
   },
+  { 
+    name: 'Nokia', 
+    platform: 'oracle-hcm', 
+    baseUrl: 'https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com',
+    siteNumber: 'CX_1'
+  },
+
+  // Custom APIs & Integrations
+  { name: 'Sandvik', platform: 'sandvik-api' },
+  { name: 'Ericsson', platform: 'ericsson-api' },
+  { name: 'Siemens', platform: 'siemens-api', domain: 'jobs.siemens.com' },
+  { name: 'Xsolla', platform: 'xsolla-api' },
 ];
 
 const axiosInstance = axios.create({
@@ -727,6 +741,163 @@ async function fetchTripJobs(company) {
   return allTrip;
 }
 
+async function fetchSandvikJobs(company) {
+  try {
+    const response = await axiosInstance.get('https://www.home.sandvik/api/jobArchiveApi/130145/en/search?count=500&page=1');
+    if (!response.data?.data?.entries) return [];
+    
+    return response.data.data.entries.map(entry => {
+      let location = entry.subtitle || '';
+      if (entry.trackingIdentifiers) {
+        const locId = entry.trackingIdentifiers.find(ti => ti.key === 'itemSubtitle' || ti.identifier === 'job-location');
+        if (locId?.masterValue) {
+          location = locId.masterValue;
+        }
+      }
+      
+      const match = entry.href?.match(/\/([^\/]+)\/?$/) || entry.href?.match(/\/([^\/]+)\/[^\/]*$/);
+      const jobId = match ? match[1] : Math.random().toString(36).substring(7);
+
+      let postedAt = new Date().toISOString();
+      if (entry.published) {
+        const dateStr = entry.published.replace('Published:', '').trim();
+        const parsedDate = new Date(dateStr);
+        if (!isNaN(parsedDate.getTime())) {
+          postedAt = parsedDate.toISOString();
+        }
+      }
+
+      return {
+        id: `sandvik-${jobId}`,
+        title: entry.title,
+        company: company.name,
+        location: location,
+        link: `https://www.home.sandvik${entry.href}`,
+        postedAt: postedAt,
+        region: detectRegion(location)
+      };
+    });
+  } catch (error) {
+    console.error(`Error fetching Sandvik jobs:`, error.message);
+    return [];
+  }
+}
+
+async function fetchEricssonJobs(company) {
+  let allJobs = [];
+  const targetRegions = ['china', 'sweden', 'singapore', 'hong kong'];
+  
+  for (const reg of targetRegions) {
+    try {
+      for (const start of [0, 10]) {
+        const url = `https://jobs.ericsson.com/api/pcsx/search?domain=ericsson.com&query=&location=${encodeURIComponent(reg)}&start=${start}`;
+        const response = await axiosInstance.get(url);
+        if (!response.data?.data?.positions) break;
+        
+        const positions = response.data.data.positions;
+        if (positions.length === 0) break;
+        
+        const jobs = positions.map(pos => {
+          const loc = pos.locations?.[0] || 'Global';
+          return {
+            id: `ericsson-${pos.id || pos.atsJobId}`,
+            title: pos.name,
+            company: company.name,
+            location: loc,
+            link: `https://jobs.ericsson.com${pos.positionUrl}`,
+            postedAt: pos.postedTs ? new Date(pos.postedTs * 1000).toISOString() : new Date().toISOString(),
+            region: detectRegion(loc)
+          };
+        });
+        
+        allJobs = allJobs.concat(jobs);
+        if (positions.length < 10) break;
+      }
+    } catch (error) {
+      console.error(`Error fetching Ericsson jobs for region ${reg}:`, error.message);
+    }
+  }
+  return allJobs;
+}
+
+async function fetchSiemensJobs(company) {
+  let allJobs = [];
+  const regions = [
+    { code: 'China', maxResults: 189 },
+    { code: 'Sweden', maxResults: 16 },
+    { code: 'Singapore', maxResults: 46 },
+    { code: 'Hong-Kong', maxResults: 18 }
+  ];
+
+  for (const reg of regions) {
+    const limit = 6;
+    for (let offset = 0; offset < reg.maxResults && offset < 120; offset += limit) {
+      try {
+        const url = `https://${company.domain}/en_US/externaljobs/SearchJobs/${reg.code}?listFilterMode=1&folderOffset=${offset}`;
+        const response = await axiosInstance.get(url, { headers: { 'Accept': 'text/html' } });
+        const html = response.data;
+        const h3s = html.split('<h3 class="article__header__text__title');
+        
+        for (let i = 1; i < h3s.length; i++) {
+          const block = h3s[i];
+          const linkMatch = /href="([^"]+)"/.exec(block);
+          const titleMatch = /<a[^>]*>\s*([\s\S]*?)\s*<\/a>/.exec(block.split('<\/h3>')[0]);
+          const locMatch = /<span class="list-item-location">([\s\S]*?)<span class="separator" aria-hidden="true">&nbsp;&#8226;&nbsp;<\/span>/.exec(block);
+          const idMatch = /Job ID:\s*(\d+)/.exec(block);
+          
+          if (linkMatch && titleMatch && idMatch) {
+            const locStr = locMatch ? locMatch[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim() : '';
+            allJobs.push({
+              id: `siemens-${idMatch[1]}`,
+              title: titleMatch[1].trim(),
+              company: company.name,
+              location: locStr,
+              link: linkMatch[1],
+              postedAt: new Date().toISOString(),
+              region: detectRegion(locStr)
+            });
+          }
+        }
+      } catch (error) {
+        console.error(`Error fetching Siemens jobs for ${reg.code} at offset ${offset}:`, error.message);
+      }
+      await new Promise(r => setTimeout(r, 100));
+    }
+  }
+  return allJobs;
+}
+
+async function fetchXsollaJobs(company) {
+  try {
+    const response = await axiosInstance.get('https://xsolla.com/careers/vacancies');
+    const html = response.data;
+    const start = html.indexOf('__NEXT_DATA__');
+    if (start === -1) return [];
+    
+    const end = html.indexOf('</script>', start);
+    const jsonText = html.slice(html.indexOf('>', start) + 1, end);
+    const data = JSON.parse(jsonText);
+    const jobPostings = data.props?.pageProps?.jobPostings;
+    if (!jobPostings) return [];
+    
+    return jobPostings.map(job => {
+      const location = job.categories?.location || job.categories?.allLocations?.join(', ') || job.country || 'Global';
+      return {
+        id: `xsolla-${job.id}`,
+        title: job.text,
+        company: company.name,
+        location: location,
+        link: job.hostedUrl || job.applyUrl,
+        postedAt: job.createdAt ? new Date(job.createdAt).toISOString() : new Date().toISOString(),
+        region: detectRegion(location)
+      };
+    });
+  } catch (error) {
+    console.error(`Error fetching Xsolla jobs:`, error.message);
+    return [];
+  }
+}
+
 function detectRegion(location) {
   if (!location) return 'Other';
   const loc = location.toLowerCase().trim();
@@ -746,27 +917,31 @@ function matchesKeywords(title) {
 async function main() {
   let allJobs = [];
 
-  for (const company of COMPANIES) {
-    console.log(`Fetching jobs for ${company.name}...`);
-    let jobs = [];
-    if (company.platform === 'greenhouse') jobs = await fetchGreenhouseJobs(company);
-    else if (company.platform === 'smartrecruiters') jobs = await fetchSmartRecruitersJobs(company);
-    else if (company.platform === 'bytedance') jobs = await fetchByteDanceJobs(company);
-    else if (company.platform === 'ashby') jobs = await fetchAshbyJobs(company);
-    else if (company.platform === 'teamtailor-feed') jobs = await fetchTeamtailorFeedJobs(company);
-    else if (company.platform === 'traveloka') jobs = await fetchTravelokaJobs(company);
-    else if (company.platform === 'workday-v2') jobs = await fetchWorkdayV2Jobs(company);
-    else if (company.platform === 'rmk') jobs = await fetchRMKJobs(company);
-    else if (company.platform === 'phenom') jobs = await fetchPhenomJobs(company);
-    else if (company.platform === 'booking') jobs = await fetchBookingJobs(company);
-    else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
-    else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
-    else if (company.platform === 'ea') jobs = await fetchEAJobs(company);
-    else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
-    else if (company.platform === 'lazada') jobs = await fetchLazadaJobs(company);
-    else if (company.platform === 'shopee') jobs = await fetchShopeeJobs(company);
-    else if (company.platform === 'trip') jobs = await fetchTripJobs(company);
-    else if (company.platform === 'oracle-hcm') jobs = await fetchOracleHCMJobs(company);
+    for (const company of COMPANIES) {
+      console.log(`Fetching jobs for ${company.name}...`);
+      let jobs = [];
+      if (company.platform === 'greenhouse') jobs = await fetchGreenhouseJobs(company);
+      else if (company.platform === 'smartrecruiters') jobs = await fetchSmartRecruitersJobs(company);
+      else if (company.platform === 'bytedance') jobs = await fetchByteDanceJobs(company);
+      else if (company.platform === 'ashby') jobs = await fetchAshbyJobs(company);
+      else if (company.platform === 'teamtailor-feed') jobs = await fetchTeamtailorFeedJobs(company);
+      else if (company.platform === 'traveloka') jobs = await fetchTravelokaJobs(company);
+      else if (company.platform === 'workday-v2') jobs = await fetchWorkdayV2Jobs(company);
+      else if (company.platform === 'rmk') jobs = await fetchRMKJobs(company);
+      else if (company.platform === 'phenom') jobs = await fetchPhenomJobs(company);
+      else if (company.platform === 'booking') jobs = await fetchBookingJobs(company);
+      else if (company.platform === 'algolia') jobs = await fetchAlgoliaJobs(company);
+      else if (company.platform === 'volvo-feed') jobs = await fetchVolvoFeed(company);
+      else if (company.platform === 'ea') jobs = await fetchEAJobs(company);
+      else if (company.platform === 'klook') jobs = await fetchKlookJobs(company);
+      else if (company.platform === 'lazada') jobs = await fetchLazadaJobs(company);
+      else if (company.platform === 'shopee') jobs = await fetchShopeeJobs(company);
+      else if (company.platform === 'trip') jobs = await fetchTripJobs(company);
+      else if (company.platform === 'oracle-hcm') jobs = await fetchOracleHCMJobs(company);
+      else if (company.platform === 'sandvik-api') jobs = await fetchSandvikJobs(company);
+      else if (company.platform === 'ericsson-api') jobs = await fetchEricssonJobs(company);
+      else if (company.platform === 'siemens-api') jobs = await fetchSiemensJobs(company);
+      else if (company.platform === 'xsolla-api') jobs = await fetchXsollaJobs(company);
     
     const filteredJobs = jobs.filter(job => matchesKeywords(job.title) && REGIONS.includes(job.region));
     console.log(`  Summary: ${jobs.length} total, ${filteredJobs.length} matched criteria (Region & Keywords).`);
