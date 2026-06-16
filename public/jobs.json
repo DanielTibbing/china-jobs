@@ -5,25 +5,7 @@
     "company": "Siemens",
     "location": "Hong Kong, Hong Kong, Hong Kong",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/473845",
-    "postedAt": "2026-06-15T02:13:03.478Z",
-    "region": "Hong Kong"
-  },
-  {
-    "id": "siemens-490295",
-    "title": "Senior Software Engineer / Software Engineer (Digital Station)",
-    "company": "Siemens",
-    "location": "Hong Kong, Hong Kong, Hong Kong",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/490295",
-    "postedAt": "2026-06-15T02:13:02.074Z",
-    "region": "Hong Kong"
-  },
-  {
-    "id": "siemens-493217",
-    "title": "Graduate Trainee Engineer Program 2026",
-    "company": "Siemens",
-    "location": "Hong Kong, Hong Kong, Hong Kong",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/493217",
-    "postedAt": "2026-06-15T02:13:02.074Z",
+    "postedAt": "2026-06-16T02:21:44.378Z",
     "region": "Hong Kong"
   },
   {
@@ -32,7 +14,7 @@
     "company": "Siemens",
     "location": "Hong Kong, Hong Kong, Hong Kong",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/496644",
-    "postedAt": "2026-06-15T02:13:02.073Z",
+    "postedAt": "2026-06-16T02:21:42.968Z",
     "region": "Hong Kong"
   },
   {
@@ -41,7 +23,25 @@
     "company": "Siemens",
     "location": "Hong Kong, Hong Kong, Hong Kong",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/465913",
-    "postedAt": "2026-06-15T02:13:02.073Z",
+    "postedAt": "2026-06-16T02:21:42.968Z",
+    "region": "Hong Kong"
+  },
+  {
+    "id": "siemens-490295",
+    "title": "Senior Software Engineer / Software Engineer (Digital Station)",
+    "company": "Siemens",
+    "location": "Hong Kong, Hong Kong, Hong Kong",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/490295",
+    "postedAt": "2026-06-16T02:21:42.968Z",
+    "region": "Hong Kong"
+  },
+  {
+    "id": "siemens-493217",
+    "title": "Graduate Trainee Engineer Program 2026",
+    "company": "Siemens",
+    "location": "Hong Kong, Hong Kong, Hong Kong",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/493217",
+    "postedAt": "2026-06-16T02:21:42.968Z",
     "region": "Hong Kong"
   },
   {
@@ -50,7 +50,7 @@
     "company": "Siemens",
     "location": "Hong Kong, Hong Kong, Hong Kong",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/496828",
-    "postedAt": "2026-06-15T02:13:00.585Z",
+    "postedAt": "2026-06-16T02:21:41.499Z",
     "region": "Hong Kong"
   },
   {
@@ -59,7 +59,7 @@
     "company": "Siemens",
     "location": "Hong Kong, Hong Kong, Hong Kong",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507354",
-    "postedAt": "2026-06-15T02:13:00.585Z",
+    "postedAt": "2026-06-16T02:21:41.499Z",
     "region": "Hong Kong"
   },
   {
@@ -68,8 +68,17 @@
     "company": "Siemens",
     "location": "Hong Kong, Hong Kong, Hong Kong",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505648",
-    "postedAt": "2026-06-15T02:13:00.585Z",
+    "postedAt": "2026-06-16T02:21:41.499Z",
     "region": "Hong Kong"
+  },
+  {
+    "id": "siemens-507769",
+    "title": "IDM Purchasing Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507769",
+    "postedAt": "2026-06-16T02:21:40.033Z",
+    "region": "Singapore"
   },
   {
     "id": "siemens-497863",
@@ -77,7 +86,7 @@
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/497863",
-    "postedAt": "2026-06-15T02:12:58.929Z",
+    "postedAt": "2026-06-16T02:21:40.033Z",
     "region": "Singapore"
   },
   {
@@ -86,97 +95,7 @@
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/487526",
-    "postedAt": "2026-06-15T02:12:58.929Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-510047",
-    "title": "Service Engineer - BMS, Fire &amp; Security Systems",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510047",
-    "postedAt": "2026-06-15T02:12:57.527Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-490907",
-    "title": "Service Engineer - BMS, Fire &amp; Security Systems",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/490907",
-    "postedAt": "2026-06-15T02:12:57.527Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-496441",
-    "title": "Project Engineer - BMS, Fire &amp; Security Systems",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/496441",
-    "postedAt": "2026-06-15T02:12:57.527Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-507769",
-    "title": "IDM Purchasing Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507769",
-    "postedAt": "2026-06-15T02:12:57.527Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-510045",
-    "title": "Service Engineer - BMS, Fire &amp; Security Systems",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510045",
-    "postedAt": "2026-06-15T02:12:56.050Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-509481",
-    "title": "CBI Data Development Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509481",
-    "postedAt": "2026-06-15T02:12:56.050Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-506017",
-    "title": "Service Engineer – Smart Building Solutions (BMS)",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506017",
-    "postedAt": "2026-06-15T02:12:54.381Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-505198",
-    "title": "ATS Design Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505198",
-    "postedAt": "2026-06-15T02:12:54.381Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-478228",
-    "title": "IT Security Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/478228",
-    "postedAt": "2026-06-15T02:12:54.381Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-505776",
-    "title": "Engineering Intern",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505776",
-    "postedAt": "2026-06-15T02:12:52.903Z",
+    "postedAt": "2026-06-16T02:21:40.033Z",
     "region": "Singapore"
   },
   {
@@ -185,52 +104,52 @@
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/498032",
-    "postedAt": "2026-06-15T02:12:52.903Z",
+    "postedAt": "2026-06-16T02:21:38.564Z",
     "region": "Singapore"
   },
   {
-    "id": "siemens-453236",
-    "title": "Railway Telecommunications Lead Engineer",
+    "id": "siemens-505198",
+    "title": "ATS Design Engineer",
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/453236",
-    "postedAt": "2026-06-15T02:12:52.903Z",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505198",
+    "postedAt": "2026-06-16T02:21:38.564Z",
     "region": "Singapore"
   },
   {
-    "id": "siemens-507728",
-    "title": "Site Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507728",
-    "postedAt": "2026-06-15T02:12:51.387Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-509485",
-    "title": "Critical Power Solution Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509485",
-    "postedAt": "2026-06-15T02:12:51.387Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-509487",
-    "title": "Engineering Intern",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509487",
-    "postedAt": "2026-06-15T02:12:51.387Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-510054",
+    "id": "siemens-510047",
     "title": "Service Engineer - BMS, Fire &amp; Security Systems",
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510054",
-    "postedAt": "2026-06-15T02:12:49.883Z",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510047",
+    "postedAt": "2026-06-16T02:21:38.564Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-490907",
+    "title": "Service Engineer - BMS, Fire &amp; Security Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/490907",
+    "postedAt": "2026-06-16T02:21:38.564Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-496441",
+    "title": "Project Engineer - BMS, Fire &amp; Security Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/496441",
+    "postedAt": "2026-06-16T02:21:38.564Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-510045",
+    "title": "Service Engineer - BMS, Fire &amp; Security Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510045",
+    "postedAt": "2026-06-16T02:21:37.097Z",
     "region": "Singapore"
   },
   {
@@ -239,7 +158,43 @@
     "company": "Siemens",
     "location": "Singapore, North East, Central Singapore, North West, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510019",
-    "postedAt": "2026-06-15T02:12:48.385Z",
+    "postedAt": "2026-06-16T02:21:37.097Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-510054",
+    "title": "Service Engineer - BMS, Fire &amp; Security Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/510054",
+    "postedAt": "2026-06-16T02:21:37.097Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-509485",
+    "title": "Critical Power Solution Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509485",
+    "postedAt": "2026-06-16T02:21:37.097Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-509487",
+    "title": "Engineering Intern",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509487",
+    "postedAt": "2026-06-16T02:21:37.097Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-453236",
+    "title": "Railway Telecommunications Lead Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/453236",
+    "postedAt": "2026-06-16T02:21:35.600Z",
     "region": "Singapore"
   },
   {
@@ -248,17 +203,62 @@
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506011",
-    "postedAt": "2026-06-15T02:12:48.385Z",
+    "postedAt": "2026-06-16T02:21:35.600Z",
     "region": "Singapore"
   },
   {
-    "id": "siemens-509160",
-    "title": "（SMVS) Manufacture Engineer 制造工程师  [无锡]",
+    "id": "siemens-478228",
+    "title": "IT Security Engineer",
     "company": "Siemens",
-    "location": "Wuxi, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509160",
-    "postedAt": "2026-06-15T02:12:42.606Z",
-    "region": "China"
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/478228",
+    "postedAt": "2026-06-16T02:21:34.135Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-506017",
+    "title": "Service Engineer – Smart Building Solutions (BMS)",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506017",
+    "postedAt": "2026-06-16T02:21:34.135Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-507728",
+    "title": "Site Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507728",
+    "postedAt": "2026-06-16T02:21:32.671Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-505776",
+    "title": "Engineering Intern",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505776",
+    "postedAt": "2026-06-16T02:21:31.072Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-509481",
+    "title": "CBI Data Development Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509481",
+    "postedAt": "2026-06-16T02:21:29.555Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-507608",
+    "title": "Student Worker - Communications and Marketing",
+    "company": "Siemens",
+    "location": "Solna, Stockholms laen, Sweden",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507608",
+    "postedAt": "2026-06-16T02:21:25.032Z",
+    "region": "Sweden"
   },
   {
     "id": "siemens-490580",
@@ -266,16 +266,7 @@
     "company": "Siemens",
     "location": "Nanjing, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/490580",
-    "postedAt": "2026-06-15T02:12:37.573Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-509054",
-    "title": "(SMVS) Product care Mechanical Engineer 机械工程师[无锡]",
-    "company": "Siemens",
-    "location": "Wuxi, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509054",
-    "postedAt": "2026-06-15T02:12:31.479Z",
+    "postedAt": "2026-06-16T02:21:23.571Z",
     "region": "China"
   },
   {
@@ -284,52 +275,7 @@
     "company": "Siemens",
     "location": "Taipei, Taipei shih, Taiwan, Province of China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/503041",
-    "postedAt": "2026-06-15T02:12:29.950Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-497724",
-    "title": "Team leader_ Data Analyses 数据分析主管",
-    "company": "Siemens",
-    "location": "Beijing, Beijing Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/497724",
-    "postedAt": "2026-06-15T02:12:28.463Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-450138",
-    "title": "EBS Senior Application Engineer",
-    "company": "Siemens",
-    "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/450138",
-    "postedAt": "2026-06-15T02:12:25.415Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-498604",
-    "title": "(SMVS) Mechanical Engineer 机械工程师 [无锡]",
-    "company": "Siemens",
-    "location": "Wuxi, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/498604",
-    "postedAt": "2026-06-15T02:12:21.621Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-506107",
-    "title": "Software Development Engineer Intern",
-    "company": "Siemens",
-    "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506107",
-    "postedAt": "2026-06-15T02:12:21.621Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-506608",
-    "title": "Data &amp; Energy Engineer",
-    "company": "Siemens",
-    "location": "Chengdu, Sichuan Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506608",
-    "postedAt": "2026-06-15T02:12:20.084Z",
+    "postedAt": "2026-06-16T02:21:18.693Z",
     "region": "China"
   },
   {
@@ -338,25 +284,25 @@
     "company": "Siemens",
     "location": "Chengdu, Sichuan Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506611",
-    "postedAt": "2026-06-15T02:12:20.084Z",
+    "postedAt": "2026-06-16T02:21:17.108Z",
     "region": "China"
   },
   {
-    "id": "siemens-509028",
-    "title": "(SMVS) QA Engineer 质量工程师 [无锡]",
+    "id": "siemens-505608",
+    "title": "Cost and Value Engineering Senior Expert - Mechatronics",
     "company": "Siemens",
-    "location": "Wuxi, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509028",
-    "postedAt": "2026-06-15T02:12:18.478Z",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505608",
+    "postedAt": "2026-06-16T02:21:17.108Z",
     "region": "China"
   },
   {
-    "id": "siemens-502620",
-    "title": "Senior Principal Product Manager",
+    "id": "siemens-450138",
+    "title": "EBS Senior Application Engineer",
     "company": "Siemens",
     "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/502620",
-    "postedAt": "2026-06-15T02:12:16.876Z",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/450138",
+    "postedAt": "2026-06-16T02:21:17.108Z",
     "region": "China"
   },
   {
@@ -365,7 +311,97 @@
     "company": "Siemens",
     "location": "Wuxi, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/498592",
-    "postedAt": "2026-06-15T02:12:13.817Z",
+    "postedAt": "2026-06-16T02:21:12.410Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-498604",
+    "title": "(SMVS) Mechanical Engineer 机械工程师 [无锡]",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/498604",
+    "postedAt": "2026-06-16T02:21:09.398Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-497724",
+    "title": "Team leader_ Data Analyses 数据分析主管",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/497724",
+    "postedAt": "2026-06-16T02:21:04.706Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-506107",
+    "title": "Software Development Engineer Intern",
+    "company": "Siemens",
+    "location": "Shanghai, Shanghai Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506107",
+    "postedAt": "2026-06-16T02:21:04.706Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-509311",
+    "title": "(SMVS) Material Planning Engineer 物料计划工程师 [无锡]",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509311",
+    "postedAt": "2026-06-16T02:21:03.140Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-509028",
+    "title": "(SMVS) QA Engineer 质量工程师 [无锡]",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509028",
+    "postedAt": "2026-06-16T02:21:03.140Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-476879",
+    "title": "Team lead of Finance Controlling / 财务控制主管",
+    "company": "Siemens",
+    "location": "Chengdu, Sichuan Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/476879",
+    "postedAt": "2026-06-16T02:21:01.640Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-507685",
+    "title": "(SMVS) Warehouse Engineer 仓库工程师（无锡）",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/507685",
+    "postedAt": "2026-06-16T02:21:00.103Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-506608",
+    "title": "Data &amp; Energy Engineer",
+    "company": "Siemens",
+    "location": "Chengdu, Sichuan Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506608",
+    "postedAt": "2026-06-16T02:21:00.103Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-509054",
+    "title": "(SMVS) Product care Mechanical Engineer 机械工程师[无锡]",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509054",
+    "postedAt": "2026-06-16T02:20:56.891Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-502620",
+    "title": "Senior Principal Product Manager",
+    "company": "Siemens",
+    "location": "Shanghai, Shanghai Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/502620",
+    "postedAt": "2026-06-16T02:20:55.390Z",
     "region": "China"
   },
   {
@@ -374,358 +410,16 @@
     "company": "Siemens",
     "location": "Chengdu, Sichuan Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/504749",
-    "postedAt": "2026-06-15T02:12:12.299Z",
+    "postedAt": "2026-06-16T02:20:55.390Z",
     "region": "China"
   },
   {
-    "id": "sh-J00198149",
-    "title": "SEO Content Intern - Regional Brand & Growth Marketing (Fall 2026)",
+    "id": "sh-J02153999",
+    "title": "Senior Data Product Manager - MPID team",
     "company": "Shopee",
     "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00198149",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00254934",
-    "title": "Online Marketing Intern - Strategy & Planning, Regional Brand & Growth Marketing (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00254934",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00336292",
-    "title": "Monee Account Management - Online Marketing Intern, Regional Brand & Growth Marketing (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00336292",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00107174",
-    "title": "Market Research Intern, Regional Brand & Growth Marketing (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00107174",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00336273",
-    "title": "Strategy and Analytics Intern - Regional CRM, Regional Brand & Growth Marketing (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00336273",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00006192",
-    "title": "Campaigns Management Intern, Regional CRM - Regional Brand & Growth Marketing (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00006192",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02005278",
-    "title": "UI/UX Intern, Buyer & Marketing - Design (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02005278",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00366919",
-    "title": "Graphic Design Intern, Regional Marketing (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00366919",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02145978",
-    "title": "Customer Service Support Lead - Maribank",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02145978",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J01990178",
-    "title": "Senior Al Engineer, Large Language Model",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J01990178",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02023916",
-    "title": "Marketing Projects Associate, Singapore Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02023916",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02151763",
-    "title": "IT Delivery and Production Support Lead, MariBank",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02151763",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02048063",
-    "title": "Livestream KOL Talent Manager, Singapore Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02048063",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02099706",
-    "title": "Product Manager Intern (Aug to Dec 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02099706",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02143233",
-    "title": "Algorithm Engineer Intern - Monee Credit (Aug to Dec 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02143233",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02105470",
-    "title": "AI Business Product Manager - Regional Marketplace Operations",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02105470",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02044681",
-    "title": "Product Manager - Clearing & Settlement - Regional Operations",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02044681",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02037906",
-    "title": "Data Analyst Intern, Buyer & Marketing - Business Intelligence (Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02037906",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02145062",
-    "title": "Regional Content Specialist, Regional Brand & Growth Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02145062",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02066932",
-    "title": "Product Manager Intern - Regional Bank AML (Aug to Dec 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02066932",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02099724",
-    "title": "Marketing Intern - MariBank (Aug to Dec 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02099724",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02124364",
-    "title": "External Traffic Marketing Intern - Monee Credit (Aug to Dec 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02124364",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02111015",
-    "title": "Regional CRM Strategy & Analytics Associate, Regional Brand & Growth Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02111015",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02010580",
-    "title": "SG Business Product Manager",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02010580",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02060126",
-    "title": "SG Business Product Manager - Operation (2026 Graduates)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02060126",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02060108",
-    "title": "SG Business Product Manager - Marketplace Product (2026 Graduates)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02060108",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02057611",
-    "title": "SG Business Product Manager - Marketplace Product",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02057611",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00240492",
-    "title": "Senior Business Product Manager - SG BPM",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00240492",
-    "postedAt": "2026-06-15T02:11:58.380Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02153415",
-    "title": "Automation Compliance Engineer Intern, IT Compliance (Summer 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02153415",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02153403",
-    "title": "Business Process Engineering - Monee Credit (Chatbot)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02153403",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02152489",
-    "title": "Business Planning & Projects Lead - SPX Express",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02152489",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02092652",
-    "title": "Senior Technical Product Manager, Business Security",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02092652",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02146051",
-    "title": "Senior Backend Engineer, Business Security - Platform",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02146051",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02099548",
-    "title": "Marketing Intern - Monee (Aug to Dec 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02099548",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02142168",
-    "title": "Automation Reliability Operation Technology Engineer - Regional Logistics (2026 Graduate)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02142168",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02127034",
-    "title": "Product Manager Intern, E-commerce Recommendation Strategy (Summer/ Fall 2026)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02127034",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02152446",
-    "title": "Product Manager – Conversational AI Agent",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02152446",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02134406",
-    "title": "[AI] AIGC Distributed Training & Optimization Engineer (Pre-training)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02134406",
-    "postedAt": "2026-06-15T02:11:58.379Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02000072",
-    "title": "Partnerships & Communications Specialist, SG Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02000072",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "link": "https://careers.shopee.sg/jobs/J02153999",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -734,7 +428,133 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J00004492",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02153835",
+    "title": "Senior Backend Engineer, Engineering Infra - DBaaS, DB Solution",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02153835",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02083133",
+    "title": "Automation Reliability Electrical Engineer - Regional Logistics",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02083133",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02000688",
+    "title": "Automation Project Engineer - Regional Logistics",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02000688",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02153415",
+    "title": "Automation Compliance Engineer Intern, IT Compliance (Summer 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02153415",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02153403",
+    "title": "Business Process Engineering - Monee Credit (Chatbot)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02153403",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02152489",
+    "title": "Business Planning & Projects Lead - SPX Express",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02152489",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02092652",
+    "title": "Senior Technical Product Manager, Business Security",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02092652",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02146051",
+    "title": "Senior Backend Engineer, Business Security - Platform",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02146051",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02099548",
+    "title": "Marketing Intern - Monee (Aug to Dec 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02099548",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02142168",
+    "title": "Automation Reliability Operation Technology Engineer - Regional Logistics (2026 Graduate)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02142168",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02127034",
+    "title": "Product Manager Intern, E-commerce Recommendation Strategy (Summer/ Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02127034",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02152446",
+    "title": "Product Manager – Conversational AI Agent",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02152446",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02134406",
+    "title": "[AI] AIGC Distributed Training & Optimization Engineer (Pre-training)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02134406",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02000072",
+    "title": "Partnerships & Communications Specialist, SG Marketing",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02000072",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -743,7 +563,7 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J02151517",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -752,7 +572,7 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J02095680",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -761,7 +581,7 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J00004525",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -770,7 +590,7 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J00278905",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -779,7 +599,196 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J00198167",
-    "postedAt": "2026-06-15T02:11:58.379Z",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00198149",
+    "title": "SEO Content Intern - Regional Brand & Growth Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00198149",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00254934",
+    "title": "Online Marketing Intern - Strategy & Planning, Regional Brand & Growth Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00254934",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00336292",
+    "title": "Monee Account Management - Online Marketing Intern, Regional Brand & Growth Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00336292",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00107174",
+    "title": "Market Research Intern, Regional Brand & Growth Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00107174",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00336273",
+    "title": "Strategy and Analytics Intern - Regional CRM, Regional Brand & Growth Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00336273",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00006192",
+    "title": "Campaigns Management Intern, Regional CRM - Regional Brand & Growth Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00006192",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02005278",
+    "title": "UI/UX Intern, Buyer & Marketing - Design (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02005278",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J00366919",
+    "title": "Graphic Design Intern, Regional Marketing (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00366919",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02145978",
+    "title": "Customer Service Support Lead - Maribank",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02145978",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J01990178",
+    "title": "Senior Al Engineer, Large Language Model",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J01990178",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02023916",
+    "title": "Marketing Projects Associate, Singapore Marketing",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02023916",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02151763",
+    "title": "IT Delivery and Production Support Lead, MariBank",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02151763",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02048063",
+    "title": "Livestream KOL Talent Manager, Singapore Marketing",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02048063",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02099706",
+    "title": "Product Manager Intern (Aug to Dec 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02099706",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02143233",
+    "title": "Algorithm Engineer Intern - Monee Credit (Aug to Dec 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02143233",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02105470",
+    "title": "AI Business Product Manager - Regional Marketplace Operations",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02105470",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02044681",
+    "title": "Product Manager - Clearing & Settlement - Regional Operations",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02044681",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02037906",
+    "title": "Data Analyst Intern, Buyer & Marketing - Business Intelligence (Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02037906",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02145062",
+    "title": "Regional Content Specialist, Regional Brand & Growth Marketing",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02145062",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02066932",
+    "title": "Product Manager Intern - Regional Bank AML (Aug to Dec 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02066932",
+    "postedAt": "2026-06-16T02:20:43.821Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02099724",
+    "title": "Marketing Intern - MariBank (Aug to Dec 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02099724",
+    "postedAt": "2026-06-16T02:20:43.821Z",
     "region": "Singapore"
   },
   {
@@ -788,7 +797,7 @@
     "company": "Lazada",
     "location": "China",
     "link": "https://www.lazada.com/en/careers/job-description/?id=GP100018835011",
-    "postedAt": "2026-06-15T02:11:57.731Z",
+    "postedAt": "2026-06-16T02:20:43.403Z",
     "region": "China"
   },
   {
@@ -797,7 +806,7 @@
     "company": "Lazada",
     "location": "China",
     "link": "https://www.lazada.com/en/careers/job-description/?id=GP100013175003",
-    "postedAt": "2026-06-15T02:11:57.731Z",
+    "postedAt": "2026-06-16T02:20:43.403Z",
     "region": "China"
   },
   {
@@ -806,7 +815,7 @@
     "company": "EA",
     "location": "Singapore, Singapore",
     "link": "https://jobs.ea.com/en_US/careers/JobDetail/Product-Manager-Global-app/214721",
-    "postedAt": "2026-06-15T02:11:51.884Z",
+    "postedAt": "2026-06-16T02:20:37.155Z",
     "region": "Singapore"
   },
   {
@@ -815,152 +824,8 @@
     "company": "EA",
     "location": "Singapore, Singapore",
     "link": "https://jobs.ea.com/en_US/careers/JobDetail/Senior-Product-Manager-Creator-Tools/214720",
-    "postedAt": "2026-06-15T02:11:51.884Z",
+    "postedAt": "2026-06-16T02:20:37.155Z",
     "region": "Singapore"
-  },
-  {
-    "id": "vo-30554-en_US",
-    "title": "Prognostic Engineer",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Prognostic-Engineer-417-56/1350806155/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.384Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-32074-en_US",
-    "title": "Digital Growth & Discoverability Lead Volvo CE",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Digital-Growth-&-Discoverability-Lead-Volvo-CE-405-08/1353507955/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.383Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-32432-en_US",
-    "title": "Head of Launch & Lifecycle Marketing, Sales Region Europe",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Head-of-Launch-&-Lifecycle-Marketing%2C-Sales-Region-Europe-405-08/1354741055/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.383Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-32647-en_US",
-    "title": "Manufacturing Engineer",
-    "company": "Volvo Group",
-    "location": "Shanghai, CN, 201206",
-    "link": "https://jobs.volvogroup.com/job/Shanghai-Manufacturing-Engineer-201206/1355063455/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.383Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-30597-en_US",
-    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.383Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-28714-en_US",
-    "title": "Experienced Emob. System Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343054855/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-28713-en_US",
-    "title": "Experienced Emob. System Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343055055/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-28711-en_US",
-    "title": "Experienced Emob. System Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343056355/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-31194-en_US",
-    "title": "Aftermarket Readiness Leader",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Aftermarket-Readiness-Leader-250102/1350510255/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-32109-en_US",
-    "title": "Senior Data Engineer",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 55",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-Data-Engineer-417-55/1353809655/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-31040-en_US",
-    "title": "Experienced Excavator Product Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-29401-en_US",
-    "title": "System Testing Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-System-Testing-Engineer-250102/1344018555/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-32010-en_US",
-    "title": "Head of Digital Experience Design, Engineering",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 55",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Head-of-Digital-Experience-Design%2C-Engineering-417-55/1353808955/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-28387-en_US",
-    "title": "Experienced E&E System Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-E&E-System-Engineer-250102/1340248855/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-31340-en_US",
-    "title": "Senior Engineer, Power System",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Power-System-250102/1351283655/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-32189-en_US",
-    "title": "Plastic Design Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Plastic-Design-Engineer-405-08/1354554055/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "Sweden"
   },
   {
     "id": "vo-32427-en_US",
@@ -968,7 +833,7 @@
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-System-Engineer-250102/1354520555/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
+    "postedAt": "2026-06-16T02:14:48.048Z",
     "region": "China"
   },
   {
@@ -977,16 +842,7 @@
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-HVAC-Design-Engineer-Wheel-Loaders-&-Haulers-405-08/1354552955/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-32433-en_US",
-    "title": "Head of Digital Marketing, Sales Region Europe",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Head-of-Digital-Marketing%2C-Sales-Region-Europe-405-08/1354739555/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
+    "postedAt": "2026-06-16T02:14:48.048Z",
     "region": "Sweden"
   },
   {
@@ -995,8 +851,161 @@
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Learning-Content-Developer-250102/1354490555/?feedId=361555",
-    "postedAt": "2026-06-15T02:10:29.382Z",
+    "postedAt": "2026-06-16T02:14:48.048Z",
     "region": "China"
+  },
+  {
+    "id": "vo-32074-en_US",
+    "title": "Digital Growth & Discoverability Lead Volvo CE",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Digital-Growth-&-Discoverability-Lead-Volvo-CE-405-08/1353507955/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-32432-en_US",
+    "title": "Head of Launch & Lifecycle Marketing, Sales Region Europe",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Head-of-Launch-&-Lifecycle-Marketing%2C-Sales-Region-Europe-405-08/1354741055/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-32647-en_US",
+    "title": "Manufacturing Engineer",
+    "company": "Volvo Group",
+    "location": "Shanghai, CN, 201206",
+    "link": "https://jobs.volvogroup.com/job/Shanghai-Manufacturing-Engineer-201206/1355063455/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-30597-en_US",
+    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-32299-en_US",
+    "title": "Solution Engineer",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Solution-Engineer-417-56/1354517055/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-32433-en_US",
+    "title": "Head of Digital Marketing, Sales Region Europe",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Head-of-Digital-Marketing%2C-Sales-Region-Europe-405-08/1354739555/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-32010-en_US",
+    "title": "Head of Digital Experience Design, Engineering",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 55",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Head-of-Digital-Experience-Design%2C-Engineering-417-55/1353808955/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-30554-en_US",
+    "title": "Prognostic Engineer",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Prognostic-Engineer-417-56/1350806155/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.048Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-28714-en_US",
+    "title": "Experienced Emob. System Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343054855/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-28713-en_US",
+    "title": "Experienced Emob. System Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343055055/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-28711-en_US",
+    "title": "Experienced Emob. System Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343056355/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-31194-en_US",
+    "title": "Aftermarket Readiness Leader",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Aftermarket-Readiness-Leader-250102/1350510255/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-32109-en_US",
+    "title": "Senior Data Engineer",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 55",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-Data-Engineer-417-55/1353809655/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-31040-en_US",
+    "title": "Experienced Excavator Product Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-29401-en_US",
+    "title": "System Testing Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-System-Testing-Engineer-250102/1344018555/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-31340-en_US",
+    "title": "Senior Engineer, Power System",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Power-System-250102/1351283655/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-32189-en_US",
+    "title": "Plastic Design Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Plastic-Design-Engineer-405-08/1354554055/?feedId=361555",
+    "postedAt": "2026-06-16T02:14:48.047Z",
+    "region": "Sweden"
   },
   {
     "id": "wd2-/job/Sweden---Lund/Experienced-ASIC-Verification-Engineer--Lund_R-123659-1",
@@ -1004,7 +1013,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Experienced-ASIC-Verification-Engineer--Lund_R-123659-1",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1013,7 +1022,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Mechanical-Engineer--Lund_R-123660",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1022,7 +1031,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Linköping",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Linkping/Junior-software-engineer-in-Linkping_R-123623",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1031,7 +1040,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-NOC-Engineer--Lund_R-123637",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1040,7 +1049,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Technical-Service-Engineer_R-123629",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1049,7 +1058,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Technical-Services-Engineer_R-123626",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1058,7 +1067,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Linköping",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Linkping/Software-Engineer---Experienced--AI-Powered-Video-Search-in-Linkping_R-123415",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1067,7 +1076,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Linköping",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Linkping/Experienced-Software-Engineer-in-Linkping_R-123427",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1076,7 +1085,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Technical-Trainer---Sales-Engineer---Nordics_R-123297",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1085,7 +1094,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Supply-Chain-Lead---Enterprise-Sales-Projects--Lund_R-123621",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1094,7 +1103,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-developer---Security_R-123533",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1103,7 +1112,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-Developer---Network_R-123534",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1112,7 +1121,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Supplier-Sustainability-Engineer--Lund_R-123610",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1121,7 +1130,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/C-C---Go-Developer---Secure-Device-Ecosystems--Lund_R-123614",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1130,7 +1139,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Audio-System-Engineer---Analytics--Lund_R-123615",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1139,16 +1148,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/AXIS-OS---System-Software-Developer--Lund_R-123613",
-    "postedAt": "2026-06-15T02:10:24.762Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "wd2-/job/Sweden---Lund/Product-Imaging-Engineer---Thermal-and-Visual-Cameras--Lund_R-123609",
-    "title": "Product Imaging Engineer - Thermal and Visual Cameras, Lund",
-    "company": "Axis Communications",
-    "location": "Sweden - Lund",
-    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Product-Imaging-Engineer---Thermal-and-Visual-Cameras--Lund_R-123609",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1157,7 +1157,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Stockholm",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Stockholm/Senior-Linux-Kernel-Engineer-in-Stockholm_R-123418-1",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1166,7 +1166,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/C-C---Go-Developer--streaming-to-cloud-from-cameras--Lund_R-123498",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1175,7 +1175,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-Software-Engineer--Core-Platform-Performance--Lund_R-123607",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1184,7 +1184,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Engineering-Manager-Core-Technologies-Media--Lund_R-123598",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1193,7 +1193,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Electronics-Engineer--Lund_R-123570",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1202,7 +1202,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Embedded-Software-Engineer---Team-Lead---Network-Recorders--Lund_R-123589",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1211,7 +1211,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Fullstack-Developer---Developer-Experience---AI-Innovation--Lund_R-123584",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1220,7 +1220,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Stockholm",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Stockholm/Experienced-Embedded-Firmware-Developer-in-Stockholm_R-123304",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1229,7 +1229,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/RF-Engineer-for-Radar-Product-Development--Lund_R-123576",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1238,7 +1238,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Radar-Algorithm-Developer---Pioneer-Next-Generation-Surveillance-Solutions--Lund_R-123566",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1247,7 +1247,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Senior-Embedded-Firmware-Developer---Access-Control-Solutions--Lund_R-123532-1",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1256,16 +1256,7 @@
     "company": "Axis Communications",
     "location": "Sweden - Stockholm",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Stockholm/Signal-Processing-and-Algorithm-Engineer_R-123535-1",
-    "postedAt": "2026-06-15T02:10:24.762Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "wd2-/job/Sweden---Lund/Engineering-Manager---AXIS-OS-Cyber-Security--Lund_R-122980-1",
-    "title": "Engineering Manager – AXIS OS Security & Compliance, Lund",
-    "company": "Axis Communications",
-    "location": "Sweden - Lund",
-    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Engineering-Manager---AXIS-OS-Cyber-Security--Lund_R-122980-1",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Sweden"
   },
   {
@@ -1274,7 +1265,7 @@
     "company": "Axis Communications",
     "location": "Singapore",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Singapore/Program---Project-Lead--Academy-APAC_R-123431-1",
-    "postedAt": "2026-06-15T02:10:24.762Z",
+    "postedAt": "2026-06-16T02:14:43.422Z",
     "region": "Singapore"
   },
   {
@@ -1283,7 +1274,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/AI-Software-Engineer_JR2025005483-1",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1292,7 +1283,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Data-Engineer_JR2025005485",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1301,7 +1292,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Marketing-Events---Partner-Success-Intern--Fintech-_JR2026007436",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1310,7 +1301,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern---PC-Audio_JR2026007390",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1319,7 +1310,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing--Lifestyle--Intern_JR2026007514",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1328,7 +1319,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Quality-Engineer_JR2026007409",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1337,7 +1328,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/AI-Data-Engineer-Intern_JR2026007475-1",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1346,7 +1337,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/XMLNAME--GRIT--Retail-Marketing-Trainee_JR2026007486",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1355,7 +1346,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Product-Evangelist--AI_JR2026007027",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1364,7 +1355,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Evangelist--Product-Marketing-_JR2026007490",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1373,7 +1364,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Game-Customer-Support-Lead_JR2025006590",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1382,7 +1373,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Marketing-Intern_JR2026007446",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1391,7 +1382,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Technical-Lead_JR2026007467",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1400,7 +1391,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Test-Automation-Developer_JR2026007434",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1409,7 +1400,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Quality-Engineer--1-year-Fixed-Term-Contract-_JR2026007479",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1418,7 +1409,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Channel-Marketing-Specialist_JR2026007382",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1427,7 +1418,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer--C---_JR2026006969",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1436,7 +1427,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Software-Ecosystem_JR2025006731",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1445,7 +1436,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Developer_JR2026007334-1",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1454,7 +1445,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/AI-Lead--IT-Applications_JR2025006113-1",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1463,7 +1454,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineering-II_JR2025004977",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1472,7 +1463,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer---Lead--AI-ML-Platform-_JR2025006746",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1481,7 +1472,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Game-AI-Developer_JR2026007297",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1490,7 +1481,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer--iOS-_JR2025006698",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1499,7 +1490,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Software-Engineer--Test-Automation-_JR2025006406",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1508,7 +1499,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-AI-Software-Engineer_JR2026007375-1",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1517,7 +1508,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer-II_JR2026007335",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1526,7 +1517,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Mechanical-Engineer_JR2026007377",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1535,7 +1526,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Engineer--AI-_JR2026007249",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1544,7 +1535,7 @@
     "company": "Razer",
     "location": "Shenzhen",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Software-Engineer_JR2026007240",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1553,7 +1544,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Electronics-Engineer-II_JR2025005459",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1562,7 +1553,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Regulatory---Compliance-Engineer_JR2025006744",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1571,7 +1562,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Developer_JR2025006722",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1580,7 +1571,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Software-Quality-Engineer_JR2026006891",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1589,7 +1580,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Manager--Product-Marketing_JR2026007261",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1598,7 +1589,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Category-Specialist_JR2026007247",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1607,7 +1598,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Marketing-Manager_JR2026007035",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1616,7 +1607,7 @@
     "company": "Razer",
     "location": "Shenzhen",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Software-Engineer_JR2026007239",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1625,7 +1616,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-AI-Engineer--Applied-_JR2026007067",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1634,7 +1625,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Software-Engineer_JR2026007201",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1643,7 +1634,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Regional-Marketing-Director--APAC_JR2025006377",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1652,7 +1643,7 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Senior-Product-Manager--Monetization-_JR2026007019",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
   },
   {
@@ -1661,7 +1652,7 @@
     "company": "Razer",
     "location": "Shenzhen",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Shenzhen/Senior-Firmware-Engineer_JR2025006080",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1670,7 +1661,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Machine-Learning-Engineer_JR2025005657",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1679,7 +1670,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineering_JR2025006514",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1688,7 +1679,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineering--JAVA-_JR2025006627",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1697,7 +1688,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Software-Engineering--JAVA-_JR2025006619",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1706,7 +1697,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-QA-Engineer_JR2025006516",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1715,7 +1706,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Machine-Learning-Engineer_JR2025005145",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1724,7 +1715,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Software-Engineer-web-_JR2025005934",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1733,7 +1724,7 @@
     "company": "Razer",
     "location": "Chengdu",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Chengdu/Senior-Data-Extraction-Engineer_JR2025005755",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "China"
   },
   {
@@ -1742,8 +1733,134 @@
     "company": "Razer",
     "location": "Singapore",
     "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Cloud-Service-Development-Engineer_JR2024004749",
-    "postedAt": "2026-06-15T02:10:09.222Z",
+    "postedAt": "2026-06-16T02:14:28.445Z",
     "region": "Singapore"
+  },
+  {
+    "id": "sr-744000132319232",
+    "title": "Software Engineer, Backend (Intern)",
+    "company": "Grab",
+    "location": "Beijing, cn",
+    "link": "https://jobs.smartrecruiters.com/grab/744000132319232",
+    "postedAt": "2026-06-16T01:40:46.881Z",
+    "region": "China"
+  },
+  {
+    "id": "gh-7997826",
+    "title": "Internal Audit Lead, Stablecoins & Digital Assets",
+    "company": "Stripe",
+    "location": "San Francisco, Seattle, New York City",
+    "link": "https://stripe.com/jobs/search?gh_jid=7997826",
+    "postedAt": "2026-06-15T16:34:23-04:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "gh-5215185008",
+    "title": "Senior Security Engineer",
+    "company": "Scopely",
+    "location": "CH - Shanghai, China",
+    "link": "https://job-boards.greenhouse.io/scopely/jobs/5215185008?gh_jid=5215185008",
+    "postedAt": "2026-06-15T14:02:31-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5123830008",
+    "title": "Anticheat Engineer",
+    "company": "Scopely",
+    "location": "CH - Shanghai, China",
+    "link": "https://job-boards.greenhouse.io/scopely/jobs/5123830008?gh_jid=5123830008",
+    "postedAt": "2026-06-15T14:02:28-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5029745007",
+    "title": "Influencer Marketing Manager（ Global Growth） ",
+    "company": "NetEase Games",
+    "location": "Singapore-Guoco Midtown",
+    "link": "https://job-boards.greenhouse.io/neteasegames/jobs/5029745007",
+    "postedAt": "2026-06-15T13:34:42-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "kl-b85a3d60-1655-4c58-a99c-ca556af1f8e1",
+    "title": "Principal Product Manager (Travel Services)",
+    "company": "Klook",
+    "location": "Singapore",
+    "link": "https://www.klookcareers.com/jobs-detail/b85a3d60-1655-4c58-a99c-ca556af1f8e1",
+    "postedAt": "2026-06-15T13:26:41",
+    "region": "Singapore"
+  },
+  {
+    "id": "bk-29444",
+    "title": "Localisation Lead - Hindi",
+    "company": "Booking.com",
+    "location": "Singapore, Singapore",
+    "link": "https://jobs.booking.com/booking/jobs/29444",
+    "postedAt": "2026-06-15T12:44:32+0000",
+    "region": "Singapore"
+  },
+  {
+    "id": "as-8d939573-6cf0-4f7e-91f6-46d0af27728b",
+    "title": "Art Lead, Clash Royale",
+    "company": "Supercell",
+    "location": "Shanghai",
+    "link": "https://jobs.ashbyhq.com/supercell/8d939573-6cf0-4f7e-91f6-46d0af27728b",
+    "postedAt": "2026-06-15T07:17:17.846+00:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5256234008",
+    "title": "Senior/Staff Server Engineer",
+    "company": "Scopely",
+    "location": "CH - China",
+    "link": "https://job-boards.greenhouse.io/scopely/jobs/5256234008?gh_jid=5256234008",
+    "postedAt": "2026-06-14T23:37:19-04:00",
+    "region": "China"
+  },
+  {
+    "id": "ericsson-563121776418622",
+    "title": "Radio Developer",
+    "company": "Ericsson",
+    "location": "Beijing,Beijing,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121776418622",
+    "postedAt": "2026-06-15T03:33:45.000Z",
+    "region": "China"
+  },
+  {
+    "id": "gh-7776139",
+    "title": "Implementation Engineer ",
+    "company": "Adyen",
+    "location": "Shanghai",
+    "link": "https://job-boards.greenhouse.io/adyen/jobs/7776139",
+    "postedAt": "2026-06-14T23:32:29-04:00",
+    "region": "China"
+  },
+  {
+    "id": "ericsson-563121776403154",
+    "title": "Experienced Developer RA",
+    "company": "Ericsson",
+    "location": "Beijing,Beijing,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121776403154",
+    "postedAt": "2026-06-15T03:03:11.000Z",
+    "region": "China"
+  },
+  {
+    "id": "gh-7865034",
+    "title": "[Growth Engineering] Staff Back-end Engineer I",
+    "company": "Coupang",
+    "location": "Shanghai, China",
+    "link": "https://www.coupang.jobs/en/jobs/?gh_jid=7865034",
+    "postedAt": "2026-06-14T23:02:39-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-6030082004",
+    "title": "Assistant Marketing Manager (KR Performance Marketing & CRM)",
+    "company": "Casetify",
+    "location": "Seoul, Seoul, South Korea",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/6030082004",
+    "postedAt": "2026-06-14T22:54:34-04:00",
+    "region": "Sweden"
   },
   {
     "id": "as-46f4ddee-b6a4-4a36-83e1-5d3749c7e6e7",
@@ -1752,6 +1869,14 @@
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/46f4ddee-b6a4-4a36-83e1-5d3749c7e6e7",
     "postedAt": "2026-06-15T01:43:38.252+00:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "ph-JR00009022",
+    "title": "Lead PMS Engineer",
+    "company": "ABB",
+    "location": "Singapore, Central Singapore, Singapore",
+    "postedAt": "2026-06-15T00:00:00.000+0000",
     "region": "Singapore"
   },
   {
@@ -1834,33 +1959,6 @@
     "link": "https://www.payoneer.com/careers/position/7919243/?gh_jid=7919243",
     "postedAt": "2026-06-12T04:12:46-04:00",
     "region": "Singapore"
-  },
-  {
-    "id": "gh-7776139",
-    "title": "Implementation Engineer ",
-    "company": "Adyen",
-    "location": "Shanghai",
-    "link": "https://job-boards.greenhouse.io/adyen/jobs/7776139",
-    "postedAt": "2026-06-12T02:50:17-04:00",
-    "region": "China"
-  },
-  {
-    "id": "gh-5215185008",
-    "title": "Senior Security Engineer",
-    "company": "Scopely",
-    "location": "CH - Shanghai, China",
-    "link": "https://job-boards.greenhouse.io/scopely/jobs/5215185008?gh_jid=5215185008",
-    "postedAt": "2026-06-12T02:32:23-04:00",
-    "region": "China"
-  },
-  {
-    "id": "gh-5123830008",
-    "title": "Anticheat Engineer",
-    "company": "Scopely",
-    "location": "CH - Shanghai, China",
-    "link": "https://job-boards.greenhouse.io/scopely/jobs/5123830008?gh_jid=5123830008",
-    "postedAt": "2026-06-12T02:32:20-04:00",
-    "region": "China"
   },
   {
     "id": "gh-7275885",
@@ -2069,17 +2167,8 @@
     "region": "Singapore"
   },
   {
-    "id": "gh-7865034",
-    "title": "[Growth Engineering] Staff Back-end Engineer I",
-    "company": "Coupang",
-    "location": "Shanghai, China",
-    "link": "https://www.coupang.jobs/en/jobs/?gh_jid=7865034",
-    "postedAt": "2026-06-11T03:03:31-04:00",
-    "region": "China"
-  },
-  {
     "id": "tv-e62ce740-412f-492c-85fa-e7359742c341",
-    "title": "Senior Associate Product Manager - Flight",
+    "title": "Product Manager - Flight",
     "company": "Traveloka",
     "location": "Singapore, Singapore",
     "link": "https://careers.traveloka.com/jobs/e62ce740-412f-492c-85fa-e7359742c341",
@@ -2240,20 +2329,20 @@
     "region": "China"
   },
   {
-    "id": "ph-JR00032351",
-    "title": "Senior ICSS Lead Engineer (2 Years Contract Role)",
-    "company": "ABB",
-    "location": "Singapore, Central Singapore, Singapore",
-    "postedAt": "2026-06-11T00:00:00.000+0000",
-    "region": "Singapore"
-  },
-  {
     "id": "ph-JR00036928",
     "title": "Test Engineer",
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-06-11T00:00:00.000+0000",
     "region": "China"
+  },
+  {
+    "id": "ph-JR00032351",
+    "title": "Senior ICSS Lead Engineer (2 Years Contract Role)",
+    "company": "ABB",
+    "location": "Singapore, Central Singapore, Singapore",
+    "postedAt": "2026-06-11T00:00:00.000+0000",
+    "region": "Singapore"
   },
   {
     "id": "ora-2078",
@@ -2280,15 +2369,6 @@
     "location": "China, Shanghai",
     "link": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2080",
     "postedAt": "2026-06-11",
-    "region": "China"
-  },
-  {
-    "id": "gh-5123826008",
-    "title": "Senior/Staff Server Engineer",
-    "company": "Scopely",
-    "location": "CH - Shanghai, China",
-    "link": "https://job-boards.greenhouse.io/scopely/jobs/5123826008?gh_jid=5123826008",
-    "postedAt": "2026-06-10T16:32:36-04:00",
     "region": "China"
   },
   {
@@ -2387,15 +2467,6 @@
     "company": "On Running",
     "location": "Shanghai",
     "link": "https://boards.greenhouse.io/onrunning/jobs/6879879?gh_jid=6879879",
-    "postedAt": "2026-06-09T16:15:08-04:00",
-    "region": "China"
-  },
-  {
-    "id": "gh-7430687",
-    "title": "Associate Store Leader, Shenzhen Luohu MixC, Phase 1",
-    "company": "On Running",
-    "location": "Shenzhen",
-    "link": "https://boards.greenhouse.io/onrunning/jobs/7430687?gh_jid=7430687",
     "postedAt": "2026-06-09T16:15:08-04:00",
     "region": "China"
   },
@@ -2517,20 +2588,20 @@
     "region": "China"
   },
   {
-    "id": "gh-5959444",
-    "title": "Retail - Lead Store Advisor（Bicester）",
-    "company": "On Running",
-    "location": "Shanghai",
-    "link": "https://boards.greenhouse.io/onrunning/jobs/5959444?gh_jid=5959444",
-    "postedAt": "2026-06-09T16:15:08-04:00",
-    "region": "China"
-  },
-  {
     "id": "gh-5310578",
     "title": "Retail - Lead Store Advisor（Bicester）",
     "company": "On Running",
     "location": "Shanghai",
     "link": "https://boards.greenhouse.io/onrunning/jobs/5310578?gh_jid=5310578",
+    "postedAt": "2026-06-09T16:15:08-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5959444",
+    "title": "Retail - Lead Store Advisor（Bicester）",
+    "company": "On Running",
+    "location": "Shanghai",
+    "link": "https://boards.greenhouse.io/onrunning/jobs/5959444?gh_jid=5959444",
     "postedAt": "2026-06-09T16:15:08-04:00",
     "region": "China"
   },
@@ -2922,20 +2993,20 @@
     "region": "Singapore"
   },
   {
-    "id": "gh-7916603",
-    "title": "Staff/Lead LLM Data Scientist (Singapore based)",
-    "company": "Agoda",
-    "location": "Singapore",
-    "link": "https://job-boards.greenhouse.io/agoda/jobs/7916603",
-    "postedAt": "2026-06-09T05:12:55-04:00",
-    "region": "Singapore"
-  },
-  {
     "id": "gh-7916604",
     "title": "Staff/Lead LLM Data Scientist (Singapore based)",
     "company": "Agoda",
     "location": "Singapore",
     "link": "https://job-boards.greenhouse.io/agoda/jobs/7916604",
+    "postedAt": "2026-06-09T05:12:55-04:00",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-7916603",
+    "title": "Staff/Lead LLM Data Scientist (Singapore based)",
+    "company": "Agoda",
+    "location": "Singapore",
+    "link": "https://job-boards.greenhouse.io/agoda/jobs/7916603",
     "postedAt": "2026-06-09T05:12:55-04:00",
     "region": "Singapore"
   },
@@ -3021,16 +3092,16 @@
     "region": "Singapore"
   },
   {
-    "id": "ph-JR00033912",
-    "title": "Testing Engineer",
+    "id": "ph-JR00034438",
+    "title": "Mechanical Engineer",
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-06-09T00:00:00.000+0000",
     "region": "China"
   },
   {
-    "id": "ph-JR00034438",
-    "title": "Mechanical Engineer",
+    "id": "ph-JR00033912",
+    "title": "Testing Engineer",
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-06-09T00:00:00.000+0000",
@@ -3088,15 +3159,6 @@
     "location": "Singapore",
     "link": "https://stripe.com/jobs/search?gh_jid=7529787",
     "postedAt": "2026-06-08T04:35:57-04:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "gh-5029745007",
-    "title": "Influencer Marketing Manager（ Global Growth） ",
-    "company": "NetEase Games",
-    "location": "Singapore-Guoco Midtown",
-    "link": "https://job-boards.greenhouse.io/neteasegames/jobs/5029745007",
-    "postedAt": "2026-06-07T22:46:53-04:00",
     "region": "Singapore"
   },
   {
@@ -3396,22 +3458,6 @@
     "region": "Singapore"
   },
   {
-    "id": "ph-JR00035848",
-    "title": "Project Engineer",
-    "company": "ABB",
-    "location": "Singapore, Central Singapore, Singapore",
-    "postedAt": "2026-06-03T00:00:00.000+0000",
-    "region": "Singapore"
-  },
-  {
-    "id": "ph-JR00029256",
-    "title": "Mechanical Engineering Team Leader",
-    "company": "ABB",
-    "location": "Shanghai, Shanghai, China",
-    "postedAt": "2026-06-03T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "ph-JR00020771",
     "title": "Senior Project Engineer",
     "company": "ABB",
@@ -3428,12 +3474,19 @@
     "region": "Sweden"
   },
   {
-    "id": "sr-744000129711725",
-    "title": "Lead Software Engineer, Backend (Autonomous Vehicle Integrations & Deployments)",
-    "company": "Grab",
-    "location": "Singapore, sg",
-    "link": "https://jobs.smartrecruiters.com/grab/744000129711725",
-    "postedAt": "2026-06-02T10:12:00.661Z",
+    "id": "ph-JR00029256",
+    "title": "Mechanical Engineering Team Leader",
+    "company": "ABB",
+    "location": "Shanghai, Shanghai, China",
+    "postedAt": "2026-06-03T00:00:00.000+0000",
+    "region": "China"
+  },
+  {
+    "id": "ph-JR00035848",
+    "title": "Project Engineer",
+    "company": "ABB",
+    "location": "Singapore, Central Singapore, Singapore",
+    "postedAt": "2026-06-03T00:00:00.000+0000",
     "region": "Singapore"
   },
   {
@@ -4007,16 +4060,16 @@
     "region": "China"
   },
   {
-    "id": "ph-JR00032453",
-    "title": "Vision Develop Engineer",
+    "id": "ph-JR00022783",
+    "title": "Project Engineer",
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-05-13T00:00:00.000+0000",
     "region": "China"
   },
   {
-    "id": "ph-JR00022783",
-    "title": "Project Engineer",
+    "id": "ph-JR00032453",
+    "title": "Vision Develop Engineer",
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-05-13T00:00:00.000+0000",
@@ -4247,16 +4300,16 @@
     "region": "China"
   },
   {
-    "id": "ph-JR00033419",
-    "title": "Project Engineer",
+    "id": "ph-JR00033422",
+    "title": "(Digital) Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-05-07T00:00:00.000+0000",
     "region": "China"
   },
   {
-    "id": "ph-JR00033422",
-    "title": "(Digital) Project Engineer",
+    "id": "ph-JR00033419",
+    "title": "Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-05-07T00:00:00.000+0000",
@@ -4738,24 +4791,6 @@
     "region": "Singapore"
   },
   {
-    "id": "as-4a1e2e02-59c0-4c96-bc86-4164609eedfb",
-    "title": "Staff Software Engineer, Lending Platform",
-    "company": "Airwallex",
-    "location": "SG - Singapore",
-    "link": "https://jobs.ashbyhq.com/airwallex/4a1e2e02-59c0-4c96-bc86-4164609eedfb",
-    "postedAt": "2026-03-31T14:37:05.541+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "as-0887ecca-15c1-479b-b4be-b0cb705d168a",
-    "title": "Senior Software Engineer, Lending Platform",
-    "company": "Airwallex",
-    "location": "SG - Singapore",
-    "link": "https://jobs.ashbyhq.com/airwallex/0887ecca-15c1-479b-b4be-b0cb705d168a",
-    "postedAt": "2026-03-31T14:36:43.580+00:00",
-    "region": "Singapore"
-  },
-  {
     "id": "trip-intl-6874",
     "title": "Marketing Campaign Manager, HK",
     "company": "Trip.com Group",
@@ -4783,15 +4818,6 @@
     "region": "Singapore"
   },
   {
-    "id": "tt-8a9ed6aa-650f-4b19-884f-69f8c2cea037",
-    "title": "Backend Developer",
-    "company": "Marshall",
-    "location": "Sweden",
-    "link": "https://careers.marshall.com/jobs/7471581-backend-developer",
-    "postedAt": "2026-03-27T09:16:03+01:00",
-    "region": "Sweden"
-  },
-  {
     "id": "as-93df1f38-8700-47c7-b402-d1fe5805a76d",
     "title": "Staff Product Manager, Check-Out",
     "company": "Airwallex",
@@ -4816,6 +4842,15 @@
     "location": "Shenzhen, China",
     "link": "https://careers.traveloka.com/jobs/36250b80-316e-4e74-8c14-e19f9a4c74e9",
     "postedAt": "2026-03-27T02:23:47.000Z",
+    "region": "China"
+  },
+  {
+    "id": "tv-6acfb357-4988-4bd7-8112-86fc63560a70",
+    "title": "Mobile Engineer --- SZ",
+    "company": "Traveloka",
+    "location": "Shenzhen, China",
+    "link": "https://careers.traveloka.com/jobs/6acfb357-4988-4bd7-8112-86fc63560a70",
+    "postedAt": "2026-03-27T02:21:33.000Z",
     "region": "China"
   },
   {
@@ -5017,24 +5052,6 @@
     "region": "China"
   },
   {
-    "id": "tv-d21be0f8-1bc0-4dbf-b1ff-d30b4ce5aa5e",
-    "title": "Software Backend Engineer",
-    "company": "Traveloka",
-    "location": "Shanghai, China",
-    "link": "https://careers.traveloka.com/jobs/d21be0f8-1bc0-4dbf-b1ff-d30b4ce5aa5e",
-    "postedAt": "2026-03-10T07:07:56.000Z",
-    "region": "China"
-  },
-  {
-    "id": "tv-c5bdfb31-7aee-4637-ace9-729520b8942b",
-    "title": "Software Engineer (web) ",
-    "company": "Traveloka",
-    "location": "Shenzhen, China",
-    "link": "https://careers.traveloka.com/jobs/c5bdfb31-7aee-4637-ace9-729520b8942b",
-    "postedAt": "2026-03-09T11:43:18.000Z",
-    "region": "China"
-  },
-  {
     "id": "as-9ff4c0f1-d279-40c4-8dfd-beba4ba69815",
     "title": "Staff Software Engineer,  Risk",
     "company": "Airwallex",
@@ -5114,15 +5131,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/0248185e-80e7-49e5-bef2-269323b4c0c4",
     "postedAt": "2026-03-03T07:38:05.686+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "tv-15c1dda8-5b43-40d8-9f59-c527c4a70616",
-    "title": "Software Backend Engineer",
-    "company": "Traveloka",
-    "location": "Shanghai, China",
-    "link": "https://careers.traveloka.com/jobs/15c1dda8-5b43-40d8-9f59-c527c4a70616",
-    "postedAt": "2026-03-03T04:01:53.000Z",
-    "region": "China"
   },
   {
     "id": "alg-ub-82b4e5c9-bb5c-46d7-80ab-693f1fe9bf55_16",
@@ -5241,12 +5249,30 @@
     "region": "China"
   },
   {
+    "id": "tv-7a2e0501-a6db-4791-a692-e758499446a3",
+    "title": "Senior Software Backend Engineer- Central Tech",
+    "company": "Traveloka",
+    "location": "Shenzhen, China",
+    "link": "https://careers.traveloka.com/jobs/7a2e0501-a6db-4791-a692-e758499446a3",
+    "postedAt": "2026-02-06T03:47:16.000Z",
+    "region": "China"
+  },
+  {
     "id": "as-bdc0c3c3-f381-48c7-bcb1-101cc21b1466",
     "title": "Senior Client Programmer, Project R.I.S.E",
     "company": "Supercell",
     "location": "Shanghai",
     "link": "https://jobs.ashbyhq.com/supercell/bdc0c3c3-f381-48c7-bcb1-101cc21b1466",
     "postedAt": "2026-02-04T07:25:00.171+00:00",
+    "region": "China"
+  },
+  {
+    "id": "tv-acb3809b-aeef-451a-af2b-aa195b6111c2",
+    "title": "上海-资深前端开发工程师/Web Engineer",
+    "company": "Traveloka",
+    "location": "Shanghai, China",
+    "link": "https://careers.traveloka.com/jobs/acb3809b-aeef-451a-af2b-aa195b6111c2",
+    "postedAt": "2026-02-02T08:58:13.000Z",
     "region": "China"
   },
   {
@@ -5630,24 +5656,6 @@
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/63c55141-c3bc-4e6d-b4dc-96c582ec776e",
     "postedAt": "2025-07-30T01:19:49.481+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "as-6c29e112-c94c-4346-9721-283aa4f4bcdc",
-    "title": "Senior Software Engineer, Lending",
-    "company": "Airwallex",
-    "location": "SG - Singapore",
-    "link": "https://jobs.ashbyhq.com/airwallex/6c29e112-c94c-4346-9721-283aa4f4bcdc",
-    "postedAt": "2025-07-15T07:55:28.710+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "as-078de7a5-2f5b-4420-ba5c-8d82a2110548",
-    "title": "Staff Software Engineer, Lending",
-    "company": "Airwallex",
-    "location": "SG - Singapore",
-    "link": "https://jobs.ashbyhq.com/airwallex/078de7a5-2f5b-4420-ba5c-8d82a2110548",
-    "postedAt": "2025-07-15T07:54:12.731+00:00",
     "region": "Singapore"
   },
   {
