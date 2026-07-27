@@ -18,7 +18,7 @@ interface JobsViewProps {
   onlyNew?: boolean;
   setOnlyNew?: (onlyNew: boolean) => void;
   companiesFromJobs: string[];
-  seenJobIds: Set<string>;
+  newJobIds: Set<string>;
   currentView: 'active' | 'history' | 'starred';
   starredJobIds: Set<string>;
   hiddenJobIds: Set<string>;
@@ -34,7 +34,7 @@ interface JobsViewProps {
 
 export function JobsView({ 
   loading, error, jobs, selectedRegion, setSelectedRegion, 
-  selectedCompany, setSelectedCompany, companiesFromJobs, seenJobIds, currentView,
+  selectedCompany, setSelectedCompany, companiesFromJobs, newJobIds, currentView,
   starredJobIds, hiddenJobIds, hiddenJobs, activeJobIds, onToggleStarred, onHide, onUnhide,
   appliedJobs, onSaveApplication, onRemoveApplication,
   onlyNew = false, setOnlyNew = () => {}
@@ -143,7 +143,7 @@ export function JobsView({
             <JobCard 
               key={job.id} 
               job={job} 
-              isNew={currentView === 'active' && !seenJobIds.has(job.id)} 
+              isNew={currentView === 'active' && newJobIds.has(job.id)} 
               onCompanyClick={handleCompanyClick}
               isStarred={starredJobIds.has(job.id)}
               isHidden={hiddenJobIds.has(job.id)}
@@ -170,7 +170,7 @@ export function JobsView({
                 </thead>
                 <tbody className="divide-y divide-gray-50 dark:divide-slate-800">
                   {jobs.map((job) => {
-                    const isNew = currentView === 'active' && !seenJobIds.has(job.id);
+                    const isNew = currentView === 'active' && newJobIds.has(job.id);
                     const companyInfo = COMPANY_DETAILS[job.company];
                     const isStarred = starredJobIds.has(job.id);
                     const isHidden = hiddenJobIds.has(job.id);

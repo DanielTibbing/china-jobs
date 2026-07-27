@@ -22,7 +22,7 @@ function App() {
     error,
     activeJobs,
     removedJobs,
-    seenJobIds,
+    newJobIds,
     starredJobIds,
     hiddenJobIds,
     starredJobs,
@@ -52,7 +52,7 @@ function App() {
                            job.location.toLowerCase().includes(searchTerm.toLowerCase())
       const matchesRegion = selectedRegion === 'All' || job.region === selectedRegion
       const matchesCompany = selectedCompany === 'All' || job.company === selectedCompany
-      const matchesNew = !onlyNew || !seenJobIds.has(job.id)
+      const matchesNew = !onlyNew || newJobIds.has(job.id)
       return matchesSearch && matchesRegion && matchesCompany && matchesNew
     })
   }
@@ -84,7 +84,7 @@ function App() {
                 onlyNew={onlyNew}
                 setOnlyNew={setOnlyNew}
                 companiesFromJobs={companiesFromJobs}
-                seenJobIds={seenJobIds}
+                newJobIds={newJobIds}
                 currentView="active"
                 starredJobIds={starredJobIds}
                 hiddenJobIds={hiddenJobIds}
@@ -109,7 +109,7 @@ function App() {
                 onlyNew={onlyNew}
                 setOnlyNew={setOnlyNew}
                 companiesFromJobs={companiesFromJobs}
-                seenJobIds={seenJobIds}
+                newJobIds={newJobIds}
                 currentView="starred"
                 starredJobIds={starredJobIds}
                 hiddenJobIds={hiddenJobIds}
@@ -134,7 +134,7 @@ function App() {
                 onlyNew={onlyNew}
                 setOnlyNew={setOnlyNew}
                 companiesFromJobs={companiesFromJobs}
-                seenJobIds={seenJobIds}
+                newJobIds={newJobIds}
                 currentView="history"
                 starredJobIds={starredJobIds}
                 hiddenJobIds={hiddenJobIds}

@@ -29,3 +29,6 @@ export interface JobApplication {
   updatedAt: string;
 }
 
+// Job entry enriched with client-side cache metadata.
+export type CachedJob = Job & { firstSeenAt?: string };
+

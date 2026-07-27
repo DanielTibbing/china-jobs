@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { Settings, Download, Upload, Database, AlertTriangle, Check, RefreshCw, ChevronLeft, Trash2, FileJson } from 'lucide-react'
-import type { Job, JobApplication } from '../../types'
+import type { Job, CachedJob, JobApplication } from '../../types'
 
 interface BackupPayload {
   version: number;
@@ -12,6 +12,8 @@ interface BackupPayload {
     hidden_job_ids?: string[];
     applied_jobs_data?: Record<string, JobApplication>;
     custom_jobs_data?: Record<string, Job>;
+    all_ever_seen_jobs?: Record<string, CachedJob>;
+    last_visit_at?: string;
     theme?: string;
   };
 }
@@ -38,6 +40,8 @@ export function SettingsView() {
           hidden_job_ids: JSON.parse(localStorage.getItem('hidden_job_ids') || '[]'),
           applied_jobs_data: JSON.parse(localStorage.getItem('applied_jobs_data') || '{}'),
           custom_jobs_data: JSON.parse(localStorage.getItem('custom_jobs_data') || '{}'),
+          all_ever_seen_jobs: JSON.parse(localStorage.getItem('all_ever_seen_jobs') || '{}'),
+          last_visit_at: localStorage.getItem('last_visit_at') || undefined,
           theme: localStorage.getItem('theme') || undefined
         }
       }
@@ -108,12 +112,25 @@ export function SettingsView() {
       mergeSetArray('starred_job_ids', imp.starred_job_ids)
       mergeSetArray('hidden_job_ids', imp.hidden_job_ids)
 
-      // 2. Merge Custom manual jobs (map merge)
+      // 2. Merge ever-seen cache: keep the earliest firstSeenAt for each job so new-job detection stays accurate
+      const localSeen: Record<string, CachedJob> = JSON.parse(localStorage.getItem('all_ever_seen_jobs') || '{}')
+      const importedSeen = imp.all_ever_seen_jobs || {}
+      const mergedSeen: Record<string, CachedJob> = { ...localSeen }
+      Object.keys(importedSeen).forEach(jobId => {
+        const localFirst = localSeen[jobId]?.firstSeenAt
+        const importedFirst = importedSeen[jobId]?.firstSeenAt
+        if (!localFirst || (importedFirst && new Date(importedFirst).getTime() < new Date(localFirst).getTime())) {
+          mergedSeen[jobId] = importedSeen[jobId]
+        }
+      })
+      localStorage.setItem('all_ever_seen_jobs', JSON.stringify(mergedSeen))
+
+      // 3. Merge Custom manual jobs (map merge)
       const localCustom: Record<string, Job> = JSON.parse(localStorage.getItem('custom_jobs_data') || '{}')
       const mergedCustom = { ...localCustom, ...(imp.custom_jobs_data || {}) }
       localStorage.setItem('custom_jobs_data', JSON.stringify(mergedCustom))
 
-      // 3. Smart Merge tracked applications based on updatedAt timestamps
+      // 4. Smart Merge tracked applications based on updatedAt timestamps
       const localApplied: Record<string, JobApplication> = JSON.parse(localStorage.getItem('applied_jobs_data') || '{}')
       const mergedApplied = { ...localApplied }
       const importedApplied = imp.applied_jobs_data || {}
@@ -141,7 +158,15 @@ export function SettingsView() {
       })
       localStorage.setItem('applied_jobs_data', JSON.stringify(mergedApplied))
 
-      // 4. Merge Theme preferences
+      // 5. Merge last visit timestamp: keep the later (more recent) value
+      if (imp.last_visit_at) {
+        const localVisit = localStorage.getItem('last_visit_at')
+        if (!localVisit || new Date(imp.last_visit_at).getTime() > new Date(localVisit).getTime()) {
+          localStorage.setItem('last_visit_at', imp.last_visit_at)
+        }
+      }
+
+      // 6. Merge Theme preferences
       if (imp.theme) {
         localStorage.setItem('theme', imp.theme)
       }
@@ -172,6 +197,8 @@ export function SettingsView() {
       localStorage.setItem('hidden_job_ids', JSON.stringify(imp.hidden_job_ids || []))
       localStorage.setItem('custom_jobs_data', JSON.stringify(imp.custom_jobs_data || {}))
       localStorage.setItem('applied_jobs_data', JSON.stringify(imp.applied_jobs_data || {}))
+      localStorage.setItem('all_ever_seen_jobs', JSON.stringify(imp.all_ever_seen_jobs || {}))
+      localStorage.setItem('last_visit_at', imp.last_visit_at || '')
       
       if (imp.theme) {
         localStorage.setItem('theme', imp.theme)
@@ -198,6 +225,8 @@ export function SettingsView() {
       localStorage.removeItem('hidden_job_ids')
       localStorage.removeItem('applied_jobs_data')
       localStorage.removeItem('custom_jobs_data')
+      localStorage.removeItem('all_ever_seen_jobs')
+      localStorage.removeItem('last_visit_at')
       localStorage.removeItem('theme')
       
       setSuccessMessage('All settings and tracking info successfully cleared! Reloading...')
@@ -377,6 +406,20 @@ export function SettingsView() {
                   <span className="text-[9px] font-bold block text-gray-400 uppercase leading-none">Custom Jobs</span>
                   <span className="text-lg font-black text-gray-800 dark:text-slate-200 mt-1 block">
                     {Object.keys(importedPayload.data.custom_jobs_data || {}).length}
+                  </span>
+                </div>
+                <div className="p-3 bg-white dark:bg-slate-900 rounded-xl border border-gray-150/40 dark:border-slate-800">
+                  <span className="text-[9px] font-bold block text-gray-400 uppercase leading-none">Ever Seen</span>
+                  <span className="text-lg font-black text-gray-800 dark:text-slate-200 mt-1 block">
+                    {Object.keys(importedPayload.data.all_ever_seen_jobs || {}).length}
+                  </span>
+                </div>
+                <div className="p-3 bg-white dark:bg-slate-900 rounded-xl border border-gray-150/40 dark:border-slate-800">
+                  <span className="text-[9px] font-bold block text-gray-400 uppercase leading-none">Last Visit</span>
+                  <span className="text-lg font-black text-gray-800 dark:text-slate-200 mt-1 block">
+                    {importedPayload.data.last_visit_at
+                      ? new Date(importedPayload.data.last_visit_at).toLocaleDateString()
+                      : '—'}
                   </span>
                 </div>
                 <div className="p-3 bg-white dark:bg-slate-900 rounded-xl border border-gray-150/40 dark:border-slate-800">

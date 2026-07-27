@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { X, Calendar, User, Mail, FileText, Trash2, Briefcase, ChevronRight, Check } from 'lucide-react'
 import type { Job, JobApplication } from '../../types'
 import { COMPANY_DETAILS } from '../../constants/companies'
@@ -65,26 +65,13 @@ const STATUS_OPTIONS: {
 export function ApplicationModal({ 
   isOpen, onClose, job, existingApplication, onSave, onDelete 
 }: ApplicationModalProps) {
-  const [status, setStatus] = useState<JobApplication['status']>('applied')
-  const [appliedAt, setAppliedAt] = useState('')
-  const [contactName, setContactName] = useState('')
-  const [contactEmail, setContactEmail] = useState('')
-  const [processStep, setProcessStep] = useState('')
-  const [notes, setNotes] = useState('')
+  const [status, setStatus] = useState<JobApplication['status']>(existingApplication?.status || 'applied')
+  const [appliedAt, setAppliedAt] = useState(existingApplication?.appliedAt || new Date().toISOString().split('T')[0])
+  const [contactName, setContactName] = useState(existingApplication?.contactName || '')
+  const [contactEmail, setContactEmail] = useState(existingApplication?.contactEmail || '')
+  const [processStep, setProcessStep] = useState(existingApplication?.processStep || '')
+  const [notes, setNotes] = useState(existingApplication?.notes || '')
   const [showConfirmDelete, setShowConfirmDelete] = useState(false)
-
-  // Sync state with existing application when modal opens/changes
-  useEffect(() => {
-    if (isOpen) {
-      setStatus(existingApplication?.status || 'applied')
-      setAppliedAt(existingApplication?.appliedAt || new Date().toISOString().split('T')[0])
-      setContactName(existingApplication?.contactName || '')
-      setContactEmail(existingApplication?.contactEmail || '')
-      setProcessStep(existingApplication?.processStep || '')
-      setNotes(existingApplication?.notes || '')
-      setShowConfirmDelete(false)
-    }
-  }, [isOpen, existingApplication])
 
   if (!isOpen) return null
 

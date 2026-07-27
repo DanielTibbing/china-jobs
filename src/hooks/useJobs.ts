@@ -1,14 +1,14 @@
 import { useState, useEffect, useMemo } from 'react'
-import type { Job, JobApplication } from '../types'
+import type { Job, CachedJob, JobApplication } from '../types'
 
 export function useJobs() {
   const [activeJobs, setActiveJobs] = useState<Job[]>([])
   const [removedJobs, setRemovedJobs] = useState<Job[]>([])
-  
-  const [seenJobIds] = useState<Set<string>>(() => {
-    const savedSeen = localStorage.getItem('seen_job_ids')
-    return savedSeen ? new Set<string>(JSON.parse(savedSeen) as string[]) : new Set<string>()
+  const [allEverSeenJobs, setAllEverSeenJobs] = useState<Record<string, CachedJob>>(() => {
+    const saved = localStorage.getItem('all_ever_seen_jobs')
+    return saved ? JSON.parse(saved) : {}
   })
+  const [lastVisitAt, setLastVisitAt] = useState<string | null>(() => localStorage.getItem('last_visit_at'))
   
   const [starredJobIds, setStarredJobIds] = useState<Set<string>>(() => {
     const savedStarred = localStorage.getItem('starred_job_ids')
@@ -34,11 +34,9 @@ export function useJobs() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
-    const savedSeen = localStorage.getItem('seen_job_ids')
     const savedAllJobs = localStorage.getItem('all_ever_seen_jobs')
-    
-    const initialSeen = savedSeen ? new Set<string>(JSON.parse(savedSeen) as string[]) : new Set<string>()
-    const allEverSeen: Record<string, Job> = savedAllJobs ? JSON.parse(savedAllJobs) : {}
+    const savedLastVisit = localStorage.getItem('last_visit_at')
+    const allEverSeen: Record<string, CachedJob> = savedAllJobs ? JSON.parse(savedAllJobs) : {}
 
     fetch('jobs.json')
       .then(res => {
@@ -51,14 +49,14 @@ export function useJobs() {
         const removed = Object.values(allEverSeen).filter(j => !currentIds.has(j.id))
         setRemovedJobs(removed.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime()))
 
-        const updatedAllEverSeen = { ...allEverSeen }
+        const updatedAllEverSeen: Record<string, CachedJob> = { ...allEverSeen }
         const nowStr = new Date().toISOString()
         data.forEach(job => {
-          const existing = allEverSeen[job.id] as any
+          const existing = allEverSeen[job.id]
           updatedAllEverSeen[job.id] = {
             ...job,
             firstSeenAt: existing?.firstSeenAt || nowStr
-          } as any
+          }
         })
 
         // Prune cache details older than 180 days since first seen, unless they are active, starred, or tracked
@@ -66,10 +64,10 @@ export function useJobs() {
         const starredSet = savedStarred ? new Set<string>(JSON.parse(savedStarred) as string[]) : new Set<string>()
         
         const savedApplied = localStorage.getItem('applied_jobs_data')
-        const appliedKeys = savedApplied ? new Set<string>(Object.keys(JSON.parse(savedApplied) as Record<string, any>)) : new Set<string>()
+        const appliedKeys = savedApplied ? new Set<string>(Object.keys(JSON.parse(savedApplied) as Record<string, JobApplication>)) : new Set<string>()
 
         const cutoffTime = Date.now() - 180 * 24 * 60 * 60 * 1000
-        const prunedAllEverSeen: Record<string, Job> = {}
+        const prunedAllEverSeen: Record<string, CachedJob> = {}
         
         Object.values(updatedAllEverSeen).forEach(job => {
           const isActive = currentIds.has(job.id)
@@ -77,7 +75,7 @@ export function useJobs() {
           const isTracked = appliedKeys.has(job.id)
           
           // Use firstSeenAt if available, fallback to postedAt for existing listings
-          const seenTime = new Date((job as any).firstSeenAt || job.postedAt).getTime()
+          const seenTime = new Date(job.firstSeenAt || job.postedAt).getTime()
           const isRecent = seenTime > cutoffTime
           
           if (isActive || isStarred || isTracked || isRecent) {
@@ -85,11 +83,14 @@ export function useJobs() {
           }
         })
         localStorage.setItem('all_ever_seen_jobs', JSON.stringify(prunedAllEverSeen))
+        setAllEverSeenJobs(prunedAllEverSeen)
 
-        setTimeout(() => {
-          const newSeenIds = new Set([...Array.from(initialSeen), ...data.map(j => j.id)])
-          localStorage.setItem('seen_job_ids', JSON.stringify(Array.from(newSeenIds)))
-        }, 2000)
+        // First-time users: start tracking from now so the next visit has a clean baseline.
+        if (!savedLastVisit) {
+          const now = new Date().toISOString()
+          localStorage.setItem('last_visit_at', now)
+          setLastVisitAt(now)
+        }
 
         setLoading(false)
       })
@@ -130,6 +131,39 @@ export function useJobs() {
       return next
     })
   }
+
+  // Jobs discovered since the user's previous visit. On the very first visit the baseline is
+  // established after load, so nothing is flagged as new during that session.
+  const newJobIds = useMemo(() => {
+    if (!lastVisitAt) return new Set<string>()
+    const cutoff = new Date(lastVisitAt).getTime()
+    return new Set(
+      activeJobs
+        .filter(job => {
+          const firstSeen = allEverSeenJobs[job.id]?.firstSeenAt
+          return firstSeen ? new Date(firstSeen).getTime() > cutoff : false
+        })
+        .map(job => job.id)
+    )
+  }, [activeJobs, lastVisitAt, allEverSeenJobs])
+
+  // Persist the end of the current session so the next visit can compute newly discovered jobs.
+  useEffect(() => {
+    const markVisit = () => {
+      const now = new Date().toISOString()
+      localStorage.setItem('last_visit_at', now)
+      setLastVisitAt(now)
+    }
+
+    window.addEventListener('beforeunload', markVisit)
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'hidden') markVisit()
+    })
+
+    return () => {
+      window.removeEventListener('beforeunload', markVisit)
+    }
+  }, [])
 
   const allEverSeenJobsList = useMemo(() => {
     const uniqueMap = new Map<string, Job>()
@@ -205,7 +239,7 @@ export function useJobs() {
     error,
     activeJobs,
     removedJobs,
-    seenJobIds,
+    newJobIds,
     starredJobIds,
     hiddenJobIds,
     starredJobs,

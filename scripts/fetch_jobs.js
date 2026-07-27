@@ -25,7 +25,18 @@ const KEYWORDS = [
   'Programmer',
   'Developer',
   'Product Manager',
-  'Marketing'
+  'Marketing',
+  // Chinese tech titles (helps platforms like Lazada/Trip that post local-language roles)
+  '工程师',
+  '开发',
+  '前端',
+  '后端',
+  '全栈',
+  '技术',
+  '研发',
+  '程序员',
+  '架构师',
+  '产品经理'
 ];
 
 const REGIONS = ['China', 'Hong Kong', 'Singapore', 'Sweden'];
@@ -756,7 +767,8 @@ async function fetchSandvikJobs(company) {
       }
       
       const match = entry.href?.match(/\/([^\/]+)\/?$/) || entry.href?.match(/\/([^\/]+)\/[^\/]*$/);
-      const jobId = match ? match[1] : Math.random().toString(36).substring(7);
+      // Fallback to the full href path so IDs stay stable across runs.
+      const jobId = match ? match[1] : (entry.href || `${entry.title}-${location}`).replace(/\//g, '-');
 
       let postedAt = new Date().toISOString();
       if (entry.published) {
@@ -917,6 +929,22 @@ function matchesKeywords(title) {
 async function main() {
   let allJobs = [];
 
+  // Load the previous output so we can keep stable postedAt timestamps for jobs we already know about.
+  // This prevents daily scrapes from reshuffling the entire list just because a platform uses the
+  // current time as its posted date.
+  const outputPath = path.join(process.cwd(), 'public', 'jobs.json');
+  let existingById = new Map();
+  try {
+    if (fs.existsSync(outputPath)) {
+      const existingJobs = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+      if (Array.isArray(existingJobs)) {
+        existingById = new Map(existingJobs.map(job => [job.id, job]));
+      }
+    }
+  } catch (e) {
+    console.error('Could not read existing jobs.json, starting fresh:', e.message);
+  }
+
     for (const company of COMPANIES) {
       console.log(`Fetching jobs for ${company.name}...`);
       let jobs = [];
@@ -948,9 +976,19 @@ async function main() {
     allJobs = allJobs.concat(filteredJobs);
   }
 
-  allJobs.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
-  fs.writeFileSync(path.join(process.cwd(), 'public', 'jobs.json'), JSON.stringify(allJobs, null, 2));
-  console.log(`Successfully wrote ${allJobs.length} matched jobs.`);
+  // Preserve the original postedAt for any job that already existed. Only genuinely new IDs
+  // (or jobs where we never had a date) get a freshly generated timestamp.
+  const stableJobs = allJobs.map(job => {
+    const existing = existingById.get(job.id);
+    if (existing && existing.postedAt) {
+      return { ...job, postedAt: existing.postedAt };
+    }
+    return job;
+  });
+
+  stableJobs.sort((a, b) => new Date(b.postedAt).getTime() - new Date(a.postedAt).getTime());
+  fs.writeFileSync(outputPath, JSON.stringify(stableJobs, null, 2));
+  console.log(`Successfully wrote ${stableJobs.length} matched jobs.`);
 }
 
 main();
