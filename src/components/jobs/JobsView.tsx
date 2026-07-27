@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Filter, Briefcase, RefreshCw, LayoutGrid, List, Building2, ExternalLink, Clock, MapPin, Star, Eye, EyeOff, CheckSquare } from 'lucide-react'
+import { Filter, Briefcase, RefreshCw, LayoutGrid, List, Building2, ExternalLink, Clock, MapPin, Star, Eye, EyeOff, CheckSquare, ArrowUp, ArrowDown } from 'lucide-react'
 import type { Job, JobApplication } from '../../types'
 import { REGION_FLAGS } from '../../constants/regions'
 import { COMPANY_DETAILS } from '../../constants/companies'
@@ -42,12 +42,47 @@ export function JobsView({
   const navigate = useNavigate();
   const [viewMode, setViewMode] = useState<'grid' | 'table'>('grid');
   const [editingJob, setEditingJob] = useState<Job | null>(null);
+  const [sortConfig, setSortConfig] = useState<{ key: 'title' | 'company' | 'region' | 'location' | 'postedAt'; direction: 'asc' | 'desc' } | null>(null);
 
   const handleCompanyClick = (company: string) => {
     setSelectedCompany(company);
     navigate('/');
     window.scrollTo(0, 0);
   };
+
+  const handleSort = (key: 'title' | 'company' | 'region' | 'location' | 'postedAt') => {
+    setSortConfig(current => {
+      if (!current || current.key !== key) {
+        return { key, direction: 'asc' };
+      }
+      if (current.direction === 'asc') {
+        return { key, direction: 'desc' };
+      }
+      return null;
+    });
+  };
+
+  const sortedJobs = useMemo(() => {
+    if (!sortConfig) return jobs;
+    const { key, direction } = sortConfig;
+    return [...jobs].sort((a, b) => {
+      const comparison = key === 'postedAt'
+        ? new Date(a.postedAt).getTime() - new Date(b.postedAt).getTime()
+        : a[key].localeCompare(b[key]);
+      return direction === 'asc' ? comparison : -comparison;
+    });
+  }, [jobs, sortConfig]);
+
+  const sortedHiddenJobs = useMemo(() => {
+    if (!sortConfig || !hiddenJobs) return hiddenJobs || [];
+    const { key, direction } = sortConfig;
+    return [...hiddenJobs].sort((a, b) => {
+      const comparison = key === 'postedAt'
+        ? new Date(a.postedAt).getTime() - new Date(b.postedAt).getTime()
+        : a[key].localeCompare(b[key]);
+      return direction === 'asc' ? comparison : -comparison;
+    });
+  }, [hiddenJobs, sortConfig]);
 
   return (
     <div className="space-y-6">
@@ -161,15 +196,35 @@ export function JobsView({
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr className="bg-gray-50 dark:bg-slate-800/50 border-b border-gray-100 dark:border-slate-800">
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Role & Company</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-center">Region</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Location</th>
-                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Posted</th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">
+                      <button onClick={() => handleSort('title')} className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                        Role & Company
+                        {sortConfig?.key === 'title' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                      </button>
+                    </th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-center">
+                      <button onClick={() => handleSort('region')} className="inline-flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                        Region
+                        {sortConfig?.key === 'region' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                      </button>
+                    </th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">
+                      <button onClick={() => handleSort('location')} className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                        Location
+                        {sortConfig?.key === 'location' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                      </button>
+                    </th>
+                    <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">
+                      <button onClick={() => handleSort('postedAt')} className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                        Posted
+                        {sortConfig?.key === 'postedAt' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                      </button>
+                    </th>
                     <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-right">Action</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-50 dark:divide-slate-800">
-                  {jobs.map((job) => {
+                  {sortedJobs.map((job) => {
                     const isNew = currentView === 'active' && newJobIds.has(job.id);
                     const companyInfo = COMPANY_DETAILS[job.company];
                     const isStarred = starredJobIds.has(job.id);
@@ -338,15 +393,35 @@ export function JobsView({
                   <table className="w-full text-left border-collapse">
                     <thead>
                       <tr className="bg-gray-50 dark:bg-slate-800/50 border-b border-gray-100 dark:border-slate-800">
-                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Role & Company</th>
-                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-center">Region</th>
-                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Location</th>
-                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">Posted</th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">
+                          <button onClick={() => handleSort('title')} className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                            Role & Company
+                            {sortConfig?.key === 'title' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                          </button>
+                        </th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-center">
+                          <button onClick={() => handleSort('region')} className="inline-flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                            Region
+                            {sortConfig?.key === 'region' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                          </button>
+                        </th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">
+                          <button onClick={() => handleSort('location')} className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                            Location
+                            {sortConfig?.key === 'location' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                          </button>
+                        </th>
+                        <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest">
+                          <button onClick={() => handleSort('postedAt')} className="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                            Posted
+                            {sortConfig?.key === 'postedAt' && (sortConfig.direction === 'asc' ? <ArrowUp className="h-3 w-3" /> : <ArrowDown className="h-3 w-3" />)}
+                          </button>
+                        </th>
                         <th className="px-6 py-4 text-[10px] font-black text-gray-400 dark:text-slate-500 uppercase tracking-widest text-right">Action</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-50 dark:divide-slate-800">
-                      {hiddenJobs.map((job) => {
+                      {sortedHiddenJobs.map((job) => {
                         const isStarred = starredJobIds.has(job.id);
                         const isExpired = !activeJobIds.has(job.id);
                         const companyInfo = COMPANY_DETAILS[job.company];
