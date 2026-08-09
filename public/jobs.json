@@ -1,5 +1,50 @@
 [
   {
+    "id": "siemens-509479",
+    "title": "西门子数字化工业集团 物理AI DevOps &amp; 智能工程开发工程师",
+    "company": "Siemens",
+    "location": "Suzhou, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509479",
+    "postedAt": "2026-08-09T00:40:47.024Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-509856",
+    "title": "EMC测试工程师 南京",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509856",
+    "postedAt": "2026-08-09T00:40:35.189Z",
+    "region": "China"
+  },
+  {
+    "id": "rmk-Assa Abloy-2",
+    "title": "Firmware Engineer",
+    "company": "Assa Abloy",
+    "location": "Shanghai, CN, 200335",
+    "link": "https://assaabloy.jobs2web.com/job/Shanghai-Firmware-Engineer-200335/1413729433/",
+    "postedAt": "2026-08-09T00:38:51.350Z",
+    "region": "China"
+  },
+  {
+    "id": "rmk-Assa Abloy-4",
+    "title": "Electronics Design Engineer",
+    "company": "Assa Abloy",
+    "location": "Stockholm, SE, SE-117 59",
+    "link": "https://assaabloy.jobs2web.com/job/Stockholm-Electronics-Design-Engineer-SE-117-59/1413866033/",
+    "postedAt": "2026-08-09T00:38:51.350Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "rmk-Assa Abloy-11",
+    "title": "Export Product Manager",
+    "company": "Assa Abloy",
+    "location": "Shanghai, CN, 200335",
+    "link": "https://assaabloy.jobs2web.com/job/Shanghai-Export-Product-Manager-200335/1413563133/",
+    "postedAt": "2026-08-09T00:38:51.350Z",
+    "region": "China"
+  },
+  {
     "id": "siemens-514650",
     "title": "(SSLS) Service Engineer 客户服务工程师 闵行",
     "company": "Siemens",
@@ -359,15 +404,6 @@
     "region": "China"
   },
   {
-    "id": "sandvik-R0095676",
-    "title": "Solva Business Development Lead",
-    "company": "Sandvik",
-    "location": "SUBANG JAYA, Selangor, Malaysia",
-    "link": "https://www.home.sandvik/en/careers/job-search/business-development/R0095676/",
-    "postedAt": "2026-08-07T00:00:00.000Z",
-    "region": "Sweden"
-  },
-  {
     "id": "sandvik-R0095674",
     "title": "Solva Business Development Lead",
     "company": "Sandvik",
@@ -375,6 +411,15 @@
     "link": "https://www.home.sandvik/en/careers/job-search/business-development/R0095674/",
     "postedAt": "2026-08-07T00:00:00.000Z",
     "region": "China"
+  },
+  {
+    "id": "sandvik-R0095676",
+    "title": "Solva Business Development Lead",
+    "company": "Sandvik",
+    "location": "SUBANG JAYA, Selangor, Malaysia",
+    "link": "https://www.home.sandvik/en/careers/job-search/business-development/R0095676/",
+    "postedAt": "2026-08-07T00:00:00.000Z",
+    "region": "Sweden"
   },
   {
     "id": "gh-8110862",
@@ -994,15 +1039,6 @@
     "region": "China"
   },
   {
-    "id": "siemens-513157",
-    "title": "(SMVS) Maintenance Engineer 维修工程师（仓储物流方向_AGV）",
-    "company": "Siemens",
-    "location": "Wuxi, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513157",
-    "postedAt": "2026-08-01T01:24:04.345Z",
-    "region": "China"
-  },
-  {
     "id": "sh-J00254934",
     "title": "Online Marketing Intern - Strategy & Planning, Regional Brand & Growth Marketing (Spring 2027)",
     "company": "Shopee",
@@ -1120,20 +1156,20 @@
     "region": "Singapore"
   },
   {
-    "id": "siemens-516104",
-    "title": "Lead Automation &amp; Software Engineer– SCADA, PLC &amp; Automation Systems",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516104",
-    "postedAt": "2026-07-31T01:22:27.689Z",
-    "region": "Singapore"
-  },
-  {
     "id": "siemens-516105",
     "title": "Senior Systems Engineer (Traction Power Systems)",
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516105",
+    "postedAt": "2026-07-31T01:22:27.689Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-516104",
+    "title": "Lead Automation &amp; Software Engineer– SCADA, PLC &amp; Automation Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516104",
     "postedAt": "2026-07-31T01:22:27.689Z",
     "region": "Singapore"
   },
@@ -1548,20 +1584,20 @@
     "region": "China"
   },
   {
-    "id": "vo-33940-en_US",
-    "title": "System Engineer at Volvo CE's Technology Center",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-System-Engineer-at-Volvo-CE's-Technology-Center-405-08/1362262355/?feedId=361555",
-    "postedAt": "2026-07-27T20:59:27.344Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-33688-en_US",
     "title": "Senior Software Engineer",
     "company": "Volvo Group",
     "location": "Göteborg, SE, 417 55",
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-Software-Engineer-417-55/1362212455/?feedId=361555",
+    "postedAt": "2026-07-27T20:59:27.344Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33940-en_US",
+    "title": "System Engineer at Volvo CE's Technology Center",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-System-Engineer-at-Volvo-CE's-Technology-Center-405-08/1362262355/?feedId=361555",
     "postedAt": "2026-07-27T20:59:27.344Z",
     "region": "Sweden"
   },
@@ -1845,6 +1881,42 @@
     "region": "Singapore"
   },
   {
+    "id": "vo-33744-en_US",
+    "title": "Experienced E&E Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-E&E-Engineer-250102/1361579055/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-33743-en_US",
+    "title": "Experienced Software Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1361578555/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-33745-en_US",
+    "title": "Digital Product Manager Payments and PSF",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Digital-Product-Manager-Payments-and-PSF-417-56/1361448755/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33746-en_US",
+    "title": "Digital Product Manager EaaS-Rental",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Digital-Product-Manager-EaaS-Rental-417-56/1361453055/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "Sweden"
+  },
+  {
     "id": "vo-33494-en_US",
     "title": "Professional Software Engineer",
     "company": "Volvo Group",
@@ -1859,51 +1931,6 @@
     "company": "Volvo Group",
     "location": "Göteborg, SE, 417 56",
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Internship-opportunity-Solution-Engineer-417-56/1351295555/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-33310-en_US",
-    "title": "Technical Sales Engineer",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Technical-Sales-Engineer-405-08/1359348055/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-33745-en_US",
-    "title": "Digital Product Manager Payments and PSF",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Digital-Product-Manager-Payments-and-PSF-417-56/1361448755/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-33743-en_US",
-    "title": "Experienced Software Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1361578555/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-33744-en_US",
-    "title": "Experienced E&E Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-E&E-Engineer-250102/1361579055/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-33746-en_US",
-    "title": "Digital Product Manager EaaS-Rental",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Digital-Product-Manager-EaaS-Rental-417-56/1361453055/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.877Z",
     "region": "Sweden"
   },
@@ -1926,12 +1953,12 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-32299-en_US",
-    "title": "Senior Solution Engineer",
+    "id": "vo-33310-en_US",
+    "title": "Technical Sales Engineer",
     "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-Solution-Engineer-417-56/1354517055/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
+    "location": "Göteborg, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Technical-Sales-Engineer-405-08/1359348055/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
     "region": "Sweden"
   },
   {
@@ -1944,13 +1971,13 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-33863-en_US",
-    "title": "Experienced Brake system Engineer",
+    "id": "vo-32299-en_US",
+    "title": "Senior Solution Engineer",
     "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Brake-system-Engineer-250102/1361880055/?feedId=361555",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-Solution-Engineer-417-56/1354517055/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "China"
+    "region": "Sweden"
   },
   {
     "id": "vo-33799-en_US",
@@ -1971,6 +1998,15 @@
     "region": "China"
   },
   {
+    "id": "vo-33863-en_US",
+    "title": "Experienced Brake system Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Brake-system-Engineer-250102/1361880055/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "China"
+  },
+  {
     "id": "vo-32044-en_US",
     "title": "Senior Engineer, Product Verification",
     "company": "Volvo Group",
@@ -1980,13 +2016,13 @@
     "region": "China"
   },
   {
-    "id": "vo-33311-en_US",
-    "title": "Technical Sales Engineer - Temporary",
+    "id": "vo-32427-en_US",
+    "title": "Senior System Engineer",
     "company": "Volvo Group",
-    "location": "Göteborg, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Technical-Sales-Engineer-Temporary-405-08/1359344955/?feedId=361555",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-System-Engineer-250102/1354520555/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.875Z",
-    "region": "Sweden"
+    "region": "China"
   },
   {
     "id": "vo-31188-en_US",
@@ -1996,15 +2032,6 @@
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Technical-Training-Developer-%28Electrical%29-417-56/1350677955/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.875Z",
     "region": "Sweden"
-  },
-  {
-    "id": "vo-32427-en_US",
-    "title": "Senior System Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-System-Engineer-250102/1354520555/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.875Z",
-    "region": "China"
   },
   {
     "id": "vo-33350-en_US",
@@ -2021,6 +2048,15 @@
     "company": "Volvo Group",
     "location": "Hallsberg, SE, 694 82",
     "link": "https://jobs.volvogroup.com/job/Hallsberg-Environmental-Engineer-694-82/1359939855/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.875Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33311-en_US",
+    "title": "Technical Sales Engineer - Temporary",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Technical-Sales-Engineer-Temporary-405-08/1359344955/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.875Z",
     "region": "Sweden"
   },
@@ -2115,20 +2151,20 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-31040-en_US",
-    "title": "Experienced Excavator Product Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.874Z",
-    "region": "China"
-  },
-  {
     "id": "vo-32416-en_US",
     "title": "Learning Content Developer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Learning-Content-Developer-250102/1354490555/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.874Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-31040-en_US",
+    "title": "Experienced Excavator Product Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.874Z",
     "region": "China"
   },
@@ -2681,20 +2717,20 @@
     "region": "China"
   },
   {
-    "id": "ph-JR00041255",
-    "title": "Project Engineer",
-    "company": "ABB",
-    "location": "Xiamen, Fujian, China",
-    "postedAt": "2026-07-27T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "ph-JR00042053",
     "title": "Commissioning Engineer",
     "company": "ABB",
     "location": "Singapore, Central Singapore, Singapore",
     "postedAt": "2026-07-27T00:00:00.000+0000",
     "region": "Singapore"
+  },
+  {
+    "id": "ph-JR00041255",
+    "title": "Project Engineer",
+    "company": "ABB",
+    "location": "Xiamen, Fujian, China",
+    "postedAt": "2026-07-27T00:00:00.000+0000",
+    "region": "China"
   },
   {
     "id": "trip-cn-4570df53-7f99-4f7b-8ba5-25c2f3a1fb8b",
@@ -4101,6 +4137,24 @@
     "link": "https://jobs.ashbyhq.com/airwallex/e98d5cde-3dc6-4e57-8f14-3f299f5da21f",
     "postedAt": "2026-07-17T05:35:15.034+00:00",
     "region": "Singapore"
+  },
+  {
+    "id": "alg-ub-968dc55f-5e63-4797-b260-caec471b2ebd_16",
+    "title": "Lead Animator",
+    "company": "Ubisoft",
+    "location": "Chengdu, cn",
+    "link": "https://jobs.smartrecruiters.com/Ubisoft2/744000138242109-lead-animator",
+    "postedAt": "2026-07-17T02:55:20.156Z",
+    "region": "China"
+  },
+  {
+    "id": "ericsson-563121772171254",
+    "title": "New Grad - Network Engineer I",
+    "company": "Ericsson",
+    "location": "Nanjing,Jiangsu,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121772171254",
+    "postedAt": "2026-07-16T09:16:11.000Z",
+    "region": "China"
   },
   {
     "id": "as-5e385747-ea12-41dc-b932-10959f2c2a2e",
@@ -6749,15 +6803,6 @@
     "link": "https://jobs.lever.co/xsolla/c8222d67-a318-46b0-aa00-44f6cc67918e",
     "postedAt": "2025-08-27T06:23:35.963Z",
     "region": "China"
-  },
-  {
-    "id": "as-25da333f-d040-4ef0-a765-c9dc74283bc5",
-    "title": "Engineering Lead, Billing",
-    "company": "Airwallex",
-    "location": "SG - Singapore",
-    "link": "https://jobs.ashbyhq.com/airwallex/25da333f-d040-4ef0-a765-c9dc74283bc5",
-    "postedAt": "2025-08-27T03:48:11.419+00:00",
-    "region": "Singapore"
   },
   {
     "id": "as-1711508a-927f-48c2-b3ef-0a79ccd0299d",
