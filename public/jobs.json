@@ -1,5 +1,95 @@
 [
   {
+    "id": "siemens-508324",
+    "title": "(SMVS) 来料检验策划工程师 (无锡)",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/508324",
+    "postedAt": "2026-08-19T00:26:39.374Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-511912",
+    "title": "(SMVS) IE Engineer (自动化项目工程师)",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/511912",
+    "postedAt": "2026-08-19T00:26:39.374Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-512285",
+    "title": "西门子 数据与人工智能中心中国研发部 NLP实习生（面向在校学生/现场实习/无转正）",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/512285",
+    "postedAt": "2026-08-19T00:26:33.587Z",
+    "region": "China"
+  },
+  {
+    "id": "sh-J02153415",
+    "title": "Automation Compliance Engineer Intern, IT Compliance (Summer/Fall 2026)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02153415",
+    "postedAt": "2026-08-19T00:26:15.754Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "vo-33516-en_US",
+    "title": "Lead Project Manager Vehicle",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 15",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Lead-Project-Manager-Vehicle-417-15/1363405555/?feedId=361555",
+    "postedAt": "2026-08-19T00:24:50.538Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-31103-en_US",
+    "title": "Engine Application Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Engine-Application-Engineer-405-08/1350443755/?feedId=361555",
+    "postedAt": "2026-08-19T00:24:50.536Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Singapore/Product-Quality-Engineer_JR2026007742",
+    "title": "Product Quality Engineer",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Quality-Engineer_JR2026007742",
+    "postedAt": "2026-08-19T00:24:33.165Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sr-744000144083739",
+    "title": "Senior Software Engineer, Planning (Robotics)",
+    "company": "Grab",
+    "location": "Shanghai, cn",
+    "link": "https://jobs.smartrecruiters.com/grab/744000144083739",
+    "postedAt": "2026-08-18T14:02:21.727Z",
+    "region": "China"
+  },
+  {
+    "id": "alg-ub-b3a41043-12ea-493c-b499-46aae5bf1d4b_16",
+    "title": "Lead Character Artist [Tom Clancy's The Division 2]",
+    "company": "Ubisoft",
+    "location": "Malmö, se",
+    "link": "https://jobs.smartrecruiters.com/Ubisoft2/744000144027102-lead-character-artist-tom-clancy-s-the-division-2-",
+    "postedAt": "2026-08-18T09:45:10.813Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "sr-744000143972329",
+    "title": "Principal Software Engineer, FundsCore",
+    "company": "Grab",
+    "location": "Singapore, sg",
+    "link": "https://jobs.smartrecruiters.com/grab/744000143972329",
+    "postedAt": "2026-08-18T02:37:24.172Z",
+    "region": "Singapore"
+  },
+  {
     "id": "siemens-507608",
     "title": "Student Worker - Communications and Marketing",
     "company": "Siemens",
@@ -459,13 +549,13 @@
     "region": "Singapore"
   },
   {
-    "id": "sr-744000143828139",
-    "title": "Principal Engineer, FundsCore",
-    "company": "Grab",
-    "location": "Singapore, sg",
-    "link": "https://jobs.smartrecruiters.com/grab/744000143828139",
-    "postedAt": "2026-08-17T13:02:04.685Z",
-    "region": "Singapore"
+    "id": "ora-2227",
+    "title": "Lead QA",
+    "company": "Virtuos",
+    "location": "Prague",
+    "link": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2227",
+    "postedAt": "2026-08-18",
+    "region": "China"
   },
   {
     "id": "as-0c4933fa-8fbf-4232-908f-c31049bdee58",
@@ -699,20 +789,20 @@
     "region": "Singapore"
   },
   {
-    "id": "vo-33085-en_US",
-    "title": "Senior Test Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
-    "postedAt": "2026-08-15T00:25:40.187Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-33086-en_US",
     "title": "Experienced Test Engineer",
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
+    "postedAt": "2026-08-15T00:25:40.187Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33085-en_US",
+    "title": "Senior Test Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
     "postedAt": "2026-08-15T00:25:40.187Z",
     "region": "Sweden"
   },
@@ -870,15 +960,6 @@
     "region": "Singapore"
   },
   {
-    "id": "siemens-505198",
-    "title": "ATS Design Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505198",
-    "postedAt": "2026-08-14T00:49:37.768Z",
-    "region": "Singapore"
-  },
-  {
     "id": "siemens-509481",
     "title": "CBI Data Development Engineer",
     "company": "Siemens",
@@ -965,15 +1046,6 @@
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-08-14T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-329b9334-72cb-44c1-84a5-68641eaa43ec",
-    "title": "高级/资深Android开发工程师(MJ036465)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=329b9334-72cb-44c1-84a5-68641eaa43ec",
-    "postedAt": "2026-08-14",
     "region": "China"
   },
   {
@@ -1535,15 +1607,6 @@
     "region": "China"
   },
   {
-    "id": "siemens-515933",
-    "title": "传感器工程师",
-    "company": "Siemens",
-    "location": "Haidian, Beijing Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515933",
-    "postedAt": "2026-08-13T00:49:29.860Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-515670",
     "title": "(SSLS) 供应商质量管理工程师 闵行",
     "company": "Siemens",
@@ -1660,15 +1723,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-17690a6c-f580-4537-a448-d1c8e391856a",
-    "title": "Agent算法开发工程师(MJ036446)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=17690a6c-f580-4537-a448-d1c8e391856a",
-    "postedAt": "2026-08-13",
-    "region": "China"
-  },
-  {
     "id": "gh-8702391002",
     "title": "Senior Software Engineer",
     "company": "Duolingo",
@@ -1765,15 +1819,6 @@
     "location": "Nanjing, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/503611",
     "postedAt": "2026-08-12T00:47:52.035Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-514276",
-    "title": "THT工艺工程师 (通孔技术）",
-    "company": "Siemens",
-    "location": "Nanjing, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514276",
-    "postedAt": "2026-08-12T00:47:50.475Z",
     "region": "China"
   },
   {
@@ -2106,15 +2151,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-9c6046e4-209f-4aa8-b773-fdac5e6fe7b5",
-    "title": "资深数据开发工程师(MJ036382)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=9c6046e4-209f-4aa8-b773-fdac5e6fe7b5",
-    "postedAt": "2026-08-10",
-    "region": "China"
-  },
-  {
     "id": "sr-744000142514809",
     "title": "Principal Engineer, FundsCore",
     "company": "Grab",
@@ -2142,6 +2178,15 @@
     "region": "China"
   },
   {
+    "id": "sh-J02172494",
+    "title": "Offensive Security Expert Engineer (Red Team)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02172494",
+    "postedAt": "2026-08-08T00:38:11.604Z",
+    "region": "Singapore"
+  },
+  {
     "id": "sh-J00205086",
     "title": "User Growth Intern, Singapore Marketing (Fall 2026)",
     "company": "Shopee",
@@ -2165,15 +2210,6 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J02175367",
-    "postedAt": "2026-08-08T00:38:11.604Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02172494",
-    "title": "Offensive Security Expert Engineer (Red Team)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02172494",
     "postedAt": "2026-08-08T00:38:11.604Z",
     "region": "Singapore"
   },
@@ -2219,15 +2255,6 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J02083133",
-    "postedAt": "2026-08-08T00:38:11.604Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02000688",
-    "title": "Automation Project Engineer - Regional Logistics",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02000688",
     "postedAt": "2026-08-08T00:38:11.604Z",
     "region": "Singapore"
   },
@@ -2310,24 +2337,6 @@
     "location": "Suzhou, cn",
     "link": "https://jobs.smartrecruiters.com/grab/744000142069129",
     "postedAt": "2026-08-07T08:01:03.564Z",
-    "region": "China"
-  },
-  {
-    "id": "sr-744000142061639",
-    "title": "Marketing Specialist",
-    "company": "Grab",
-    "location": "Shanghai, cn",
-    "link": "https://jobs.smartrecruiters.com/grab/744000142061639",
-    "postedAt": "2026-08-07T07:16:27.732Z",
-    "region": "China"
-  },
-  {
-    "id": "sr-744000142054879",
-    "title": "Senior Software Engineer, Planning",
-    "company": "Grab",
-    "location": "Shanghai, cn",
-    "link": "https://jobs.smartrecruiters.com/grab/744000142054879",
-    "postedAt": "2026-08-07T06:29:36.947Z",
     "region": "China"
   },
   {
@@ -2552,15 +2561,6 @@
     "location": "San Francisco, Seattle",
     "link": "https://stripe.com/jobs/search?gh_jid=7939868",
     "postedAt": "2026-08-06T12:10:07-04:00",
-    "region": "Sweden"
-  },
-  {
-    "id": "gh-7913702",
-    "title": "Staff Product Manager, Dashboard",
-    "company": "Stripe",
-    "location": "San Francisco, Seattle, NYC, Chicago, Atlanta, US Remote",
-    "link": "https://stripe.com/jobs/search?gh_jid=7913702",
-    "postedAt": "2026-08-06T12:10:06-04:00",
     "region": "Sweden"
   },
   {
@@ -2816,15 +2816,6 @@
     "region": "Hong Kong"
   },
   {
-    "id": "sr-744000141647849",
-    "title": "Lead Technical Program Manager",
-    "company": "Grab",
-    "location": "Singapore, sg",
-    "link": "https://jobs.smartrecruiters.com/grab/744000141647849",
-    "postedAt": "2026-08-05T06:54:51.360Z",
-    "region": "Singapore"
-  },
-  {
     "id": "gh-6134929004",
     "title": "Senior Product Engineer",
     "company": "Casetify",
@@ -2840,24 +2831,6 @@
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/859e5457-e5ec-4d78-9a83-e6a0eec270bc",
     "postedAt": "2026-08-05T03:17:33.305+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "sr-744000141629929",
-    "title": "Lead Product Manager, GrabMart Fulfilment",
-    "company": "Grab",
-    "location": "Singapore, sg",
-    "link": "https://jobs.smartrecruiters.com/grab/744000141629929",
-    "postedAt": "2026-08-05T02:24:45.347Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sr-744000141629239",
-    "title": "Lead Data Engineer, Analytic Platform ",
-    "company": "Grab",
-    "location": "Singapore, sg",
-    "link": "https://jobs.smartrecruiters.com/grab/744000141629239",
-    "postedAt": "2026-08-05T02:09:02.901Z",
     "region": "Singapore"
   },
   {
@@ -2878,33 +2851,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-0bc76a8e-33ea-4ff2-8c6e-d98f249aa5c2",
-    "title": "Agent开发工程师(MJ036310)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=0bc76a8e-33ea-4ff2-8c6e-d98f249aa5c2",
-    "postedAt": "2026-08-05",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-6545e9f6-3533-4dc3-9de7-3c5a2822e052",
-    "title": "Agent开发工程师(MJ036309)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=6545e9f6-3533-4dc3-9de7-3c5a2822e052",
-    "postedAt": "2026-08-05",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-b020b0f5-ffed-4f07-a446-621268f14121",
-    "title": "后端开发工程师（特征平台）(MJ036312)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=b020b0f5-ffed-4f07-a446-621268f14121",
-    "postedAt": "2026-08-05",
-    "region": "China"
-  },
-  {
     "id": "gh-8675670002",
     "title": "Senior Product Manager",
     "company": "Duolingo",
@@ -2912,15 +2858,6 @@
     "link": "https://careers.duolingo.com/jobs/8675670002?gh_jid=8675670002",
     "postedAt": "2026-08-04T09:21:41-04:00",
     "region": "China"
-  },
-  {
-    "id": "ericsson-563121775153253",
-    "title": "Technical Sales Lead - Antennas (Global)",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121775153253",
-    "postedAt": "2026-08-04T11:47:49.000Z",
-    "region": "Sweden"
   },
   {
     "id": "ericsson-563121776557032",
@@ -2995,33 +2932,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-7114eaeb-3364-41d6-aa47-13249790861c",
-    "title": "资深Java开发工程师(MJ036296)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=7114eaeb-3364-41d6-aa47-13249790861c",
-    "postedAt": "2026-08-04",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-2ef6fb0a-82b6-4576-a7c3-b237146139f1",
-    "title": "Java开发工程师(AI工程方向)(MJ036295)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=2ef6fb0a-82b6-4576-a7c3-b237146139f1",
-    "postedAt": "2026-08-04",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-05ff5631-b5ca-4db1-8949-3cfbabb14c23",
-    "title": "智能客服系统服务端 Java 开发工程师(MJ036286)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=05ff5631-b5ca-4db1-8949-3cfbabb14c23",
-    "postedAt": "2026-08-04",
-    "region": "China"
-  },
-  {
     "id": "vo-33264-en_US",
     "title": "Mechanical Design Engineer - Base Engine systems",
     "company": "Volvo Group",
@@ -3062,15 +2972,6 @@
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-08-03T00:00:00.000+0000",
     "region": "China"
-  },
-  {
-    "id": "trip-intl-12979044-88a9-4243-9541-26383344879b",
-    "title": "Marketing Campaigns Intern(MJ003812)",
-    "company": "Trip.com Group",
-    "location": "Singapore",
-    "link": "https://careers.trip.com/#/job-detail?jobId=12979044-88a9-4243-9541-26383344879b",
-    "postedAt": "2026-08-03",
-    "region": "Singapore"
   },
   {
     "id": "siemens-516290",
@@ -3251,15 +3152,6 @@
     "region": "Singapore"
   },
   {
-    "id": "gh-6129466004",
-    "title": "Influencer Marketing Intern",
-    "company": "Casetify",
-    "location": "Kwun Tong, Hong Kong",
-    "link": "https://job-boards.greenhouse.io/casetify/jobs/6129466004",
-    "postedAt": "2026-07-29T04:15:32-04:00",
-    "region": "Hong Kong"
-  },
-  {
     "id": "siemens-515743",
     "title": "Service Engineer",
     "company": "Siemens",
@@ -3278,38 +3170,11 @@
     "region": "Singapore"
   },
   {
-    "id": "siemens-505532",
-    "title": "研发项目经理",
-    "company": "Siemens",
-    "location": "Beijing, Beijing Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505532",
-    "postedAt": "2026-07-29T01:16:30.534Z",
-    "region": "China"
-  },
-  {
-    "id": "wd2-/job/Sweden---Lund/Regulatory-Engineer-R-D--Lund_R-123837",
-    "title": "Regulatory Engineer R&D, Lund",
-    "company": "Axis Communications",
-    "location": "Sweden - Lund",
-    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Regulatory-Engineer-R-D--Lund_R-123837",
-    "postedAt": "2026-07-29T01:14:37.808Z",
-    "region": "Sweden"
-  },
-  {
     "id": "ph-JR00042743",
     "title": "Project Engineer",
     "company": "ABB",
     "location": "Hangzhou, Zhejiang, China",
     "postedAt": "2026-07-29T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-600c24ce-ad4b-40bd-90ed-69eb6ee35667",
-    "title": "AI Agent开发工程师(MJ036195)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=600c24ce-ad4b-40bd-90ed-69eb6ee35667",
-    "postedAt": "2026-07-29",
     "region": "China"
   },
   {
@@ -3385,15 +3250,6 @@
     "region": "China"
   },
   {
-    "id": "gh-7449571",
-    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
-    "company": "Riot Games",
-    "location": "Guangzhou, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
-    "postedAt": "2026-07-28T13:17:50-04:00",
-    "region": "China"
-  },
-  {
     "id": "gh-7271179",
     "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
@@ -3403,11 +3259,11 @@
     "region": "China"
   },
   {
-    "id": "gh-7449588",
-    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "id": "gh-7449571",
+    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
     "location": "Guangzhou, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7449588?gh_jid=7449588",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -3417,6 +3273,15 @@
     "company": "Riot Games",
     "location": "Shanghai, China",
     "link": "https://www.riotgames.com/en/work-with-us/job/7786020?gh_jid=7786020",
+    "postedAt": "2026-07-28T13:17:50-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7449588",
+    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449588?gh_jid=7449588",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -3435,15 +3300,6 @@
     "company": "Riot Games",
     "location": "Shanghai, China",
     "link": "https://www.riotgames.com/en/work-with-us/job/4519009?gh_jid=4519009",
-    "postedAt": "2026-07-28T13:17:50-04:00",
-    "region": "China"
-  },
-  {
-    "id": "gh-7922945",
-    "title": "Staff Software Engineer, Services - Unpublished R&D Product",
-    "company": "Riot Games",
-    "location": "Guangzhou, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7922945?gh_jid=7922945",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -3484,13 +3340,13 @@
     "region": "China"
   },
   {
-    "id": "trip-intl-8c1e9a35-c686-4ef1-999b-1dacdd9516fd",
-    "title": "Brand Marketing Intern (SG & MY)(MJ003788)",
-    "company": "Trip.com Group",
-    "location": "Singapore",
-    "link": "https://careers.trip.com/#/job-detail?jobId=8c1e9a35-c686-4ef1-999b-1dacdd9516fd",
-    "postedAt": "2026-07-28",
-    "region": "Singapore"
+    "id": "siemens-508655",
+    "title": "产品质量工程师_电气方向",
+    "company": "Siemens",
+    "location": "Suzhou, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/508655",
+    "postedAt": "2026-07-27T21:01:35.994Z",
+    "region": "China"
   },
   {
     "id": "siemens-515223",
@@ -3498,15 +3354,6 @@
     "company": "Siemens",
     "location": "Suzhou, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515223",
-    "postedAt": "2026-07-27T21:01:35.994Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-508655",
-    "title": "产品质量工程师_电气方向",
-    "company": "Siemens",
-    "location": "Suzhou, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/508655",
     "postedAt": "2026-07-27T21:01:35.994Z",
     "region": "China"
   },
@@ -3718,6 +3565,15 @@
     "region": "China"
   },
   {
+    "id": "vo-33476-en_US",
+    "title": "Logistics Engineer Remanufacturing",
+    "company": "Volvo Group",
+    "location": "Shanghai, CN, 201206",
+    "link": "https://jobs.volvogroup.com/job/Shanghai-Logistics-Engineer-Remanufacturing-201206/1359738655/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "China"
+  },
+  {
     "id": "vo-33746-en_US",
     "title": "Digital Product Manager EaaS-Rental",
     "company": "Volvo Group",
@@ -3725,15 +3581,6 @@
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Digital-Product-Manager-EaaS-Rental-417-56/1361453055/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.877Z",
     "region": "Sweden"
-  },
-  {
-    "id": "vo-33744-en_US",
-    "title": "Experienced E&E Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-E&E-Engineer-250102/1361579055/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "China"
   },
   {
     "id": "vo-33346-en_US",
@@ -3745,20 +3592,20 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-33476-en_US",
-    "title": "Logistics Engineer Remanufacturing",
-    "company": "Volvo Group",
-    "location": "Shanghai, CN, 201206",
-    "link": "https://jobs.volvogroup.com/job/Shanghai-Logistics-Engineer-Remanufacturing-201206/1359738655/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "China"
-  },
-  {
     "id": "vo-33743-en_US",
     "title": "Experienced Software Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1361578555/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-33744-en_US",
+    "title": "Experienced E&E Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-E&E-Engineer-250102/1361579055/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.877Z",
     "region": "China"
   },
@@ -3772,20 +3619,11 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-30597-en_US",
-    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-33802-en_US",
-    "title": "Experienced Mechanical Engineer",
+    "id": "vo-33799-en_US",
+    "title": "Senior Mechanical Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Mechanical-Engineer-250102/1361900655/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Mechanical-Engineer-250102/1361785255/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
   },
@@ -3799,13 +3637,22 @@
     "region": "China"
   },
   {
-    "id": "vo-33799-en_US",
-    "title": "Senior Mechanical Engineer",
+    "id": "vo-33802-en_US",
+    "title": "Experienced Mechanical Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Mechanical-Engineer-250102/1361785255/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Mechanical-Engineer-250102/1361900655/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
+  },
+  {
+    "id": "vo-30597-en_US",
+    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-32044-en_US",
@@ -3939,15 +3786,6 @@
     "company": "Axis Communications",
     "location": "Sweden - Lund",
     "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Director-of-Sales-and-Marketing-Systems--Lund_R-123830-1",
-    "postedAt": "2026-07-27T01:23:55.986Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "wd2-/job/Sweden---Lund/Software-Engineers-for-Custom-Object-Training---Building-the-Engine-and-the-Face-of-Custom-AI_R-123807",
-    "title": "Software Engineers for Custom Object Training – Building the Engine and the Face of Custom AI, Lund",
-    "company": "Axis Communications",
-    "location": "Sweden - Lund",
-    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Software-Engineers-for-Custom-Object-Training---Building-the-Engine-and-the-Face-of-Custom-AI_R-123807",
     "postedAt": "2026-07-27T01:23:55.986Z",
     "region": "Sweden"
   },
@@ -4310,42 +4148,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-4570df53-7f99-4f7b-8ba5-25c2f3a1fb8b",
-    "title": "高级/资深算法工程师（预测方向）(MJ021758)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=4570df53-7f99-4f7b-8ba5-25c2f3a1fb8b",
-    "postedAt": "2026-07-27",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-09bc510f-c2d7-4d8b-bf83-55fa80fc8466",
-    "title": "后端开发工程师（大数据）(MJ026895)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=09bc510f-c2d7-4d8b-bf83-55fa80fc8466",
-    "postedAt": "2026-07-27",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-e06d2760-97e2-4bba-b187-24feacb06c1b",
-    "title": "数据仓库工程师（酒店业务）(MJ028761)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e06d2760-97e2-4bba-b187-24feacb06c1b",
-    "postedAt": "2026-07-27",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-dc04e71d-5fb5-4b48-8cfd-c9d0d60f493d",
-    "title": "资深算法工程师（预测/大模型方向）(MJ034490)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=dc04e71d-5fb5-4b48-8cfd-c9d0d60f493d",
-    "postedAt": "2026-07-27",
-    "region": "China"
-  },
-  {
     "id": "gh-7981493",
     "title": "Senior Staff / Staff Back-End Engineer ",
     "company": "Coupang",
@@ -4363,14 +4165,6 @@
     "region": "China"
   },
   {
-    "id": "ph-JR00039967",
-    "title": "Associate Project Engineer",
-    "company": "ABB",
-    "location": "Xiamen, Fujian, China",
-    "postedAt": "2026-07-24T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "ph-JR00038718",
     "title": "Project Engineer",
     "company": "ABB",
@@ -4379,12 +4173,11 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-63f4abc3-6d8e-48dd-80d1-8b7ccfa47550",
-    "title": "高级/资深数据仓库工程师(MJ036144)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=63f4abc3-6d8e-48dd-80d1-8b7ccfa47550",
-    "postedAt": "2026-07-24",
+    "id": "ph-JR00039967",
+    "title": "Associate Project Engineer",
+    "company": "ABB",
+    "location": "Xiamen, Fujian, China",
+    "postedAt": "2026-07-24T00:00:00.000+0000",
     "region": "China"
   },
   {
@@ -4401,15 +4194,6 @@
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-07-23T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-914454cf-5780-4eef-a525-a23363db3cb2",
-    "title": "Java开发工程师(MJ036114)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=914454cf-5780-4eef-a525-a23363db3cb2",
-    "postedAt": "2026-07-23",
     "region": "China"
   },
   {
@@ -4456,15 +4240,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/b3a8fc74-ec1b-4abf-9742-bbac0d6e3e6b",
     "postedAt": "2026-07-22T02:05:11.138+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-b1bc27ac-76fc-45dd-b5ea-7ee528aa80f4",
-    "title": "资深搜推算法工程师(MJ036098)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=b1bc27ac-76fc-45dd-b5ea-7ee528aa80f4",
-    "postedAt": "2026-07-22",
-    "region": "China"
   },
   {
     "id": "kl-b0e48c70-0f22-4e93-822f-8f49868a8a91",
@@ -4548,15 +4323,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-e03d227f-0603-422f-913e-c111e26e2b75",
-    "title": "大模型算法工程师(MJ036060)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e03d227f-0603-422f-913e-c111e26e2b75",
-    "postedAt": "2026-07-20",
-    "region": "China"
-  },
-  {
     "id": "gh-7080211",
     "title": "Senior Staff/Staff Machine Learning Engineer",
     "company": "Coupang",
@@ -4607,15 +4373,6 @@
     "location": "Beijing,Beijing,China",
     "link": "https://jobs.ericsson.com/careers/job/563121776758482",
     "postedAt": "2026-07-15T11:22:12.000Z",
-    "region": "China"
-  },
-  {
-    "id": "ericsson-563121776759028",
-    "title": "PA Developer",
-    "company": "Ericsson",
-    "location": "Beijing,Beijing,China",
-    "link": "https://jobs.ericsson.com/careers/job/563121776759028",
-    "postedAt": "2026-07-15T05:55:35.000Z",
     "region": "China"
   },
   {
@@ -4679,24 +4436,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-05ce8978-ed8a-4687-9e39-31e450a03e47",
-    "title": "AI应用开发工程师（视频创作方向）(MJ035990)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=05ce8978-ed8a-4687-9e39-31e450a03e47",
-    "postedAt": "2026-07-14",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-7aba2b2e-2159-4bb0-928b-f7e592b90031",
-    "title": "资深前端开发工程师(MJ035981)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=7aba2b2e-2159-4bb0-928b-f7e592b90031",
-    "postedAt": "2026-07-14",
-    "region": "China"
-  },
-  {
     "id": "as-0d05eec4-1115-4bae-933e-5eae7939ba99",
     "title": "Senior Software Engineer, Infrastructure (Infra Platform)",
     "company": "Airwallex",
@@ -4722,15 +4461,6 @@
     "link": "https://job-boards.greenhouse.io/nex/jobs/5281628008",
     "postedAt": "2026-07-13T01:52:49-04:00",
     "region": "Hong Kong"
-  },
-  {
-    "id": "ericsson-563121776756329",
-    "title": "PA Developer",
-    "company": "Ericsson",
-    "location": "Beijing,Beijing,China",
-    "link": "https://jobs.ericsson.com/careers/job/563121776756329",
-    "postedAt": "2026-07-13T04:01:31.000Z",
-    "region": "China"
   },
   {
     "id": "xsolla-252b30e5-ce58-4a32-88b3-07ee83d06e67",
@@ -4784,15 +4514,6 @@
     "location": "Shanghai",
     "link": "https://jobs.lever.co/xsolla/a90cb94a-df2b-4f42-b60d-8abb68c4bf86",
     "postedAt": "2026-07-09T05:18:13.686Z",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-84be8e87-a8e0-425e-81da-aa9ae473999c",
-    "title": "技术专家（C端）(MJ035935)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=84be8e87-a8e0-425e-81da-aa9ae473999c",
-    "postedAt": "2026-07-09",
     "region": "China"
   },
   {
@@ -4877,15 +4598,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-89adadee-2fa4-42c5-8429-934ba9d92b7b",
-    "title": "前端开发工程师（深圳）(MJ035888)",
-    "company": "Trip.com Group",
-    "location": "Shenzhen, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=89adadee-2fa4-42c5-8429-934ba9d92b7b",
-    "postedAt": "2026-07-07",
-    "region": "China"
-  },
-  {
     "id": "kl-0acf270c-4bdc-42a6-b64c-9a994568fdaf",
     "title": "Team Leader, Customer Experience (Mandarin Speaker)",
     "company": "Klook",
@@ -4910,15 +4622,6 @@
     "location": "Shanghai",
     "link": "https://job-boards.greenhouse.io/adyen/jobs/8034919",
     "postedAt": "2026-07-02T22:26:43-04:00",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-9608a286-6078-4526-85c4-eb5c263fbc91",
-    "title": "大数据平台资深工程师/专家(MJ035860)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=9608a286-6078-4526-85c4-eb5c263fbc91",
-    "postedAt": "2026-07-03",
     "region": "China"
   },
   {
@@ -4958,24 +4661,6 @@
     "region": "Hong Kong"
   },
   {
-    "id": "trip-cn-88a47e50-984a-44d3-a7b2-3c80c91e80d8",
-    "title": "资深后端开发工程师(MJ035846)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=88a47e50-984a-44d3-a7b2-3c80c91e80d8",
-    "postedAt": "2026-07-02",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-e5a11137-5296-4af6-bd15-ac4e36ba619a",
-    "title": "AI应用开发工程师(MJ035830)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e5a11137-5296-4af6-bd15-ac4e36ba619a",
-    "postedAt": "2026-07-02",
-    "region": "China"
-  },
-  {
     "id": "gh-8040140",
     "title": "Director - Backend Engineering (Infrastructure)",
     "company": "Coupang",
@@ -5000,15 +4685,6 @@
     "location": "Beijing, China",
     "link": "https://jobs.lever.co/xsolla/0affadcf-dd1d-4649-9ab9-0244a585ee9c",
     "postedAt": "2026-07-01T07:13:53.422Z",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-4177708c-ebd3-40bf-818d-dff9e3f9d9f9",
-    "title": "Agent Platform Engineer(MJ035816)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=4177708c-ebd3-40bf-818d-dff9e3f9d9f9",
-    "postedAt": "2026-07-01",
     "region": "China"
   },
   {
@@ -5210,15 +4886,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-8a29a8cc-f760-4898-9f35-c250bb07113c",
-    "title": "AI搜索算法工程师(MJ035646)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=8a29a8cc-f760-4898-9f35-c250bb07113c",
-    "postedAt": "2026-06-22",
-    "region": "China"
-  },
-  {
     "id": "as-a10accf6-67ae-4ea4-b555-4f59f20e5882",
     "title": "Senior Software Engineer, Infrastructure (Citizen Dev)",
     "company": "Airwallex",
@@ -5318,60 +4985,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-a800df2e-8412-4e65-a06c-370b33ad633f",
-    "title": "推荐算法工程师（生成式推荐方向）(MJ035616)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=a800df2e-8412-4e65-a06c-370b33ad633f",
-    "postedAt": "2026-06-17",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-0a7c56f2-6123-4077-822e-c8a50819b049",
-    "title": "高级/资深Java开发工程师(MJ018776)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=0a7c56f2-6123-4077-822e-c8a50819b049",
-    "postedAt": "2026-06-17",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-48433f1a-99f3-4c9b-98eb-c5c400e1983f",
-    "title": "资深算法工程师（搜索推荐方向）(MJ032057)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=48433f1a-99f3-4c9b-98eb-c5c400e1983f",
-    "postedAt": "2026-06-17",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-aaa3f95b-b236-4124-b7ed-3be93190d913",
-    "title": "AI Agent工程师（酒店BU）(MJ032746)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=aaa3f95b-b236-4124-b7ed-3be93190d913",
-    "postedAt": "2026-06-17",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-62176d63-9e2e-4645-9b6a-2811c921d88a",
-    "title": "AI Infra 研发工程师（GPU 推理方向）(MJ034962)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=62176d63-9e2e-4645-9b6a-2811c921d88a",
-    "postedAt": "2026-06-17",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-30d00417-b6f1-4591-b891-f557d122667b",
-    "title": "高级/资深iOS开发工程师(MJ035494)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=30d00417-b6f1-4591-b891-f557d122667b",
-    "postedAt": "2026-06-17",
-    "region": "China"
-  },
-  {
     "id": "kl-87cd8edf-d35f-41b1-aea7-3d0dff69f1a3",
     "title": "Manager, Performance Marketing (MSE) ",
     "company": "Klook",
@@ -5396,51 +5009,6 @@
     "location": "CN - Shenzhen",
     "link": "https://jobs.ashbyhq.com/airwallex/6f676117-072d-4b37-80a9-d65adbdad078",
     "postedAt": "2026-06-16T07:06:53.543+00:00",
-    "region": "China"
-  },
-  {
-    "id": "trip-intl-46d2b2ee-ebb6-4254-b2b8-a379ce3aa6a2",
-    "title": "Marketing Campaign Intern(MJ002465)",
-    "company": "Trip.com Group",
-    "location": "Hong Kong, China",
-    "link": "https://careers.trip.com/#/job-detail?jobId=46d2b2ee-ebb6-4254-b2b8-a379ce3aa6a2",
-    "postedAt": "2026-06-16",
-    "region": "China"
-  },
-  {
-    "id": "trip-intl-67457c86-c1a5-4400-acdd-edd38661792d",
-    "title": "Senior Marketing Manager,Global Chains(MJ001942)",
-    "company": "Trip.com Group",
-    "location": "Hong Kong, China",
-    "link": "https://careers.trip.com/#/job-detail?jobId=67457c86-c1a5-4400-acdd-edd38661792d",
-    "postedAt": "2026-06-16",
-    "region": "China"
-  },
-  {
-    "id": "trip-intl-aff57c3b-f659-43fe-97ad-301a8e0bdda5",
-    "title": "Marketing & Operations Manager (Hong Kong)(MJ001165)",
-    "company": "Trip.com Group",
-    "location": "Hong Kong, China",
-    "link": "https://careers.trip.com/#/job-detail?jobId=aff57c3b-f659-43fe-97ad-301a8e0bdda5",
-    "postedAt": "2026-06-16",
-    "region": "China"
-  },
-  {
-    "id": "trip-intl-23bd0db1-4af3-4368-9cbe-e75948dec4c2",
-    "title": "Associate Marketing Campaign Manager, SG(MJ001042)",
-    "company": "Trip.com Group",
-    "location": "Singapore",
-    "link": "https://careers.trip.com/#/job-detail?jobId=23bd0db1-4af3-4368-9cbe-e75948dec4c2",
-    "postedAt": "2026-06-16",
-    "region": "Singapore"
-  },
-  {
-    "id": "trip-intl-be764a31-318c-460f-8fba-b5ffddd34a49",
-    "title": "Senior Marketing Partnerships and Affiliates Manager HK & TW(MJ000993)",
-    "company": "Trip.com Group",
-    "location": "Hong Kong, China",
-    "link": "https://careers.trip.com/#/job-detail?jobId=be764a31-318c-460f-8fba-b5ffddd34a49",
-    "postedAt": "2026-06-16",
     "region": "China"
   },
   {
@@ -5515,12 +5083,21 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-edb5a8a3-dbd9-4844-96e3-12b13fbf5908",
-    "title": "Java开发工程师(AI工程方向)(MJ035536)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=edb5a8a3-dbd9-4844-96e3-12b13fbf5908",
-    "postedAt": "2026-06-11",
+    "id": "ericsson-563121776254614",
+    "title": "System Integration Engineer - Early Career",
+    "company": "Ericsson",
+    "location": "Dalian,Liaoning,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121776254614",
+    "postedAt": "2026-06-11T04:22:41.000Z",
+    "region": "China"
+  },
+  {
+    "id": "ericsson-563121776254653",
+    "title": "Software Developer - Early Career",
+    "company": "Ericsson",
+    "location": "Dalian,Liaoning,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121776254653",
+    "postedAt": "2026-06-11T04:20:33.000Z",
     "region": "China"
   },
   {
@@ -5584,15 +5161,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-e98e6a20-b12d-4f62-9265-201a31a6e5b1",
-    "title": "高级/资深Java开发工程师（推荐排序算法方向）(MJ035389)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e98e6a20-b12d-4f62-9265-201a31a6e5b1",
-    "postedAt": "2026-06-03",
-    "region": "China"
-  },
-  {
     "id": "gh-7864690",
     "title": "Senior Product Manager (Pricing)",
     "company": "Coupang",
@@ -5600,15 +5168,6 @@
     "link": "https://www.coupang.jobs/en/jobs/?gh_jid=7864690",
     "postedAt": "2026-06-02T01:14:19-04:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-53257253-7785-4731-80ed-47cc765dec49",
-    "title": "AI后端开发工程师(MJ030206)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=53257253-7785-4731-80ed-47cc765dec49",
-    "postedAt": "2026-06-02",
-    "region": "China"
   },
   {
     "id": "alg-ub-0f62f732-ec08-4b05-b2a8-88b8e60619ef_16",
@@ -5627,15 +5186,6 @@
     "link": "https://jobs.smartrecruiters.com/Ubisoft2/744000129436298-senior-engine-programmer-tom-clancy-s-the-division-2-",
     "postedAt": "2026-06-01T09:04:14.775Z",
     "region": "Sweden"
-  },
-  {
-    "id": "trip-cn-794e0e13-e580-4c7a-ae65-d30eb2409fab",
-    "title": "大模型算法工程师（Agent方向）(MJ035301)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=794e0e13-e580-4c7a-ae65-d30eb2409fab",
-    "postedAt": "2026-06-01",
-    "region": "China"
   },
   {
     "id": "as-579104ca-b257-48e2-8985-4d5f72f30b68",
@@ -5664,24 +5214,6 @@
     "region": "Sweden"
   },
   {
-    "id": "trip-cn-c3d59c6d-5ee2-4e5c-81a0-4fff3ed3580a",
-    "title": "AI搜索算法工程师(MJ035257)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=c3d59c6d-5ee2-4e5c-81a0-4fff3ed3580a",
-    "postedAt": "2026-05-28",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-40442608-8d09-465b-95a9-9a3a84e4d5ad",
-    "title": "资深大模型语音对话算法工程师(MJ035244)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=40442608-8d09-465b-95a9-9a3a84e4d5ad",
-    "postedAt": "2026-05-28",
-    "region": "China"
-  },
-  {
     "id": "as-330db6f4-079a-452a-a552-0c499d5c1473",
     "title": "Senior Associate, Partner Marketing, CN",
     "company": "Airwallex",
@@ -5700,15 +5232,6 @@
     "region": "Sweden"
   },
   {
-    "id": "trip-cn-77d0e4fe-f50a-4a0c-85dc-aeb7019317a2",
-    "title": "资深AI工程师（Agent方向）(MJ035181)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=77d0e4fe-f50a-4a0c-85dc-aeb7019317a2",
-    "postedAt": "2026-05-25",
-    "region": "China"
-  },
-  {
     "id": "as-5fa97d90-9c8c-452a-9ec0-d0949ec10ae0",
     "title": "Staff Data Platform Engineer, Knowledge Platform",
     "company": "Airwallex",
@@ -5718,15 +5241,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-b370ee7a-92f3-4ed8-8768-1bf27cebf9e8",
-    "title": "高级/资深Android开发工程师(MJ032645)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=b370ee7a-92f3-4ed8-8768-1bf27cebf9e8",
-    "postedAt": "2026-05-22",
-    "region": "China"
-  },
-  {
     "id": "ora-2037",
     "title": "Transformation Lead, AI",
     "company": "Virtuos",
@@ -5734,24 +5248,6 @@
     "link": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2037",
     "postedAt": "2026-05-21",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-444fd351-c42f-4542-8d79-8f413065834f",
-    "title": "后端技术专家（酒店研发）(MJ021025)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=444fd351-c42f-4542-8d79-8f413065834f",
-    "postedAt": "2026-05-19",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-706d3198-0966-405a-be60-631e20b0745b",
-    "title": "高级/资深前端开发工程师（酒店研发）(MJ023132)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=706d3198-0966-405a-be60-631e20b0745b",
-    "postedAt": "2026-05-19",
-    "region": "China"
   },
   {
     "id": "alg-ub-6abd9041-86ed-4274-80f1-7391c1c7283b_16",
@@ -5772,15 +5268,6 @@
     "region": "Sweden"
   },
   {
-    "id": "trip-cn-6e5246c4-a7e1-4a15-84a9-e52935dc965f",
-    "title": "高级/资深数据仓库工程师(MJ034966)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=6e5246c4-a7e1-4a15-84a9-e52935dc965f",
-    "postedAt": "2026-05-14",
-    "region": "China"
-  },
-  {
     "id": "tt-1fceb592-4bb0-43ee-a584-1f7144a77461",
     "title": "Machine Learning DSP Engineer",
     "company": "Marshall",
@@ -5788,24 +5275,6 @@
     "link": "https://careers.marshall.com/jobs/7730245-machine-learning-dsp-engineer",
     "postedAt": "2026-05-13T11:02:39+02:00",
     "region": "Sweden"
-  },
-  {
-    "id": "trip-cn-e3b9e426-9472-44f8-8ade-8d32cf2490d2",
-    "title": "推荐算法工程师（生成式推荐方向）(MJ034952)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e3b9e426-9472-44f8-8ade-8d32cf2490d2",
-    "postedAt": "2026-05-13",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-0b886da0-2c2a-4c5a-9055-1c9577cef6cb",
-    "title": "java开发工程师(MJ034946)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=0b886da0-2c2a-4c5a-9055-1c9577cef6cb",
-    "postedAt": "2026-05-13",
-    "region": "China"
   },
   {
     "id": "ora-2005",
@@ -5850,24 +5319,6 @@
     "location": "CN - Shanghai",
     "link": "https://jobs.ashbyhq.com/airwallex/ab89a8da-c743-4165-b154-2f1eab958950",
     "postedAt": "2026-05-11T13:34:26.739+00:00",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-28ac30f1-207e-4abb-89c7-3a24f90b7316",
-    "title": "资深Agent框架开发(MJ034903)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=28ac30f1-207e-4abb-89c7-3a24f90b7316",
-    "postedAt": "2026-05-11",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-8d5ebb9c-2a09-4573-a28a-d70e7090416f",
-    "title": "Java开发工程师(MJ034880)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=8d5ebb9c-2a09-4573-a28a-d70e7090416f",
-    "postedAt": "2026-05-11",
     "region": "China"
   },
   {
@@ -5916,14 +5367,6 @@
     "region": "Singapore"
   },
   {
-    "id": "ph-JR00033422",
-    "title": "(Digital) Project Engineer",
-    "company": "ABB",
-    "location": "Xiamen, Fujian, China",
-    "postedAt": "2026-05-07T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "ph-JR00033419",
     "title": "Project Engineer",
     "company": "ABB",
@@ -5932,12 +5375,11 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-e39cd38a-2ce0-4449-a295-88c873289b27",
-    "title": "Java 高级开发(MJ034802)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e39cd38a-2ce0-4449-a295-88c873289b27",
-    "postedAt": "2026-05-07",
+    "id": "ph-JR00033422",
+    "title": "(Digital) Project Engineer",
+    "company": "ABB",
+    "location": "Xiamen, Fujian, China",
+    "postedAt": "2026-05-07T00:00:00.000+0000",
     "region": "China"
   },
   {
@@ -6002,15 +5444,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/967a6fef-cfb1-4a1b-98c2-50690489bd4e",
     "postedAt": "2026-04-30T23:39:17.218+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-b9f245a8-960b-41c9-8d69-379820549ff8",
-    "title": "高级/资深风控策略算法工程师(MJ034745)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=b9f245a8-960b-41c9-8d69-379820549ff8",
-    "postedAt": "2026-04-29",
-    "region": "China"
   },
   {
     "id": "ora-1968",
@@ -6112,39 +5545,12 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-938cf261-ec80-4605-a17e-a5906f2bdb7b",
-    "title": "Java开发工程师(MJ034523)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=938cf261-ec80-4605-a17e-a5906f2bdb7b",
-    "postedAt": "2026-04-17",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-be2a2a46-dcc0-4aff-b670-943c5afce9a4",
-    "title": "资深SRE工程师（流量调度方向）(MJ034417)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=be2a2a46-dcc0-4aff-b670-943c5afce9a4",
-    "postedAt": "2026-04-13",
-    "region": "China"
-  },
-  {
     "id": "gh-5913808004",
     "title": "Senior Product Manager - Shenzhen",
     "company": "Casetify",
     "location": "Shenzhen",
     "link": "https://job-boards.greenhouse.io/casetify/jobs/5913808004",
     "postedAt": "2026-04-10T06:47:49-04:00",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-a1f0d06f-8f8b-4dbd-9ae8-4a31af92c9b1",
-    "title": "高级/资深测试开发工程师(MJ023131)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=a1f0d06f-8f8b-4dbd-9ae8-4a31af92c9b1",
-    "postedAt": "2026-04-10",
     "region": "China"
   },
   {
@@ -6173,15 +5579,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/4a684362-6f24-442c-989c-3417ae62a92b",
     "postedAt": "2026-04-03T07:37:04.479+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-f9ad6963-46a7-413f-9432-f6c24f61f8e8",
-    "title": "前端开发工程师(MJ031490)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=f9ad6963-46a7-413f-9432-f6c24f61f8e8",
-    "postedAt": "2026-04-03",
-    "region": "China"
   },
   {
     "id": "as-5847f0f9-49c5-498b-a5f1-ff450c1ee844",
@@ -6229,30 +5626,12 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-b36a7b76-8e93-4355-8101-d5e768bb3ee3",
-    "title": "模型工程技术专家(MJ034089)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=b36a7b76-8e93-4355-8101-d5e768bb3ee3",
-    "postedAt": "2026-03-26",
-    "region": "China"
-  },
-  {
     "id": "kl-00b04d37-3786-46d8-a8d9-702d4a5f0254",
     "title": "Manager, Performance Marketing (MetaSearch) ",
     "company": "Klook",
     "location": "China",
     "link": "https://www.klookcareers.com/jobs-detail/00b04d37-3786-46d8-a8d9-702d4a5f0254",
     "postedAt": "2026-03-24T10:47:31",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-66d258f6-f6b1-4bd9-9b05-28db773b79bb",
-    "title": "Java后端开发工程师（AI大数据）(MJ033981)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=66d258f6-f6b1-4bd9-9b05-28db773b79bb",
-    "postedAt": "2026-03-20",
     "region": "China"
   },
   {
@@ -6301,15 +5680,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-f482e214-405f-4d2d-b887-6f11099739e6",
-    "title": "智能客服算法工程师(MJ033771)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=f482e214-405f-4d2d-b887-6f11099739e6",
-    "postedAt": "2026-03-11",
-    "region": "China"
-  },
-  {
     "id": "kl-15460d68-01f0-4e80-98a8-ae9f067a3a3e",
     "title": "Director, Marketing Analytics",
     "company": "Klook",
@@ -6325,15 +5695,6 @@
     "location": "CN - Shanghai",
     "link": "https://jobs.ashbyhq.com/airwallex/d64c46a2-bd46-497d-857a-ac81804cca95",
     "postedAt": "2026-03-10T07:51:04.561+00:00",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-edfc4da6-224b-45da-98a1-48d4b68716dd",
-    "title": "测试开发工程师(MJ023886)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=edfc4da6-224b-45da-98a1-48d4b68716dd",
-    "postedAt": "2026-03-10",
     "region": "China"
   },
   {
@@ -6371,15 +5732,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/7374cd5e-fc70-496a-9de5-e7a7719df155",
     "postedAt": "2026-03-06T03:31:19.431+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-c81fae38-1a97-49e4-97c7-66d09f97af95",
-    "title": "-后端开发工程师-(MJ029727)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=c81fae38-1a97-49e4-97c7-66d09f97af95",
-    "postedAt": "2026-03-05",
-    "region": "China"
   },
   {
     "id": "kl-c37dde98-a93f-48e7-829a-db0387b6c69f",
@@ -6432,24 +5784,6 @@
     "location": "Chengdu, cn",
     "link": "https://jobs.smartrecruiters.com/Ubisoft2/744000112075664-senior-engine-programmer-new-project-on-switch2-",
     "postedAt": "2026-03-02T02:41:47.451Z",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-c06d0b5f-0c9a-40c8-9881-6e56a23ef1ee",
-    "title": "后端开发工程师(MJ020051)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=c06d0b5f-0c9a-40c8-9881-6e56a23ef1ee",
-    "postedAt": "2026-03-01",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-970ed1e2-85c2-4480-b515-5052bce12282",
-    "title": "前端技术专家（酒店研发）(MJ022585)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=970ed1e2-85c2-4480-b515-5052bce12282",
-    "postedAt": "2026-02-28",
     "region": "China"
   },
   {
@@ -6516,15 +5850,6 @@
     "region": "China"
   },
   {
-    "id": "trip-cn-ea205bc8-c7b9-4b43-a90c-39ff78f52c96",
-    "title": "-数据仓库工程师-(MJ025467)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=ea205bc8-c7b9-4b43-a90c-39ff78f52c96",
-    "postedAt": "2026-02-04",
-    "region": "China"
-  },
-  {
     "id": "as-9e064013-6286-4984-9541-7bd702286d64",
     "title": "Senior Software Engineer Backend, Billing",
     "company": "Airwallex",
@@ -6532,15 +5857,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/9e064013-6286-4984-9541-7bd702286d64",
     "postedAt": "2026-02-02T08:55:53.616+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-a41f6cf5-bac8-4da3-8f83-a695b90e50fc",
-    "title": "技术专家(MJ023925)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=a41f6cf5-bac8-4da3-8f83-a695b90e50fc",
-    "postedAt": "2026-02-01",
-    "region": "China"
   },
   {
     "id": "ph-JR00023227",
@@ -6631,33 +5947,6 @@
     "region": "Singapore"
   },
   {
-    "id": "trip-cn-e31bad57-86f3-4058-bf2c-4903e07243ec",
-    "title": "推荐算法工程师(MJ031022)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e31bad57-86f3-4058-bf2c-4903e07243ec",
-    "postedAt": "2026-01-01",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-71998a50-1760-4844-8b98-a5be1a759364",
-    "title": "Java大数据平台开发工程师(MJ031218)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=71998a50-1760-4844-8b98-a5be1a759364",
-    "postedAt": "2025-12-30",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-6b94b19a-5aea-43f6-9e5f-2c516157d829",
-    "title": "多模态内容理解算法工程师(MJ032458)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=6b94b19a-5aea-43f6-9e5f-2c516157d829",
-    "postedAt": "2025-12-29",
-    "region": "China"
-  },
-  {
     "id": "as-1276800f-a4ad-4c75-af30-d4a14933aa38",
     "title": "Engineering Lead/Manager, Risk",
     "company": "Airwallex",
@@ -6700,15 +5989,6 @@
     "location": "Shanghai",
     "link": "https://jobs.lever.co/xsolla/e0816368-5dfc-4d76-92e1-dbcdd16848f9",
     "postedAt": "2025-12-22T03:04:05.191Z",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-e2c22c79-8596-4c23-893c-0764186d34a5",
-    "title": "增长算法工程师(MJ032363)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=e2c22c79-8596-4c23-893c-0764186d34a5",
-    "postedAt": "2025-12-22",
     "region": "China"
   },
   {
@@ -6755,114 +6035,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/d2770857-8f59-487e-9622-5c7ea64a54be",
     "postedAt": "2025-12-09T01:41:59.086+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "trip-cn-8a355bda-1934-48c8-8c09-294a96b98e15",
-    "title": "后端开发工程师—行程规划(MJ031875)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=8a355bda-1934-48c8-8c09-294a96b98e15",
-    "postedAt": "2025-11-25",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-2d91e56e-ef9c-4a91-b511-97d6170666dc",
-    "title": "资深测试开发工程师（推荐算法、内容审核方向）(MJ031739)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=2d91e56e-ef9c-4a91-b511-97d6170666dc",
-    "postedAt": "2025-11-18",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-1fa6ce64-5b27-4e3e-889a-006779c25335",
-    "title": "推荐算法工程师(MJ031786)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=1fa6ce64-5b27-4e3e-889a-006779c25335",
-    "postedAt": "2025-11-13",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-429240ee-e548-47d8-932a-dec46456a27b",
-    "title": "图像算法工程师(MJ031787)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=429240ee-e548-47d8-932a-dec46456a27b",
-    "postedAt": "2025-11-13",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-6232d617-a32d-4933-bf6e-231d807ac79a",
-    "title": "资深大模型应用开发工程师(MJ031566)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=6232d617-a32d-4933-bf6e-231d807ac79a",
-    "postedAt": "2025-11-10",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-699698ea-ff2d-4bb7-8b7c-86d62f1bfe19",
-    "title": "前端开发工程师-UGC(MJ031557)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=699698ea-ff2d-4bb7-8b7c-86d62f1bfe19",
-    "postedAt": "2025-11-07",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-b9ae6974-051d-42b7-9f43-d1026d23d6c9",
-    "title": "机器翻译算法工程师(MJ029222)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=b9ae6974-051d-42b7-9f43-d1026d23d6c9",
-    "postedAt": "2025-11-07",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-0f52211c-4a4b-4de1-adda-1e614c8ae433",
-    "title": "后端开发工程师-行程规划(MJ031476)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=0f52211c-4a4b-4de1-adda-1e614c8ae433",
-    "postedAt": "2025-11-03",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-2d9ddbf3-3ab1-42b3-b26f-931728f9c326",
-    "title": "资深后端/技术专家(MJ024303)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=2d9ddbf3-3ab1-42b3-b26f-931728f9c326",
-    "postedAt": "2025-11-01",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-cf144dbc-069f-4ff2-b9f8-3c36d1b8d65b",
-    "title": "搜索后端开发工程师(MJ031351)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=cf144dbc-069f-4ff2-b9f8-3c36d1b8d65b",
-    "postedAt": "2025-10-28",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-51852d74-72e1-4445-b960-fd7b8a1a707e",
-    "title": "前端开发工程师-行程规划(MJ031352)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=51852d74-72e1-4445-b960-fd7b8a1a707e",
-    "postedAt": "2025-10-28",
-    "region": "China"
-  },
-  {
-    "id": "trip-cn-5d5249ef-fed1-494b-b013-625e7fe9b6b0",
-    "title": "大模型算法工程师（行程规划方向）(MJ031345)",
-    "company": "Trip.com Group",
-    "location": "Shanghai, China",
-    "link": "https://careers.ctrip.com/index.html#/job-detail?jobId=5d5249ef-fed1-494b-b013-625e7fe9b6b0",
-    "postedAt": "2025-10-28",
-    "region": "China"
   },
   {
     "id": "bk-21486",
