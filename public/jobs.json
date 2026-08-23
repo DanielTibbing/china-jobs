@@ -1,5 +1,23 @@
 [
   {
+    "id": "siemens-513415",
+    "title": "高级结构设计工程师（工业变频器）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513415",
+    "postedAt": "2026-08-23T00:28:49.496Z",
+    "region": "China"
+  },
+  {
+    "id": "rmk-Assa Abloy-19",
+    "title": "Senior Lead AX and D365 Developer",
+    "company": "Assa Abloy",
+    "location": "Malmö, SE, 211 19",
+    "link": "https://assaabloy.jobs2web.com/job/Chennai-Senior-Lead-AX-and-D365-Developer-600-032/1399646433/",
+    "postedAt": "2026-08-23T00:27:00.278Z",
+    "region": "Sweden"
+  },
+  {
     "id": "siemens-516105",
     "title": "Senior Systems Engineer (Traction Power Systems)",
     "company": "Siemens",
@@ -1155,20 +1173,20 @@
     "region": "Singapore"
   },
   {
-    "id": "vo-33086-en_US",
-    "title": "Experienced Test Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
-    "postedAt": "2026-08-15T00:25:40.187Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-33085-en_US",
     "title": "Senior Test Engineer",
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
+    "postedAt": "2026-08-15T00:25:40.187Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33086-en_US",
+    "title": "Experienced Test Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
     "postedAt": "2026-08-15T00:25:40.187Z",
     "region": "Sweden"
   },
@@ -1323,15 +1341,6 @@
     "location": "Beijing, Beijing Shi, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/494351",
     "postedAt": "2026-08-14T00:49:09.600Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-509311",
-    "title": "(SMVS) Material Planning Engineer 物料计划工程师 [无锡]",
-    "company": "Siemens",
-    "location": "Wuxi, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509311",
-    "postedAt": "2026-08-14T00:49:00.800Z",
     "region": "China"
   },
   {
@@ -3535,6 +3544,15 @@
     "region": "Singapore"
   },
   {
+    "id": "siemens-514468",
+    "title": "Service Engineer – Building Automation Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514468",
+    "postedAt": "2026-07-27T01:26:14.126Z",
+    "region": "Singapore"
+  },
+  {
     "id": "siemens-513702",
     "title": "Zone Marketing Manager (Automation)",
     "company": "Siemens",
@@ -3549,15 +3567,6 @@
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513500",
-    "postedAt": "2026-07-27T01:26:14.126Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-514468",
-    "title": "Service Engineer – Building Automation Systems",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514468",
     "postedAt": "2026-07-27T01:26:14.126Z",
     "region": "Singapore"
   },
@@ -3589,15 +3598,6 @@
     "region": "China"
   },
   {
-    "id": "vo-33346-en_US",
-    "title": "Android Developer at Volvo CE's Technology Center",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Android-Developer-at-Volvo-CE's-Technology-Center-405-08/1359393355/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-33476-en_US",
     "title": "Logistics Engineer Remanufacturing",
     "company": "Volvo Group",
@@ -3605,6 +3605,15 @@
     "link": "https://jobs.volvogroup.com/job/Shanghai-Logistics-Engineer-Remanufacturing-201206/1359738655/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.877Z",
     "region": "China"
+  },
+  {
+    "id": "vo-33346-en_US",
+    "title": "Android Developer at Volvo CE's Technology Center",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Android-Developer-at-Volvo-CE's-Technology-Center-405-08/1359393355/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-33744-en_US",
@@ -3625,29 +3634,20 @@
     "region": "China"
   },
   {
+    "id": "vo-33799-en_US",
+    "title": "Senior Mechanical Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Mechanical-Engineer-250102/1361785255/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "China"
+  },
+  {
     "id": "vo-33802-en_US",
     "title": "Experienced Mechanical Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Mechanical-Engineer-250102/1361900655/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-30597-en_US",
-    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-33863-en_US",
-    "title": "Experienced Brake system Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Brake-system-Engineer-250102/1361880055/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
   },
@@ -3661,13 +3661,22 @@
     "region": "China"
   },
   {
-    "id": "vo-33799-en_US",
-    "title": "Senior Mechanical Engineer",
+    "id": "vo-33863-en_US",
+    "title": "Experienced Brake system Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Mechanical-Engineer-250102/1361785255/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Brake-system-Engineer-250102/1361880055/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
+  },
+  {
+    "id": "vo-30597-en_US",
+    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-33350-en_US",
@@ -3685,15 +3694,6 @@
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-System-Engineer-250102/1354520555/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.875Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-31194-en_US",
-    "title": "Aftermarket Readiness Leader",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Aftermarket-Readiness-Leader-250102/1350510255/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.874Z",
     "region": "China"
   },
   {
@@ -3720,6 +3720,15 @@
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1343054855/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.874Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-31194-en_US",
+    "title": "Aftermarket Readiness Leader",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Aftermarket-Readiness-Leader-250102/1350510255/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.874Z",
     "region": "China"
   },
@@ -5206,16 +5215,16 @@
     "region": "Singapore"
   },
   {
-    "id": "ph-JR00033419",
-    "title": "Project Engineer",
+    "id": "ph-JR00033422",
+    "title": "(Digital) Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-05-07T00:00:00.000+0000",
     "region": "China"
   },
   {
-    "id": "ph-JR00033422",
-    "title": "(Digital) Project Engineer",
+    "id": "ph-JR00033419",
+    "title": "Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-05-07T00:00:00.000+0000",
