@@ -1,5 +1,86 @@
 [
   {
+    "id": "siemens-514457",
+    "title": "Service Team Leader – Fire Detection &amp; Alarm Systems",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514457",
+    "postedAt": "2026-08-29T04:23:39.939Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-514598",
+    "title": "OCS/OCR Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514598",
+    "postedAt": "2026-08-29T04:23:35.402Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "sh-J02002368",
+    "title": "Senior Anti-fraud Algorithm Engineer - Search, Recommendation and Ads",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J02002368",
+    "postedAt": "2026-08-29T04:22:45.843Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "wd2-/job/Sweden---Lund/Engineering-Manager---BVP-Test_R-123943",
+    "title": "Engineering Manager – BVP Test",
+    "company": "Axis Communications",
+    "location": "Sweden - Lund",
+    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/Engineering-Manager---BVP-Test_R-123943",
+    "postedAt": "2026-08-29T04:21:12.331Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "wd2-/job/Singapore/Product-Quality-Engineer_JR2026007742",
+    "title": "Product Quality Engineer II",
+    "company": "Razer",
+    "location": "Singapore",
+    "link": "https://razer.wd3.myworkdayjobs.com/Careers/job/Singapore/Product-Quality-Engineer_JR2026007742",
+    "postedAt": "2026-08-29T04:21:00.141Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "gh-8161016",
+    "title": "Staff Mobile Engineer [L6-1] Marketing Product Engineering",
+    "company": "Coupang",
+    "location": "Shanghai, China",
+    "link": "https://www.coupang.jobs/en/jobs/?gh_jid=8161016",
+    "postedAt": "2026-08-28T09:31:37-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-8160647",
+    "title": "Staff Back-end Engineer [L6-1] (Business Support and Innovation)",
+    "company": "Coupang",
+    "location": "Shanghai, China",
+    "link": "https://www.coupang.jobs/en/jobs/?gh_jid=8160647",
+    "postedAt": "2026-08-28T09:26:39-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-8158885",
+    "title": "Manager,Front-end Engineering[L6-2] (TW Front Engineering)",
+    "company": "Coupang",
+    "location": "Shanghai, China",
+    "link": "https://www.coupang.jobs/en/jobs/?gh_jid=8158885",
+    "postedAt": "2026-08-28T09:23:31-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-6173276004",
+    "title": "Marketing Manager",
+    "company": "Casetify",
+    "location": "Seoul, Seoul, South Korea",
+    "link": "https://job-boards.greenhouse.io/casetify/jobs/6173276004",
+    "postedAt": "2026-08-28T05:09:16-04:00",
+    "region": "Sweden"
+  },
+  {
     "id": "siemens-514462",
     "title": "Service Engineer – Fire Detection &amp; Alarm Systems",
     "company": "Siemens",
@@ -79,24 +160,6 @@
     "link": "https://careers.shopee.sg/jobs/J02182392",
     "postedAt": "2026-08-28T07:09:58.673Z",
     "region": "Singapore"
-  },
-  {
-    "id": "rmk-Assa Abloy-19",
-    "title": "Senior R&amp;D Engineer",
-    "company": "Assa Abloy",
-    "location": "Zhongshan, GD, CN, 528415",
-    "link": "https://assaabloy.jobs2web.com/job/Zhongshan-Senior-R&amp;D-Engineer-GD-528415/1420580233/",
-    "postedAt": "2026-08-28T07:08:31.262Z",
-    "region": "China"
-  },
-  {
-    "id": "rmk-Assa Abloy-24",
-    "title": "EHS Engineer",
-    "company": "Assa Abloy",
-    "location": "Zhongshan, GD, CN, 528415",
-    "link": "https://assaabloy.jobs2web.com/job/Zhongshan-EHS-Engineer-GD-528415/1420580833/",
-    "postedAt": "2026-08-28T07:08:31.262Z",
-    "region": "China"
   },
   {
     "id": "vo-34487-en_US",
@@ -275,15 +338,6 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J02176634",
-    "postedAt": "2026-08-27T05:11:19.947Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02177838",
-    "title": "Algorithm Engineer - AIGC (2027 Graduate)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02177838",
     "postedAt": "2026-08-27T05:11:19.947Z",
     "region": "Singapore"
   },
@@ -558,6 +612,15 @@
     "region": "China"
   },
   {
+    "id": "alg-ac-164581",
+    "title": "IT Product lead, Customer and Commercial China",
+    "company": "Atlas Copco",
+    "location": "China, China",
+    "link": "https://www.atlascopcogroup.com/en/careers/jobs/job-overview/job-detail/it-product-lead-customer-and-commercial-china/164581",
+    "postedAt": "2026-08-26T06:32:16.917+00:00",
+    "region": "China"
+  },
+  {
     "id": "as-ea158520-e1f6-4a6a-b112-f46933922bc8",
     "title": "Software Engineer II, Infrastructure (Data/AI-related)",
     "company": "Airwallex",
@@ -731,15 +794,6 @@
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/c7070452-6ec6-443c-8015-db339403634a",
     "postedAt": "2026-08-25T02:07:19.381+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-509485",
-    "title": "Critical Power Solution Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509485",
-    "postedAt": "2026-08-25T00:28:41.943Z",
     "region": "Singapore"
   },
   {
@@ -1009,15 +1063,6 @@
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513415",
     "postedAt": "2026-08-23T00:28:49.496Z",
     "region": "China"
-  },
-  {
-    "id": "siemens-516105",
-    "title": "Senior Systems Engineer (Traction Power Systems)",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516105",
-    "postedAt": "2026-08-22T00:27:30.583Z",
-    "region": "Singapore"
   },
   {
     "id": "siemens-519176",
@@ -1299,24 +1344,6 @@
     "region": "Singapore"
   },
   {
-    "id": "sh-J00056373",
-    "title": "Campaign Operations Intern - Big Campaigns, Regional Marketing (Spring 2027)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00056373",
-    "postedAt": "2026-08-20T00:27:11.268Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00366919",
-    "title": "Graphic Design Intern, Regional Marketing (Spring 2027)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00366919",
-    "postedAt": "2026-08-20T00:27:11.268Z",
-    "region": "Singapore"
-  },
-  {
     "id": "vo-32905-en_US",
     "title": "Asset Intelligence Engineer",
     "company": "Volvo Group",
@@ -1464,15 +1491,6 @@
     "location": "China, Xi'an",
     "link": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2114",
     "postedAt": "2026-08-19",
-    "region": "China"
-  },
-  {
-    "id": "sr-744000144083739",
-    "title": "Senior Software Engineer, Planning (Robotics)",
-    "company": "Grab",
-    "location": "Shanghai, cn",
-    "link": "https://jobs.smartrecruiters.com/grab/744000144083739",
-    "postedAt": "2026-08-18T14:02:21.727Z",
     "region": "China"
   },
   {
@@ -1788,20 +1806,20 @@
     "region": "Singapore"
   },
   {
-    "id": "vo-33085-en_US",
-    "title": "Senior Test Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
-    "postedAt": "2026-08-15T00:25:40.187Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-33086-en_US",
     "title": "Experienced Test Engineer",
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
+    "postedAt": "2026-08-15T00:25:40.187Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33085-en_US",
+    "title": "Senior Test Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
     "postedAt": "2026-08-15T00:25:40.187Z",
     "region": "Sweden"
   },
@@ -2935,15 +2953,6 @@
     "region": "Singapore"
   },
   {
-    "id": "ericsson-563121777043484",
-    "title": "MCN E2E Solution Lead",
-    "company": "Ericsson",
-    "location": "Singapore,Singapore,Singapore",
-    "link": "https://jobs.ericsson.com/careers/job/563121777043484",
-    "postedAt": "2026-08-07T05:51:46.000Z",
-    "region": "Singapore"
-  },
-  {
     "id": "wd2-/job/Sweden---Lund/Experienced-Net-Developer--Lund_R-123882",
     "title": "Experienced .Net Developer, Lund",
     "company": "Axis Communications",
@@ -3443,15 +3452,6 @@
     "region": "China"
   },
   {
-    "id": "wd2-/job/Sweden---Lund/QA-Engineer---AI-first-Developer-Experience--Lund_R-123808",
-    "title": "QA Engineer - AI first Developer Experience, Lund",
-    "company": "Axis Communications",
-    "location": "Sweden - Lund",
-    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Lund/QA-Engineer---AI-first-Developer-Experience--Lund_R-123808",
-    "postedAt": "2026-08-01T01:22:14.682Z",
-    "region": "Sweden"
-  },
-  {
     "id": "wd2-/job/Singapore/Product-Marketing-Specialist_JR2026007726",
     "title": "Product Marketing Specialist",
     "company": "Razer",
@@ -3638,15 +3638,6 @@
     "region": "China"
   },
   {
-    "id": "gh-7449571",
-    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
-    "company": "Riot Games",
-    "location": "Guangzhou, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
-    "postedAt": "2026-07-28T13:17:50-04:00",
-    "region": "China"
-  },
-  {
     "id": "gh-7271179",
     "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
@@ -3656,11 +3647,11 @@
     "region": "China"
   },
   {
-    "id": "gh-7786020",
-    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "id": "gh-7449571",
+    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
-    "location": "Shanghai, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7786020?gh_jid=7786020",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -3670,6 +3661,15 @@
     "company": "Riot Games",
     "location": "Guangzhou, China",
     "link": "https://www.riotgames.com/en/work-with-us/job/7449588?gh_jid=7449588",
+    "postedAt": "2026-07-28T13:17:50-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7786020",
+    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7786020?gh_jid=7786020",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -3854,11 +3854,20 @@
     "region": "China"
   },
   {
-    "id": "vo-32044-en_US",
-    "title": "Senior Engineer, Product Verification",
+    "id": "vo-30597-en_US",
+    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33799-en_US",
+    "title": "Senior Mechanical Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Product-Verification-250102/1360193355/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Mechanical-Engineer-250102/1361785255/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
   },
@@ -3872,22 +3881,13 @@
     "region": "China"
   },
   {
-    "id": "vo-33799-en_US",
-    "title": "Senior Mechanical Engineer",
+    "id": "vo-32044-en_US",
+    "title": "Senior Engineer, Product Verification",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Mechanical-Engineer-250102/1361785255/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Product-Verification-250102/1360193355/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
-  },
-  {
-    "id": "vo-30597-en_US",
-    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "Sweden"
   },
   {
     "id": "vo-32427-en_US",
@@ -3935,20 +3935,20 @@
     "region": "China"
   },
   {
-    "id": "vo-31040-en_US",
-    "title": "Experienced Excavator Product Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.874Z",
-    "region": "China"
-  },
-  {
     "id": "vo-32416-en_US",
     "title": "Learning Content Developer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Learning-Content-Developer-250102/1354490555/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.874Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-31040-en_US",
+    "title": "Experienced Excavator Product Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.874Z",
     "region": "China"
   },
@@ -4407,15 +4407,6 @@
     "location": "Chengdu, cn",
     "link": "https://jobs.smartrecruiters.com/Ubisoft2/744000138242109-lead-animator",
     "postedAt": "2026-07-17T02:55:20.156Z",
-    "region": "China"
-  },
-  {
-    "id": "ericsson-563121772171254",
-    "title": "New Grad - Network Engineer I",
-    "company": "Ericsson",
-    "location": "Nanjing,Jiangsu,China",
-    "link": "https://jobs.ericsson.com/careers/job/563121772171254",
-    "postedAt": "2026-07-16T09:16:11.000Z",
     "region": "China"
   },
   {
