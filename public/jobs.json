@@ -1,5 +1,14 @@
 [
   {
+    "id": "siemens-509485",
+    "title": "Critical Power Solution Engineer",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509485",
+    "postedAt": "2026-08-30T01:50:16.383Z",
+    "region": "Singapore"
+  },
+  {
     "id": "siemens-514457",
     "title": "Service Team Leader – Fire Detection &amp; Alarm Systems",
     "company": "Siemens",
@@ -87,15 +96,6 @@
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514462",
     "postedAt": "2026-08-28T07:10:58.084Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-509481",
-    "title": "CBI Data Development Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/509481",
-    "postedAt": "2026-08-28T07:10:56.132Z",
     "region": "Singapore"
   },
   {
@@ -745,18 +745,18 @@
     "region": "Sweden"
   },
   {
-    "id": "ph-JR00045272",
-    "title": "Project Engineer",
-    "company": "ABB",
-    "location": "Shanghai, Shanghai, China",
-    "postedAt": "2026-08-26T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "ph-JR00039967",
     "title": "Associate Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
+    "postedAt": "2026-08-26T00:00:00.000+0000",
+    "region": "China"
+  },
+  {
+    "id": "ph-JR00045272",
+    "title": "Project Engineer",
+    "company": "ABB",
+    "location": "Shanghai, Shanghai, China",
     "postedAt": "2026-08-26T00:00:00.000+0000",
     "region": "China"
   },
@@ -803,24 +803,6 @@
     "location": "Nanjing, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516297",
     "postedAt": "2026-08-25T00:28:18.575Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-505608",
-    "title": "Cost and Value Engineering Senior Expert - Mechatronics",
-    "company": "Siemens",
-    "location": "Beijing, Beijing Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505608",
-    "postedAt": "2026-08-25T00:28:15.501Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-506228",
-    "title": "控制硬件设计工程师 - 伺服驱动器（溧水）",
-    "company": "Siemens",
-    "location": "Nanjing, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506228",
-    "postedAt": "2026-08-25T00:28:12.311Z",
     "region": "China"
   },
   {
@@ -1806,20 +1788,20 @@
     "region": "Singapore"
   },
   {
-    "id": "vo-33086-en_US",
-    "title": "Experienced Test Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
-    "postedAt": "2026-08-15T00:25:40.187Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-33085-en_US",
     "title": "Senior Test Engineer",
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
+    "postedAt": "2026-08-15T00:25:40.187Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-33086-en_US",
+    "title": "Experienced Test Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
     "postedAt": "2026-08-15T00:25:40.187Z",
     "region": "Sweden"
   },
@@ -3836,15 +3818,6 @@
     "region": "China"
   },
   {
-    "id": "vo-33743-en_US",
-    "title": "Experienced Software Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1361578555/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.877Z",
-    "region": "China"
-  },
-  {
     "id": "vo-33744-en_US",
     "title": "Experienced E&E Engineer",
     "company": "Volvo Group",
@@ -3854,13 +3827,13 @@
     "region": "China"
   },
   {
-    "id": "vo-30597-en_US",
-    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "id": "vo-33743-en_US",
+    "title": "Experienced Software Engineer",
     "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "Sweden"
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1361578555/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.877Z",
+    "region": "China"
   },
   {
     "id": "vo-33799-en_US",
@@ -3888,6 +3861,15 @@
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Product-Verification-250102/1360193355/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
+  },
+  {
+    "id": "vo-30597-en_US",
+    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-32427-en_US",
@@ -5274,16 +5256,16 @@
     "region": "Singapore"
   },
   {
-    "id": "ph-JR00033422",
-    "title": "(Digital) Project Engineer",
+    "id": "ph-JR00033419",
+    "title": "Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-05-07T00:00:00.000+0000",
     "region": "China"
   },
   {
-    "id": "ph-JR00033419",
-    "title": "Project Engineer",
+    "id": "ph-JR00033422",
+    "title": "(Digital) Project Engineer",
     "company": "ABB",
     "location": "Xiamen, Fujian, China",
     "postedAt": "2026-05-07T00:00:00.000+0000",
