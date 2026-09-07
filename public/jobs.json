@@ -1,5 +1,50 @@
 [
   {
+    "id": "siemens-515785",
+    "title": "OEM 销售工程师 (沈阳 &amp; 长春）",
+    "company": "Siemens",
+    "location": "Changchun, Jilin Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515785",
+    "postedAt": "2026-09-07T01:23:10.977Z",
+    "region": "China"
+  },
+  {
+    "id": "sh-J00364383",
+    "title": "Marketing Projects Intern, SBS (Spring 2027)",
+    "company": "Shopee",
+    "location": "Singapore",
+    "link": "https://careers.shopee.sg/jobs/J00364383",
+    "postedAt": "2026-09-07T01:22:44.869Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "rmk-Assa Abloy-12",
+    "title": "Electronics Design Engineer",
+    "company": "Assa Abloy",
+    "location": "Stockholm, SE, SE-117 59",
+    "link": "https://assaabloy.jobs2web.com/job/Stockholm-Electronics-Design-Engineer-SE-117-59/1413866033/",
+    "postedAt": "2026-09-07T01:21:17.146Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "rmk-Assa Abloy-14",
+    "title": "Firmware Engineer",
+    "company": "Assa Abloy",
+    "location": "Shanghai, CN, 200335",
+    "link": "https://assaabloy.jobs2web.com/job/Shanghai-Firmware-Engineer-200335/1413729433/",
+    "postedAt": "2026-09-07T01:21:17.146Z",
+    "region": "China"
+  },
+  {
+    "id": "sr-744000147692499",
+    "title": "Senior Principal Engineer, AI Transformation",
+    "company": "Grab",
+    "location": "Singapore, sg",
+    "link": "https://jobs.smartrecruiters.com/grab/744000147692499",
+    "postedAt": "2026-09-06T15:16:14.201Z",
+    "region": "Singapore"
+  },
+  {
     "id": "siemens-516105",
     "title": "Senior Systems Engineer (Traction Power Systems)",
     "company": "Siemens",
@@ -295,6 +340,24 @@
     "link": "https://stripe.com/jobs/search?gh_jid=8160776",
     "postedAt": "2026-09-02T23:28:52-04:00",
     "region": "Singapore"
+  },
+  {
+    "id": "ericsson-563121777152896",
+    "title": "New Grad-Reliability Engineer-BJ",
+    "company": "Ericsson",
+    "location": "Beijing,Beijing,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121777152896",
+    "postedAt": "2026-09-03T03:01:23.000Z",
+    "region": "China"
+  },
+  {
+    "id": "ericsson-563121777152899",
+    "title": "New Grad-AI Developer-BJ",
+    "company": "Ericsson",
+    "location": "Beijing,Beijing,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121777152899",
+    "postedAt": "2026-09-03T03:01:12.000Z",
+    "region": "China"
   },
   {
     "id": "ericsson-563121777143086",
@@ -1556,18 +1619,18 @@
     "region": "Sweden"
   },
   {
-    "id": "ph-JR00039967",
-    "title": "Associate Project Engineer",
-    "company": "ABB",
-    "location": "Xiamen, Fujian, China",
-    "postedAt": "2026-08-26T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "ph-JR00045272",
     "title": "Project Engineer",
     "company": "ABB",
     "location": "Shanghai, Shanghai, China",
+    "postedAt": "2026-08-26T00:00:00.000+0000",
+    "region": "China"
+  },
+  {
+    "id": "ph-JR00039967",
+    "title": "Associate Project Engineer",
+    "company": "ABB",
+    "location": "Xiamen, Fujian, China",
     "postedAt": "2026-08-26T00:00:00.000+0000",
     "region": "China"
   },
@@ -1642,33 +1705,6 @@
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/518159",
     "postedAt": "2026-08-25T00:28:06.073Z",
     "region": "China"
-  },
-  {
-    "id": "sh-J02139364",
-    "title": "Corporate Communications, Senior Associate - Singapore Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02139364",
-    "postedAt": "2026-08-25T00:27:47.695Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02013264",
-    "title": "Client Partner, Regional Brand & Growth Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02013264",
-    "postedAt": "2026-08-25T00:27:47.695Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02168404",
-    "title": "Channel Strategy Associate/Senior Associate, Regional Brand & Growth Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02168404",
-    "postedAt": "2026-08-25T00:27:47.695Z",
-    "region": "Singapore"
   },
   {
     "id": "vo-34526-en_US",
@@ -1913,15 +1949,6 @@
     "region": "China"
   },
   {
-    "id": "sh-J00381723",
-    "title": "Public Relations Associate, Singapore Marketing",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00381723",
-    "postedAt": "2026-08-20T00:27:11.268Z",
-    "region": "Singapore"
-  },
-  {
     "id": "vo-34365-en_US",
     "title": "Lean Manufacturing Engineer - Supply Partner Development",
     "company": "Volvo Group",
@@ -1974,15 +2001,6 @@
     "link": "https://www.klookcareers.com/jobs-detail/b0e48c70-0f22-4e93-822f-8f49868a8a91",
     "postedAt": "2026-08-19T14:33:15",
     "region": "China"
-  },
-  {
-    "id": "ericsson-563121776986347",
-    "title": "IT Data Engineer",
-    "company": "Ericsson",
-    "location": "Linköping,Östergötland,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121776986347",
-    "postedAt": "2026-08-19T12:38:02.000Z",
-    "region": "Sweden"
   },
   {
     "id": "as-1b63af30-7155-4ecb-af13-12f934dd8ad3",
@@ -2107,33 +2125,6 @@
     "company": "Shopee",
     "location": "Singapore",
     "link": "https://careers.shopee.sg/jobs/J02044436",
-    "postedAt": "2026-08-18T00:26:19.055Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J02040952",
-    "title": "Product Manager Intern, Buyer & Marketing - User & Notification (Spring 2027)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02040952",
-    "postedAt": "2026-08-18T00:26:19.055Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00001740",
-    "title": "Big Campaigns Intern - Singapore Marketing (Spring 2027)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00001740",
-    "postedAt": "2026-08-18T00:26:19.055Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "sh-J00001791",
-    "title": "Affiliates Intern - Singapore Marketing (Spring 2027)",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J00001791",
     "postedAt": "2026-08-18T00:26:19.055Z",
     "region": "Singapore"
   },
@@ -2278,24 +2269,6 @@
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/518180",
     "postedAt": "2026-08-15T00:28:00.732Z",
     "region": "Singapore"
-  },
-  {
-    "id": "vo-33086-en_US",
-    "title": "Experienced Test Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Test-Engineer-405-08/1364597855/?feedId=361555",
-    "postedAt": "2026-08-15T00:25:40.187Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-33085-en_US",
-    "title": "Senior Test Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-Test-Engineer-405-08/1364603255/?feedId=361555",
-    "postedAt": "2026-08-15T00:25:40.187Z",
-    "region": "Sweden"
   },
   {
     "id": "wd2-/job/Sweden---Stockholm/ASIC-Design-Engineers-to-our-R-D-site-in-Stockholm_R-123913",
@@ -2594,20 +2567,20 @@
     "region": "China"
   },
   {
-    "id": "gh-5959444",
-    "title": "Retail - Lead Store Advisor（Bicester）",
-    "company": "On Running",
-    "location": "Shanghai",
-    "link": "https://boards.greenhouse.io/onrunning/jobs/5959444?gh_jid=5959444",
-    "postedAt": "2026-08-13T13:10:39-04:00",
-    "region": "China"
-  },
-  {
     "id": "gh-5310578",
     "title": "Retail - Lead Store Advisor（Bicester）",
     "company": "On Running",
     "location": "Shanghai",
     "link": "https://boards.greenhouse.io/onrunning/jobs/5310578?gh_jid=5310578",
+    "postedAt": "2026-08-13T13:10:39-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-5959444",
+    "title": "Retail - Lead Store Advisor（Bicester）",
+    "company": "On Running",
+    "location": "Shanghai",
+    "link": "https://boards.greenhouse.io/onrunning/jobs/5959444?gh_jid=5959444",
     "postedAt": "2026-08-13T13:10:39-04:00",
     "region": "China"
   },
@@ -3863,20 +3836,20 @@
     "region": "China"
   },
   {
-    "id": "gh-7271179",
-    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
-    "company": "Riot Games",
-    "location": "Shanghai, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7271179?gh_jid=7271179",
-    "postedAt": "2026-07-28T13:17:50-04:00",
-    "region": "China"
-  },
-  {
     "id": "gh-7449571",
     "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
     "location": "Guangzhou, China",
     "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
+    "postedAt": "2026-07-28T13:17:50-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7271179",
+    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Shanghai, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7271179?gh_jid=7271179",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -4052,15 +4025,6 @@
     "region": "China"
   },
   {
-    "id": "vo-30597-en_US",
-    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 56",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.876Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-32044-en_US",
     "title": "Senior Engineer, Product Verification",
     "company": "Volvo Group",
@@ -4068,6 +4032,15 @@
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Product-Verification-250102/1360193355/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.876Z",
     "region": "China"
+  },
+  {
+    "id": "vo-30597-en_US",
+    "title": "Senior OT Network & Systems Engineer - Battery Energy Storage Systems - Volvo Energy",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-OT-Network-&-Systems-Engineer-Battery-Energy-Storage-Systems-Volvo-Energy-417-56/1348424255/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.876Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-32427-en_US",
@@ -4097,20 +4070,20 @@
     "region": "China"
   },
   {
-    "id": "vo-31340-en_US",
-    "title": "Senior Engineer, Power System",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Power-System-250102/1351283655/?feedId=361555",
-    "postedAt": "2026-07-27T01:23:58.874Z",
-    "region": "China"
-  },
-  {
     "id": "vo-31040-en_US",
     "title": "Experienced Excavator Product Engineer",
     "company": "Volvo Group",
     "location": "Ji'nan, CN, 250102",
     "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Excavator-Product-Engineer-250102/1349907355/?feedId=361555",
+    "postedAt": "2026-07-27T01:23:58.874Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-31340-en_US",
+    "title": "Senior Engineer, Power System",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Senior-Engineer%2C-Power-System-250102/1351283655/?feedId=361555",
     "postedAt": "2026-07-27T01:23:58.874Z",
     "region": "China"
   },
@@ -4622,15 +4595,6 @@
     "link": "https://job-boards.greenhouse.io/nex/jobs/5281628008",
     "postedAt": "2026-07-13T01:52:49-04:00",
     "region": "Hong Kong"
-  },
-  {
-    "id": "ericsson-563121776756346",
-    "title": "PA Developer",
-    "company": "Ericsson",
-    "location": "Beijing,Beijing,China",
-    "link": "https://jobs.ericsson.com/careers/job/563121776756346",
-    "postedAt": "2026-07-13T04:02:00.000Z",
-    "region": "China"
   },
   {
     "id": "kl-2c55043b-6cba-4b4b-8ae3-c8f73e72b310",
