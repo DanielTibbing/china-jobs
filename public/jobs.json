@@ -1,5 +1,68 @@
 [
   {
+    "id": "siemens-514276",
+    "title": "THT工艺工程师 (通孔技术）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514276",
+    "postedAt": "2026-11-15T03:16:36.029Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-514276",
+    "title": "THT工艺工程师 (通孔技术）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/514276",
+    "postedAt": "2026-11-15T03:16:34.627Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-506332",
+    "title": "创新部门产品经理",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506332",
+    "postedAt": "2026-11-15T03:16:31.973Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-511912",
+    "title": "(SMVS) IE Engineer (自动化项目工程师)",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/511912",
+    "postedAt": "2026-11-15T03:16:29.260Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-523395",
+    "title": "产品经理（驱动调试工具）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523395",
+    "postedAt": "2026-11-15T03:16:22.317Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-522007",
+    "title": "数字化工业Sales100培训生销售工程师 北京",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522007",
+    "postedAt": "2026-11-15T03:16:19.209Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-523587",
+    "title": "机械开发工程师",
+    "company": "Siemens",
+    "location": "Suzhou, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523587",
+    "postedAt": "2026-11-15T03:16:19.209Z",
+    "region": "China"
+  },
+  {
     "id": "siemens-521832",
     "title": "硬件系统开发工程师 电力电子",
     "company": "Siemens",
@@ -126,6 +189,24 @@
     "region": "Sweden"
   },
   {
+    "id": "ericsson-563121777481793",
+    "title": "FPGA Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777481793",
+    "postedAt": "2026-11-13T16:16:23.000Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "ericsson-563121777481760",
+    "title": "FPGA Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777481760",
+    "postedAt": "2026-11-13T16:04:43.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "gh-8368656",
     "title": "Technical Solutions Engineer",
     "company": "Stripe",
@@ -189,83 +270,11 @@
     "region": "China"
   },
   {
-    "id": "siemens-528484",
-    "title": "产品质量工程师 空气断路器产品",
-    "company": "Siemens",
-    "location": "Suzhou, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528484",
-    "postedAt": "2026-11-13T03:43:10.627Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-526915",
-    "title": "高级控制算法工程师（工业变频器）",
-    "company": "Siemens",
-    "location": "Nanjing, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526915",
-    "postedAt": "2026-11-13T03:43:09.260Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-529017",
-    "title": "机器制造应用中心工程师",
-    "company": "Siemens",
-    "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/529017",
-    "postedAt": "2026-11-13T03:43:09.260Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-519465",
-    "title": "Veloce Emulation Application Engineer",
-    "company": "Siemens",
-    "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519465",
-    "postedAt": "2026-11-13T03:43:07.964Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-521694",
-    "title": "数字化工业 Sales100培训生_销售工程师 郑州",
-    "company": "Siemens",
-    "location": "Zhengzhou, Henan Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521694",
-    "postedAt": "2026-11-13T03:43:06.636Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-525097",
     "title": "解决方案工程师 深圳",
     "company": "Siemens",
     "location": "Shenzhen, Guangdong Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525097",
-    "postedAt": "2026-11-13T03:43:05.325Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-526267",
-    "title": "数字化工程师 (仪征)",
-    "company": "Siemens",
-    "location": "Yizheng, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526267",
-    "postedAt": "2026-11-13T03:43:05.325Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-529337",
-    "title": "机械开发工程师_上海金山",
-    "company": "Siemens",
-    "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/529337",
-    "postedAt": "2026-11-13T03:43:05.325Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-521827",
-    "title": "数字化工业 Sales100培训生_解决方案工程师 青岛",
-    "company": "Siemens",
-    "location": "Qingdao, Shandong Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521827",
     "postedAt": "2026-11-13T03:43:05.325Z",
     "region": "China"
   },
@@ -297,15 +306,6 @@
     "region": "China"
   },
   {
-    "id": "siemens-521548",
-    "title": "西门子数字化工业集团 物理AI平台 全栈开发",
-    "company": "Siemens",
-    "location": "Suzhou, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521548",
-    "postedAt": "2026-11-13T03:42:56.847Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-528639",
     "title": "测试开发工程师",
     "company": "Siemens",
@@ -324,20 +324,20 @@
     "region": "Singapore"
   },
   {
-    "id": "vo-36862-en_US",
-    "title": "Powertrain Installation Design Engineer - Wheel Loaders",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Powertrain-Installation-Design-Engineer-Wheel-Loaders-405-08/1376771855/?feedId=361555",
-    "postedAt": "2026-11-13T03:41:13.998Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-36863-en_US",
     "title": "Electrical Installation Design Engineer - Wheel Loaders",
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-Electrical-Installation-Design-Engineer-Wheel-Loaders-405-08/1376762155/?feedId=361555",
+    "postedAt": "2026-11-13T03:41:13.998Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-36862-en_US",
+    "title": "Powertrain Installation Design Engineer - Wheel Loaders",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Powertrain-Installation-Design-Engineer-Wheel-Loaders-405-08/1376771855/?feedId=361555",
     "postedAt": "2026-11-13T03:41:13.998Z",
     "region": "Sweden"
   },
@@ -402,6 +402,15 @@
     "location": "Stockholm,Stockholm,Sweden",
     "link": "https://jobs.ericsson.com/careers/job/563121777555249",
     "postedAt": "2026-11-12T18:57:27.000Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "ericsson-563121777201291",
+    "title": "Entry level: SW Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777201291",
+    "postedAt": "2026-11-12T14:56:16.000Z",
     "region": "Sweden"
   },
   {
@@ -600,6 +609,15 @@
     "region": "Singapore"
   },
   {
+    "id": "ericsson-563121777436188",
+    "title": "Software Quality & Test Lead | Early Career Program",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777436188",
+    "postedAt": "2026-11-11T15:27:57.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "kl-226979c6-cf22-46be-bae5-2c259cf4766b",
     "title": "Senior Product Manager (Workbench) ",
     "company": "Klook",
@@ -616,6 +634,15 @@
     "link": "https://www.klookcareers.com/jobs-detail/5fae3b8a-01e1-47ab-9976-9ffaf4ef8e34",
     "postedAt": "2026-11-11T14:17:01",
     "region": "Singapore"
+  },
+  {
+    "id": "ericsson-563121777213669",
+    "title": "Junior Radio Software Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777213669",
+    "postedAt": "2026-11-11T12:45:46.000Z",
+    "region": "Sweden"
   },
   {
     "id": "gh-8376240",
@@ -651,15 +678,6 @@
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/9d770432-8a34-44d4-9273-6dbce7d93aeb",
     "postedAt": "2026-11-11T09:47:39.229+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "gh-8370587",
-    "title": "Implementation Engineer",
-    "company": "Adyen",
-    "location": "Singapore",
-    "link": "https://job-boards.greenhouse.io/adyen/jobs/8370587",
-    "postedAt": "2026-11-11T02:46:55-05:00",
     "region": "Singapore"
   },
   {
@@ -735,15 +753,6 @@
     "region": "Sweden"
   },
   {
-    "id": "wd2-/job/Sweden---Stockholm/Sales-Engineer---Sweden_R-123470",
-    "title": "Sales Engineer",
-    "company": "Axis Communications",
-    "location": "Sweden - Stockholm",
-    "link": "https://axis.wd3.myworkdayjobs.com/External_Career_Site/job/Sweden---Stockholm/Sales-Engineer---Sweden_R-123470",
-    "postedAt": "2026-11-11T03:13:06.787Z",
-    "region": "Sweden"
-  },
-  {
     "id": "sr-744000161019099",
     "title": "Lead Data Scientist, People Analytics",
     "company": "Grab",
@@ -760,6 +769,15 @@
     "link": "https://careers.roblox.com/jobs/8359634?gh_jid=8359634",
     "postedAt": "2026-11-10T14:34:52-05:00",
     "region": "Singapore"
+  },
+  {
+    "id": "ericsson-563121777370335",
+    "title": "AI-Native CI/CD Engineer | Early Career Program",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777370335",
+    "postedAt": "2026-11-10T19:05:17.000Z",
+    "region": "Sweden"
   },
   {
     "id": "sr-744000160903099",
@@ -807,20 +825,11 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-37071-en_US",
-    "title": "Product Manager - Marine Aftermarket",
+    "id": "vo-36621-en_US",
+    "title": "Technical Leader",
     "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 15",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Product-Manager-Marine-Aftermarket-417-15/1376297255/?feedId=361555",
-    "postedAt": "2026-11-10T04:49:55.817Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-37132-en_US",
-    "title": "Experienced Emob. System Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1376384155/?feedId=361555",
+    "location": "Shanghai, CN, 201206",
+    "link": "https://jobs.volvogroup.com/job/Shanghai-Technical-Leader-201206/1374347955/?feedId=361555",
     "postedAt": "2026-11-10T04:49:55.817Z",
     "region": "China"
   },
@@ -834,13 +843,22 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-36621-en_US",
-    "title": "Technical Leader",
+    "id": "vo-37132-en_US",
+    "title": "Experienced Emob. System Engineer",
     "company": "Volvo Group",
-    "location": "Shanghai, CN, 201206",
-    "link": "https://jobs.volvogroup.com/job/Shanghai-Technical-Leader-201206/1374347955/?feedId=361555",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Emob_-System-Engineer-250102/1376384155/?feedId=361555",
     "postedAt": "2026-11-10T04:49:55.817Z",
     "region": "China"
+  },
+  {
+    "id": "vo-37071-en_US",
+    "title": "Product Manager - Marine Aftermarket",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 15",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Product-Manager-Marine-Aftermarket-417-15/1376297255/?feedId=361555",
+    "postedAt": "2026-11-10T04:49:55.817Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-36196-en_US",
@@ -1002,6 +1020,15 @@
     "region": "Singapore"
   },
   {
+    "id": "ericsson-563121777429369",
+    "title": "Entry level: Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777429369",
+    "postedAt": "2026-11-06T08:34:52.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "sr-744000160126899",
     "title": "Software Engineering Manager II",
     "company": "Grab",
@@ -1074,15 +1101,6 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-36946-en_US",
-    "title": "Experienced Software Engineer",
-    "company": "Volvo Group",
-    "location": "Ji'nan, CN, 250102",
-    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1375787655/?feedId=361555",
-    "postedAt": "2026-11-06T03:45:42.845Z",
-    "region": "China"
-  },
-  {
     "id": "vo-36697-en_US",
     "title": "Senior Design Leader",
     "company": "Volvo Group",
@@ -1090,6 +1108,15 @@
     "link": "https://jobs.volvogroup.com/job/Bra%C3%A5s-Senior-Design-Leader-363-41/1375867755/?feedId=361555",
     "postedAt": "2026-11-06T03:45:42.845Z",
     "region": "Sweden"
+  },
+  {
+    "id": "vo-36946-en_US",
+    "title": "Experienced Software Engineer",
+    "company": "Volvo Group",
+    "location": "Ji'nan, CN, 250102",
+    "link": "https://jobs.volvogroup.com/job/Ji'nan-Experienced-Software-Engineer-250102/1375787655/?feedId=361555",
+    "postedAt": "2026-11-06T03:45:42.845Z",
+    "region": "China"
   },
   {
     "id": "vo-36058-en_US",
@@ -1101,20 +1128,20 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-36964-en_US",
-    "title": "Experienced Electrical Design Engineer",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Electrical-Design-Engineer-405-08/1375864355/?feedId=361555",
-    "postedAt": "2026-11-06T03:45:42.844Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-36060-en_US",
     "title": "Lead Power System & Grid Compliance",
     "company": "Volvo Group",
     "location": "Göteborg, SE, 417 56",
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Lead-Power-System-&-Grid-Compliance-417-56/1375863155/?feedId=361555",
+    "postedAt": "2026-11-06T03:45:42.844Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-36964-en_US",
+    "title": "Experienced Electrical Design Engineer",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Experienced-Electrical-Design-Engineer-405-08/1375864355/?feedId=361555",
     "postedAt": "2026-11-06T03:45:42.844Z",
     "region": "Sweden"
   },
@@ -1242,15 +1269,6 @@
     "region": "Singapore"
   },
   {
-    "id": "ericsson-563121777438238",
-    "title": "Strategic Product Manager | Early Career Program",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777438238",
-    "postedAt": "2026-11-04T09:04:41.000Z",
-    "region": "Sweden"
-  },
-  {
     "id": "as-897f9dc2-b3ee-4207-b60c-2db04c515a40",
     "title": "Product Lead, Issuing",
     "company": "Airwallex",
@@ -1275,24 +1293,6 @@
     "location": "Suzhou, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527727",
     "postedAt": "2026-11-04T03:26:48.211Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-520775",
-    "title": "数字化工业 Sales100培训生_销售工程师 武汉",
-    "company": "Siemens",
-    "location": "Wuhan, Hubei Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520775",
-    "postedAt": "2026-11-04T03:26:48.211Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-521851",
-    "title": "数字化工业Sales100 解决方案工程师 天津",
-    "company": "Siemens",
-    "location": "Tianjin, Tianjin Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521851",
-    "postedAt": "2026-11-04T03:26:41.384Z",
     "region": "China"
   },
   {
@@ -1350,15 +1350,6 @@
     "region": "China"
   },
   {
-    "id": "vo-30035-en_US",
-    "title": "Marketing Manager",
-    "company": "Volvo Group",
-    "location": "Shanghai, CN, 201206",
-    "link": "https://jobs.volvogroup.com/job/Shanghai-Marketing-Manager-201206/1346085955/?feedId=361555",
-    "postedAt": "2026-11-04T03:24:55.884Z",
-    "region": "China"
-  },
-  {
     "id": "vo-36017-en_US",
     "title": "Senior Cost Engineer - Metallic Technologies",
     "company": "Volvo Group",
@@ -1366,6 +1357,15 @@
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-Cost-Engineer-Metallic-Technologies-417-15/1372941855/?feedId=361555",
     "postedAt": "2026-11-04T03:24:55.884Z",
     "region": "Sweden"
+  },
+  {
+    "id": "vo-30035-en_US",
+    "title": "Marketing Manager",
+    "company": "Volvo Group",
+    "location": "Shanghai, CN, 201206",
+    "link": "https://jobs.volvogroup.com/job/Shanghai-Marketing-Manager-201206/1346085955/?feedId=361555",
+    "postedAt": "2026-11-04T03:24:55.884Z",
+    "region": "China"
   },
   {
     "id": "wd2-/job/Sweden---Lund/Radar-RF-Design-Engineer_R-124255",
@@ -1445,15 +1445,6 @@
     "link": "https://fa-exhj-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2345",
     "postedAt": "2026-11-04",
     "region": "China"
-  },
-  {
-    "id": "ericsson-563121777269703",
-    "title": "Integration Lead | Early Career Program",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777269703",
-    "postedAt": "2026-11-03T14:28:59.000Z",
-    "region": "Sweden"
   },
   {
     "id": "as-7b252696-914f-49a9-86ff-5a6b10136219",
@@ -1588,6 +1579,15 @@
     "location": "NYC, SF, Seattle or Chicago ",
     "link": "https://stripe.com/jobs/search?gh_jid=8167556",
     "postedAt": "2026-11-02T12:50:07-05:00",
+    "region": "Sweden"
+  },
+  {
+    "id": "ericsson-563121777523661",
+    "title": "System Data Engineer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777523661",
+    "postedAt": "2026-11-02T10:09:37.000Z",
     "region": "Sweden"
   },
   {
@@ -1848,15 +1848,6 @@
     "region": "China"
   },
   {
-    "id": "ericsson-563121777400007",
-    "title": "Strategic Product Manager, Transport | Early Career Program",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777400007",
-    "postedAt": "2026-10-29T23:28:21.000Z",
-    "region": "Sweden"
-  },
-  {
     "id": "alg-ub-6ff50a46-8572-4345-9827-f9e6e3b0eb94_16",
     "title": "Lead Animator",
     "company": "Ubisoft",
@@ -1953,15 +1944,6 @@
     "location": "Braås, SE, 363 41",
     "link": "https://jobs.volvogroup.com/job/Bra%C3%A5s-Master-Thesis-Digital-Thread-for-Weld-Engineering-From-Design-to-Manufacturing-363-41/1374695155/?feedId=361555",
     "postedAt": "2026-10-29T02:57:32.012Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "ericsson-563121776992704",
-    "title": "AI in RAN System Developer",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121776992704",
-    "postedAt": "2026-10-28T22:44:58.000Z",
     "region": "Sweden"
   },
   {
@@ -2306,6 +2288,15 @@
     "region": "China"
   },
   {
+    "id": "ericsson-563121777201289",
+    "title": "Baseband L1 Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777201289",
+    "postedAt": "2026-10-26T09:29:46.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "gh-8221841",
     "title": "[Growth Marketing] Sr. Staff Back-end Engineer",
     "company": "Coupang",
@@ -2322,6 +2313,15 @@
     "link": "https://careers.shopee.sg/jobs/J02204702",
     "postedAt": "2026-10-24T02:04:15.916Z",
     "region": "Singapore"
+  },
+  {
+    "id": "vo-35751-en_US",
+    "title": "Volvo Group Graduate Program 2027 - Production Engineer",
+    "company": "Volvo Group",
+    "location": "Umeå, SE, 901 24",
+    "link": "https://jobs.volvogroup.com/job/Ume%C3%A5-Volvo-Group-Graduate-Program-2027-Production-Engineer-901-24/1374108755/?feedId=361555",
+    "postedAt": "2026-10-24T02:02:20.924Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-35959-en_US",
@@ -2351,12 +2351,12 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-35751-en_US",
-    "title": "Volvo Group Graduate Program 2027 - Production Engineer",
+    "id": "vo-35784-en_US",
+    "title": "Volvo Group Graduate Program 2027 - Maintenance Engineer",
     "company": "Volvo Group",
     "location": "Umeå, SE, 901 24",
-    "link": "https://jobs.volvogroup.com/job/Ume%C3%A5-Volvo-Group-Graduate-Program-2027-Production-Engineer-901-24/1374108755/?feedId=361555",
-    "postedAt": "2026-10-24T02:02:20.924Z",
+    "link": "https://jobs.volvogroup.com/job/Ume%C3%A5-Volvo-Group-Graduate-Program-2027-Maintenance-Engineer-901-24/1374109155/?feedId=361555",
+    "postedAt": "2026-10-24T02:02:20.923Z",
     "region": "Sweden"
   },
   {
@@ -2365,15 +2365,6 @@
     "company": "Volvo Group",
     "location": "Skövde, SE, 541 87",
     "link": "https://jobs.volvogroup.com/job/Sk%C3%B6vde-Volvo-Group-Graduate-Program-2027-AI-Enabled-Production-Engineer-541-87/1374107055/?feedId=361555",
-    "postedAt": "2026-10-24T02:02:20.923Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-35784-en_US",
-    "title": "Volvo Group Graduate Program 2027 - Maintenance Engineer",
-    "company": "Volvo Group",
-    "location": "Umeå, SE, 901 24",
-    "link": "https://jobs.volvogroup.com/job/Ume%C3%A5-Volvo-Group-Graduate-Program-2027-Maintenance-Engineer-901-24/1374109155/?feedId=361555",
     "postedAt": "2026-10-24T02:02:20.923Z",
     "region": "Sweden"
   },
@@ -2387,20 +2378,11 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-36008-en_US",
-    "title": "Volvo Group Graduate Program 2027 - Automation  Engineer",
+    "id": "vo-36084-en_US",
+    "title": "Volvo Group Graduate Program 2027 - Exhaust After Treatment System (EATS) Engineer",
     "company": "Volvo Group",
     "location": "Göteborg, SE, 417 15",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Volvo-Group-Graduate-Program-2027-Automation-Engineer-417-15/1373455355/?feedId=361555",
-    "postedAt": "2026-10-24T02:02:20.922Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-35992-en_US",
-    "title": "Volvo Group Graduate Program 2027 - Production Engineer",
-    "company": "Volvo Group",
-    "location": "Köping, SE, 731 80",
-    "link": "https://jobs.volvogroup.com/job/K%C3%B6ping-Volvo-Group-Graduate-Program-2027-Production-Engineer-731-80/1374105155/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Volvo-Group-Graduate-Program-2027-Exhaust-After-Treatment-System-%28EATS%29-Engineer-417-15/1374104255/?feedId=361555",
     "postedAt": "2026-10-24T02:02:20.922Z",
     "region": "Sweden"
   },
@@ -2423,11 +2405,20 @@
     "region": "Sweden"
   },
   {
-    "id": "vo-36084-en_US",
-    "title": "Volvo Group Graduate Program 2027 - Exhaust After Treatment System (EATS) Engineer",
+    "id": "vo-36008-en_US",
+    "title": "Volvo Group Graduate Program 2027 - Automation  Engineer",
     "company": "Volvo Group",
     "location": "Göteborg, SE, 417 15",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Volvo-Group-Graduate-Program-2027-Exhaust-After-Treatment-System-%28EATS%29-Engineer-417-15/1374104255/?feedId=361555",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Volvo-Group-Graduate-Program-2027-Automation-Engineer-417-15/1373455355/?feedId=361555",
+    "postedAt": "2026-10-24T02:02:20.922Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-35992-en_US",
+    "title": "Volvo Group Graduate Program 2027 - Production Engineer",
+    "company": "Volvo Group",
+    "location": "Köping, SE, 731 80",
+    "link": "https://jobs.volvogroup.com/job/K%C3%B6ping-Volvo-Group-Graduate-Program-2027-Production-Engineer-731-80/1374105155/?feedId=361555",
     "postedAt": "2026-10-24T02:02:20.922Z",
     "region": "Sweden"
   },
@@ -2599,15 +2590,6 @@
     "location": "Seattle, San Francisco, Seattle, New York, Toronto",
     "link": "https://stripe.com/jobs/search?gh_jid=8209967",
     "postedAt": "2026-10-22T16:29:55-04:00",
-    "region": "Sweden"
-  },
-  {
-    "id": "ericsson-563121777228173",
-    "title": "Core Network SaaS Developer",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777228173",
-    "postedAt": "2026-10-22T13:06:11.000Z",
     "region": "Sweden"
   },
   {
