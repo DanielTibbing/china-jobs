@@ -1,19 +1,226 @@
 [
   {
+    "id": "siemens-516508",
+    "title": "SCADA &amp; IT/OT Engineering Intern",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/516508",
+    "postedAt": "2026-11-27T05:29:51.359Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-530351",
+    "title": "Design Engineer Intern",
+    "company": "Siemens",
+    "location": "Singapore, Central Singapore, Singapore",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530351",
+    "postedAt": "2026-11-27T05:29:45.786Z",
+    "region": "Singapore"
+  },
+  {
+    "id": "siemens-506332",
+    "title": "创新部门产品经理",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/506332",
+    "postedAt": "2026-11-27T05:29:36.252Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-526436",
+    "title": "Domain Business Developer 区域暖通业务拓展",
+    "company": "Siemens",
+    "location": "Chengdu, Sichuan Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526436",
+    "postedAt": "2026-11-27T05:29:34.945Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-527042",
+    "title": "嵌入式软件工程师 (BSP)",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527042",
+    "postedAt": "2026-11-27T05:29:32.284Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-527759",
+    "title": "Siemens 伺服电机产品经理（南京溧水）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527759",
+    "postedAt": "2026-11-27T05:29:27.928Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-527879",
+    "title": "Siemens 伺服驱动器  硬件研发专家（南京溧水）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527879",
+    "postedAt": "2026-11-27T05:29:27.928Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-529303",
+    "title": "研发部可持续发展工程师（LCA,EPD,Eco-design）",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/529303",
+    "postedAt": "2026-11-27T05:29:26.588Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-518789",
+    "title": "环境安规测试工程师 南京",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/518789",
+    "postedAt": "2026-11-27T05:29:25.270Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-530813",
+    "title": "认证工程师 南京",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530813",
+    "postedAt": "2026-11-27T05:29:25.270Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-525733",
+    "title": "Planning Engineer",
+    "company": "Siemens",
+    "location": "Shanghai, Shanghai Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525733",
+    "postedAt": "2026-11-27T05:29:22.509Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-530817",
+    "title": "嵌入式软件工程师 (应用)",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530817",
+    "postedAt": "2026-11-27T05:29:22.509Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-530240",
+    "title": "(SPA) 研发软件开发工程师",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530240",
+    "postedAt": "2026-11-27T05:29:21.065Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-529767",
+    "title": "西门子中国 数控系统 产品经理 南京溧水",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/529767",
+    "postedAt": "2026-11-27T05:29:19.591Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-528662",
+    "title": "高级结构工程师-电机",
+    "company": "Siemens",
+    "location": "Nanjing, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/528662",
+    "postedAt": "2026-11-27T05:29:15.512Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-529344",
+    "title": "（SMVS）产品关怀_ 机械工程师",
+    "company": "Siemens",
+    "location": "Wuxi, Jiangsu Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/529344",
+    "postedAt": "2026-11-27T05:29:15.512Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-530197",
+    "title": "平台与技术负责人 Head of Marketplace &amp; Tech",
+    "company": "Siemens",
+    "location": "Shenzhen, Guangdong Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530197",
+    "postedAt": "2026-11-27T05:29:14.139Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-523991",
+    "title": "AI架构师/高级顾问 (智能制造方向)",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523991",
+    "postedAt": "2026-11-27T05:29:12.786Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-530912",
+    "title": "主任机械工程师",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530912",
+    "postedAt": "2026-11-27T05:29:11.386Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-530911",
+    "title": "机械工程师",
+    "company": "Siemens",
+    "location": "Beijing, Beijing Shi, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530911",
+    "postedAt": "2026-11-27T05:29:11.386Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-36058-en_US",
+    "title": "Lead BESS Electrical Design Engineer",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 56",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Lead-BESS-Electrical-Design-Engineer-417-56/1375864255/?feedId=361555",
+    "postedAt": "2026-11-27T05:27:32.468Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-37628-en_US",
+    "title": "Vehicle Motion Technical Lead",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 15",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Vehicle-Motion-Technical-Lead-417-15/1378567855/?feedId=361555",
+    "postedAt": "2026-11-27T05:27:32.467Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "ericsson-563121777212620",
+    "title": "Entry level: Verification Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777212620",
+    "postedAt": "2026-11-26T08:11:00.000Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "sr-744000163817710",
+    "title": "Paid Media Lead - All Verticals",
+    "company": "Grab",
+    "location": "Singapore, sg",
+    "link": "https://jobs.smartrecruiters.com/grab/744000163817710",
+    "postedAt": "2026-11-26T07:39:04.810Z",
+    "region": "Singapore"
+  },
+  {
     "id": "siemens-525726",
     "title": "Bid Engineer – Building Automation &amp; Fire Safety",
     "company": "Siemens",
     "location": "Singapore, Central Singapore, Singapore",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525726",
-    "postedAt": "2026-11-26T05:35:31.503Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-523252",
-    "title": "RAMS Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/523252",
     "postedAt": "2026-11-26T05:35:31.503Z",
     "region": "Singapore"
   },
@@ -36,60 +243,6 @@
     "region": "China"
   },
   {
-    "id": "siemens-503611",
-    "title": "功率电子硬件开发工程师（变频器 / 伺服驱动器）",
-    "company": "Siemens",
-    "location": "Nanjing, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/503611",
-    "postedAt": "2026-11-26T05:35:11.394Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-527014",
-    "title": "XAgent前沿部署工程师（FDE）",
-    "company": "Siemens",
-    "location": "Beijing, Beijing Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527014",
-    "postedAt": "2026-11-26T05:35:11.394Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-520775",
-    "title": "数字化工业 Sales100培训生_销售工程师 武汉",
-    "company": "Siemens",
-    "location": "Wuhan, Hubei Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/520775",
-    "postedAt": "2026-11-26T05:35:08.563Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-524292",
-    "title": "(Lead) RD Talent – Industrial Intelligence",
-    "company": "Siemens",
-    "location": "Shanghai, Shanghai Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/524292",
-    "postedAt": "2026-11-26T05:35:07.145Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-518159",
-    "title": "高级质量EHS体系工程师 大连",
-    "company": "Siemens",
-    "location": "Dalian, Liaoning Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/518159",
-    "postedAt": "2026-11-26T05:35:05.424Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-505532",
-    "title": "研发项目经理",
-    "company": "Siemens",
-    "location": "Beijing, Beijing Shi, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/505532",
-    "postedAt": "2026-11-26T05:35:03.861Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-518011",
     "title": "嵌入式软件开发工程师",
     "company": "Siemens",
@@ -99,20 +252,20 @@
     "region": "China"
   },
   {
-    "id": "siemens-521691",
-    "title": "数字化工业 Sales100培训生_销售工程师 大连",
-    "company": "Siemens",
-    "location": "Dalian, Liaoning Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521691",
-    "postedAt": "2026-11-26T05:35:00.869Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-521851",
     "title": "数字化工业Sales100 解决方案工程师 天津",
     "company": "Siemens",
     "location": "Tianjin, Tianjin Shi, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521851",
+    "postedAt": "2026-11-26T05:35:00.869Z",
+    "region": "China"
+  },
+  {
+    "id": "siemens-521691",
+    "title": "数字化工业 Sales100培训生_销售工程师 大连",
+    "company": "Siemens",
+    "location": "Dalian, Liaoning Sheng, China",
+    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521691",
     "postedAt": "2026-11-26T05:35:00.869Z",
     "region": "China"
   },
@@ -252,6 +405,15 @@
     "region": "Sweden"
   },
   {
+    "id": "ericsson-563121777599469",
+    "title": "Developer- AI-powered engineering services",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777599469",
+    "postedAt": "2026-11-25T12:39:16.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "ericsson-563121777212615",
     "title": "Entry Level: DPD Developer",
     "company": "Ericsson",
@@ -288,30 +450,12 @@
     "region": "China"
   },
   {
-    "id": "siemens-527892",
-    "title": "软件开发工程师（HMI界面定制开发）南京",
-    "company": "Siemens",
-    "location": "Nanjing, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527892",
-    "postedAt": "2026-11-25T05:46:10.061Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-524075",
     "title": "嵌入式软件开发工程师（伺服驱动器、变频器）南京",
     "company": "Siemens",
     "location": "Nanjing, Jiangsu Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/524075",
     "postedAt": "2026-11-25T05:46:10.061Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-526267",
-    "title": "数字化工程师 (仪征)",
-    "company": "Siemens",
-    "location": "Yizheng, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526267",
-    "postedAt": "2026-11-25T05:46:08.626Z",
     "region": "China"
   },
   {
@@ -330,24 +474,6 @@
     "location": "Chengdu, Sichuan Sheng, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527390",
     "postedAt": "2026-11-25T05:46:04.042Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-515785",
-    "title": "OEM 销售工程师 (沈阳 &amp; 长春）",
-    "company": "Siemens",
-    "location": "Changchun, Jilin Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/515785",
-    "postedAt": "2026-11-25T05:46:02.622Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-518161",
-    "title": "高级供应商质量工程师 大连",
-    "company": "Siemens",
-    "location": "Dalian, Liaoning Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/518161",
-    "postedAt": "2026-11-25T05:45:59.688Z",
     "region": "China"
   },
   {
@@ -439,6 +565,15 @@
     "region": "Sweden"
   },
   {
+    "id": "ericsson-563121777619016",
+    "title": "Entry Level: Radio Hardware developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777619016",
+    "postedAt": "2026-11-24T13:34:40.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "bk-30703",
     "title": "Product Manager- Accommodations, Partner Performance",
     "company": "Booking.com",
@@ -466,48 +601,12 @@
     "region": "Hong Kong"
   },
   {
-    "id": "siemens-530545",
-    "title": "IDM Purchasing Engineer",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530545",
-    "postedAt": "2026-11-24T07:11:23.721Z",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-527182",
-    "title": "嵌入式软件工程师 (应用)",
-    "company": "Siemens",
-    "location": "Nanjing, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/527182",
-    "postedAt": "2026-11-24T07:11:08.232Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-522007",
     "title": "数字化工业Sales100培训生销售工程师 北京",
     "company": "Siemens",
     "location": "Beijing, Beijing Shi, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/522007",
     "postedAt": "2026-11-24T07:10:58.714Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-530393",
-    "title": "AI算法工程师 物理建模与仿真算法",
-    "company": "Siemens",
-    "location": "Suzhou, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530393",
-    "postedAt": "2026-11-24T07:10:56.944Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-521832",
-    "title": "硬件系统开发工程师 电力电子",
-    "company": "Siemens",
-    "location": "Suzhou, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/521832",
-    "postedAt": "2026-11-24T07:10:53.180Z",
     "region": "China"
   },
   {
@@ -521,7 +620,7 @@
   },
   {
     "id": "siemens-530354",
-    "title": "Intelligence Center X Engineer - Enterprise AI and Data (China)",
+    "title": "Enterprise AI Engineer - Intelligence Center X (China)",
     "company": "Siemens",
     "location": "Shanghai, Shanghai Shi, China",
     "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/530354",
@@ -610,6 +709,15 @@
     "region": "China"
   },
   {
+    "id": "ericsson-563121777643780",
+    "title": "Intern-AI Developer",
+    "company": "Ericsson",
+    "location": "Beijing,Beijing,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121777643780",
+    "postedAt": "2026-11-24T06:07:57.000Z",
+    "region": "China"
+  },
+  {
     "id": "gh-8384688",
     "title": "Staff Security Engineer ",
     "company": "Riot Games",
@@ -671,21 +779,21 @@
     "region": "China"
   },
   {
+    "id": "ericsson-563121777587440",
+    "title": "Junior Baseband Software Developer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777587440",
+    "postedAt": "2026-11-23T15:29:34.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "gh-8175627",
     "title": "Scale Partner Marketing Lead",
     "company": "Stripe",
     "location": "San Francisco, Seattle, New York, Chicago, Atlanta, Remote in the US",
     "link": "https://stripe.com/jobs/search?gh_jid=8175627",
     "postedAt": "2026-11-23T09:28:52-05:00",
-    "region": "Sweden"
-  },
-  {
-    "id": "ericsson-563121777619170",
-    "title": "Junior Software Developer",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777619170",
-    "postedAt": "2026-11-23T09:35:01.000Z",
     "region": "Sweden"
   },
   {
@@ -750,24 +858,6 @@
     "region": "Singapore"
   },
   {
-    "id": "siemens-526266",
-    "title": "IT Application Solution Engineer / IT 应用解决方案工程师（仪征）",
-    "company": "Siemens",
-    "location": "Yizheng, Jiangsu Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/526266",
-    "postedAt": "2026-11-22T03:36:26.529Z",
-    "region": "China"
-  },
-  {
-    "id": "siemens-525097",
-    "title": "解决方案工程师 深圳",
-    "company": "Siemens",
-    "location": "Shenzhen, Guangdong Sheng, China",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/525097",
-    "postedAt": "2026-11-22T03:36:16.986Z",
-    "region": "China"
-  },
-  {
     "id": "siemens-530195",
     "title": "Industrial AI Application Engineer",
     "company": "Siemens",
@@ -793,15 +883,6 @@
     "link": "https://jobs.ashbyhq.com/airwallex/36d4b8df-ad02-4e69-9547-1f0b0f7d03da",
     "postedAt": "2026-11-20T08:37:07.468+00:00",
     "region": "Singapore"
-  },
-  {
-    "id": "ericsson-563121777567347",
-    "title": "Product Manager, People Digital Solutions, AI and Analytics",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777567347",
-    "postedAt": "2026-11-20T07:34:43.000Z",
-    "region": "Sweden"
   },
   {
     "id": "siemens-521694",
@@ -1072,6 +1153,24 @@
     "region": "Sweden"
   },
   {
+    "id": "ericsson-563121777431846",
+    "title": "AI Product Engineer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777431846",
+    "postedAt": "2026-11-19T13:55:29.000Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "ericsson-563121777045926",
+    "title": "ML Ops Engineer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777045926",
+    "postedAt": "2026-11-19T10:45:40.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "siemens-521692",
     "title": "数字化工业 Sales100培训生_销售工程师 沈阳",
     "company": "Siemens",
@@ -1216,15 +1315,6 @@
     "region": "Singapore"
   },
   {
-    "id": "ericsson-563121777182714",
-    "title": "ASIC Synthesis & PPA Engineer",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777182714",
-    "postedAt": "2026-11-18T08:39:47.000Z",
-    "region": "Sweden"
-  },
-  {
     "id": "as-c992a940-930c-400f-b73d-1ab303d10b45",
     "title": "Software Engineer, Risk",
     "company": "Airwallex",
@@ -1243,24 +1333,6 @@
     "region": "China"
   },
   {
-    "id": "vo-37348-en_US",
-    "title": "Manufacturing and EHS Engineer",
-    "company": "Volvo Group",
-    "location": "Shanghai, CN, 201206",
-    "link": "https://jobs.volvogroup.com/job/Shanghai-Manufacturing-and-EHS-Engineer-201206/1377314855/?feedId=361555",
-    "postedAt": "2026-11-18T04:46:17.172Z",
-    "region": "China"
-  },
-  {
-    "id": "vo-36800-en_US",
-    "title": "ADAS Function Developer & Scrum Master",
-    "company": "Volvo Group",
-    "location": "Göteborg, SE, 417 15",
-    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-ADAS-Function-Developer-&-Scrum-Master-417-15/1374955655/?feedId=361555",
-    "postedAt": "2026-11-18T04:46:17.172Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-36861-en_US",
     "title": "Electrical Installation Design Engineer",
     "company": "Volvo Group",
@@ -1275,6 +1347,24 @@
     "company": "Volvo Group",
     "location": "Göteborg, SE, 417 15",
     "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-Senior-ADAS-Function-Developer-417-15/1374790955/?feedId=361555",
+    "postedAt": "2026-11-18T04:46:17.172Z",
+    "region": "Sweden"
+  },
+  {
+    "id": "vo-37348-en_US",
+    "title": "Manufacturing and EHS Engineer",
+    "company": "Volvo Group",
+    "location": "Shanghai, CN, 201206",
+    "link": "https://jobs.volvogroup.com/job/Shanghai-Manufacturing-and-EHS-Engineer-201206/1377314855/?feedId=361555",
+    "postedAt": "2026-11-18T04:46:17.172Z",
+    "region": "China"
+  },
+  {
+    "id": "vo-36800-en_US",
+    "title": "ADAS Function Developer & Scrum Master",
+    "company": "Volvo Group",
+    "location": "Göteborg, SE, 417 15",
+    "link": "https://jobs.volvogroup.com/job/G%C3%B6teborg-ADAS-Function-Developer-&-Scrum-Master-417-15/1374955655/?feedId=361555",
     "postedAt": "2026-11-18T04:46:17.172Z",
     "region": "Sweden"
   },
@@ -1360,15 +1450,6 @@
     "region": "China"
   },
   {
-    "id": "sr-744000161986079",
-    "title": "Principal Software Engineer, Backend",
-    "company": "Grab",
-    "location": "Singapore, sg",
-    "link": "https://jobs.smartrecruiters.com/grab/744000161986079",
-    "postedAt": "2026-11-17T02:34:36.247Z",
-    "region": "Singapore"
-  },
-  {
     "id": "as-371b8b90-6f10-4664-b5c7-e98c1b0a0f3e",
     "title": "Product Marketing Manager, APAC",
     "company": "Checkout.com",
@@ -1378,22 +1459,13 @@
     "region": "China"
   },
   {
-    "id": "ericsson-563121777429708",
-    "title": "Linux Kernel / Yocto Engineers",
+    "id": "ericsson-563121777560334",
+    "title": "AI developer - Radio E2E Integration",
     "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777429708",
-    "postedAt": "2026-11-16T12:48:21.000Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "ericsson-563121777587329",
-    "title": "ASIC Emulation Engineer",
-    "company": "Ericsson",
-    "location": "Stockholm,Stockholm,Sweden",
-    "link": "https://jobs.ericsson.com/careers/job/563121777587329",
-    "postedAt": "2026-11-16T10:36:52.000Z",
-    "region": "Sweden"
+    "location": "Beijing,Beijing,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121777560334",
+    "postedAt": "2026-11-16T12:36:40.000Z",
+    "region": "China"
   },
   {
     "id": "as-859e5457-e5ec-4d78-9a83-e6a0eec270bc",
@@ -1441,6 +1513,15 @@
     "region": "Singapore"
   },
   {
+    "id": "ericsson-563121777136996",
+    "title": "Radar and ISAC System Engineer",
+    "company": "Ericsson",
+    "location": "Stockholm,Stockholm,Sweden",
+    "link": "https://jobs.ericsson.com/careers/job/563121777136996",
+    "postedAt": "2026-11-13T12:41:40.000Z",
+    "region": "Sweden"
+  },
+  {
     "id": "gh-8368656",
     "title": "Technical Solutions Engineer",
     "company": "Stripe",
@@ -1468,13 +1549,13 @@
     "region": "Singapore"
   },
   {
-    "id": "sh-J02212062",
-    "title": "Data Quality Engineer, MPID Team",
-    "company": "Shopee",
-    "location": "Singapore",
-    "link": "https://careers.shopee.sg/jobs/J02212062",
-    "postedAt": "2026-11-13T03:42:39.413Z",
-    "region": "Singapore"
+    "id": "vo-36863-en_US",
+    "title": "Electrical Installation Design Engineer - Wheel Loaders",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Electrical-Installation-Design-Engineer-Wheel-Loaders-405-08/1376762155/?feedId=361555",
+    "postedAt": "2026-11-13T03:41:13.998Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-36862-en_US",
@@ -1482,15 +1563,6 @@
     "company": "Volvo Group",
     "location": "Eskilstuna, SE, 405 08",
     "link": "https://jobs.volvogroup.com/job/Eskilstuna-Powertrain-Installation-Design-Engineer-Wheel-Loaders-405-08/1376771855/?feedId=361555",
-    "postedAt": "2026-11-13T03:41:13.998Z",
-    "region": "Sweden"
-  },
-  {
-    "id": "vo-36863-en_US",
-    "title": "Electrical Installation Design Engineer - Wheel Loaders",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Electrical-Installation-Design-Engineer-Wheel-Loaders-405-08/1376762155/?feedId=361555",
     "postedAt": "2026-11-13T03:41:13.998Z",
     "region": "Sweden"
   },
@@ -1639,7 +1711,7 @@
   },
   {
     "id": "gh-8359634",
-    "title": "Lead - Strategic Partnerships and Operations, SEA and OCE ",
+    "title": "Lead – Strategic Operations & Partnerships — SEA and OCE",
     "company": "Roblox",
     "location": "Singapore",
     "link": "https://careers.roblox.com/jobs/8359634?gh_jid=8359634",
@@ -1683,15 +1755,6 @@
     "region": "China"
   },
   {
-    "id": "vo-37052-en_US",
-    "title": "Senior System Verification Engineer Connectivity",
-    "company": "Volvo Group",
-    "location": "Eskilstuna, SE, 405 08",
-    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-System-Verification-Engineer-Connectivity-405-08/1376289555/?feedId=361555",
-    "postedAt": "2026-11-10T04:49:55.817Z",
-    "region": "Sweden"
-  },
-  {
     "id": "vo-37071-en_US",
     "title": "Product Manager - Marine Aftermarket",
     "company": "Volvo Group",
@@ -1708,6 +1771,15 @@
     "link": "https://jobs.volvogroup.com/job/Shanghai-Technical-Leader-201206/1374347955/?feedId=361555",
     "postedAt": "2026-11-10T04:49:55.817Z",
     "region": "China"
+  },
+  {
+    "id": "vo-37052-en_US",
+    "title": "Senior System Verification Engineer Connectivity",
+    "company": "Volvo Group",
+    "location": "Eskilstuna, SE, 405 08",
+    "link": "https://jobs.volvogroup.com/job/Eskilstuna-Senior-System-Verification-Engineer-Connectivity-405-08/1376289555/?feedId=361555",
+    "postedAt": "2026-11-10T04:49:55.817Z",
+    "region": "Sweden"
   },
   {
     "id": "vo-36196-en_US",
@@ -2126,14 +2198,6 @@
     "region": "Singapore"
   },
   {
-    "id": "ph-JR00033419",
-    "title": "Project Engineer",
-    "company": "ABB",
-    "location": "Xiamen, Fujian, China",
-    "postedAt": "2026-10-30T00:00:00.000+0000",
-    "region": "China"
-  },
-  {
     "id": "alg-ub-6ff50a46-8572-4345-9827-f9e6e3b0eb94_16",
     "title": "Lead Animator",
     "company": "Ubisoft",
@@ -2472,15 +2536,6 @@
     "location": "SG - Singapore",
     "link": "https://jobs.ashbyhq.com/airwallex/252a825e-ac40-41fa-b12e-dda400167e68",
     "postedAt": "2026-10-22T06:38:32.402+00:00",
-    "region": "Singapore"
-  },
-  {
-    "id": "siemens-513501",
-    "title": "T&amp;C Engineer - ATC",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/513501",
-    "postedAt": "2026-10-22T02:02:00.597Z",
     "region": "Singapore"
   },
   {
@@ -3384,15 +3439,6 @@
     "region": "China"
   },
   {
-    "id": "ericsson-563121777144160",
-    "title": "2027 New Graduates - Network Engineer",
-    "company": "Ericsson",
-    "location": "Nanjing,Jiangsu,China",
-    "link": "https://jobs.ericsson.com/careers/job/563121777144160",
-    "postedAt": "2026-09-02T16:00:00.000Z",
-    "region": "China"
-  },
-  {
     "id": "ericsson-563121777144238",
     "title": "2027 New Graduates - RAN Software Developer",
     "company": "Ericsson",
@@ -3407,6 +3453,15 @@
     "company": "Ericsson",
     "location": "Beijing,Beijing,China",
     "link": "https://jobs.ericsson.com/careers/job/563121777144276",
+    "postedAt": "2026-09-02T16:00:00.000Z",
+    "region": "China"
+  },
+  {
+    "id": "ericsson-563121777144160",
+    "title": "2027 New Graduates - Network Engineer",
+    "company": "Ericsson",
+    "location": "Nanjing,Jiangsu,China",
+    "link": "https://jobs.ericsson.com/careers/job/563121777144160",
     "postedAt": "2026-09-02T16:00:00.000Z",
     "region": "China"
   },
@@ -3490,15 +3545,6 @@
     "link": "https://job-boards.greenhouse.io/casetify/jobs/6173276004",
     "postedAt": "2026-08-28T05:09:16-04:00",
     "region": "Sweden"
-  },
-  {
-    "id": "siemens-519809",
-    "title": "Site Installation Engineer - CRL",
-    "company": "Siemens",
-    "location": "Singapore, Central Singapore, Singapore",
-    "link": "https://jobs.siemens.com/en_US/externaljobs/JobDetail/519809",
-    "postedAt": "2026-08-28T07:10:51.335Z",
-    "region": "Singapore"
   },
   {
     "id": "as-31043330-96b2-4c9b-91f7-0d53e12afa11",
@@ -4227,15 +4273,6 @@
     "region": "China"
   },
   {
-    "id": "gh-7449571",
-    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
-    "company": "Riot Games",
-    "location": "Guangzhou, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
-    "postedAt": "2026-07-28T13:17:50-04:00",
-    "region": "China"
-  },
-  {
     "id": "gh-7271179",
     "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
@@ -4245,11 +4282,11 @@
     "region": "China"
   },
   {
-    "id": "gh-7449588",
-    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "id": "gh-7449571",
+    "title": "Software Engineer, Gameplay - Unpublished R&D Product (Contract)",
     "company": "Riot Games",
     "location": "Guangzhou, China",
-    "link": "https://www.riotgames.com/en/work-with-us/job/7449588?gh_jid=7449588",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449571?gh_jid=7449571",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
@@ -4259,6 +4296,15 @@
     "company": "Riot Games",
     "location": "Shanghai, China",
     "link": "https://www.riotgames.com/en/work-with-us/job/7786020?gh_jid=7786020",
+    "postedAt": "2026-07-28T13:17:50-04:00",
+    "region": "China"
+  },
+  {
+    "id": "gh-7449588",
+    "title": "Software Engineer, Services - Unpublished R&D Product (Contract)",
+    "company": "Riot Games",
+    "location": "Guangzhou, China",
+    "link": "https://www.riotgames.com/en/work-with-us/job/7449588?gh_jid=7449588",
     "postedAt": "2026-07-28T13:17:50-04:00",
     "region": "China"
   },
